@@ -3,8 +3,8 @@
 ### Course Description
 
 Traditional products are becoming smart products and smart products are becoming
-connected. From smart homes to smart cities, this trend in product development and design is
-likely to have a profound impact on our future.
+connected. From smart homes to smart cities, this trend in product development
+and design is likely to have a profound impact on our future.
 
 This course takes the view that the internet of things is best viewed as an extension
 of the World Wide Web. So, throughout this course, we will consider how the Web was

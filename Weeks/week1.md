@@ -1,0 +1,78 @@
+# Internet of Things Week 1
+
+## Topics
+
++ Course mechanics
++ Smart, connected products
++ Demonstration: Building a web site with IntelliJ and Java
+
+## Required readings
+
++ [Smart Connected Products](https://hbr.org/2014/11/how-smart-connected-products-are-transforming-competition)
++ [Enabling The Internet of Things](https://www.andrew.cmu.edu/user/mm6/95-733/iot/Enabling_the_Internet_of_Things.pdf)
+
++ [AJAX Article from IBM By Philip McCarthy](http://www.ibm.com/developerworks/library/j-ajax1/?ca%3D)
+
++ [AJAX Code discussed in the article by Philip McCarthy](Ajax/j-ajax1.zip)
+
++ [IntelliJ HTML5 Websocket example from Oracle](Whiteboard_Instructions.txt)
+
+
+## Slides
++ [Introduction to course structure](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/01_IntroToCourseStructure.pdf)
+
++ [Smart and Connected Products](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/01_IntroductionToIOT.pdf)
+
+
+## Project
++ [Project 1](https://www.andrew.cmu.edu/user/mm6/95-733/homework/Spring2020/S20Project1.txt)
+
+## Quizzes
+
++ No quizzes during the first week of class.
+
+## Optional Readings
+
++ [Described in "Smart Connected Products" : URIBeacon is now Eddystone - uses existing app on your phone](https://developers.google.com/beacons/)
+
++ [Google's Physical Web Short video](https://www.youtube.com/watch?v=1yaLPRgtlR0&feature=youtu.be)
+
++ [Google's Physical Web Long video](https://www.youtube.com/watch?v=vyfy7AdPk2g)
+
++ [Find the lost dog](https://youtu.be/-Y77cUI_z30)
+
++ [IntelliJ installation and basic servlets](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_Installs.pdf)
+
++ [IntelliJ Alternative installation](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_Alternative_Startup.docx)
+
++ [Tile Bluetooth tracker](https://www.thetileapp.com/en-us/products)
+
++ [Scientific American on the Internet of Things](http://cba.mit.edu/docs/papers/04.10.i0.pdf)
+
+
++ [IoT Alliance](https://www.trusted-iot.org)
+
++ [Wot and IoT](https://webofthings.org/2016/01/23/wot-vs-iot-12/)
+
+
++ [Required: JavaScript Object Notation (JSON) Grammar](http://www.json.org/index.html)
+
++ [Introductory servlets](http://proquestcombo.safaribooksonline.com/9780596516680)
+
++ [Java JSON API](http://www.oracle.com/technetwork/articles/java/json-1973242.html)
+
++ [Firebug](http://getfirebug.com/downloads)
+
++ [Firebug tutorial](http://www.ibm.com/developerworks/web/library/wa-aj-firebug/)
+
++ [Debugging AJAX](http://www.youtube.com/watch?v=W4jXAaEMp2M)
+
++ [Hello World Using JSON and AJAX](JSONHelloWorld.txt)
+
++ [Simple JSONP example](JSONP/JSONPDemo.txt)
+
++ [General viewing: Lynda and CMU Tutorials](http://www.cmu.edu/lynda/)
+
++ [General: Enterprise Integration Patterns](http://www.enterpriseintegrationpatterns.com)
+
++ [Digital Twins ](https://www.iiconsortium.org/journal-of-innovation.htm)

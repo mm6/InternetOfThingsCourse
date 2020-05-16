@@ -2,7 +2,7 @@
 
 ## Syllabus
 
- ### Instructor
+### Instructor
 
 Name: Michael J. McCarthy
 
@@ -73,7 +73,7 @@ The student needs to download and install the most recent IntelliJ Ultimate IDE.
 
 ### Hardware Requirements
 
-The student needs to purchase a Particle Photon Starter Kit. [Available here.](https://store.particle.io/products/photon-kit)
+The student needs to purchase a Particle Photon with Headers Starter Kit. [Available here.](https://store.particle.io/products/photon-kit)
 
 
 ### Time and place
