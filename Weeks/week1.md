@@ -18,9 +18,9 @@
 
 + [AJAX Article from IBM By Philip McCarthy](http://www.ibm.com/developerworks/library/j-ajax1/?ca%3D)
 
-+ [AJAX Code discussed in the article by Philip McCarthy](http://www.andrew.cmu.edu/~mm6/95-733/Ajax/j-ajax1.zip)
++ [AJAX Code discussed in the article by Philip McCarthy](http://www.andrew.cmu.edu/user/mm6/95-733/Ajax/j-ajax1.zip)
 
-+ [IntelliJ HTML5 Websocket example from Oracle](http://www.andrew.cmu.edu/~mm6/95-733/Whiteboard_Instructions.txt)
++ [IntelliJ HTML5 Websocket example from Oracle](http://www.andrew.cmu.edu/user/mm6/95-733/Whiteboard_Instructions.txt)
 
 ## Project
 + [Project 1](https://www.andrew.cmu.edu/user/mm6/95-733/homework/Spring2020/S20Project1.txt)
