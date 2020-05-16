@@ -69,7 +69,7 @@ The student needs to download and install the most recent IntelliJ Ultimate IDE.
 [For server side coding use TomEE PlusAvailable here.](https://www.jetbrains.com/idea/)
 
 
-[Installation instructions are available here.](http://www.andrew.cmu.edu/~mm6/95-733/IntelliJ_Installs.pdf)
+[Installation instructions are available here.](http://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_Installs.pdf)
 
 ### Hardware Requirements
 
