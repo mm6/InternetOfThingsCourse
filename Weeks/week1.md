@@ -50,29 +50,25 @@
 + [Scientific American on the Internet of Things](http://cba.mit.edu/docs/papers/04.10.i0.pdf)
 
 
-+ [IoT Alliance](https://www.trusted-iot.org)
++ [Industrial Internet Consortium](https://www.trusted-iot.org)
 
 + [Wot and IoT](https://webofthings.org/2016/01/23/wot-vs-iot-12/)
 
 
-+ [Required: JavaScript Object Notation (JSON) Grammar](http://www.json.org/index.html)
++ [JavaScript Object Notation (JSON) Grammar](http://www.json.org/index.html)
 
 + [Introductory servlets](http://proquestcombo.safaribooksonline.com/9780596516680)
 
 + [Java JSON API](http://www.oracle.com/technetwork/articles/java/json-1973242.html)
 
-+ [Firebug](http://getfirebug.com/downloads)
-
-+ [Firebug tutorial](http://www.ibm.com/developerworks/web/library/wa-aj-firebug/)
++ [Firefox Developer](https://www.mozilla.org/en-US/firefox/developer/)
 
 + [Debugging AJAX](http://www.youtube.com/watch?v=W4jXAaEMp2M)
 
-+ [Hello World Using JSON and AJAX](JSONHelloWorld.txt)
++ [Hello World Using JSON and AJAX](https://www.andrew.cmu.edu/user/mm6/95-733/JSONHelloWorld.txt)
 
-+ [Simple JSONP example](JSONP/JSONPDemo.txt)
++ [Simple JSONP example](https://www.andrew.cmu.edu/user/mm6/95-733/JSONP/JSONPDemo.txt)
 
 + [General viewing: Lynda and CMU Tutorials](http://www.cmu.edu/lynda/)
 
 + [General: Enterprise Integration Patterns](http://www.enterpriseintegrationpatterns.com)
-
-+ [Digital Twins ](https://www.iiconsortium.org/journal-of-innovation.htm)
