@@ -71,7 +71,7 @@ The student needs to download and install the most recent IntelliJ Ultimate IDE.
 
 
 
-[Installation instructions are available here.](http://www.andrew.cmu.edu/~mm6/95-733/IntelliJ_Installs.pdf")
+[Installation instructions are available here.](http://www.andrew.cmu.edu/~mm6/95-733/IntelliJ_Installs.pdf)
 
 ### Time and place
 
