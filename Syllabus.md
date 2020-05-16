@@ -70,6 +70,7 @@ The student needs to download and install the most recent IntelliJ Ultimate IDE.
 
 
 
+[Installation instructions are available here.](https://docs.google.com/viewer?url=${https://github.com/mm6/InternetOfThingsCourse/blob/master/miscellaneous/IntelliJ_Installs.pdf})
 [Installation instructions are available here.](../master/miscellaneous/IntelliJ_Installs.pdf)
 
 ### Time and place
