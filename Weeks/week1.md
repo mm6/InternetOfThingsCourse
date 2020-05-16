@@ -6,6 +6,11 @@
 + Smart, connected products
 + Demonstration: Building a web site with IntelliJ and Java
 
+## Slides
++ [Introduction to course structure](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/01_IntroToCourseStructure.pdf)
+
++ [Smart and Connected Products](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/01_IntroductionToIOT.pdf)
+
 ## Required readings
 
 + [Smart Connected Products](https://hbr.org/2014/11/how-smart-connected-products-are-transforming-competition)
@@ -16,13 +21,6 @@
 + [AJAX Code discussed in the article by Philip McCarthy](http://www.andrew.cmu.edu/~mm6/95-733/Ajax/j-ajax1.zip)
 
 + [IntelliJ HTML5 Websocket example from Oracle](http://www.andrew.cmu.edu/~mm6/95-733/Whiteboard_Instructions.txt)
-
-
-## Slides
-+ [Introduction to course structure](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/01_IntroToCourseStructure.pdf)
-
-+ [Smart and Connected Products](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/01_IntroductionToIOT.pdf)
-
 
 ## Project
 + [Project 1](https://www.andrew.cmu.edu/user/mm6/95-733/homework/Spring2020/S20Project1.txt)
