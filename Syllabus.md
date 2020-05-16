@@ -28,27 +28,29 @@ Zoom URL: See Canvas
 
 ### Prerequisite
 
-The ability to program is the main prerequisite. If unsure about your ability, speak with your instructor.
+The ability to program is the main prerequisite. If you are unsure about your
+ability, speak with your instructor.
 
 ### Assignments
 
-Four programming projects equally weighted (60%).
+There will be four programming projects equally weighted (60%).
 
-One of the projects (Project 4) will be chosen and demonstrated by a student team. On Project 4, the number of students in a student team is between 1 and 3. This project requires a demonstration presented to the class. The demonstration will be divided equally among the team members.
+One of the projects (Project 4) will be chosen and designed by a student team. On Project 4, the number of students in a student team is between 1 and 3. This project requires a demonstration presented to the class. The demonstration will be divided equally among the team members.
 
-Quizzes on readings at start of lecture with low score dropped (10%).
+There will be quizzes on the readings at the start of lecture with the low score dropped (10%).
 
-Closed Book Final Exam based on readings, lectures, and programming (30%).
+There will be a closed Book Final Exam based on readings, lectures, and programming (30%).
 
 ### Late Assignment Policy
 
 
-You have 7 grace days to spend. This policy is meant to cover such issues as job interviews, travel and so on. After the seven days are spent
-there is a penalty of 10% per day late.
+You have 7 grace days to spend. This policy is meant to cover such issues as job
+interviews, travel and so on. After the seven days are spent, there is a late penalty
+of 10% per day.
 
 ### Policy on collaboration
 
-Unless otherwise noted, collaboration is not permitted. While it is fine to discuss projects with others it is a cheating violation when code is copied or shared. If a student is caught sharing his or her work with another, a failing grade may be assigned for the course. Likewise, if a student uses another's work when completing his or her own, a failing grade may be assigned for the course. In either case, the Dean will be notified. Github submissions and past student solutions are checked. In addition, the exams are designed to test your knowledge and coding skills.
+Unless otherwise noted, collaboration is not permitted. While it is fine to discuss projects with others it is a cheating violation when code is copied or shared. If a student is caught sharing his or her work with another, a failing grade may be assigned for the course. Likewise, if a student uses another's work when completing his or her own, a failing grade may be assigned for the course. In either case, the Dean will be notified. Note that github submissions and past student solutions are checked for cheating. In addition, the exams are designed to test your knowledge and coding skills.
 
 ### Policy on grading complaints
 
@@ -58,17 +60,17 @@ Grading mistakes may occur. Please contact the TA who graded your assignment abo
 ### Use of Canvas
 
 
-There will be a Canvas site for the course. Grades will be posted there and assignments will be submitted there. We will also make good use of the discussion board. It is far better to post a question to the discussion board than it is to send your instructor or TA an email. Answers posted there are available for all to see. The main site for the course (syllabus, course description and schedule) is this page.
+There will be a Canvas site for the course. Grades will be posted there and assignments will be submitted there. We will also make good use of the discussion board on Piazza. It is far better to post a question to the discussion board than it is to send your instructor or TA an email. Answers posted there are available for all to see. The main site for the course (syllabus, course description and schedule) is this page.
 
 ### Software Requirements
 
 The student needs to download and install the most recent IntelliJ Ultimate IDE. Available here.
 
-For server side coding use TomEE PlusAvailable here.
+[For server side coding use TomEE PlusAvailable here.](https://www.jetbrains.com/idea/)
 
 
 
-Installation instructions are available here.
+[Installation instructions are available here.](/miscellaneous/IntelliJ_Installs.pdf)
 
 ### Time and place
 
@@ -103,9 +105,7 @@ Thursday 04:30PM 05:50PM Adelaide, Australia
 
 Building the Web of Things
 
-By Guinard and Trifa
-
-Available here
+By Guinard and Trifa [Available here](https://webofthings.org/)
 
 ### Optional Text
 
@@ -116,6 +116,7 @@ Robert W. Sebesta, University of Colorado, Colorado Springs
 ISBN: 978-0-13-377598-3
 
 Publisher: Addison-Wesley
+[Available here.](https://www.amazon.com/Programming-World-Wide-Robert-Sebesta/dp/0201704846)
 
 ### Good health:
 
