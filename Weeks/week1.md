@@ -23,7 +23,7 @@
 + [IntelliJ HTML5 Websocket example from Oracle](http://www.andrew.cmu.edu/user/mm6/95-733/Whiteboard_Instructions.txt)
 
 ## Project
-+ [Project 1](https://www.andrew.cmu.edu/user/mm6/95-733/homework/Spring2020/S20Project1.txt)
++ [Project 1 Servlets, AJAX, JSON, Web Sockets, Particle Photon Microcontroller](https://www.andrew.cmu.edu/user/mm6/95-733/homework/Spring2020/S20Project1.txt)
 
 ## Quizzes
 
