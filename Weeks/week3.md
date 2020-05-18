@@ -1,3 +1,5 @@
+# Carnegie Mellon University
+
 # 95-733 Internet of Things Week 3
 
 ## Topics
@@ -48,4 +50,3 @@
 + [Convergence of IOT and Blockchain (Microsoft)](https://azure.microsoft.com/en-us/solutions/blockchain/)
 
 + [IOT Device to Ethereum - Cool Example](https://hackaday.com/2017/11/09/iot-with-the-ethereum-blockchain/)
-         
