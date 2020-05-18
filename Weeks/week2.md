@@ -12,7 +12,7 @@
 + Demonstration: The Particle IDE
 
 ## Slides
-+ [Enabling the Internet of Things](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/02_EnablingTheInternetOfThings.pptx)
++ [Enabling the Internet of Things](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/02_EnablingTheInternetOfThings.pdf)
 
 + [Four interaction styles](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/01_Four_Styles.ppt)
 
