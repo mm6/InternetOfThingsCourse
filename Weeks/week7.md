@@ -54,123 +54,28 @@
 
 + [Python - reading freebase](http://code.google.com/p/freebase-python/wiki/GettingStarted)
 
++ [MQL Documentation](http://www.freebase.com/docs/mql)
 
-       [MQL Documentation]
-       (http://www.freebase.com/docs/mql)
++ [Discovery of Datasets](https://www.blog.google/products/search/making-it-easier-discover-datasets/)
 
++ [DBPedia and freebase](http://wiki.freebase.com/wiki/DBPedia)
 
-       [Discovery of Datasets]
-       (https://www.blog.google/products/search/making-it-easier-discover-datasets/)
++ [Metcalfe's Law, Web 2.0 and the semantic web](http://www.cs.umd.edu/~golbeck/downloads/Web20-SW-JWS-webVersion.pdf)
 
++ [Video Tutorial on semantic web](http://videolectures.net/training06_sure_stsw/)
 
++ [The Wine Ontology](http://www.w3.org/TR/owl-guide/wine.rdf)
 
-       [DBPedia and freebase]
-       (http://wiki.freebase.com/wiki/DBPedia)
++ [DBPedia Ontology](http://mappings.dbpedia.org/server/ontology/classes/)
 
++ [SPARQL at IBM](http://www.ibm.com/developerworks/xml/library/j-sparql/)
 
-       [Metcalfe's Law, Web 2.0 and the semantic web]
-       (http://www.cs.umd.edu/~golbeck/downloads/Web20-SW-JWS-webVersion.pdf)
++ [SPARQL Tutorial](http://www.xml.com/lpt/a/1628)
 
++ [Semantic Web Experts Video](http://technologyvoice.com/2013/09/04/deciphering-the-semantic-web-video)
 
++ [JSON-LD](http://www.markus-lanthaler.com/research/on-using-json-ld-to-create-evolvable-restful-services.pdf)
 
++ [Linked Data Video](http://videolectures.net/iswc08_heath_hpldw/)
 
-       [Video Tutorial on semantic web]
-       (http://videolectures.net/training06_sure_stsw/)
-
-
-
-    [The Wine Ontology]
-    (http://www.w3.org/TR/owl-guide/wine.rdf)
-
-
-    [DBPedia Ontology]
-    (http://mappings.dbpedia.org/server/ontology/classes/)
-
-
-
-        [SPARQL at IBM]
-        (http://www.ibm.com/developerworks/xml/library/j-sparql/)
-
-
-         [SPARQL Tutorial]
-         (http://www.xml.com/lpt/a/1628)
-
-
-         [Semantic Web Experts Video]
-         (http://technologyvoice.com/2013/09/04/deciphering-the-semantic-web-video)
-
-
-         [JSON-LD]
-         (http://www.markus-lanthaler.com/research/on-using-json-ld-to-create-evolvable-restful-services.pdf)
-
-
-
-         [Linked Data Video]
-         (http://videolectures.net/iswc08_heath_hpldw/)
-
-
-         [Video for June 24]
-         (http://heinz-video1.andrew.cmu.edu/Mediasite/Catalog/Full/e12a51f42845453f9d7863231a0a73a421)
-
-
-
-  </Reading>
-
-
-  <!--
-
-     [Introduction to OWL]
-     (https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/OntologiesInOWL.ppt)
-
-
-     [Introduction to JSON-LD]
-     (https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/JSON-LD.pptx)
-
-
-     [Making queries on RDF]
-     (https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/QueriesOnRDF.ppt)
-
-  -->
-   <In>--</In>
-   <Out>
-       []
-       ()
-    </Out>
-   <!--
-   <Out>
-       [Quiz 6 start of class on Tuesday on Web of Things Architecture at W3C]
-       (https://w3c.github.io/wot-architecture/)
-    </Out>
-    -->
-  <!--
-  <Out>
-       [Thursday Quiz 5 on From the Internet of Things to the Web of Things: Resource Oriented Architecture and Best Practices]
-       ()
-    </Out>
-   -->
-</Lecture>
-
-
-
-<!--Lecture 8 -->
-
-
-<Lecture>
-  <Date>Week 8: Tuesday March 3 Final Exam held during normal class time and place.</Date>
-  <Reading>
-     <book></book>
-
-          [Final Exam (Closed book, Closed notes) Canvas Based - Review for final exam]
-          (review.txt)
-
-  </Reading>
-
-       []
-       ()
-
-    <In>--</In>
-    <Out>
-       []
-       ()
-    </Out>
-</Lecture>
++ [Video for June 24](http://heinz-video1.andrew.cmu.edu/Mediasite/Catalog/Full/e12a51f42845453f9d7863231a0a73a421)

@@ -18,7 +18,7 @@ Zoom URL: See Canvas
 
 ### Teaching Assistant
 
-Name: Nitish Singh
+Name: Nitesh Singh
 
 Email: nksingh@andrew.cmu.edu
 
