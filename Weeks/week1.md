@@ -27,6 +27,8 @@
 ## Project
 + [Project 1 Servlets, AJAX, JSON, Web Sockets, Particle Photon Microcontroller](https://www.andrew.cmu.edu/user/mm6/95-733/homework/Spring2020/S20Project1.md)
 
++ [Project 1 Servlets, AJAX, JSON, Web Sockets, Particle Photon Microcontroller](./projects/S20Project1.md)
+
 ## Quizzes
 
 + No quizzes during the first week of class.
