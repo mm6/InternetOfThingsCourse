@@ -14,7 +14,7 @@ Office: Hamburg Hall 3015
 
 Phone: 412-268-4657
 
-Officer Hours on Zoom: Wednesday 9:30 - 11:30 AM
+Officer Hours on Zoom: Wednesday 9:00 - 11:00 AM
 
 Zoom URL: See Canvas or Piazza
 

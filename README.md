@@ -10,4 +10,4 @@
 + [Week 3 June 2](./Weeks/week3.md)
 + [Week 4 June 9](./Weeks/week4.md)
 + [Week 5 June 16](./Weeks/week5.md)
-+ [Week 6 June 23](./Weeks/week6.md)
++ [Week 6 June 23 Final Exam](./Weeks/week6.md)
