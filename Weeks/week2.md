@@ -5,7 +5,7 @@
 ## Topics
 
 Here we consider how the World Wide Web provides guidance on the construction of the internet of
-things.
+things. Security and privacy are continuing concerns. We argue that an interoperable internet of things is possible.
 
 + Enabling the Internet of Things
 + Four HTTP interaction patterns
