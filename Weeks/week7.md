@@ -30,7 +30,7 @@
 
 + [TBL at TED Put Data On The Web](https://www.youtube.com/watch?v=OM6XIICm_qo)
 
-+ [Linked Data](http://linkeddata.org/)
++ [Linked Data](https://www.w3.org/standards/semanticweb/data)
 
 + [Sematic web Tutorial](http://www.linkeddatatools.com/semantic-web-basics)
 
@@ -79,5 +79,3 @@
 + [JSON-LD](http://www.markus-lanthaler.com/research/on-using-json-ld-to-create-evolvable-restful-services.pdf)
 
 + [Linked Data Video](http://videolectures.net/iswc08_heath_hpldw/)
-
-+ [Video for June 24](http://heinz-video1.andrew.cmu.edu/Mediasite/Catalog/Full/e12a51f42845453f9d7863231a0a73a421)

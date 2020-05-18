@@ -24,6 +24,12 @@
 
 + [Self-sovereign identity](https://www.computerworld.com/article/3244128/how-blockchain-makes-self-sovereign-identities-possible.html)
 
++ [Bruce Schneier RSA Conference Keynote on Regulating the Internet of Things](https://www.youtube.com/watch?v=b05ksqy9F7k)
+
++ [Bruce Schneier Security of Things](https://www.schneier.com/blog/archives/2016/11/regulation_of_t.html)
+
++ [Sanjay Sarma and IoT Security](http://www.politico.com/agenda/story/2015/06/internet-of-things-privacy-risks-security-000096)
+
 ## Project
 
 + There is no new project during week 6.
@@ -39,11 +45,7 @@
 
 ## Optional Readings
 
-+ [Required: Bruce Schneier RSA Conference Keynote on Regulating the Internet of Things](https://www.youtube.com/watch?v=b05ksqy9F7k)
 
-+ [Required: Bruce Schneier Security of Things](https://www.schneier.com/blog/archives/2016/11/regulation_of_t.html)
-
-+ [Required: Sanjay Sarma and IoT Security](http://www.politico.com/agenda/story/2015/06/internet-of-things-privacy-risks-security-000096)
 
 + [IoT Security Foundation](https://iotsecurityfoundation.org/)
 
