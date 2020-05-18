@@ -55,7 +55,7 @@
 
 + [Bluetooth Attack Vector](https://www.armis.com/blueborne/)
 
-+[Edgent video](https://www.youtube.com/watch?v=Xqns7yVNDnk)
++ [Edgent video](https://www.youtube.com/watch?v=Xqns7yVNDnk)
 
 + [Edgent and Data Analytics](https://www.datasciencecentral.com/video/real-time-analytics-for-iot-with-apache-edgent-and-ibm-streams)
 
