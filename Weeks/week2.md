@@ -20,7 +20,7 @@
 
 ## Required readings
 
-+ [The Computer for the 21st Century](iot/The_Computer_For_The_21st_Century.pdf)
++ [The Computer for the 21st Century](https://www.andrew.cmu.edu/user/mm6/95-733/iot/The_Computer_For_The_21st_Century.pdf)
 
 + [The Computer for the 21st Century Video ](https://www.youtube.com/watch?v=CkHALBOqn7s)
 
