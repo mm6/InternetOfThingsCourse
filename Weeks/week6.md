@@ -13,8 +13,7 @@
 
 ## Slides
 
-+ [Self-sovereign identities]
-(https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/Self-Sovereign-Identity.pptx)
++ [Self-sovereign identities](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/Self-Sovereign-Identity.pptx)
 
 + [Introduction to RDF](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_RDF.ppt)
 
