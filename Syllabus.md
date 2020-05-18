@@ -16,7 +16,7 @@ Phone: 412-268-4657
 
 Officer Hours on Zoom: Wednesday 9:30 - 11:30 AM
 
-Zoom URL: See Canvas
+Zoom URL: See Canvas or Piazza
 
 ### Teaching Assistant
 
@@ -24,9 +24,9 @@ Name: Nitesh Singh
 
 Email: nksingh@andrew.cmu.edu
 
-Officer Hours on Zoom: TBA
+Officer Hours on Zoom: Tuesday, Wednesday 6:30 PM - 8:30 PM
 
-Zoom URL: See Canvas
+Zoom URL: See Canvas or Piazza
 
 ### Prerequisite
 
