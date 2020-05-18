@@ -35,20 +35,16 @@ ability, speak with your instructor.
 
 ### Assignments
 
-There will be four programming projects equally weighted (60%).
+There will be three programming projects equally weighted (60%).
 
-One of the projects (Project 4) will be chosen and designed by a student team. On Project 4, the number of students in a student team is between 1 and 3. This project requires a demonstration presented to the class. The demonstration will be divided equally among the team members.
+There will be four quizzes on the readings at the start of lecture with the low score dropped (15%).
 
-There will be quizzes on the readings at the start of lecture with the low score dropped (10%).
-
-There will be a closed Book Final Exam based on readings, lectures, and programming (30%).
+There will be a closed Book Final Exam based on readings, lectures, and programming (25%).
 
 ### Late Assignment Policy
 
-
 You have 7 grace days to spend. This policy is meant to cover such issues as job
-interviews, travel and so on. After the seven days are spent, there is a late penalty
-of 10% per day.
+interviews, travel and so on. After the seven days are spent, there is a late penalty of 10% per day.
 
 ### Policy on collaboration
 
