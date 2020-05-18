@@ -39,7 +39,7 @@
 
 + [IBMs IOT Knowledge Graph](https://www.youtube.com/watch?v=ebBTdH62yLg)
 
-+ [Google uses JSON-LD embedded in HTML(https://developers.google.com/schemas/formats/json-ld)
++ [Google uses JSON-LD embedded in HTML](https://developers.google.com/schemas/formats/json-ld)
 
 + [Google uses JSON-LD in Knowledge Graph API](https://developers.google.com/knowledge-graph/)
 
@@ -59,8 +59,6 @@
 
 + [Web of Things Architecture Matthias Kovatsch(W3C) Video Lecture](https://www.youtube.com/watch?v=xgkglOZiF9M)
 
-+ [JSON-LD video](https://www.youtube.com/watch?v=vioCbTo3C-4)
-
 + [Rasberry Pi Demo with Betsy](https://www.youtube.com/watch?v=DPHzm3f2lps)
 
 + [Google, Yahoo, and Bing support Schema.org](http://schema.org)
@@ -74,8 +72,6 @@
 + [A List Apart on RDFa](http://www.alistapart.com/articles/introduction-to-rdfa/)
 
 + [Google's Use of RDFa](http://support.google.com/webmasters/bin/answer.py?hl=en&amp;answer=99170&amp;topic=1088472&amp;ctx=topic)
-
-+ [Best Buy uses RDFa for eCommerce](http://www.readwriteweb.com/archives/how_best_buy_is_using_the_semantic_web.php)
 
 + [What is RDF?](http://www.xml.com/pub/a/2001/01/24/rdf.html)
 

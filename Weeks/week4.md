@@ -22,7 +22,7 @@
 
 ## Required readings
 
-+ [Sensor Andrew - Large Scale Campus Wide Sensing](http://wise.ece.cmu.edu/resources/publications/ibm-sensor-andrew-11.pdf)
++ [Sensor Andrew - Large Scale Campus Wide Sensing](https://users.ece.cmu.edu/~agr/resources/publications/ibm-sensor-andrew-11.pdf)
 
 + [Sensor Andrew - Video](https://vimeo.com/9079961)
 
