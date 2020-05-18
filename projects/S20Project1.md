@@ -35,8 +35,7 @@ a web application that reports on the health of a Particle Photon.
 
    Name your project ACoolAJAXShoppingCart.
 
-   IntelliJ Ultimate may be downloaded from here:
-   https://www.jetbrains.com/idea/
+   [IntelliJ Ultimate may be downloaded from here](https://www.jetbrains.com/idea/)
 
    Grading: The grader will test this and will be looking for solid documentation.
    That is, you must provide comments throughout the code. These comments will
@@ -75,7 +74,7 @@ a web application that reports on the health of a Particle Photon.
    Note there is a full example on the course schedule showing how
    JSON may be generated on the server and read on the client.
 
-   For a careful description of JSON see http://www.json.org/
+   [For a careful description of JSON see here](http://www.json.org/)
 
    Note that there is a bug in this web application. Enter a few
    items into the shopping cart and then refresh the page. Only after
