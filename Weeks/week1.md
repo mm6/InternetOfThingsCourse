@@ -4,6 +4,8 @@
 
 ## Topics
 
+We begin the course with a discussion of business use cases and security concerns.
+
 + Course mechanics
 + Smart, connected products
 + Demonstration: Building a web site with IntelliJ and Java

@@ -3,6 +3,10 @@
 # 95-733 Internet of Things Week 2
 
 ## Topics
+
+Here we consider how the World Wide Web provides guidance on the construction of the internet of
+things.
+
 + Enabling the Internet of Things
 + Four HTTP interaction patterns
 + Server side AJAX in Java
