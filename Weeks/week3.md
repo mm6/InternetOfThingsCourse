@@ -31,7 +31,6 @@
 + Project 1 Due Midnight Tuesday
 + [Project 2 Publish Subscribe](https://www.andrew.cmu.edu/user/mm6/95-733/homework/Spring2020/S20Project2.txt)
 
-
 ## Quizzes
 
 + Quiz 2 is on Canvas at the start of class.

@@ -38,12 +38,9 @@
 
 ## Optional Readings
 
-
-
 + [Photons and Windows 10 Set up](https://www.andrew.cmu.edu/user/mm6/95-733/Photon/SetupParticlePhotoninWindows10.pdf)
 
 + [Photons Used by CheerLights and ThingSpeak](https://cheerlights.com)
-
 
 + [Micro bit ](http://microbit.org/)
 
