@@ -26,8 +26,7 @@ a web application that reports on the health of a Particle Photon.
    to be included under Web Pages/WEBINF in IntelliJ. Also,
    be sure to turn off Oracle if it is using port 8080.
 
-   There are notes to help you install IntelliJ and TomEE Plus
-   on the course schedule. See IntelliJ_Installs.
+   There are notes to help you install IntelliJ and TomEE Plus. [See IntelliJ_Installs.](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_Installs.pdf)
 
 1) 5 Points. Build a working Ajax shopping cart using the code from the article.
    So that the TA's have an easy time grading the assignments, IntelliJ
