@@ -1,7 +1,9 @@
 # 95-733 Internet of Things Demonstration Code
 
+## This is code for a Particle Photon to visit a web application.
+
 This is C++ code. It needs to be compiled and the compiled code
-runs on a Particle Photon micro controller. Use the Particle
+will execute on a Particle Photon micro controller. Use the Particle
 web IDE to compile this code and perform an over the air deployment
 to your Photon.
 
