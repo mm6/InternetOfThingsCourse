@@ -70,7 +70,7 @@ a web application that reports on the health of a Particle Photon.
    This part requires that you design a JSON string that
    corresponds to the XML shopping cart.
 
-   Note there is a full example [provided here](https://www.andrew.cmu.edu/user/mm6/95-733/JSONHelloWorld.txt) showing how JSON may be generated on the server and read by the client.
+   Note there is a full example [provided here](https://www.andrew.cmu.edu/user/mm6/95-733/JSONHelloWorld.md) showing how JSON may be generated on the server and read by the client.
 
    [For a careful description of JSON see here](http://www.json.org/)
 
