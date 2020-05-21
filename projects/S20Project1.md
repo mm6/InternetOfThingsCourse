@@ -94,7 +94,7 @@ a web application that reports on the health of a Particle Photon.
 4) 30 Points. Deploy the Whiteboard application that Oracle uses
    to introduce websockets to TomEE Plus using IntelliJ Ultimate.
 
-   [See whiteboard instructions](https://www.andrew.cmu.edu/user/mm6/95-733/Whiteboard_Instructions.txt)
+   [See whiteboard instructions](Whiteboard_Instructions.md)
 
    Study the code in the Whiteboard application and use it as a guide
    to building a collaborative shopping cart. That is, build a shopping
@@ -103,7 +103,7 @@ a web application that reports on the health of a Particle Photon.
    McCarthy. When an item is added or deleted, everyone should be notified
    without polling the server.
 
-   No AJAX is allowed in this part of Project 1.
+   No AJAX is allowed in this part of Project 1. It is based on websockets.
 
    Name your project WhiteboardAppProject.
 
