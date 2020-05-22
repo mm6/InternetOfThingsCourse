@@ -7,7 +7,7 @@ will execute on a Particle Photon micro controller. Use the Particle
 web IDE to compile this code and perform an over the air deployment
 to your Photon.
 
-This is a simple HTTP client that makes periodic visits on an HTTP
+This is a simple HTTP client that makes periodic visits to an HTTP
 server. The periodic visits act like heart beats to inform the server
 that the device is still alive.
 
@@ -20,38 +20,40 @@ particle serial monitor
 Author: mm6 with various code snippets taken from Particle.io.
 */
 
-// DEBUG == true generates output to shell
-// after command line:
+// Setting DEBUG == true generates debugging output to a shell.
+// Install the Particle CLI and enter the command:
 // particle serial monitor
 boolean DEBUG = true;
 
-// How many seconds to wait until calling the server
+// Establish the number of seconds to wait until calling the server.
 int NUMSECONDS = 10;
 
-// a char array to hold response data
+// Define a char array to hold response data.
 char reply[512];
 
 // Use the TCPClient to write HTTP request
 TCPClient client;
 
-// Location of waiting server
+// We need the location of waiting server.
 // Using localhost would be a mistake.
 // The Photon treats localhost as itself.
 
-// Examine your own machine to find its IP address
+// Examine your own machine to find its IP address.
 byte serverIP[] = { 192, 168, 1, 2 };
 
-// Server port for web application
+// Establish the server port for the web application.
 int port = 8080;
 
-// We only want to visit every 10 seconds or so
+// We only want to visit every 10 seconds or so.
 int timeCtr = 0;
 
-// Device ID will be stored here after being retrieved from the device
+// Device ID will be stored here after being retrieved from the device.
+// This is a unique, 96 bit identifier.
+// This looks like the following: 0x3d0020000c47353536383631.
 String photonID = "";
 
 void setup() {
-    // to allow for debug
+    // to allow for debug using the CLI
     Serial.begin(9600);
 
     // find ID of this device
