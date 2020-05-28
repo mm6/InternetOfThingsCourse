@@ -1,11 +1,9 @@
-95-733 Internet of Things    Tuesday, June 2, 2020
+# 95-733 Internet of Things    Tuesday, June 2, 2020
 
-Due Date: 11:59 PM Tuesday, June 16, 2020
+## Project 2 Due Date: 11:59 PM Tuesday, June 16, 2020
 
-Topics: MQTT, Google Charts, Particle Photon  
+### Topics: MQTT, Google Charts, Particle Photon  
 
-Project 2
-=========
 
 The internet of things (IoT) often collects real time data from sensors and
 transmits these data to a service offering publish and subscribe capabilities. The service
@@ -20,12 +18,12 @@ In the section where you work with the Particle Photon and MQTT, you may need to
 your fire wall off and then reboot your machine. Firewalls can be sticky and may only
 appear to be off. Turn your fire wall back on after completing this assignment.
 
-Objectives
-==========
+### Objectives
 
 One objective of this project is to learn to use an MQTT publish subscribe broker
 named Mosquitto. MQTT is targeted at low power constrained devices. It will likely play an
-important role in a mature IoT.
+important role in a mature IoT. In class, we will discuss how some big players are
+using MQTT.
 
 The second objective is to learn Google Charts. The internet of things will rely
 heavily on real time visualization in the browser. Google Charts may play a significant
@@ -33,8 +31,8 @@ role in this area.
 
 The third objective is to continue our work with the Particle Photon microcontroller.
 
-Overview and setup
-==================
+### Overview and setup
+
 
 This is a three part assignment. The first part asks that you develop a small
 system using Javascript and an MQTT broker. The second part asks that you
@@ -49,16 +47,16 @@ HTML WebSockets and wrote our own server side code that sent a message to all li
 
 In Parts 1 and 2 of this project, we will not write our own server side code. Instead,
 we will use an open source MQTT broker called Mosquitto. Mosquitto can be downloaded
-from here: http://mosquitto.org/download/.
+[from here](http://mosquitto.org/download/).
 
 Note: In the past, some students had trouble with Mosquito but had an easy time
 downloading Hive MQ's MQTT broker. The instructions below
 refer to my success in using Mosquito. Feel free to use whatever MQTT broker that
 you are comfortable with. You may use the local Hive MQ (downloaded to your machine
 or the remote version on the cloud.) Hive MQ's MQTT (both local and cloud) are
-available from here: https://www.hivemq.com/try-out/
+available [from here](https://www.hivemq.com/try-out/).
 
-You can install Mosquitto on your MAC using brew. See http://brew.sh and then
+You can install Mosquitto on your MAC using brew. See [here](http://brew.sh) and then
 use "brew install mosquitto". There are directions on the mosquitto web site for
 Windows users.
 
@@ -68,17 +66,21 @@ Javascript). To change the configuration of Mosquitto, we can modify the configu
 file found at /usr/local/etc/mosquitto/mosquitto.conf (on a MAC). My configuration file
 contains these lines:
 
+```
 listener 1883
 protocol mqtt
 
 listener 9002
 protocol websockets
-
+```
 
 My copy of mosquitto is located at /usr/local/sbin. If I change to that
 directory, I can run mosquitto (picking up the configuration file) with the command
 
+```
 mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf -v
+
+```
 
 Once you have Mosquitto running, we want to connect to the server from Javascript running
 in a browser. We do not want to write the client side MQTT code ourselves. Even though we have
@@ -88,31 +90,28 @@ use Websockets below the scenes.
 
 In our web pages, we will include the Javascript library from Paho. It is called mqttws31.js.
 There is a very nice getting started section at the following link. It has a simple example of a
-Javascript client that will run in a web page. It is very useful for us:
+Javascript client that will run in a web page. It is very useful for us and is found [here.](https://eclipse.org/paho/clients/js/)
 
-	https://eclipse.org/paho/clients/js/
+The mqttws31.js Javascript library can be included in your HTML file with this script tag:
 
-The mqttws31.js Javascript library can be included in your HTML with this script:
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+```
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+There is a nice discussion [here on MQTT.](https://www.ibm.com/support/knowledgecenter/SSFKSJ_9.0.0/com.ibm.mq.pro.doc/q002870_.htm)
 
-There is a nice discussion here on MQTT.
+### Part 1.
 
-        https://www.ibm.com/support/knowledgecenter/SSFKSJ_9.0.0/com.ibm.mq.pro.doc/q002870_.htm
-
-Part 1.
-=======
 
 Your task in Project 2 Part 1 is to:
 
-1) 5 Points. Build a IntelliJ project named Project2Basic with the code found here:
-   http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousemove
-   Note that every time the mouse moves (within the box) an event is generated
-   and the x and y coordinates are displayed. It is required that you add your
-   own detailed comments to this code - explaining clearly how it works. The grader
-   will grade based on the quality of these comments.
+1. 5 Points. Build a IntelliJ project named Project2Basic with the code found [here.](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousemove)
+Note that every time the mouse moves (within the box) an event is generated
+and the x and y coordinates are displayed. It is required that you add your
+own detailed comments to this code - explaining clearly how it works. The grader
+will grade based on the quality of these comments.
 
-2) 15 Points. Here we want to sense the mouse movements and pass them along to Mosquitto running
+2. 15 Points. Here we want to sense the mouse movements and pass them along to Mosquitto running
    MQTT. Copy Project2Basic (along with your comments) to a new IntelliJ project called
    MouseTrackerPublishSubscribe. Your first task is to write a jsp file (named publish.jsp)
    that publishes each new mouse coordinate pair to your MQTT broker.
@@ -121,7 +120,7 @@ Your task in Project 2 Part 1 is to:
    Note: Copying projects can be done in IntelliJ by creating the new project
    and copying files one at a time.
 
-3) 15 Points. Add a new JSP file named subscriber.jsp to your existing
+3. 15 Points. Add a new JSP file named subscriber.jsp to your existing
    project. It too will make use of mqttws31.js. Your subscriber.jsp will
    subscribe to events published to Mosquitto. It will simply display the coordinates
    being received (there will be no box as is shown in publish.jsp).
@@ -135,8 +134,7 @@ Your task in Project 2 Part 1 is to:
    unique name. In this part of Project 2, we need two names - one for the publisher
    and another for the subscriber.
 
-Part 2.
-=======
+### Part 2.
 
 In Part 2, we will be communicating with Mosquitto in two ways. We will use Websockets from within
 our Javascript code - running within a browser. And we will also use standard TCP sockets (and a client
@@ -144,24 +142,24 @@ library) from within a stand-alone Java program. In order to make this happen, w
 ensure that the Mosquitto configuration includes the following four lines. You will need to
 carefully use the appropriate ports within your code.
 
-	listener 1883
-	protocol mqtt
-	listener 9002
-	protocol websockets
+```
+listener 1883
+protocol mqtt
+listener 9002
+protocol websockets
+```
 
 For the Java client, we will be using the Eclipse Paho Java Client libraries.
 This is very easy to do using Maven and IntelliJ. In short, Maven is an opinionated build tool.
 That is, it is based around the idea of "convention over configuration". There is a nice 5 minute
-video here on using Maven on the IntelliJ IDE here: https://www.youtube.com/watch?v=pt3uB0sd5kY.
+video here on using Maven on the IntelliJ IDE [here.](https://www.youtube.com/watch?v=pt3uB0sd5kY)
 
 The following URL has the repository definition and the dependency definition needed for your pom.xml.
 It also has a very nice sample Java client that you will want to work from. You should get this code to
-compile
-using IntelliJ and Maven.
+compile using IntelliJ and Maven. The code is found [here.](https://eclipse.org/paho/clients/java/)
 
-	https://eclipse.org/paho/clients/java/
 
-1) 5 Points. Build a IntelliJ project named TemperatureSensorSimulatorProject. This project will hold a stand alone
+1. 5 Points. Build a IntelliJ project named TemperatureSensorSimulatorProject. This project will hold a stand alone
 Java program named TemperatureSensor.java. Every 5 seconds, TemperatureSensor.java will generate a
 random temperature (uniformly distributed) between the values of 0 and 100 degrees fahrenheit. If the
 random temperature is between 0 and 45 degrees inclusive, TemperatureSensor.java sends the temperature
@@ -198,7 +196,7 @@ Sending a cold temp message to topic pittsburgh/temperature/coldTemps
 
 
 
-2) 5 Points. Build a IntelliJ web application that allows the user to subscribe to a particular topic
+2. 5 Points. Build a IntelliJ web application that allows the user to subscribe to a particular topic
 from Mosquitto. The user might be interested in "pittsburgh/temperature/coldTemps", "pittsburgh/temperature/niceTemps",
 "pittsburgh/temperature/hotTemps", or all temperatures in Pittsburgh. Name the web application project TemperatureSubscriberProject.
 
@@ -207,14 +205,14 @@ topic wildcards. The detailed design of the site is in your hands. It will allow
 from the four possible options and will then show each temperature and timestamp pair published to
 that topic.
 
-3) 10 Points. Build a IntelliJ project named DiceRollingClientProject. This project will hold a stand alone
+3. 10 Points. Build a IntelliJ project named DiceRollingClientProject. This project will hold a stand alone
 Java program named DiceRollingClient.java. Every one second, DiceRollingClient.java will generate two random
 integers between 1 and 6 inclusive (each is uniformly distributed). It will then publish a JSON string to
 Mosquito in the following format {"Die1" : Number, "Die2" : Number }. For example, in the first three seconds,
 the program might transmit {"Die1" : 3, "Die2" : 1 } {"Die1" : 3, "Die2" : 6 } and
 {"Die1" : 2, "Die2" : 4 }.
 
-4) 15 Points. Build a IntelliJ web application project named DiceRollingMonitorProject. The web
+4. 15 Points. Build a IntelliJ web application project named DiceRollingMonitorProject. The web
 application will act as a subscriber to MQTT messages. This project will require the Javascript
 library mqttws31.js. It will also make good use of Google Charts to display the following on a
 browser:
@@ -239,8 +237,8 @@ browser:
        line running above 2 through 12 at a constant height of 1/11 on the y-axis. This line graph will
        change as the dice rolls are pushed to the MQTT subscriber.
 
-Part 3.
-=======
+### Part 3.
+
 
     Imagine an IoT instructor who wants to call roll quickly. During class, each student has a Wifi
 connected Photon. In a few moments, the instructor has a roster of all students present. This roster
@@ -298,8 +296,8 @@ your solution. If you have difficulty running Mosquitto on your machine, see us 
 to get Mosquitto running there is a free online version available (Hive MQ). Get started soon and use
 Hive if you are not able to run a local broker.
 
-Some notes on Using a Remote Broker
-===================================
+### Optional notes on Using a Remote Broker
+
 
 If you are unable to install Mosquito on your local machine, I have had success with the following
 broker on the cloud:
@@ -308,43 +306,48 @@ broker.hivemq.com  for MQTT use port  1883
 and for Websockets use port  8000
 
 In my Javascript, I am using a line like this:
+```
 
  var loc = {'hostname' : 'broker.hivemq.com', 'port' : '8000' };
-
+```
 In my Java code, I am using a line like this:
 
- String broker  = "tcp://broker.hivemq.com:1883";
+```
+String broker  = "tcp://broker.hivemq.com:1883";
+```
 
 Mosquito is fussy about the client ID. In the following line of code,
 I have used my Andrew ID. You should do that as well. In this way, we will
 not step on each other.
 
+```
 client = new Paho.MQTT.Client(loc.hostname, Number(loc.port), 'mm6');
+```
+
+### Optional notes on Installing Mosquito on a  PC
 
 
-Installing Mosquito on a  PC
-============================
-
-Download mosquitto setup file from http://www.eclipse.org/downloads/download.php?file=/mosquitto/binary/win32/mosquitto-1.4.10-install-win32.exe
+Download mosquitto setup file from [here.](http://www.eclipse.org/downloads/download.php?file=/mosquitto/binary/win32/mosquitto-1.4.10-install-win32.exe)
 
 Run the setup file and follow the steps to complete the installation.
 note: Default destination folder is C:\Program Files (x86)\mosquitto
 
-Download and Install Win32 OpenSSL v1.0.2h from here http://slproweb.com/products/Win32OpenSSL.html
-Install it to C:\temp\OpenSSL-Win32
+Download and Install Win32 OpenSSL v1.0.2h from [here](http://slproweb.com/products/Win32OpenSSL.html
+Install it to C:\temp\OpenSSL-Win32)
 
 Copy libeay32.dll and ssleay32.dll from C:\temp\OpenSSL-Win32\bin to C:\Program Files (x86)\mosquitto
 
-Download pthreadVC2.dll from ftp://sources.redhat.com/pub/pthreads-win32/dll-latest/dll/x86/ and Copy it to C:\Program Files (x86)\mosquitto
+Download pthreadVC2.dll from [here.](ftp://sources.redhat.com/pub/pthreads-win32/dll-latest/dll/x86/ and Copy it to C:\Program Files (x86)\mosquitto)
 
-PC Testing
-==========
+### Optional notes on PC Testing
+
 open command prompt and run the following commands
 
+```
 cd C:\Program Files (x86)\mosquitto
 
 mosquitto.exe -v -c mosquitto.conf
-
+```
 
 You should get messages similar to this
 1474406476: mosquitto version 1.4.10 (build date 24/08/2016 21:03:24.73) starting
@@ -358,6 +361,7 @@ You should get messages similar to this
 An MQTT POM File for Maven
 ==========================
 
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 <modelVersion>4.0.0</modelVersion>
@@ -397,3 +401,4 @@ An MQTT POM File for Maven
 </properties>
 <name>TemperatureSensorProject</name>
 </project>
+```

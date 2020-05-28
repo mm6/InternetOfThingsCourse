@@ -27,9 +27,8 @@
 
 
 ## Project
-
++ [Project 2 The publish and subscribe pattern](../projects/project2/Project2.md)
 + Project 1 Due Midnight Tuesday
-+ [Project 2 Publish Subscribe](https://www.andrew.cmu.edu/user/mm6/95-733/homework/Spring2020/S20Project2.txt)
 
 ## Quizzes
 
