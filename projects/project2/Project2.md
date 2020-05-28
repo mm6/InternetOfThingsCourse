@@ -98,7 +98,7 @@ The mqttws31.js Javascript library can be included in your HTML file with this s
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
 ```
 
-There is a nice discussion [here on MQTT.](https://www.ibm.com/support/knowledgecenter/SSFKSJ_9.0.0/com.ibm.mq.pro.doc/q002870_.htm)
+There is a nice discussion [here on MQTT.](https://developer.ibm.com/articles/iot-mqtt-why-good-for-iot/)
 
 ### Part 1.
 
