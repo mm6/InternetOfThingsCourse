@@ -28,7 +28,7 @@ We begin the course with a discussion of business use cases and security concern
 
 ## Project
 
-+ [Project 1 Servlets, AJAX, JSON, Web Sockets, Particle Photon Microcontroller](../projects/S20Project1.md)
++ [Project 1 Servlets, AJAX, JSON, Web Sockets, Particle Photon Microcontroller](../projects/project1/S20Project1.md)
 
 ## Quizzes
 
