@@ -27,7 +27,7 @@
 
 
 ## Project
-+ [Project 2 The publish and subscribe pattern](../projects/project2/Project2.md)
++ [Project 2 Publish Subscribe](../projects/project2/Project2.md)
 + Project 1 Due Midnight Tuesday
 
 ## Quizzes
