@@ -103,7 +103,7 @@ There is a nice discussion [here on MQTT.](https://developer.ibm.com/articles/io
 ### Part 1.
 
 
-Your task in Project 2 Part 1 is to:
+Your Part 1 we will experiment using real time data on the web.
 
 1. 5 Points. Build a IntelliJ project named Project2Basic with the code found [here.](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousemove)
 Note that every time the mouse moves (within the box) an event is generated
@@ -239,12 +239,13 @@ browser:
 
 ### Part 3.
 
+In Part 3 we will experiment with MQTT and the Particle Photon.
 
-    Imagine an IoT instructor who wants to call roll quickly. During class, each student has a Wifi
+Imagine an IoT instructor who wants to call roll quickly. During class, each student has a Wifi
 connected Photon. In a few moments, the instructor has a roster of all students present. This roster
 is available on a web site accessible by the instructor.
 
-    1) 15 Points. Using a Particle Photon, develop firmware that will publish your name and a URL to
+1. 15 Points. Using a Particle Photon, develop firmware that will publish your name and a URL to
 an MQTT service. Name this firmware file 'transmitid.ino'. Your name, URL pair will be published to the topic
 'student/id'. Use the IDE provided at build.particle.io. To get started making calls to MQTT from
 Photon, use the code provided at Particle. In my solution, I worked from the example called
@@ -265,7 +266,7 @@ MQTT.cpp in your Particle Application. After selecting the library, you have to 
  the JSON object { "name":"Michael McCarthy", "URL":"http://www.andrew.cmu.edu/user/mm6"}. You are required
 to do the same. For your URL, choose http://www.andrew.cmu.edu/user/<your andrew ID>.
 
-    2) 15 Points. Using IntelliJ, build a web project called PhotonMQTTSubscriber. Within this project,
+2. 15 Points. Using IntelliJ, build a web project called PhotonMQTTSubscriber. Within this project,
 write an index.html file and javascript code that subscribes to your MQTT service. It will subscribe to any
 messages published to 'student/id'. When the Photon publishes a name and URL to the topic 'student/id', your
 web site will display the name and URL on the browser. You have to plan on many names being published (even
@@ -273,8 +274,7 @@ though you only have one Photon to test with). If many names arrive, they should
 arrive, on the browser.
 
 
-Submission guide
-================
+### Submission guide
 
 Documentation is required. Spend some time cleaning up your code and adding good comments to
 your code.
