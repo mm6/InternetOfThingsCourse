@@ -8,8 +8,8 @@
 + Client and server side Websockets
 + The MQTT protocol
 + Demonstration: Real time mouse movements through an MQTT broker
-+ Demonstration: A Java application, Google Charts and MQTT
-+ Demonstration: A Micro controller communicates with an MQTT broker
++ Demonstration: A Java application communicates through an MQTT broker to Google Charts in a browser
++ Demonstration: A Micro controller communicates through an MQTT broker to a browser
 
 
 ## Slides
