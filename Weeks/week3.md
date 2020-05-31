@@ -7,6 +7,9 @@
 + Client side AJAX in Javascript
 + Client and server side Websockets
 + MQTT
++ Demonstration: Real time mouse movements through an MQTT broker
++ Demonstration: A Java application, Google Charts and MQTT
++ Demonstration: A Micro controller communicates with an MQTT broker
 
 
 ## Slides
