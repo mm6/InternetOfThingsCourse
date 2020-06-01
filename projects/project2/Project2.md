@@ -179,7 +179,9 @@ the topic called "pittsburgh/temperature/hotTemps" on Mosquitto.
 
     Note: A typical execution appears as follows:
 
+```
 Connected
+
 Sending a cold temp message to topic pittsburgh/temperature/coldTemps
 Publishing message: It is cold out 17 degrees at time: Sun Sep 15 18:34:18 EDT 2019
 Message published
@@ -193,7 +195,7 @@ Sending a nice temp message to topic pittsburgh/temperature/niceTemps
 Publishing message: It is nice out 74 degrees at time: Sun Sep 15 18:34:33 EDT 2019
 Message published
 Sending a cold temp message to topic pittsburgh/temperature/coldTemps
-
+```
 
 
 2. 5 Points. Build a IntelliJ web application that allows the user to subscribe to a particular topic
