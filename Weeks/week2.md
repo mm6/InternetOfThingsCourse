@@ -49,3 +49,5 @@ things. Security and privacy are continuing concerns. We argue that an interoper
 + [Micro bit ](http://microbit.org/)
 
 + [Alternatives to Photon  ](https://thenewstack.io/10-diy-development-boards-iot-prototyping/)
+
++ [IOT Security Labeling From CMU](https://cylab.cmu.edu/news/2020/05/27-iot-labels-consumers.html)

@@ -46,6 +46,8 @@
 
 + [Video: MQTT at Google](https://www.youtube.com/watch?v=7kcDL5BDe0s)
 
+
+
 + [Convergence of IOT and Blockchain (IBM)](https://www.ibm.com/internet-of-things/trending/blockchain)
 
 + [Convergence of IOT and Blockchain (Microsoft)](https://azure.microsoft.com/en-us/solutions/blockchain/)
