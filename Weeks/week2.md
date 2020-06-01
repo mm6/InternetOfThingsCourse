@@ -18,9 +18,9 @@ things. Security and privacy are continuing concerns. We argue that an interoper
 ## Slides
 + [Enabling the Internet of Things](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/02_EnablingTheInternetOfThings.pdf)
 
-+ [Four interaction styles](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/01_Four_Styles.ppt)
++ [Four interaction styles](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/02_Four_Styles.pdf)
 
-+ [Server side Java and server side AJAX](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/02_ServerSideJavaAndAJAX.ppt)
++ [Server side Java and server side AJAX](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/02_ServerSideJavaAndAJAX.pdf)
 
 ## Required readings
 
