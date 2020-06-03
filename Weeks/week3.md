@@ -4,6 +4,9 @@
 
 ## Topics
 
+In week 3 we study client side web technologies such as Javascript, XML, and JSON.
+We begin our study of websockets and MQTT.
+
 + Client side AJAX in Javascript
 + Client and server side Websockets
 + The MQTT protocol

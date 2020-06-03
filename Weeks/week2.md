@@ -4,8 +4,7 @@
 
 ## Topics
 
-Here we consider how the World Wide Web provides guidance on the construction of the internet of
-things. Security and privacy are continuing concerns. We argue that an interoperable internet of things is possible.
+In week 2 we consider how the World Wide Web provides guidance on the construction of the internet of things. In particular, we look at important details associated with server side AJAX. Security and privacy are continuing concerns. We argue that, with the adoption of web standards, an interoperable internet of things is possible.
 
 + Enabling the Internet of Things
 + Four HTTP interaction patterns
@@ -35,6 +34,7 @@ things. Security and privacy are continuing concerns. We argue that an interoper
 ## Project
 
 + There is no project assigned during week 2.
+
 ## Quizzes
 
 + Quiz 1 is on Canvas at the start of class.

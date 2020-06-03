@@ -4,6 +4,9 @@
 
 ## Topics
 
+In week 4 we go into detail on the MQTT protocol. We also discuss client side technologies
+such as Micro controllers, personal area networks, OpenChirp from CMU, programmable logic controllers (PLC's), and SCADA systems. We conclude with an interesting use case - Sensor Andrew at CMU.
+
 + MQTT Qualities of Service  
 + Demonstration: MQTT
 + Web of Things Video
@@ -14,7 +17,7 @@
 
 ## Slides
 
-+ [MQTT Qualities of Service](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_MQTT_QualitiesOfService.pptx)
++ [MQTT Qualities of Service](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_MQTT_QualitiesOfService.pdf)
 
 + [Overview of Microcontrollers and Wireless PAN Protocols](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/03_Microcontroller.pptx)
 
