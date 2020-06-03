@@ -19,7 +19,7 @@ such as Micro controllers, personal area networks, OpenChirp from CMU, programma
 
 + [MQTT Qualities of Service](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_MQTT_QualitiesOfService.pdf)
 
-+ [SCADA](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_SCADA.pdf)
++ [Industrial Internet of Things and SCADA](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_SCADA.pdf)
 
 + [Overview of Microcontrollers and Wireless PAN Protocols](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/03_Microcontroller.pptx)
 
