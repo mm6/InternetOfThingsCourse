@@ -22,8 +22,6 @@
 
 + [LoRa and LoRaWAN Video](https://youtu.be/6WMzRrmMjQU)
 
-
-
 ## Project
 
 + [Project 3 Webhooks and ThingSpeak ](https://www.andrew.cmu.edu/user/mm6/95-733/homework/Spring2020/S20Project3.txt)
