@@ -22,7 +22,6 @@
 
 + [LoRa and LoRaWAN Video](https://youtu.be/6WMzRrmMjQU)
 
-+ [OpenChirp at Carnegie Mellon](https://users.ece.cmu.edu/~agr/resources/publications/openchirp-smart-edge-17.pdf)
 
 
 ## Project
@@ -31,7 +30,7 @@
 
 ## Quizzes
 
-+ Quiz 4 on OpenChirp
++ Quiz 4 on OpenChirp and Sensor Andrew
 
 ## Optional Readings
 

@@ -7,13 +7,14 @@
 In week 4 we go into detail on the MQTT protocol. We also discuss client side technologies
 such as Micro controllers, personal area networks, OpenChirp from CMU, programmable logic controllers (PLC's), and SCADA systems. We conclude with an interesting use case - Sensor Andrew at CMU.
 
-+ MQTT Qualities of Service  
++ MQTT Qualities of Service
++ OpenChirp architecture from CMU
++ IIoT and SCADA
++ Microcontrollers and Wireless PAN Protocols
 + Demonstration: MQTT
 + Web of Things Video
-+ OpenChirp at CMU revisited
-+ PAN Protocols
 + LoRa and LoRaWan video  
-+ XMPP
++ Introduction to XMPP
 
 ## Slides
 
@@ -31,7 +32,7 @@ such as Micro controllers, personal area networks, OpenChirp from CMU, programma
 
 + [Sensor Andrew - Video](https://vimeo.com/9079961)
 
-+ [CoAP Tutorial](https://www.youtube.com/watch?v=4bSr5x5gKvA)
++ [OpenChirp at Carnegie Mellon](https://users.ece.cmu.edu/~agr/resources/publications/openchirp-smart-edge-17.pdf)
 
 ## Project
 
@@ -42,18 +43,11 @@ such as Micro controllers, personal area networks, OpenChirp from CMU, programma
 + Quiz 3 is on Canvas at the start of class.
 + Quiz 3 is on "People, Places, Things: Web Presence for the Real World"
 
-+ Quiz 3 on Google IoT and IBM Blockchain IoT use case 2.
-
-+ Quiz 3 Part 1 at Start of class on Tuesday on [Video: IOT at Google uses MQTT]
-(https://www.youtube.com/watch?v=7kcDL5BDe0s)
-
-+ Quiz 3 Part 2 at Start of class on Tuesday on [Video: The Convergence of IOT and Blockchain](https://developer.ibm.com/tv/convergence-iot-blockchain/)
-
 ## Optional Readings
 
 + [Jeff Jaffe (W3C) at Industry of Things World video](https://www.w3.org/WoT/)
 
-
++ [CoAP Tutorial](https://www.youtube.com/watch?v=4bSr5x5gKvA)
 
 + [Explaining REST](http://www.looah.com/source/view/2284)
 
