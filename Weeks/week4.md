@@ -24,7 +24,7 @@ such as Micro controllers, personal area networks, OpenChirp from CMU, programma
 
 + [Microcontrollers, WPAN, and LPWAN Protocols](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Microcontrollers.pdf)
 
-+ [Introduction to XMPP](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_XMPP_Overview.pptx)
++ [Introduction to XMPP](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_XMPP_Overview.pdf)
 
 ## Required readings
 
