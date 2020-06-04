@@ -22,7 +22,7 @@ such as Micro controllers, personal area networks, OpenChirp from CMU, programma
 
 + [Industrial Internet of Things and SCADA](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_SCADA.pdf)
 
-+ [Overview of Microcontrollers and Wireless PAN Protocols](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/03_Microcontroller.pptx)
++ [Microcontrollers, WPAN, and LPWAN Protocols](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Microcontrollers.pdf)
 
 + [Introduction to XMPP](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_XMPP_Overview.pptx)
 
