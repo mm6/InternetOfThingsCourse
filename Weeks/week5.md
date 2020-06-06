@@ -16,7 +16,7 @@
 
 + [XMPP Programming and Sensor Andrew ](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP.pdf)
 
-+ [WoT Integration Patterns, REST, CoAP, Building the WoT ](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_CoAP.pptx)
++ [REST, Integration Patterns, and CoAP](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_RESTandCoAP.pdf)
 
 ## Required readings
 
