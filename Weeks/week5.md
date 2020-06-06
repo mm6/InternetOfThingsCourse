@@ -14,7 +14,7 @@
 
 ## Slides
 
-+ [XMPP Programming and Thing Discovery ](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP_Programming.pptx)
++ [XMPP Programming and Sensor Andrew ](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP.pdf)
 
 + [WoT Integration Patterns, REST, CoAP, Building the WoT ](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_CoAP.pptx)
 
