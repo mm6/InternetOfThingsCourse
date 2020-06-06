@@ -4,8 +4,8 @@
 
 ## Topics
 
-In week 4 we go into detail on the MQTT protocol. We also discuss client side technologies
-such as Micro controllers, personal area networks, OpenChirp from CMU, programmable logic controllers (PLC's), and SCADA systems. We conclude with an interesting use case - Sensor Andrew at CMU.
+There are two use cases studied in week 4 - Sensor Andrew and OpenChirp. Both of these
+are IoT initiatives built at Carnegie Mellon. We go into detail on the MQTT protocol, client side technologies such as micro controllers, personal area networks, programmable logic controllers, and SCADA systems. 
 
 + MQTT Qualities of Service
 + OpenChirp architecture from CMU
