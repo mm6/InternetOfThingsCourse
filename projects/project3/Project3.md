@@ -20,8 +20,7 @@ Goal: Publish data from your Photon to the service provided by Particle.
 Part 1. Publishing messages from an IoT device to a proxy service.
 
    Set up your photon so that there is a single resistor connecting D0 to 3V3 as shown
-   in "Step 5: digitalRead" of the Tinker tutorial found here:
-   https://docs.particle.io/guide/getting-started/tinker/photon/
+   in "Step 5: digitalRead" of the [Tinker tutorial](https://docs.particle.io/guide/getting-started/tinker/photon/)
 
    When the wire connects D0 to 3V3 (pins 10 and 21), the value of D0 is high (Note:
    there is no light on the Photon that indicates this). When the wire is disconnected,
