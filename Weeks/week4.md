@@ -4,17 +4,17 @@
 
 ## Topics
 
-There are two use cases introduced in week 4 - Sensor Andrew and OpenChirp. Both of these
+Two use cases are introduced, Sensor Andrew and OpenChirp. Both of these
 are IoT initiatives built at Carnegie Mellon. We go into detail on the MQTT protocol, client side technologies such as micro controllers, personal area networks, programmable logic controllers, and SCADA systems.
 
 + MQTT Qualities of Service
 + OpenChirp architecture from CMU
 + IIoT and SCADA
 + Microcontrollers and Wireless PAN Protocols
-+ Demonstration: Webhooks
-+ Web of Things Video
 + LoRa and LoRaWan video  
++ Web of Things Video
 + Introduction to XMPP
++ Demonstration: Webhooks
 
 ## Slides
 
