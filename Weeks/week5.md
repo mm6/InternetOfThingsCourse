@@ -25,7 +25,7 @@ In week 5 we cover more details of XMPP and why it was chosen as the data format
 
 ## Project
 
-+ [Project 3 Webhooks and ThingSpeak ](https://www.andrew.cmu.edu/user/mm6/95-733/homework/Spring2020/S20Project3.txt)
++ There is no project assigned during week 5.
 
 ## Quizzes
 
