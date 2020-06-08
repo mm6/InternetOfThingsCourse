@@ -36,7 +36,7 @@ are IoT initiatives built at Carnegie Mellon. We go into detail on the MQTT prot
 
 ## Project
 
-+ [Project 3 Webhooks and ThingSpeak ]((../projects/project3/Project3.md)
++ [Project 3 Webhooks and ThingSpeak ](../projects/project3/Project3.md)
 
 ## Quizzes
 
