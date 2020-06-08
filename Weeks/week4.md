@@ -11,7 +11,7 @@ are IoT initiatives built at Carnegie Mellon. We go into detail on the MQTT prot
 + OpenChirp architecture from CMU
 + IIoT and SCADA
 + Microcontrollers and Wireless PAN Protocols
-+ Demonstration: MQTT
++ Demonstration: Webhooks
 + Web of Things Video
 + LoRa and LoRaWan video  
 + Introduction to XMPP
