@@ -77,8 +77,8 @@ Part 2. Using a Webhook.
 
    Your channel will be named "OnOrOffChannel" and Field1 will be contain "OnOrOffValue".
 
-Submission:
-===========
+Submission
+==========
 a) Turn in a copy of your well-documented firmware ReadAndPublishD0.ino. Include your name
 as the author and include a description of the code. On each line of code, explain briefly
 what that line is doing.
