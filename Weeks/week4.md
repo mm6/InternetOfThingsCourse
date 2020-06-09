@@ -26,7 +26,7 @@ are IoT initiatives built at Carnegie Mellon. We go into detail on the MQTT prot
 
 + [Microcontrollers, WPAN, and LPWAN Protocols](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Microcontrollers.pdf)
 
-+ [Introduction to XMPP](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_XMPP_Overview.pdf)
++ [XMPP Overview](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_XMPP_Overview.pdf)
 
 ## Required readings
 
