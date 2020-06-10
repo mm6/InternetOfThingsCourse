@@ -4,7 +4,8 @@
 
 ## Topics
 
-In week 5 we cover more details of XMPP and why it was chosen as the data format for Sensor Andrew. We also discuss service discovery, REST, and CoAp.
+In week 5 we cover more details of XMPP and why it was chosen as the data format for Sensor Andrew. We also discuss service discovery and the REST architectural style. CoAp is introduced as RESTful protocol and three Web of Things integration patterns are highlighted.
+HTTP and CoAp are compared.
 
 + Sensor Andrew Architecture
 + Programming XMPP and IoT Discovery
