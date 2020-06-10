@@ -10,8 +10,6 @@ In week 5 we cover more details of XMPP and why it was chosen as the data format
 + Programming XMPP and IoT Discovery
 + Web of Things Integration patterns
 + Constrained Application Protocol(CoAp)
-+ Discuss Presentations Project 4
-+ [Student selected Project 4](https://www.andrew.cmu.edu/user/mm6/95-733/iot/Presentation.txt)
 
 ## Slides
 
