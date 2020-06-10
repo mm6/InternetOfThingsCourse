@@ -5,7 +5,8 @@
 ## Topics
 
 In week 3 we study client side web technologies such as Javascript, XML, and JSON.
-We begin our study of websockets and MQTT.
+We begin our study of WebSockets. We demonstrate how WebSockets may be used to carry messages
+between a browser and an MQTT broker. Real time interactions are displayed in a browser using the Google Charts Javascript library.
 
 + Client side AJAX in Javascript
 + Client and server side Websockets
