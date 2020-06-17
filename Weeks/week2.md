@@ -54,4 +54,6 @@ The Particle IDE is introduced and over the air updates are described and shown.
 
 + [Alternatives to Photon  ](https://thenewstack.io/10-diy-development-boards-iot-prototyping/)
 
++ [IoT Security Ripple20](https://www.zdnet.com/google-amp/article/ripple20-vulnerabilities-will-haunt-the-iot-landscape-for-years-to-come/)
+
 + [IOT Security Labeling From CMU](https://cylab.cmu.edu/news/2020/05/27-iot-labels-consumers.html)
