@@ -4,9 +4,9 @@
 
 ## Topics
 
-Week 6 is our final exam week. It is comprehensive and covers the entire mini. 
+Week 6 is our final exam week. It is comprehensive and covers the entire mini.
 
-+ [The Final Exam is closed book, closed notes. It is Canvas based. See the Review for final exam.](https://www.andrew.cmu.edu/user/mm6/95-733/review.txt)
++ [The Final Exam is open book, open notes. It is Canvas based. See the Review for final exam.](https://www.andrew.cmu.edu/user/mm6/95-733/review.txt)
 + The Final Exam is normally held during the regular class time and place.
 
 ## Slides
