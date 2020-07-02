@@ -29,3 +29,4 @@ We consider how SSI might be used in IoT.
 ## Optional Readings
 
 + [W3C Decentralized Identifiers](https://www.w3.org/TR/did-core/)
++ [W3C Verifiable Credentials Use Cases](https://www.w3.org/TR/vc-use-cases/)
