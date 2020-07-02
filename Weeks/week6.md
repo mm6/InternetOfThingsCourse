@@ -4,27 +4,28 @@
 
 ## Topics
 
-Week 6 is our final exam week. It is comprehensive and covers the entire mini.
+In week 6 we discuss Self-Sovereign Identity (SSI) using blockchain technology.
+We consider how SSI might be used in IoT.
 
-+ [The Final Exam is open book, open notes. It is Canvas based. See the Review for final exam.](https://www.andrew.cmu.edu/user/mm6/95-733/review.txt)
-+ The Final Exam is normally held during the regular class time and place.
++ Self-sovereign Identity
 
 ## Slides
 
-+ There are no slides presented during final exam week.
++ [Self Sovereign Identity and IoT](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_IoTandSelfSovereignIdentity.pdf)
+
 
 ## Required readings
 
-+ See the review for final exam.
++ [Self-sovereign identity at Computerworld](https://www.computerworld.com/article/3244128/how-blockchain-makes-self-sovereign-identities-possible.html)
 
 ## Project
 
-+ No projects are assigned during final exam week.
++ There is no project assigned during week 6.
 
 ## Quizzes
 
-+ There are no quizzes during the final exam week.
++ Quiz 5 on LoRa and LoRaWAN
 
 ## Optional Readings
 
-+ See the review for final exam
++ [W3C Decentralized Identifiers](https://www.w3.org/TR/did-core/)
