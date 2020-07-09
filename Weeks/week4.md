@@ -27,7 +27,8 @@ are IoT initiatives built at Carnegie Mellon. Sensor Andrew's use of XMPP is hig
 
 + [Microcontrollers, WPAN, and LPWAN Protocols](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Microcontrollers.pdf)
 
-+ [XMPP Overview](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_XMPP_Overview.pdf)
++ [Bluetooth](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Bluetooth.pdf)
+
 
 ## Required readings
 
