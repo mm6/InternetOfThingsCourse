@@ -4,9 +4,13 @@
 
 ## Topics
 
-In week 5 we cover more details of XMPP and why it was chosen as the data format for Sensor Andrew. We also discuss service discovery and the REST architectural style. CoAp is introduced as RESTful protocol and three Web of Things integration patterns are highlighted.
+In week 5, two use cases are introduced, Sensor Andrew and OpenChirp. Both of these
+are IoT initiatives built at Carnegie Mellon. Sensor Andrew's use of XMPP is highlighted and so is OpenChirp's use of LoRa and LoRaWan.
+
+We also discuss service discovery and the REST architectural style. CoAp is introduced as RESTful protocol and three Web of Things integration patterns are highlighted.
 HTTP and CoAp are compared.
 
++ Introduction to XMPP
 + Sensor Andrew Architecture
 + Programming XMPP and IoT Discovery
 + Web of Things Integration patterns

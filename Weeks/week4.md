@@ -12,9 +12,9 @@ and Bluetooth LE.
 + OpenChirp architecture from CMU
 + IIoT and SCADA
 + Microcontrollers and Wireless PAN Protocols
++ Bluetooth and Bluetooth LE
 + LoRa and LoRaWan video  
 + Web of Things Video
-
 + Demonstration: Webhooks
 
 ## Slides
