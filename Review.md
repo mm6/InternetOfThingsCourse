@@ -119,6 +119,13 @@
 + SSI Online
 + Existing systems and standards
 
+### Smart cities
+
++ Transportation
++ Human Services
++ Safety
++ Conservation
+
 ### Google Charts
 
 + Google Charts basics

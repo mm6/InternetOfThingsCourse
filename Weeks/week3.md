@@ -49,9 +49,3 @@ between a browser and an MQTT broker. Real time interactions are displayed in a 
 + [Internet of Things Landscape](http://mattturck.com/wp-content/uploads/2016/03/Internet-of-Things-2016.png)
 
 + [Video: MQTT at Google](https://www.youtube.com/watch?v=7kcDL5BDe0s)
-
-+ [Convergence of IOT and Blockchain (IBM)](https://www.ibm.com/internet-of-things/trending/blockchain)
-
-+ [Convergence of IOT and Blockchain (Microsoft)](https://azure.microsoft.com/en-us/solutions/blockchain/)
-
-+ [IOT Device to Ethereum - Cool Example](https://hackaday.com/2017/11/09/iot-with-the-ethereum-blockchain/)

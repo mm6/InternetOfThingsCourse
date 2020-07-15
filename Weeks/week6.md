@@ -13,6 +13,7 @@ We consider how SSI might be used in IoT.
 
 + [Self Sovereign Identity and IoT](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_IoTandSelfSovereignIdentity.pdf)
 
++ [Smart Cities](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_Smart_Cities.pdf)
 
 ## Required readings
 
@@ -30,4 +31,8 @@ We consider how SSI might be used in IoT.
 
 + [W3C Decentralized Identifiers](https://www.w3.org/TR/did-core/)
 + [W3C Verifiable Credentials Use Cases](https://www.w3.org/TR/vc-use-cases/)
++ [Convergence of IOT and Blockchain (IBM)](https://www.ibm.com/internet-of-things/trending/blockchain)
++ [Convergence of IOT and Blockchain (Microsoft)](https://azure.microsoft.com/en-us/solutions/blockchain/)
++ [IOT Device to Ethereum - Cool Example](https://hackaday.com/2017/11/09/iot-with-the-ethereum-blockchain/)
++ [HyperCat](https://youtu.be/6Ps8iEGRi1U)
 + [Eclipse Kura Video](https://www.youtube.com/watch?v=ia8cLnR1uFI)

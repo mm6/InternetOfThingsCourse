@@ -79,5 +79,3 @@ HTTP and CoAp are compared.
 + [What is RDF?](http://www.xml.com/pub/a/2001/01/24/rdf.html)
 
 + [RDFa Primer](http://www.w3.org/TR/xhtml-rdfa-primer/)
-
-+ [HyperCat](https://youtu.be/6Ps8iEGRi1U)
