@@ -14,30 +14,35 @@ Office: Hamburg Hall 3015
 
 Phone: 412-268-4657
 
-Officer Hours on Zoom: Wednesday 9:00 - 11:00 AM
+Officer Hours on Zoom: TBA
 
 Zoom URL: See Canvas or Piazza
 
 ### Teaching Assistant
 
-Name: Nitesh Singh
+Name: TBA
 
-Email: nksingh@andrew.cmu.edu
+Email: TBA
 
-Officer Hours on Zoom: Tuesday, Wednesday 6:30 PM - 8:30 PM
+Officer Hours on Zoom: TBA
 
 Zoom URL: See Canvas or Piazza
 
 ### Prerequisite
 
-The ability to program is the main prerequisite. If you are unsure about your
+The ability to program is the main prerequisite.  The student may be asked to learn and work
+with programming languages he or she has not been exposed to. A certain level
+of programming maturity is required. If you are unsure about your
 ability, speak with your instructor.
 
 ### Assignments
 
-There will be three programming projects equally weighted (60%).
+There will be four programming projects equally weighted (60%). Three will be
+assigned by your instructor and one will be self-assigned. The self-assigned
+project (Project 4) will be demonstrated to the class during the final week of
+classes.
 
-There will be four quizzes on the readings at the start of lecture with the low score dropped (15%).
+There will be four or five quizzes on the readings at the start of lecture with the low score dropped (15%).
 
 There will be a closed Book Final Exam based on readings, lectures, and programming (25%).
 
@@ -76,11 +81,11 @@ The student needs to purchase a Particle Photon with Headers Starter Kit. [Avail
 
 ### Time and place
 
-Tuseday 09:00AM 11:50 AM Adelaide, Australia
+TBA
 
 ### Review Session Time and place
 
-Thursday 04:30PM 05:50PM Adelaide, Australia
+TBA
 
 
 ### Grading Scale
