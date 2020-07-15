@@ -78,7 +78,7 @@
     + eSquirt
     + ID resolution
 
-### XMPP and Sensor Andrew at Carnegie Mellon lecture notes
+### Primary article: Sensor Andrew at Carnegie Mellon
 
 + Traditional IM applications
 + SMTP architecture
@@ -89,7 +89,7 @@
 + <stream>, <Presence>, <IQ>, <Message>
 + XML Schema for XMPP
 
-### OpenChirp at Carnegie Mellon
+### Primary article: OpenChirp at Carnegie Mellon
 
 + OpenChirp
 + LoRaWAN
@@ -113,13 +113,13 @@
 + GATT
 + Profiles, Services, and Characteristics
 
-### Self-sovereign Identity and Blockchains
+### Self-sovereign Identity and Blockchains lecture notes
 
 + SSI Offline
 + SSI Online
 + Existing systems and standards
 
-### Smart cities
+### Smart cities lecture notes
 
 + Transportation
 + Human Services
