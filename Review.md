@@ -131,19 +131,6 @@
 + Be able to read and interpret a simple firmware application.
 + The Particel Device Cloud
 
-### Review Project 1
-
-+ AJAX
-+ JSON and XML compared
-+ Websockets use case
-
-### Review Project 2
-
-+ MouseTracker Publish/Subscribe using MQTT
-+ Java TemperatureSensor using MQTT and MQTT topics
-+ Java DiceRolling using MQTT and GoogleCharts
-+ Photon publisher sending a name to MQTT
-
 ### Industrial Internet of Things (IIOT) lecture notes
 
 + SCADA
@@ -161,6 +148,19 @@
 + CoAP Request/Acknowledge/Callback
 + CoAP publish subscribe
 + CoAP resource discovery
+
+### Review Project 1
+
++ AJAX
++ JSON and XML compared
++ Websockets use case
+
+### Review Project 2
+
++ MouseTracker Publish/Subscribe using MQTT
++ Java TemperatureSensor using MQTT and MQTT topics
++ Java DiceRolling using MQTT and GoogleCharts
++ Photon publisher sending a name to MQTT
 
 ### Review Project 3
 
