@@ -29,9 +29,9 @@ We begin the course with a discussion of business use cases and security concern
 ## Project
 
 + [IntelliJ installation and basic servlets](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_Installs.pdf)
-+ [IntelliJ installation and basic servlets (video 1)](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_InstallsVideo1.mp4.pdf)
-+ [IntelliJ installation and basic servlets (video 1)](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_InstallsVideo2.mp4.pdf)
-+ [IntelliJ installation and basic servlets (video 1)](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_InstallsVideo3.mp4.pdf)
++ [IntelliJ installation and basic servlets (video 1)](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_InstallsVideo1.mp4)
++ [IntelliJ installation and basic servlets (video 1)](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_InstallsVideo2.mp4)
++ [IntelliJ installation and basic servlets (video 1)](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_InstallsVideo3.mp4)
 + [Project 1 Servlets, AJAX, JSON, Web Sockets, Particle Photon Microcontroller](../projects/project1/S20Project1.md)
 
 ## Quizzes
