@@ -78,15 +78,24 @@ The student needs to download and install the most recent IntelliJ Ultimate IDE.
 
 The student needs to purchase a Particle Photon with Headers Starter Kit. [Available here.](https://store.particle.io/products/photon-kit)
 
+### Delivery Mode IRR
+
+Uses a combined approach of remote technology and rotating
+in-person attendance (i.e., If a course meets on MW, some
+attend in-person on M and remotely on W, while others attend
+remotely on M and in-person on W). Students may choose to
+attend in-person or remotely during the course's scheduled
+meeting time.
+
 
 ### Time and place
 
-TBA
+T. R. 5:10 - 6:30 PM Room HBH 1005
+
 
 ### Review Session Time and place
 
 TBA
-
 
 ### Grading Scale
 
