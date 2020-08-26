@@ -114,6 +114,16 @@ Building the Web of Things
 
 By Guinard and Trifa [Available here](https://webofthings.org/)
 
+For an online copy, click on the O’Reilly for [Education link](https://cmu.primo.exlibrisgroup.com/discovery/fulldisplay?context=PC&vid=01CMU_INST:01CMU&search_scope=MyInst_and_CI&tab=Everything&docid=cdi_safari_books_9781617292682) in the
+“View Online” section of the library catalog record for the book.
+
+You’ll get a “Select your institution” dropdown menu prompt. Select 
+the “Not listed? Click here” option in that dropdown.
+
+Enter your Andrew email address and click “Let’s Go.” You’ll
+then get full text access to the book through the platform.
+
+
 ### Optional Text
 
 Programming the World Wide Web, Eighth Edition
