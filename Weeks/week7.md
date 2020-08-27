@@ -20,7 +20,7 @@
 
 ## Quizzes
 
-+ Quiz 5 on LoRa and LoRaWAN
++ Quiz 6 on self-sovereign identity
 
 ## Optional Readings
 
