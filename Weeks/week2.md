@@ -57,3 +57,5 @@ The Particle IDE is introduced and over the air updates are described and shown.
 + [IoT Security Ripple20](https://www.zdnet.com/google-amp/article/ripple20-vulnerabilities-will-haunt-the-iot-landscape-for-years-to-come/)
 
 + [IOT Security Labeling From CMU](https://cylab.cmu.edu/news/2020/05/27-iot-labels-consumers.html)
+
++ [IoT Security Software from SEI](https://www.sei.cmu.edu/news-events/news/article.cfm?assetId=644874)
