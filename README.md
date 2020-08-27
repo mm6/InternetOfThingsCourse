@@ -12,4 +12,4 @@
 + [Week 5 Tuesday, September 29 and Thursday, October 1](./Weeks/week5.md)
 + [Week 6 Tuesday, October 6 and Thursday, October 8](./Weeks/week6.md)
 + [Week 7 Tuesday, October 13 and Thursday, October 15](./Weeks/week7.md)
-+ [Week 8 Final Exam](./Weeks/week8.md)
++ [Week 8 Tuesday, October 20 Final Exam](./Weeks/week8.md)
