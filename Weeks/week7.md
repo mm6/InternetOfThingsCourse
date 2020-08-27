@@ -4,27 +4,25 @@
 
 ## Topics
 
-Week 7 is our final exam week. It is comprehensive and covers the entire mini.
-
-+ [The Final Exam is open book, open notes. It is Canvas based. See the Review for final exam.](../Review.md)
-+ The Final Exam is normally held during the regular class time and place.
++ Week 7 is our student presentation week. We will also review material on smart cities.
 
 ## Slides
 
-+ There are no slides presented during final exam week.
++ [Smart Cities](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_Smart_Cities.pdf)
 
 ## Required readings
 
-+ See the review for final exam.
++ [Smart Cities and IoT](https://www.tandfonline.com/doi/full/10.1080/15228053.2019.1587572)
 
 ## Project
 
-+ No projects are assigned during final exam week.
++ There is no project assigned during week 7.
 
 ## Quizzes
 
-+ There are no quizzes during the final exam week.
++ Quiz 5 on LoRa and LoRaWAN
 
 ## Optional Readings
 
-+ See the review for final exam
++ [HyperCat](https://youtu.be/6Ps8iEGRi1U)
++ [Eclipse Kura Video](https://www.youtube.com/watch?v=ia8cLnR1uFI)
