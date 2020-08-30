@@ -1,6 +1,6 @@
-# 95-733 Internet of Things Tuesday, May 19, 2020
+# 95-733 Internet of Things Tuesday, September 1, 2020
 
-## Project 1  Due: 11:59 PM, Tuesday, June 2, 2020
+## Project 1  Due: 11:59 PM, Tuesday, September 15, 2020
 
 
 ### Programming with Servlets, AJAX, JSON, Web Sockets, Particle Photon
