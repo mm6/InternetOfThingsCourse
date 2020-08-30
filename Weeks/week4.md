@@ -40,7 +40,7 @@ and Bluetooth LE.
 
 ## Project
 
-+ [Project 3 Webhooks and ThingSpeak ](../projects/project3/Project3.md)
++ There is no project assigned during week 4.
 
 ## Quizzes
 

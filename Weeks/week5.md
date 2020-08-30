@@ -29,8 +29,8 @@ HTTP and CoAp are compared.
 + [LoRa and LoRaWAN Video](https://youtu.be/6WMzRrmMjQU)
 
 ## Project
++ [Project 3 Webhooks and ThingSpeak ](../projects/project3/Project3.md)
 
-+ There is no project assigned during week 5.
 
 ## Quizzes
 
