@@ -39,6 +39,13 @@ We begin the course with a discussion of business use cases and security concern
 
 + No quizzes during the first week of class.
 
+## Video Lectures
+
++ [01_CourseAdministration](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/d682f3d740ee4288999ed1b32831b3681d)
++ [02_CourseOrganization](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/e40a7436891648c2a5474c927f5572371d)
++ [03_Lecture1](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/bc7f8e22e066467181ce64a47b4f8cd01d)
+
+
 ## Optional Readings
 
 + [Described in "Smart Connected Products" : URIBeacon is now Eddystone - uses existing app on your phone](https://developers.google.com/beacons/)
