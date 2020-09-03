@@ -65,6 +65,11 @@ Grading mistakes may occur. Please contact the TA who graded your assignment abo
 
 There will be a Canvas site for the course. Grades will be posted there and assignments will be submitted there. We will also make good use of the discussion board on Piazza. It is far better to post a question to the discussion board than it is to send your instructor or TA an email. Answers posted there are available for all to see. The main site for the course (syllabus, course description and schedule) is this page.
 
+### FERPA Statement
+
+Classes and lab introductions will be recorded via Zoom so that students in this course (and only students in this course) can watch or re-watch past  sessions. Please note that breakout rooms will not be recorded. These recordings will be available on Canvas as soon as possible after each session. Please note that you are not allowed to share these recordings. This is to protect your FERPA rights and those of your fellow students.
+
+
 ### Software Requirements
 
 The student needs to download and install the most recent IntelliJ Ultimate IDE. Available here.
