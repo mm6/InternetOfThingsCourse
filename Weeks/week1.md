@@ -17,7 +17,7 @@ We begin the course with a discussion of business use cases and security concern
 
 ## Required readings
 
-+ [Smart Connected Products](https://hbr.org/2014/11/how-smart-connected-products-are-transforming-competition)
++ [Smart Connected Products (Read up to but not including "Reshaping Industry Structure")](https://hbr.org/2014/11/how-smart-connected-products-are-transforming-competition)
 + [Enabling The Internet of Things](https://www.andrew.cmu.edu/user/mm6/95-733/iot/Enabling_the_Internet_of_Things.pdf)
 
 + [AJAX Article from IBM By Philip McCarthy](http://www.ibm.com/developerworks/library/j-ajax1/?ca%3D)
