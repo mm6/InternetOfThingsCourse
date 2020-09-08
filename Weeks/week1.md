@@ -47,7 +47,7 @@ We begin the course with a discussion of business use cases and security concern
 + [04_Lecture1](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/60b308fcf55a418db8329d09ec45840e1d)
 
 ## Video Demonstrations
-[05_Lecture1_Demos](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/a9fe6d4a24e54cdf82514013f1ae409c1d)
++ [05_Lecture1_Demos](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/a9fe6d4a24e54cdf82514013f1ae409c1d)
 
 ## Optional Readings
 
