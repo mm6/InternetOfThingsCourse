@@ -44,6 +44,11 @@ The Particle IDE is introduced and over the air updates are described and shown.
 + Quiz 1 is on Canvas at the start of class.
 + Quiz 1 Covers "Smart Connected Products" and "Enabling the Internet of Things".
 
+## Video Lectures
++ [06_ReviewQuiz_Week2](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/dddc9d7adb3e44eabb9ccb8a226e13ea1d)
++ [07_Lecture2](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/e7e80e8afad44277a86f935fb37c87f81d)
++ [08_Lecture2](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/a2b2886c525d453ab22a955f017986c91d)
+
 ## Optional Readings
 
 + [Photons and Windows 10 Set up](https://www.andrew.cmu.edu/user/mm6/95-733/Photon/SetupParticlePhotoninWindows10.pdf)
