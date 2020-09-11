@@ -48,6 +48,7 @@ The Particle IDE is introduced and over the air updates are described and shown.
 + [06_ReviewQuiz_Week2](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/dddc9d7adb3e44eabb9ccb8a226e13ea1d)
 + [07_Lecture2](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/e7e80e8afad44277a86f935fb37c87f81d)
 + [08_Lecture2](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/a2b2886c525d453ab22a955f017986c91d)
++ [09_Lecture2](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/4567e3ee057d4d2180ca1d59f0850fe71d)
 
 ## Optional Readings
 
