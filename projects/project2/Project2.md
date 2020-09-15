@@ -1,6 +1,6 @@
-# 95-733 Internet of Things    Tuesday, June 2, 2020
+# 95-733 Internet of Things    Tuesday, September 15, 2020
 
-## Project 2 Due Date: 11:59 PM Tuesday, June 16, 2020
+## Project 2 Due Date: 11:59 PM Tuesday, September 29, 2020
 
 ### Topics: MQTT, Google Charts, Particle Photon  
 
