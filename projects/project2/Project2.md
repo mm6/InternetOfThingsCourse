@@ -293,7 +293,7 @@ Part 3:
 
 Zip the directory. Submit a single zipped file to Canvas.
 
-We may require that you schedule some time during the instructor or TA office hours to demonstrate
+We will require that you schedule some time during the instructor or TA office hours to demonstrate
 your solution. If you have difficulty running Mosquitto on your machine, see us soon. If we are unable
 to get Mosquitto running there is a free online version available (Hive MQ). Get started soon and use
 Hive if you are not able to run a local broker.
