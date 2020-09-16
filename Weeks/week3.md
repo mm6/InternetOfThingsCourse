@@ -42,6 +42,11 @@ between a browser and an MQTT broker. Real time interactions are displayed in a 
 + Quiz 2 is on Canvas at the start of class.
 + Quiz 2 is on "The Computer for the 21st Century"
 
+## Video Lectures
++ [10_Lecture3_QuizReview](https://heinzcollege.mediasite.com/Mediasite/Play/e96f9a1bac874d86892b02eefa9e5dac1d)
++ [11_Lecture3](https://heinzcollege.mediasite.com/Mediasite/Play/50a2ba3e20ec4f4497631c599f73cf261d)
++ [12_Lecture3MQTT](https://heinzcollege.mediasite.com/Mediasite/Play/6a8b1c0de3a644db90f80b08e43b69a81d)
+
 ## Optional Readings
 
 + [MQTT Specification](http://public.dhe.ibm.com/software/dw/webservices/ws-mqtt/MQTT_V3.1_Protocol_Specific.pdf)
