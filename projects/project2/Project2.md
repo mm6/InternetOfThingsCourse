@@ -266,7 +266,7 @@ MQTT.cpp in your Particle Application. After selecting the library, you have to 
 
        The name, URL pair will be transmitted in JSON format. For example, in my solution I am sending
  the JSON object { "name":"Michael McCarthy", "URL":"http://www.andrew.cmu.edu/user/mm6"}. You are required
-to do the same. For your URL, choose http://www.andrew.cmu.edu/user/<your andrew ID>.
+to do the same. For your URL, choose http://www.andrew.cmu.edu/user/your_andrew_ID.
 
 2. 15 Points. Using IntelliJ, build a web project called PhotonMQTTSubscriber. Within this project,
 write an index.html file and javascript code that subscribes to your MQTT service. It will subscribe to any
