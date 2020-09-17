@@ -264,8 +264,8 @@ The MQTT library is available by searching the libraries on Particle. You need t
 MQTT.cpp in your Particle Application. After selecting the library, you have to hit the
 'Include In Project' button. Your code will automatically receive the #include<MQTT.h> statement.
 
-       The name, URL pair will be transmitted in JSON format. For example, in my solution I am sending
- the JSON object { "name":"Michael McCarthy", "URL":"http://www.andrew.cmu.edu/user/mm6"}. You are required
+The name, URL pair will be transmitted in JSON format. For example, in my solution I am sending
+the JSON object { "name":"Michael McCarthy", "URL":"http://www.andrew.cmu.edu/user/mm6"}. You are required
 to do the same. For your URL, choose http://www.andrew.cmu.edu/user/your_andrew_ID.
 
 2. 15 Points. Using IntelliJ, build a web project called PhotonMQTTSubscriber. Within this project,
