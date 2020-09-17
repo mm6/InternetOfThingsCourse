@@ -273,7 +273,8 @@ write an index.html file and javascript code that subscribes to your MQTT servic
 messages published to 'student/id'. When the Photon publishes a name and URL to the topic 'student/id', your
 web site will display the name and URL on the browser. You have to plan on many names being published (even
 though you only have one Photon to test with). If many names arrive, they should all be listed, as they
-arrive, on the browser.
+arrive, on the browser. In order to do this, your Javascript will create a Set object. When a name
+arrives that is not in the set, display it on the browser. If a name arrives that is already in the set, simply ignore it. Test this by changing the name and url coming from your Photon. You will need to flash your firmware with a new name and URL.
 
 
 ### Submission guide
