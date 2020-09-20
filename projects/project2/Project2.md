@@ -151,13 +151,11 @@ protocol websockets
 
 For the Java client, we will be using the Eclipse Paho Java Client libraries.
 This is very easy to do using Maven and IntelliJ. In short, Maven is an opinionated build tool.
-That is, it is based around the idea of "convention over configuration". There is a nice 5 minute
-video here on using Maven on the IntelliJ IDE [here.](https://www.youtube.com/watch?v=pt3uB0sd5kY)
+That is, it is based around the idea of "convention over configuration". There is a nice [5 minute
+video here on using Maven on the IntelliJ IDE.](https://www.youtube.com/watch?v=pt3uB0sd5kY)
 
-The following URL has the repository definition and the dependency definition needed for your pom.xml.
-It also has a very nice sample Java client that you will want to work from. You should get this code to
-compile using IntelliJ and Maven. The code is found [here.](https://eclipse.org/paho/clients/java/)
-For details of using IntelliJ, Maven, and MQTT, see [here.](./MavenJavaAndMQTT.md)
++ [We will be using the code from this web site.](https://eclipse.org/paho/clients/java/)
++ [Here are the details of using this code in IntelliJ.](./MavenJavaAndMQTT.md)
 
 
 1. 5 Points. Build a IntelliJ project named TemperatureSensorSimulatorProject. This project will hold a stand alone
