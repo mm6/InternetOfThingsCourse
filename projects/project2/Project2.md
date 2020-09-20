@@ -154,8 +154,8 @@ This is very easy to do using Maven and IntelliJ. In short, Maven is an opiniona
 That is, it is based around the idea of "convention over configuration". There is a nice [5 minute
 video here on using Maven on the IntelliJ IDE.](https://www.youtube.com/watch?v=pt3uB0sd5kY)
 
-+ [We will be using the code from this web site.](https://eclipse.org/paho/clients/java/)
-+ [Here are the details of using this code in IntelliJ.](./MavenJavaAndMQTT.md)
++ [To get started, we will be using the sample code from this web site.](https://eclipse.org/paho/clients/java/)
++ [Here are some details of using this sample code in IntelliJ.](./MavenJavaAndMQTT.md)
 
 
 1. 5 Points. Build a IntelliJ project named TemperatureSensorSimulatorProject. This project will hold a stand alone
