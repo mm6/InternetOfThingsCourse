@@ -157,6 +157,7 @@ video here on using Maven on the IntelliJ IDE [here.](https://www.youtube.com/wa
 The following URL has the repository definition and the dependency definition needed for your pom.xml.
 It also has a very nice sample Java client that you will want to work from. You should get this code to
 compile using IntelliJ and Maven. The code is found [here.](https://eclipse.org/paho/clients/java/)
+For details of using IntelliJ, Maven, and MQTT, see [here.](./MavenJavaAndMQTT.md)
 
 
 1. 5 Points. Build a IntelliJ project named TemperatureSensorSimulatorProject. This project will hold a stand alone
