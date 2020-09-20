@@ -13,7 +13,7 @@
 11. Apply/OK
 12. On the right side bar, locate the maven tab.
 13. Click Reload all maven projects.
-14. Run mosquitto and use the Java code below to test.
+14. Run mosquitto and use the Java code below to test the connection.
 
 
 ## Java code - a simple MQTT client
