@@ -8,7 +8,9 @@ We begin the course with a discussion of business use cases and security concern
 We make a distinction between products, smart products, and connected products. Various types
 of tags are introduced to enable arbitrary "things" to play a roll in the IoT.
 
-The central article for the course, "Enabling the Internet of Things", is discussed.
+The central article for the course, "Enabling the Internet of Things", is discussed. The paper
+argues that the standardized but decentralized model provided by the World Wide Web is the
+correct one to use in designing an interoperable internet of things - a web of things.
 
 + Course mechanics
 + Smart, connected products
