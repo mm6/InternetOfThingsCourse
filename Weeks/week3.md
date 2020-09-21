@@ -4,13 +4,16 @@
 
 ## Topics
 
-In week 3 we study client side web technologies such as Javascript, XML, and JSON.
-We begin our study of WebSockets. We demonstrate how WebSockets may be used to carry messages
-between a browser and an MQTT broker. Real time interactions are displayed in a browser using the Google Charts Javascript library.
+In week 3 we study client side web technologies such as Javascript, XML, JSON, and websockets.
+We also begin our study of MQTT. We describe the role that MQTT plays in several major IoT platforms -
+AWS IoT, Microsoft Azure IoT, Google Cloud IoT, and IBM Watson IoT. This week includes several
+demonstrations showing microcontrollers, browsers, and Java programs interacting with an MQTT broker.
+The Google Charts Javascript library is introduced and shows real time graphical displays of IoT events in a
+browser.
 
 + Client side AJAX in Javascript
 + Client and server side Websockets
-+ The MQTT protocol
++ The MQTT protocol 
 + Demonstration: Real time mouse movements through an MQTT broker
 + Demonstration: A Java application communicates through an MQTT broker to Google Charts in a browser
 + Demonstration: A Micro controller communicates through an MQTT broker to a browser
