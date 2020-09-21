@@ -4,9 +4,13 @@
 
 ## Topics
 
-In week 2 we consider how the World Wide Web provides guidance on the construction of the internet of things. In particular, we look at important details associated with server side AJAX.
+In week 2 we consider how the World Wide Web provides guidance on the construction of the internet of things.
 
-Security and privacy are continuing concerns. We argue that, with the adoption of web standards, an interoperable internet of things is possible.
+We look at four interaction patterns provided by HTTP and study important details associated with server side AJAX.
+
+Security and privacy are continuing concerns.
+
+We argue that, with the adoption of web standards, an interoperable internet of things is possible.
 
 The Particle IDE is introduced and over the air updates are described and shown. Micro controller to servlet interactions are demonstrated.  
 
