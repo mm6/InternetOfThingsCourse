@@ -5,6 +5,10 @@
 ## Topics
 
 We begin the course with a discussion of business use cases and security concerns.
+We make a distinction between products, smart products, and connected products. Various types
+of tags are introduced to enable arbitrary "things" to play a roll in the IoT.
+
+The central article for the course, "Enabling the Internet of Things", is discussed.
 
 + Course mechanics
 + Smart, connected products
