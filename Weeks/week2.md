@@ -4,7 +4,7 @@
 
 ## Topics
 
-In week 2 we consider how the World Wide Web provides guidance on the construction of the internet of things.
+In week 2 we consider how the design of the World Wide Web provides guidance on the construction of the internet of things.
 
 We look at four interaction patterns provided by HTTP and study important details associated with server side AJAX.
 
