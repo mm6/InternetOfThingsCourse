@@ -13,7 +13,7 @@ browser.
 
 + Client side AJAX in Javascript
 + Client and server side Websockets
-+ The MQTT protocol 
++ The MQTT protocol including qualities of service and unreliable networking 
 + Demonstration: Real time mouse movements through an MQTT broker
 + Demonstration: A Java application communicates through an MQTT broker to Google Charts in a browser
 + Demonstration: A Micro controller communicates through an MQTT broker to a browser
