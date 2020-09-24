@@ -47,6 +47,10 @@ and Bluetooth LE.
 + Quiz 3 is on Canvas at the start of class.
 + Quiz 3 is on "People, Places, Things: Web Presence for the Real World"
 
+
+## Video Lectures
++ [14_Lecture4](https://heinzcollege.mediasite.com/Mediasite/Play/478ea5a5f97242c08b26c874cedd44c31d)
+
 ## Optional Readings
 
 
