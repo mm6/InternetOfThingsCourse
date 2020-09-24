@@ -36,7 +36,7 @@ and Bluetooth LE.
 
 + [Sensor Andrew - Video](https://vimeo.com/9079961)
 
-+ [OpenChirp at Carnegie Mellon up to but not including "B. Energy Consumption."](https://users.ece.cmu.edu/~agr/resources/publications/openchirp-smart-edge-17.pdf)
++ [OpenChirp at Carnegie Mellon up to but not including "B. Energy Consumption".](https://users.ece.cmu.edu/~agr/resources/publications/openchirp-smart-edge-17.pdf)
 
 ## Project
 
