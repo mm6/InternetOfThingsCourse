@@ -32,11 +32,11 @@ and Bluetooth LE.
 
 ## Required readings
 
-+ [Sensor Andrew - Large Scale Campus Wide Sensing up to but not including "Building energy optimization"](https://users.ece.cmu.edu/~agr/resources/publications/ibm-sensor-andrew-11.pdf)
++ [Sensor Andrew - Large Scale Campus Wide Sensing up to but not including "Building energy optimization".](https://users.ece.cmu.edu/~agr/resources/publications/ibm-sensor-andrew-11.pdf)
 
 + [Sensor Andrew - Video](https://vimeo.com/9079961)
 
-+ [OpenChirp at Carnegie Mellon up to but not including "B. Energy Consumption"](https://users.ece.cmu.edu/~agr/resources/publications/openchirp-smart-edge-17.pdf)
++ [OpenChirp at Carnegie Mellon up to but not including "B. Energy Consumption."](https://users.ece.cmu.edu/~agr/resources/publications/openchirp-smart-edge-17.pdf)
 
 ## Project
 
