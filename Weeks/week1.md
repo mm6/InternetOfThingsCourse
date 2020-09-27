@@ -56,6 +56,7 @@ correct one to use in designing an interoperable internet of things - a web of t
 + [05_Lecture1_Demos](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/a9fe6d4a24e54cdf82514013f1ae409c1d)
 
 ## Optional Readings
++ [Coffee maker ransom machine](https://arstechnica.com/information-technology/2020/09/how-a-hacker-turned-a-250-coffee-maker-into-ransom-machine/)
 
 + [Described in "Smart Connected Products" : URIBeacon is now Eddystone - uses existing app on your phone](https://developers.google.com/beacons/)
 
