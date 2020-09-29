@@ -52,6 +52,7 @@ on the internet at large. Both protocols utilize service discovery.
 
 ## Video Lectures
 + [14_Lecture4](https://heinzcollege.mediasite.com/Mediasite/Play/478ea5a5f97242c08b26c874cedd44c31d)
++ [15_Lecture4](https://heinzcollege.mediasite.com/Mediasite/Play/ad477960aa83498ba3cb057b03a48afb1d)
 
 ## Optional Readings
 
