@@ -58,6 +58,8 @@ correct one to use in designing an interoperable internet of things - a web of t
 ## Optional Readings
 + [Coffee maker ransom machine](https://arstechnica.com/information-technology/2020/09/how-a-hacker-turned-a-250-coffee-maker-into-ransom-machine/)
 
++ [IOT Security Labeling From CMU](https://cylab.cmu.edu/news/2020/05/27-iot-labels-consumers.html)
+
 + [Described in "Smart Connected Products" : URIBeacon is now Eddystone - uses existing app on your phone](https://developers.google.com/beacons/)
 
 + [Google's Physical Web Short video](https://www.youtube.com/watch?v=1yaLPRgtlR0&feature=youtu.be)
