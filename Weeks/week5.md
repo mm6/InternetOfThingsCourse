@@ -31,7 +31,7 @@ Particle cloud using CoAp.
 
 ## Projects
 + [Project 3 Webhooks and ThingSpeak ](../projects/project3/Project3.md)
-+ [Project 4 Student defined project]((../projects/project4/Project4.md)
++ [Project 4 Student defined project](../projects/project4/Project4.md)
 
 
 ## Quizzes
