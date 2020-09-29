@@ -5,7 +5,9 @@
 ## Topics
 
 During week 4, we go into detail on the MQTT protocol, client side technologies such as micro controllers, personal area networks, programmable logic controllers, and SCADA systems. We also discuss Bluetooth
-and Bluetooth LE.
+and Bluetooth LE. We end the week by comparing BLE with XMPP. The comparison is of interest because
+BLE's focus is on short distance, resource constrained, networking. XMPP, on the other hand, works
+on the internet at large. Both protocols utilize service discovery.
 
 
 + MQTT Qualities of Service

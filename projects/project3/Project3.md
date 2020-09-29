@@ -1,6 +1,6 @@
 # 95-733 Internet of Things           Project 3
 
-## IoT and Webhooks                   Due: Tuesday, June 23, 11:59:00 PM
+## IoT and Webhooks                   Due: Tuesday, October 13, 11:59:00 PM
 
 
 This project is short and should not take you too long. It represents a very nice
