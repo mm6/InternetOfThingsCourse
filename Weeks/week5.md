@@ -22,7 +22,7 @@ Particle cloud using CoAp.
 + [XMPP Overview](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP_Overview.pdf)
 
 + [XMPP Programming and Sensor Andrew ](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP.pdf)
-
++ [Webhooks](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_WebhooksPublishSubscribe.pdf)
 + [REST, Integration Patterns, and CoAP](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_RESTandCoAP.pdf)
 
 ## Required readings
