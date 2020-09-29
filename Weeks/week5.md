@@ -29,8 +29,9 @@ Particle cloud using CoAp.
 
 + [LoRa and LoRaWAN Video](https://youtu.be/6WMzRrmMjQU)
 
-## Project
+## Projects
 + [Project 3 Webhooks and ThingSpeak ](../projects/project3/Project3.md)
++ [Project 4 Student defined project]((../projects/project4/Project4.md)
 
 
 ## Quizzes
