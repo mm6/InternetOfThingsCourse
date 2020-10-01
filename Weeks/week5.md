@@ -10,6 +10,9 @@ are IoT initiatives built at Carnegie Mellon. Sensor Andrew's use of XMPP is hig
 The publish/subscribe pattern is revisited using HTTP Webhooks. Thingspeak Webhooks are used in Project 3.
 
 We also discuss service discovery and the REST architectural style. CoAp is introduced as RESTful protocol and three Web of Things integration patterns are highlighted.
+
+The Web of Things Architecture from W3C and Mozilla are introduced. 
+
 HTTP and CoAp are compared. It is noted that the microcontroller used in class interacts with the
 Particle cloud using CoAp.
 
@@ -30,7 +33,7 @@ Particle cloud using CoAp.
 ## Required readings
 
 + [Web of Things Architecture at W3C](https://www.w3.org/TR/wot-architecture/)
-+ WoT Use Cases Section 4, WoT Architecture Section 6, WoT Building blocks Section 7
++ WoT Architecture Use Cases Section 4, WoT Architecture Section 6, WoT Architecture Building blocks Section 7
 + [Web of Things Architecture Matthias Kovatsch(W3C) Video Lecture](https://www.youtube.com/watch?v=xgkglOZiF9M)
 
 ## Projects
