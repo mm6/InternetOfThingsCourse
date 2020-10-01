@@ -29,18 +29,20 @@ Particle cloud using CoAp.
 
 ## Required readings
 
-+ [LoRa and LoRaWAN Video](https://youtu.be/6WMzRrmMjQU)
++ [Web of Things Architecture at W3C](https://w3c.github.io/wot-architecture/)
++ [Web of Things Architecture Matthias Kovatsch(W3C) Video Lecture](https://www.youtube.com/watch?v=xgkglOZiF9M)
 
 ## Projects
 + [Project 3 Webhooks and ThingSpeak ](../projects/project3/Project3.md)
 + [Project 4 Student defined project](../projects/project4/Project4.md)
-
 
 ## Quizzes
 
 + Quiz 4 on OpenChirp and Sensor Andrew
 
 ## Optional Readings
+
++ [LoRa and LoRaWAN Video](https://youtu.be/6WMzRrmMjQU)
 
 + [Google Knowledge Graph](https://www.youtube.com/watch?v=mmQl6VGvX-c)
 
@@ -61,10 +63,6 @@ Particle cloud using CoAp.
 + [Web of Things](https://www.w3.org/2017/04/w3c-web-of-things-intro.pdf)
 
 + [Web of Things Video](https://www.postscapes.com/pulse/web-of-things-the-pursuit-of-interoperability-in-iot/)
-
-+ [Web of Things Architecture at W3C](https://w3c.github.io/wot-architecture/)
-
-+ [Web of Things Architecture Matthias Kovatsch(W3C) Video Lecture](https://www.youtube.com/watch?v=xgkglOZiF9M)
 
 + [Rasberry Pi Demo with Betsy](https://www.youtube.com/watch?v=DPHzm3f2lps)
 
