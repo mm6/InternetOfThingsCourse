@@ -29,7 +29,7 @@ Particle cloud using CoAp.
 
 ## Required readings
 
-+ [Web of Things Architecture at W3C](https://w3c.github.io/wot-architecture/)
++ [Web of Things Architecture at W3C](https://www.w3.org/TR/wot-architecture/)
 + [Web of Things Architecture Matthias Kovatsch(W3C) Video Lecture](https://www.youtube.com/watch?v=xgkglOZiF9M)
 
 ## Projects
