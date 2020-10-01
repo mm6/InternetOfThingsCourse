@@ -46,7 +46,6 @@ on the internet at large. Both protocols utilize service discovery.
 
 ## Quizzes
 
-+ Quiz 3 is on Canvas at the start of class.
 + Quiz 3 is on "People, Places, Things: Web Presence for the Real World"
 
 

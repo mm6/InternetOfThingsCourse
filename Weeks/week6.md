@@ -23,7 +23,7 @@ We consider how SSI might be used in IoT.
 
 ## Quizzes
 
-+ Quiz 5 on LoRa and LoRaWAN
++ Quiz 5: WoT Architecture Use Cases Section 4, WoT Architecture Section 6, WoT Architecture Building blocks Section 7
 
 ## Optional Readings
 
