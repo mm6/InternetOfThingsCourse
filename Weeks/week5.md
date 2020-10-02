@@ -11,7 +11,7 @@ The publish/subscribe pattern is revisited using HTTP Webhooks. Thingspeak Webho
 
 We also discuss service discovery and the REST architectural style. CoAp is introduced as RESTful protocol and three Web of Things integration patterns are highlighted.
 
-The Web of Things Architecture from W3C and Mozilla are introduced. 
+The Web of Things Architecture from W3C and Mozilla are introduced.
 
 HTTP and CoAp are compared. It is noted that the microcontroller used in class interacts with the
 Particle cloud using CoAp.
@@ -43,6 +43,11 @@ Particle cloud using CoAp.
 ## Quizzes
 
 + Quiz 4 on OpenChirp and Sensor Andrew
+
+## Video Lectures
+
++ [16_Lecture5](https://heinzcollege.mediasite.com/Mediasite/Play/302ca40f3f3b4a9880d09901989a13721d)
++ [17_Lecture5](https://heinzcollege.mediasite.com/Mediasite/Play/251d1c7c5320408f9ded1c75fc7a53d81d)
 
 ## Optional Readings
 
