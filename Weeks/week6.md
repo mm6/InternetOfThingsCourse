@@ -27,6 +27,11 @@ We consider how SSI might be used in IoT.
 
 + Quiz 5: WoT Architecture Use Cases Section 4, WoT Architecture Section 6, WoT Architecture Building blocks Section 7
 
+## Video 13_Lectures
+
++ [18_Lecture6](https://heinzcollege.mediasite.com/Mediasite/Play/af6b402ca8f44635ac308d229d5ce3531d)
++ [19_Lecture6](https://heinzcollege.mediasite.com/Mediasite/Play/1f08f85d38674d2eb1fcc95238a47d121d)
+
 ## Optional Readings
 
 + [W3C Decentralized Identifiers](https://www.w3.org/TR/did-core/)
