@@ -4,7 +4,8 @@
 
 ## Topics
 
-+ Week 7 is our student presentation week. We will also review material on smart cities.
++ Week 7 is our student presentation week. We will also review material on smart cities, flow
+programming, and edge analytics.
 
 ## Slides
 
