@@ -9,6 +9,7 @@
 ## Slides
 
 + [Smart Cities](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_Smart_Cities.pdf)
++ [Flow Programming and Edge Analytics](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/07_FlowProgramming.pdf)
 
 ## Required readings
 
