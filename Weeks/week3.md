@@ -54,7 +54,7 @@ browser.
 
 + [MQTT Specification](http://public.dhe.ibm.com/software/dw/webservices/ws-mqtt/MQTT_V3.1_Protocol_Specific.pdf)
 
-+ [Sparkplug defines MQTT best practices](https://www.cirrus-link.com/mqtt-sparkplug-tahu/)
++ [Sparkplug B defines MQTT best practices - what a message contains](https://www.cirrus-link.com/mqtt-sparkplug-tahu/)
 
 + [Internet of Things Landscape](http://mattturck.com/wp-content/uploads/2016/03/Internet-of-Things-2016.png)
 
