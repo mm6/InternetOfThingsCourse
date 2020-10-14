@@ -115,7 +115,7 @@
 
 ### Web of Things Architecture at W3C
 
-+ [Jeff Jaffe (W3C) at Industry of Things World video](https://www.w3.org/WoT/)
++ [Jeff Jaffe (W3C) at Industry of Things World video](https://www.youtube.com/watch?v=VKKxnk-aRhY&feature=youtu.be&list=PLEyJjfPQS2aCnJ7fktjgmnwvl_RmsvQbd)
 + Servient
 + Thing Description (TD)
 + WoT Scrpting API
