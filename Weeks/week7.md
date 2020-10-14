@@ -24,6 +24,10 @@ programming, and edge analytics.
 
 + Quiz 6 on self-sovereign identity
 
+## Video Lectures
+
++ [20_Lecture7](https://heinzcollege.mediasite.com/Mediasite/Play/2935e6dcc4d945b89ca9c3bb0ff9e43e1d)
+
 ## Optional Readings
 
 + [HyperCat](https://youtu.be/6Ps8iEGRi1U)
