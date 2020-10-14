@@ -5,7 +5,7 @@
 ## Topics
 
 + Week 7 is our student presentation week. We will also review material on smart cities, flow
-programming, and edge analytics.
+based programming (FBP), and edge analytics.
 
 ## Slides
 
@@ -30,5 +30,6 @@ programming, and edge analytics.
 
 ## Optional Readings
 
++ [Flow Based Programming by J. Paul Rodker Morrison](https://youtu.be/up2yhNTsaDs)
 + [HyperCat](https://youtu.be/6Ps8iEGRi1U)
 + [Eclipse Kura Video](https://www.youtube.com/watch?v=ia8cLnR1uFI)
