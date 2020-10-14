@@ -113,6 +113,13 @@
 + GATT
 + Profiles, Services, and Characteristics
 
+### Web of Things Architecture at W3C
+
++ [Jeff Jaffe (W3C) at Industry of Things World video](https://www.w3.org/WoT/)
++ Servient
++ Thing Description (TD)
++ WoT Scrpting API
+
 ### Self-sovereign Identity and Blockchains lecture notes
 
 + SSI Offline
@@ -155,6 +162,11 @@
 + CoAP Request/Acknowledge/Callback
 + CoAP publish subscribe
 + CoAP resource discovery
+
+### Flow Programming and Edge Analytics
+
++ Node-Red (Javascript)
++ Apache Edgent (Java)
 
 ### Review Project 1
 
