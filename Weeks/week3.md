@@ -13,7 +13,7 @@ browser.
 
 + Client side AJAX in Javascript
 + Client and server side Websockets
-+ The MQTT protocol including qualities of service and unreliable networking 
++ The MQTT protocol including qualities of service and unreliable networking
 + Demonstration: Real time mouse movements through an MQTT broker
 + Demonstration: A Java application communicates through an MQTT broker to Google Charts in a browser
 + Demonstration: A Micro controller communicates through an MQTT broker to a browser
@@ -35,7 +35,6 @@ browser.
 
 + [MQTT Tutorial](http://www.hivemq.com/mqtt-essentials/)
 
-
 ## Project
 + [Project 2 Publish Subscribe](../projects/project2/Project2.md)
 + Project 1 Due Midnight Tuesday
@@ -54,6 +53,8 @@ browser.
 ## Optional Readings
 
 + [MQTT Specification](http://public.dhe.ibm.com/software/dw/webservices/ws-mqtt/MQTT_V3.1_Protocol_Specific.pdf)
+
++ [Sparkplug](https://www.cirrus-link.com/mqtt-sparkplug-tahu/)
 
 + [Internet of Things Landscape](http://mattturck.com/wp-content/uploads/2016/03/Internet-of-Things-2016.png)
 
