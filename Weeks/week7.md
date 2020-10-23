@@ -32,6 +32,7 @@ based programming (FBP), and edge analytics.
 
 + [21_StudentPresentations](https://heinzcollege.mediasite.com/Mediasite/Play/32d1d07e8dfe4280aa1d56064b9983e91d)
 + [Former students win international award](https://2020.hackerspace.govhack.org/projects/firecloud)
++ [Former students FireCloud Video](https://www.youtube.com/watch?v=6Vpi4iBzb70&feature=youtu.be)
 
 ## Optional Readings
 
