@@ -56,6 +56,9 @@ correct one to use in designing an interoperable internet of things - a web of t
 + [05_Lecture1_Demos](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/a9fe6d4a24e54cdf82514013f1ae409c1d)
 
 ## Optional Readings
+
++ [Bottomless Coffee](https://www.bottomless.com/)
+
 + [Coffee maker ransom machine](https://arstechnica.com/information-technology/2020/09/how-a-hacker-turned-a-250-coffee-maker-into-ransom-machine/)
 
 + [IOT Security Labeling From CMU](https://cylab.cmu.edu/news/2020/05/27-iot-labels-consumers.html)
