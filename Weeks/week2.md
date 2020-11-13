@@ -70,3 +70,5 @@ The Particle IDE is introduced and over the air updates are described and shown.
 + [IoT Security Software from SEI](https://www.sei.cmu.edu/news-events/news/article.cfm?assetId=644874)
 
 + [IOT Security Standards body](https://www.ioxtalliance.org/)
+
++ [IoT Security](https://www.enisa.europa.eu/publications/guidelines-for-securing-the-internet-of-things)
