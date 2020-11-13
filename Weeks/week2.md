@@ -71,4 +71,4 @@ The Particle IDE is introduced and over the air updates are described and shown.
 
 + [IOT Security Standards body](https://www.ioxtalliance.org/)
 
-+ [IoT Security](https://www.enisa.europa.eu/publications/guidelines-for-securing-the-internet-of-things)
++ [European Union Agency for CyberSecurity - IoT Security](https://www.enisa.europa.eu/publications/guidelines-for-securing-the-internet-of-things)
