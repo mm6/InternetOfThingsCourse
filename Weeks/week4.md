@@ -68,6 +68,6 @@ on the internet at large. Both protocols utilize service discovery.
 
 + [Web of Things Lecture](https://www.youtube.com/watch?v=xgkglOZiF9M)
 
-+ [Web of Things at Mozilla](https://iot.mozilla.org/things/)
++ [Web of Things at Mozilla](https://iot.mozilla.org/)
 
 + [MIT Tagging the supply chain](http://news.mit.edu/2020/cryptographic-tag-supply-chain-0220)
