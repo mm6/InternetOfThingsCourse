@@ -36,6 +36,7 @@ browser.
 + [MQTT Tutorial](http://www.hivemq.com/mqtt-essentials/)
 
 ## Project
+
 + [Project 2 Publish Subscribe](../projects/project2/Project2.md)
 + Project 1 Due Midnight Tuesday
 

@@ -57,6 +57,8 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 ## Optional Readings
 
+
+
 + [Bottomless Coffee](https://www.bottomless.com/)
 
 + [Coffee maker ransom machine](https://arstechnica.com/information-technology/2020/09/how-a-hacker-turned-a-250-coffee-maker-into-ransom-machine/)
