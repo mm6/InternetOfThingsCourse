@@ -57,7 +57,7 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 ## Optional Readings
 
-+ [Discover IoT Journal Springer] (https://link.springer.com/search?query=discover+iot)
++ [Discover IoT Journal Springer](https://link.springer.com/search?query=discover+iot)
 
 + [Bottomless Coffee](https://www.bottomless.com/)
 
