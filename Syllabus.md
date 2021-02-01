@@ -14,9 +14,9 @@ Office: Hamburg Hall 3015
 
 Phone: 412-268-4657
 
-Officer Hours on Zoom: TBA
+Officer Hours on Zoom: See Canvas
 
-Zoom URL: See Canvas or Piazza
+Zoom URL: See Canvas 
 
 ### Teaching Assistant
 
