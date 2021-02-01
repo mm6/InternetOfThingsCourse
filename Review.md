@@ -179,7 +179,7 @@
 + MouseTracker Publish/Subscribe using MQTT
 + Java TemperatureSensor using MQTT and MQTT topics
 + Java DiceRolling using MQTT and GoogleCharts
-+ Photon publisher sending a name to MQTT
++ Argon publisher sending a name to MQTT
 
 ### Review Project 3
 
