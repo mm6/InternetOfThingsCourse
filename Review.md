@@ -138,10 +138,10 @@
 + Google Charts basics
 + Google charts in course project
 
-### Photon microntroller lecture notes
+### Argon microntroller lecture notes
 
 + What is firmware?
-+ How did our Photon communicate with our servlets?
++ How did our Argon communicate with our servlets?
 + Be able to read and interpret a simple firmware application.
 + The Particel Device Cloud
 
