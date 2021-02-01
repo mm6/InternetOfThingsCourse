@@ -81,21 +81,17 @@ The student needs to download and install the most recent IntelliJ Ultimate IDE.
 
 ### Hardware Requirements
 
-The student needs to purchase a Particle Photon with Headers Starter Kit. [Available here.](https://store.particle.io/products/photon-kit)
+The student needs to have access to Particle Argon with Headers Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit)
 
-### Delivery Mode IRR
+### Delivery Mode REO
 
-Uses a combined approach of remote technology and rotating
-in-person attendance (i.e., If a course meets on MW, some
-attend in-person on M and remotely on W, while others attend
-remotely on M and in-person on W). Students may choose to
-attend in-person or remotely during the course's scheduled
+Students will attend remotely (via zoom) during the course's scheduled
 meeting time.
 
 
-### Time and place
+### Time
 
-T. R. 5:10 - 6:30 PM Room HBH 1005
+T. R. 1:30 - 2:50 PM
 
 
 ### Review Session Time and place
