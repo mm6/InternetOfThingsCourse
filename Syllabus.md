@@ -16,7 +16,7 @@ Phone: 412-268-4657
 
 Officer Hours on Zoom: See Canvas
 
-Zoom URL: See Canvas 
+Zoom URL: See Canvas
 
 ### Teaching Assistant
 
@@ -81,7 +81,7 @@ The student needs to download and install the most recent IntelliJ Ultimate IDE.
 
 ### Hardware Requirements
 
-The student needs to have access to Particle Argon with Headers Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit)
+The student needs to have access to a Particle Argon with Headers Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit)
 
 ### Delivery Mode REO
 
