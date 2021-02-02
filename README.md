@@ -5,7 +5,7 @@
 
 + [Course Description](./CourseDescription.md)
 + [Syllabus](./Syllabus.md)
-+ Tuesday, Thursday 1:30 PM - 2:50 PM
++ Class meeting times: Tuesday, Thursday 1:30 PM - 2:50 PM
 + [Week 1 Tuesday, February 2 and Thursday, February 4](./Weeks/week1.md)
 + [Week 2 Tuesday, February 9 and Thursday, February 11](./Weeks/week2.md)
 + [Week 3 Tuesday, February 16 and Thursday, February 18](./Weeks/week3.md)
