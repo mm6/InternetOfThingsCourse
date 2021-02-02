@@ -1,11 +1,11 @@
 # 95-733 Internet of Things Demonstration Code
 
-## This is code for a Particle Photon to visit a web application.
+## This is code for a Particle Argon to visit a web application.
 
 This is C++ code. It needs to be compiled and the compiled code
-will execute on a Particle Photon micro controller. Use the Particle
+will execute on a Particle Argon micro controller. Use the Particle
 web IDE to compile this code and perform an over the air deployment
-to your Photon.
+to your Argon.
 
 This is a simple HTTP client that makes periodic visits to an HTTP
 server. The periodic visits act like heart beats to inform the server
@@ -36,7 +36,7 @@ TCPClient client;
 
 // We need the location of waiting server.
 // Using localhost would be a mistake.
-// The Photon treats localhost as itself.
+// The Argon treats localhost as itself.
 
 // Examine your own machine to find its IP address.
 byte serverIP[] = { 192, 168, 1, 2 };
@@ -50,14 +50,14 @@ int timeCtr = 0;
 // Device ID will be stored here after being retrieved from the device.
 // This is a unique, 96 bit identifier.
 // This looks like the following: 0x3d0020000c47353536383631.
-String photonID = "";
+String ArgonID = "";
 
 void setup() {
     // to allow for debug using the CLI
     Serial.begin(9600);
 
     // find ID of this device
-    photonID = getCoreID();
+    ArgonID = getCoreID();
 
 }
 
@@ -73,13 +73,13 @@ void loop() {
            if(DEBUG) Serial.println("Connecting to web server: ");
            if (client.connect(serverIP, port)) {
                if(DEBUG) Serial.println("Connected...");
-               out("POST /PhotonTracker/PhotonServlet HTTP/1.1\r\n");
+               out("POST /ArgonTracker/ArgonServlet HTTP/1.1\r\n");
                out("Host: mylocalserver:8080\r\n");
-               out("User-Agent: Photon/1.0\r\n");
+               out("User-Agent: Argon/1.0\r\n");
                out("Content-Type: application/x-www-form-urlencoded\r\n");
                out("Connection: close\r\n");
                // send the device ID to the server
-               msg = "Photon_ID=" + photonID;
+               msg = "Argon_ID=" + ArgonID;
                String length = String( msg.length() );
                out("Content-length: " + length + "\r\n\r\n"); // Blank line after POST headers
                out(msg);
@@ -148,7 +148,7 @@ void in(char *ptr, uint8_t timeout) {
 
 }
 
-// Each Photon device has a unique identifier
+// Each Argon device has a unique identifier
 // Read it and return it as a sting in base 16
 String getCoreID()
 {
