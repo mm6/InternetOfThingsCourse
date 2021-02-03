@@ -39,7 +39,7 @@ correct one to use in designing an interoperable internet of things - a web of t
 + [IntelliJ installation and basic servlets (video 2)](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/1bd644fe2faf43f1afc476fabc133e431d)
 + [IntelliJ installation and basic servlets (video 3)](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/1cc1acfa5581425fb506a903978eeb7d1d)
 + [IntelliJ installation and basic servlets (video 4)](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/b7dfb095ffc24d0da1094007b1eadd9d1d)
-+ [Project 1 Servlets, AJAX, JSON, Web Sockets, Particle Argon Microcontroller](../projects/project1/F20Project1.md)
++ [Project 1 Servlets, AJAX, JSON, Web Sockets, Particle Argon Microcontroller](../projects/project1/Project1.md)
 
 ## Quizzes
 

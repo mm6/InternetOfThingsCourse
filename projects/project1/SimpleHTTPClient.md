@@ -18,11 +18,13 @@ particle serial monitor
 ```
 /*
 Author: mm6 with various code snippets taken from Particle.io.
+This firmware generates periodic heartbeats from an Argon.
 */
 
 // Setting DEBUG == true generates debugging output to a shell.
-// Install the Particle CLI and enter the command:
+// To view these messages, install the Particle CLI and enter the command:
 // particle serial monitor
+
 boolean DEBUG = true;
 
 // Establish the number of seconds to wait until calling the server.
@@ -39,7 +41,9 @@ TCPClient client;
 // The Argon treats localhost as itself.
 
 // Examine your own machine to find its IP address.
-byte serverIP[] = { 192, 168, 1, 2 };
+
+byte serverIP[] = { 192, 168, 86, 164 };
+
 
 // Establish the server port for the web application.
 int port = 8080;
@@ -47,17 +51,23 @@ int port = 8080;
 // We only want to visit every 10 seconds or so.
 int timeCtr = 0;
 
+
+
 // Device ID will be stored here after being retrieved from the device.
 // This is a unique, 96 bit identifier.
-// This looks like the following: 0x3d0020000c47353536383631.
-String ArgonID = "";
+// This looks like the following: 0x3d002d000cf7353536383631.
+
+String deviceID = "";
 
 void setup() {
     // to allow for debug using the CLI
     Serial.begin(9600);
 
-    // find ID of this device
-    ArgonID = getCoreID();
+    // get the unique id of this device as 24 hex characters
+   deviceID = System.deviceID().c_str();
+
+   // display the id to the command line interface
+   Serial.println(deviceID);
 
 }
 
@@ -66,10 +76,8 @@ String msg = "";
 
 void loop() {
      // If timeCtr is above the current time wait until the current time catches up
-     if (timeCtr > millis()) {
-        return;
-     }
-     else {
+     if (timeCtr <= millis()) {
+
            if(DEBUG) Serial.println("Connecting to web server: ");
            if (client.connect(serverIP, port)) {
                if(DEBUG) Serial.println("Connected...");
@@ -79,12 +87,12 @@ void loop() {
                out("Content-Type: application/x-www-form-urlencoded\r\n");
                out("Connection: close\r\n");
                // send the device ID to the server
-               msg = "Argon_ID=" + ArgonID;
+               msg = "Argon_ID=" + deviceID;
                String length = String( msg.length() );
                out("Content-length: " + length + "\r\n\r\n"); // Blank line after POST headers
                out(msg);
-               if(DEBUG) Serial.println("Data sent to server" + msg + "Size == " + msg.length());
-               if(DEBUG) Serial.println("Closing Connection...");
+               if(DEBUG) Serial.println("Data sent to server\n" + msg + "Size == " + msg.length());
+               if(DEBUG) Serial.println("Closing Connection...\n");
                in(reply, 3000);
             }
             else {  // server not found to be available
@@ -141,32 +149,10 @@ void in(char *ptr, uint8_t timeout) {
         delay(400);
         client.stop();
         if(DEBUG){
-            Serial.println();
             Serial.print("Done, Total bytes: ");
             Serial.println(pos);
         }
 
 }
 
-// Each Argon device has a unique identifier
-// Read it and return it as a sting in base 16
-String getCoreID()
-{
-  String coreIdentifier = "";
-  char id[12];
-  memcpy(id, (char *)ID1, 12);
-  char hex_digit;
-  for (int i = 0; i < 12; ++i)
-  {
-    hex_digit = 48 + (id[i] >> 4);
-    if (57 < hex_digit)
-     hex_digit += 39;
-     coreIdentifier = coreIdentifier + hex_digit;
-    hex_digit = 48 + (id[i] & 0xf);
-   if (57 < hex_digit)
-     hex_digit += 39;
-   coreIdentifier = coreIdentifier + hex_digit;
- }
- return coreIdentifier;
-}
 ```
