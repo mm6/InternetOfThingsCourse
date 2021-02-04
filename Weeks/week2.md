@@ -6,7 +6,7 @@
 
 In week 2 we consider how the design of the World Wide Web provides guidance on the construction of the internet of things.
 
-We look at four interaction patterns provided by HTTP and study important details associated with server side AJAX.
+We look at four interaction patterns provided by HTTP and study some important details associated with server side AJAX.
 
 Security and privacy are continuing concerns.
 

@@ -14,7 +14,7 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 + Course mechanics
 + Smart, connected products
-+ Demonstration: Building a web site with IntelliJ and Java
++ Demonstration: Building a web site with IntelliJ and Java (see videos).
 
 ## Slides
 + [Introduction to course structure](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/01_IntroToCourseStructure.pdf)
