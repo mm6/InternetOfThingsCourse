@@ -1,20 +1,20 @@
-# 95-733 Internet of Things    Tuesday, September 15, 2020
+# 95-733 Internet of Things    Tuesday, February 16, 2021
 
-## Project 2 Due Date: 11:59 PM Tuesday, September 29, 2020
+## Project 2 Due Date: 11:59 PM Tuesday, March 2, 2021
 
-### Topics: MQTT, Google Charts, Particle Photon  
+### Topics: MQTT, Google Charts, Particle Argon  
 
 
 The internet of things (IoT) often collects real time data from sensors and
 transmits these data to a service offering publish and subscribe capabilities. The service
 is usually called a broker. The sensor acts as a publisher. The sensor has no idea who
-its subscribers are. It simply transmits data to the broker. The subscriber subscribes
+its subscribers are. It simply transmits data to the broker. A subscriber subscribes
 to messages from the broker and, in this way, is able to read data from the sensors.
 The publish subscribe approach exemplifies loose coupling and provides for scalability.
 
 The publish subscribe design pattern is well established in the internet of things.
 
-In the section where you work with the Particle Photon and MQTT, you may need to turn
+In the section where you work with the Particle Argon and MQTT, you may need to turn
 your fire wall off and then reboot your machine. Firewalls can be sticky and may only
 appear to be off. Turn your fire wall back on after completing this assignment.
 
@@ -22,14 +22,14 @@ appear to be off. Turn your fire wall back on after completing this assignment.
 
 One objective of this project is to learn to use an MQTT publish subscribe broker
 named Mosquitto. MQTT is targeted at low power constrained devices. It will likely play an
-important role in a mature IoT. In class, we will discuss how some big players are
+important role in a mature IoT. In class, we will describe how many of the big players are
 using MQTT.
 
 The second objective is to learn Google Charts. The internet of things will rely
-heavily on real time visualization in the browser. Google Charts may play a significant
+heavily on real time visualizations in the browser. Google Charts may play a significant
 role in this area.
 
-The third objective is to continue our work with the Particle Photon microcontroller.
+The third objective is to continue our work with the Particle Argon microcontroller.
 
 ### Overview and setup
 
@@ -39,7 +39,7 @@ system using Javascript and an MQTT broker. The second part asks that you
 build a small system using a Java program as a publisher to MQTT and a
 Javascript program as a subscriber to messages coming from MQTT. The third
 part asks that you create a simple application that will be deployed (flashed)
-to a Particle Photon. This application will make good use of MQTT.
+to a Particle Argon. This application will make good use of MQTT.
 
 In Project 1, we used a whiteboard application from Oracle to build an
 application that allowed us to collaborate in real time without polling. We leveraged
@@ -132,7 +132,7 @@ will grade based on the quality of these comments.
 
    Note: MQTT is very fussy about client names. Each client that visits must present a
    unique name. In this part of Project 2, we need two names - one for the publisher
-   and another for the subscriber.
+   and another for the subscriber. If you add an additional subscriber, you need an additional name.
 
 ### Part 2.
 
@@ -240,19 +240,19 @@ browser:
 
 ### Part 3.
 
-In Part 3 we will experiment with MQTT and the Particle Photon.
+In Part 3 we will experiment with MQTT and the Particle Argon.
 
 Imagine an IoT instructor who wants to call roll quickly. During class, each student has a Wifi
-connected Photon. In a few moments, the instructor has a roster of all students present. This roster
+connected Argon. In a few moments, the instructor has a roster of all students present. This roster
 is available on a web site accessible by the instructor.
 
-1. 15 Points. Using a Particle Photon, develop firmware that will publish your name and a URL to
+1. 15 Points. Using a Particle Argon, develop firmware that will publish your name and a URL to
 an MQTT service. Name this firmware file 'transmitid.ino'. Your name, URL pair will be published to the topic
-'student/id'. Use the IDE provided at build.particle.io. To get started making calls to MQTT from
-Photon, use the code provided at Particle. In my solution, I worked from the example called
+'student/id'. Use the IDE provided at build.particle.io. To get started making calls to MQTT from an
+Argon, use the code provided at Particle. In my solution, I worked from the example called
 'mqtttest.ino'. Write your firmware so that your name and URL is published every 5 seconds to the MQTT
-service. Note the call to 'client.loop()'. This is an important call to make in order for your client (Photon)
-and your server (MQTT) to stay connected. Whenever your Photon sends your name and URL to the
+service. Note the call to 'client.loop()'. This is an important call to make in order for your client (Argon)
+and your server (MQTT) to stay connected. Whenever your Argon sends your name and URL to the
 server, it should blink a light. The light will remain on for one second - notifying the student that
 her transmission is taking place.
 
@@ -267,13 +267,13 @@ The name, URL pair will be transmitted in JSON format. For example, in my soluti
 the JSON object { "name":"Michael McCarthy", "URL":"http://www.andrew.cmu.edu/user/mm6"}. You are required
 to do the same. For your URL, choose http://www.andrew.cmu.edu/user/your_andrew_ID.
 
-2. 15 Points. Using IntelliJ, build a web project called PhotonMQTTSubscriber. Within this project,
+2. 15 Points. Using IntelliJ, build a web project called ArgonMQTTSubscriber. Within this project,
 write an index.html file and javascript code that subscribes to your MQTT service. It will subscribe to any
-messages published to 'student/id'. When the Photon publishes a name and URL to the topic 'student/id', your
+messages published to 'student/id'. When the Argon publishes a name and URL to the topic 'student/id', your
 web site will display the name and URL on the browser. You have to plan on many names being published (even
-though you only have one Photon to test with). If many names arrive, they should all be listed, as they
+though you only have one Argon to test with). If many names arrive, they should all be listed, as they
 arrive, on the browser. In order to do this, your Javascript will create a Set object. When a name
-arrives that is not in the set, display it on the browser. If a name arrives that is already in the set, simply ignore it. Test this by changing the name and url coming from your Photon. You will need to flash your firmware with a new name and URL.
+arrives that is not in the set, display it on the browser. If a name arrives that is already in the set, simply ignore it. Test this by changing the name and url coming from your Argon. You will need to flash your firmware with a new name and URL.
 
 
 ### Submission guide
