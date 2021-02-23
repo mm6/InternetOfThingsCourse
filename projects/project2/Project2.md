@@ -69,9 +69,10 @@ contains these lines:
 ```
 listener 1883
 protocol mqtt
-
 listener 9002
 protocol websockets
+allow_anonymous true
+
 ```
 
 My copy of mosquitto is located at /usr/local/sbin. If I change to that
@@ -147,6 +148,7 @@ listener 1883
 protocol mqtt
 listener 9002
 protocol websockets
+allow_anonymous true
 ```
 
 For the Java client, we will be using the Eclipse Paho Java Client libraries.
