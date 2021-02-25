@@ -57,6 +57,8 @@ on the internet at large. Both protocols utilize service discovery.
 
 + [InfluxDB time series database chosen for OpenChirp](https://www.influxdata.com/time-series-database/)
 
++ [What is Ladder Logic](https://www.youtube.com/watch?v=qaI48NCUvkA)
+
 + [CoAP Tutorial](https://www.youtube.com/watch?v=4bSr5x5gKvA)
 
 + [Explaining REST](http://www.looah.com/source/view/2284)
