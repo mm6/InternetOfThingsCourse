@@ -55,6 +55,7 @@ on the internet at large. Both protocols utilize service discovery.
 
 ## Optional Readings
 
++ [InfluxDB time series database chosen for OpenChirp](https://www.influxdata.com/time-series-database/)
 
 + [CoAP Tutorial](https://www.youtube.com/watch?v=4bSr5x5gKvA)
 
