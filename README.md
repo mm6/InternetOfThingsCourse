@@ -12,5 +12,5 @@
 + [Week 4 Tuesday, February 23 no class, Thursday, February 25](./Weeks/week4.md)
 + [Week 5 Tuesday, March 2, Thursday, March 4 ](./Weeks/week5.md)
 + [Week 6 Tuesday, March 9, Thursday, March 11 ](./Weeks/week6.md)
-+ [Week 7 Tuesday, March 16 Thursday, March 18](./Weeks/week7.md)
++ [Week 7 Tuesday, March 16 (Project 4 presentations) Thursday, March 18 (Final Exam)](./Weeks/week7.md)
 + [Week 7 Thursday, March 18 Final Exam](./Weeks/week8.md)
