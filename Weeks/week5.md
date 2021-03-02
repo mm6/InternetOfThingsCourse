@@ -38,6 +38,7 @@ Particle cloud using CoAp.
 
 ## Projects
 + [Project 3 Webhooks and ThingSpeak and BLE ](../projects/project3/Project3.md)
++ [Project 3 Webhooks and ThingSpeak Photon Only ](../projects/project3/Project3_Photon.md)
 + [Project 4 Student defined project - due in one week](../projects/project4/Project4.md)
 
 ## Quizzes
