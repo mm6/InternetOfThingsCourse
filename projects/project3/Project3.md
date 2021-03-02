@@ -210,7 +210,7 @@ uint32_t ieee11073_from_float(float temperature) {
 
 ### Submission guide
 
-Place the following in a single directory and zip that directory into a file named <yourAndrewID>Project3.zip.
+Place the following in a single directory and zip that directory into a file named yourAndrewIDProject3.zip.
 Submit the single zip file to Canvas.
 
 a) Turn in a copy of your well-documented firmware ReadAndPublishLightValues.ino. Include your name
@@ -218,7 +218,7 @@ as the author and include a description of the code. On each line of code, expla
 what that line is doing.
 
 b) Turn in a screen shot showing the graphical display at Thingspeak. The display will
-show a line graph showing the different values over time. It will also display a lamp widget and a numeric value widget. Name the screenshot {yourAndrewID}Project3PartBScreenShot. The line graph must
+show a line graph showing the different values over time. It will also display a lamp widget and a numeric value widget. Name the screenshot yourAndrewIDProject3PartBScreenShot. The line graph must
 show at least 5 distinct light level values connected by lines.
 
-c) Turn in a screenshot showing a central device connected to an Argon running as a BLE peripheral. Name the screen shot {yourAndrewID}Project3PartCScreenShot.
+c) Turn in a screenshot showing a central device connected to an Argon running as a BLE peripheral. Name the screen shot yourAndrewIDProject3PartCScreenShot.
