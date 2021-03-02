@@ -1,7 +1,6 @@
 # 95-733 Internet of Things           Project 3
 
-## IoT and Webhooks                   Due: Tuesday, October 13, 11:59:00 PM
-
+## Webhooks, ThingSpeak Photon Only     Due: Tuesday, March 16, 11:59:00 PM
 
 This project is short and should not take you too long. It represents a very nice
 conclusion to our class work and readings. All along the way, it makes use of
