@@ -1,6 +1,6 @@
 # 95-733 Internet of Things           Project 3
 
-## IoT and Webhooks                   Due: Tuesday, March 16, 11:59:00 PM
+## Webhooks, ThingSpeak, and BLE      Due: Tuesday, March 16, 11:59:00 PM
 
 
 There are three parts to Project 3.
