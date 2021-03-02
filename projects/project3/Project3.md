@@ -3,13 +3,13 @@
 ## IoT and Webhooks                   Due: Tuesday, March 16, 11:59:00 PM
 
 
-There are three parts to Project 3. 
+There are three parts to Project 3.
 
-In Part 1, you will configure hardware and write firmware to detect light levels and publish these levels to the cloud (at Particle).
-In Part 2, you will configure a webhook so that the light levels are published from Particle to ThingSpeak. You will also build a small dashboard of widgets at ThingSpeak to graphically display your light level data.
-In Part 3, you will use constrained low level networking and configure your Argon to behave as a BLE peripheral.  
++ In Part 1, you will configure hardware and write firmware to detect light levels and publish these levels to the cloud (at Particle).
++ In Part 2, you will configure a webhook so that the light levels are published from Particle to ThingSpeak. You will also build a small dashboard of widgets at ThingSpeak to graphically display your light level data.
++ In Part 3, you will use constrained low level networking and configure your Argon to behave as a BLE peripheral.  
 
-Part 1. Hardware setup
+### Part 1. Hardware setup
 
 1. Hold the breadboard so that row 1 is away and row 30 is near (on the bottom).
 2. Place the Argon bottom on row 26 of the breadboard.
@@ -60,7 +60,7 @@ Figure 1
    Particle Cloud and the Webhook call to Thingspeak can keep up. The Particle console should display
    your name value pairs.
 
-Part 2. Using a Webhook.
+### Part 2. Using a Webhook
 
    In this part, you will configure the Particle cloud service to forward your light value messages to Thingspeak. This will result in a new HTTP request to Thingspeak after each call on the Particle cloud from your Argon. This is called a Webhook. It is a simple way to implement publish/subscribe messaging. Your Argon will publish a message to the event name "LightValue" and Thingspeak will be called for each
    publication. Thingspeak acts as webhook subscriber.
@@ -82,7 +82,7 @@ Part 2. Using a Webhook.
    Add a lamp widget to your ThingSpeak dashboard. The lamp will turn on if the Argon reports of values greater than 100.
 
 
-Part 3. Capturing a BLE signal from an Argon.
+### Part 3. Capturing a BLE signal from an Argon.
 
    Particle provides a tutorial on the Argon and BLE [here] (https://docs.particle.io/tutorials/device-os/bluetooth-le/). Using the firmware from the tutorial (copied below), configure your Argon to act as a BLE peripheral. Submit a screen shot showing a BLE central device connected to your Argon. I have had success using LightBlue described [here](https://punchthrough.com/lightblue/). The article at Argon recommends using the nRF Toolbox mobile app from Nordic Semiconductor.
 
@@ -208,8 +208,8 @@ uint32_t ieee11073_from_float(float temperature) {
 ```    
 
 
-Submission
-==========
+### Submission guide
+
 Place the following in a single directory and zip that directory into a file named <yourAndrewID>Project3.zip.
 Submit the single zip file to Canvas.
 
