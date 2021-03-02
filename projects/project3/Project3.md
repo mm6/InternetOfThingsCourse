@@ -84,7 +84,7 @@ Figure 1
 
 ### Part 3. Capturing a BLE signal from an Argon.
 
-   Particle provides a tutorial on the Argon and BLE [here](https://docs.particle.io/tutorials/device-os/bluetooth-le/). Using the firmware from the tutorial (copied below), configure your Argon to act as a BLE peripheral. Submit a screen shot showing a BLE central device connected to your Argon. I have had success using LightBlue described [here](https://punchthrough.com/lightblue/). The article at Argon recommends using the [nRF Toolbox mobile app](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Toolbox) from Nordic Semiconductor. Either of these (or perhaps another) will do fine.
+   Particle provides a tutorial on the Argon and BLE [here](https://docs.particle.io/tutorials/device-os/bluetooth-le/). Using the firmware from the tutorial (copied below), configure your Argon to act as a BLE peripheral. Submit a screen shot showing a BLE central device connected to your Argon. I have had success using LightBlue described [here](https://punchthrough.com/lightblue/). The article on the Argon and BLE at  Particle recommends using the [nRF Toolbox mobile app](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Toolbox) from Nordic Semiconductor. Either of these (or perhaps another) will do fine.
 
 ```
 #include "Particle.h"
