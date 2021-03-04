@@ -9,6 +9,8 @@ are IoT initiatives built at Carnegie Mellon. Sensor Andrew's use of XMPP is hig
 
 The publish/subscribe pattern is revisited using HTTP Webhooks. Thingspeak Webhooks are used in Project 3.
 
+Project 3 also demonstrates how a microcontroller can act as a Bluetooth Low Energy peripheral.
+
 We also discuss service discovery and the REST architectural style. CoAp is introduced as RESTful protocol and three Web of Things integration patterns are highlighted.
 
 The Web of Things Architecture from W3C and Mozilla are introduced.
@@ -24,10 +26,12 @@ Particle cloud using CoAp.
 
 ## Slides
 
++ [Webhooks](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_WebhooksPublishSubscribe.pdf)
+
 + [XMPP Overview](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP_Overview.pdf)
 
 + [XMPP Programming and Sensor Andrew ](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP.pdf)
-+ [Webhooks](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_WebhooksPublishSubscribe.pdf)
+
 + [REST, Integration Patterns, and CoAP](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_RESTandCoAP.pdf)
 
 ## Required readings
