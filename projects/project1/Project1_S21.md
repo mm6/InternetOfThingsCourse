@@ -15,13 +15,13 @@ On Mac OSX, run the shell command:
 sudo npm install -g --unsafe-perm node-red
 ```
 
-On Windows, run the shell command
+On Windows, run the shell command:
 ```
 npm install -g --unsafe-perm node-red
 
 ```
 
-2) Execute Node-RED with the shell command
+2) Execute Node-RED with the shell command:
 ```
    node-red
 ```
