@@ -2,7 +2,7 @@
 
 ## Project 1  Due: 11:59 PM, Wednesday, June 9, 2021
 
-### Programming a Particle Argon to report heartbeats to the Particle cloud and Node- RED
+### Part 1: Programming a Particle Argon to report heartbeats to the Particle cloud and Node- RED
 
 #### Necessary Installations
 
@@ -138,3 +138,9 @@ $particle update-cli     Update the CLI
 
 11) Our goal is for Node-RED to subscribe to and receive the messages that are being published to the Particle console. We want Node-RED to hear about the heart beats. [Read about Node-RED and integrate Node-RED
 with the Particle console.](https://docs.particle.io/community/node-red/)
+
+### Part 2: Node-RED Programming
+
+#### Data processing
+
+0) The objective of this part is to gain skills in the creation and execution of Node-RED flows. We will work with the heartbeat data that we are receiving from our Particle Argon.
