@@ -34,17 +34,16 @@ npm install -g --unsafe-perm node-red
 #### Argon Setup, Particle IDE, and Particle CLI
 We will be programming the Argon by developing our firmware code in C++, compiling to machine code, and downloading via Particle's over the air (OTA) update.
 
-4) Establish credentials at Particle.io here https://www.particle.io/
+4) [Establish credentials at Particle.io](https://www.particle.io/)
 
-5) Install the Particle Command Line Interface (CLI) by following directions here:
-https://docs.particle.io/tutorials/developer-tools/cli/
+5) [Install the Particle Command Line Interface (CLI) by following these directions.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
-6) Set up your Particle Argon by following the directions here: https://docs.particle.io/quickstart/argon/
+6) [Set up your Particle Argon.](https://docs.particle.io/quickstart/argon/)
 It is recommended that you complete this tutorial. That is, blink an LED on your microcontroller as per the instructions in the Argon Quickstart. In addition, carefully read over the documentation in the firmware.
 
 #### Publish a heartbeat to the Particle Console
 
-7) Use the code below to publish heartbeat messages to the Particle Console.
+7) Use the code below to publish heartbeat messages to the Particle console.
 
 ```
 /*
@@ -124,19 +123,18 @@ void loop() {
 ```
 8) Study the code above. After compiling and deploying the code to your Argon, use a shell and check if the CLI is working properly.
 
-9) The following are useful CLI commands. For additional commands see https://docs.particle.io/tutorials/developer-tools/cli/
+9) The following are useful CLI commands.
 
 ```
 $particle login          Login to Particle
 $particle serial monitor Listen for Serial.print
 $particle update-cli     Update the CLI
 ```
+[There are plenty of additional CLI commands.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
 10) Using the Particle console, verify that it is receiving the heartbearts from the Argon.
 
 #### Using Node-RED, subscribe to the heartbeat messages that are being published to particle.
 
-11) Our goal is for Node-RED to subscribe to and receive messages being published to the Particle console.
-
-12) Follow these directions. We are running Node-RED on our local system.
-https://docs.particle.io/community/node-red/
+11) Our goal is for Node-RED to subscribe to and receive the messages that are being published to the Particle console. We want Node-RED to hear about the heart beats. [Read about Node-RED and integrate Node-RED 
+with the Particle console.](https://docs.particle.io/community/node-red/)
