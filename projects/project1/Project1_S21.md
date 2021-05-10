@@ -41,7 +41,7 @@ We will be programming the Argon by developing our firmware code in C++, compili
 6) [Set up your Particle Argon.](https://docs.particle.io/quickstart/argon/)
 It is recommended that you complete this tutorial. That is, blink an LED on your microcontroller as per the instructions in the Argon Quickstart. In addition, carefully read over the documentation in the firmware.
 
-#### Publish a heartbeat to the Particle Console
+#### Publish heartbeat messages to the Particle console
 
 7) Use the code below to publish heartbeat messages to the Particle console.
 
