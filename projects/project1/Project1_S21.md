@@ -101,7 +101,7 @@ void setup() {
 
 }
 
-// Event nameto send to the server at Particle
+// Event name to send to the server at Particle
 String name = "heartbeat";
 
 void loop() {
