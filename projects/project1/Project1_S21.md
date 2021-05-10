@@ -7,6 +7,7 @@
 #### Necessary Installations
 
 0) [Follow these directions and install Node.js.](https://nodejs.org/en/download/)
+
 1) [Follow these directions and install Node-RED locally on your laptop or desktop machine.](https://nodered.org/docs/getting-started/local)
 
 On Mac OSX, run the shell command
