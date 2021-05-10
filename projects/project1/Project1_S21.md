@@ -10,13 +10,12 @@
 
 1) The node package manager (npm) was installed as part of node.js in step 0. Next, use npm to install Node-RED locally on your laptop or desktop machine.
 
-    On Mac OSX, run the shell command:
+On Mac OSX, run the shell command:
 ```
 sudo npm install -g --unsafe-perm node-red
-
 ```
-    On Windows, run the shell command
 
+On Windows, run the shell command
 ```
 npm install -g --unsafe-perm node-red
 
