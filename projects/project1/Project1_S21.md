@@ -7,7 +7,7 @@
 #### Necessary Installations
 
 0) [Follow these directions and install Node.js.](https://nodejs.org/en/download/)
-1) [Follow these directions and install Node-RED.](https://nodered.org/docs/getting-started/local)
+1) [Follow these directions and install Node-RED locally.](https://nodered.org/docs/getting-started/local)
 
 On Mac OSX, run the shell command
 ```
