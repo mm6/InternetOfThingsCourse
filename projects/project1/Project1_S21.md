@@ -67,7 +67,7 @@ int NUMSECONDS = 10;
 // The variable timeCtr will be used to hold the current time in milliseconds.
 int timeCtr = 0;
 
-// Device ID will be stored here after being retrieved from the device.
+// The device ID will be stored here after being retrieved from the device.
 // This is a unique, 96 bit identifier.
 // This looks like the following: 0x3d002d000cf7353536383631.
 
