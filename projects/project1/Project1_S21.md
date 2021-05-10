@@ -51,7 +51,7 @@ Author: mm6 with various code snippets taken from Particle.io.
 This firmware generates periodic heartbeats from an Argon to
 the Particle cloud using Particle.publish(string name,string value).
 The first argument will be the name of the event. The event name is
-'heqrtbeat'. The second argument will be a JSON string holding
+'heartbeat'. The second argument will be a JSON string holding
 the device ID.
 */
 
