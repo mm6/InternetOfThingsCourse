@@ -161,4 +161,4 @@ msg.payload = JSON.stringify(newMessage);
 return msg;
 ```
 
-2) Add another function node that checks the timestamp. If the current message arrived late (after 15 seconds) then set an ontime variable to false, otherwise set it to true. Include the new field in the json message.  
+2) Add another function node that checks the timestamp. If the current message arrived late (after 15 seconds) then set a variable named "ontime" to false, otherwise set the ontime variable to true. Include the new "ontime" field and its value in the json message.
