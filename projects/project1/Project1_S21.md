@@ -23,7 +23,7 @@ npm install -g --unsafe-perm node-red
 
 2) Execute Node-RED with the shell command
 ```
-   $node-red
+   node-red
 ```
 3) Test a running instance of Node-Red.
    Use a browser and visit the localhost URL:
