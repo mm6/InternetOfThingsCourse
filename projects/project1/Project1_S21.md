@@ -6,17 +6,28 @@
 
 #### Necessary Installations
 
-0) [Install Node.js](https://nodejs.org/en/download/)
-1) [Install Node-RED](https://nodered.org/docs/getting-started/local)
-   On Mac OSX, run
-   sudo npm install -g --unsafe-perm node-red
-   On Windows, run
+0) [Follow these directions and install Node.js.](https://nodejs.org/en/download/)
+1) [Follow these directions and install Node-RED.](https://nodered.org/docs/getting-started/local)
+
+On Mac OSX, run the shell command
+```
+sudo npm install -g --unsafe-perm node-red
+```
+
+On Windows, run the shell command
+```
    npm install -g --unsafe-perm node-red
+```
+
 2) Execute Node-RED with the shell command
+```
    $node-red
+```
 3) Test a running instance of Node-Red.
-   Use a browser and visit:
+   Use a browser and visit the localhost URL:
+```
    http://127.0.0.1:1880/
+```
 
 #### Argon Setup, Particle IDE, and Particle CLI
 We will be programming the Argon by developing our firmware code in C++, compiling to machine code, and downloading via Particle's over the air (OTA) update.
