@@ -144,7 +144,7 @@ The Node-RED palette should have a subscribe node wired to a debug node.
 
 ### Part 2: Node-RED Programming
 
-#### Data processing
+#### Working with flows
 
 0) The objective of this part is to gain skills in the creation and execution of Node-RED flows. We will work with the heartbeat data that we are receiving from our Particle Argon. [Follow this link for a good place to learn about Node-RED and its capabilities.](https://nodered.org/docs/)
 
