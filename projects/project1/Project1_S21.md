@@ -6,18 +6,16 @@
 
 #### Necessary Installations
 
-0) Node.js
-   Visit https://nodejs.org/en/download/ and choose Mac OSX or Windows installer
-1) Node-RED
-   Visit https://nodered.org/docs/getting-started/local
+0) [Install Node.js](https://nodejs.org/en/download/)
+1) [Install Node-RED](https://nodered.org/docs/getting-started/local)
    On Mac OSX, run
    sudo npm install -g --unsafe-perm node-red
    On Windows, run
    npm install -g --unsafe-perm node-red
-2) Run Node-RED
+2) Execute Node-RED with the shell command
    $node-red
-3) Test a running instance of Node-Red
-   Use a browser and visit
+3) Test a running instance of Node-Red.
+   Use a browser and visit:
    http://127.0.0.1:1880/
 
 #### Argon Setup, Particle IDE, and Particle CLI
