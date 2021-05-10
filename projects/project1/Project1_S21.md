@@ -120,3 +120,12 @@ $particle login          Login to Particle
 $particle serial monitor Listen for Serial.print
 $particle update-cli     Update the CLI
 ```
+
+10) Using the Particle console, verify that it is receiving the heartbearts from the Argon.
+
+#### Using Node-RED, subscribe to the heartbeat messages that are being published to particle.
+
+11) Our goal is for Node-RED to subscribe to and receive messages being published to the Particle console.
+
+12) Follow these directions. We are running Node-RED on our local system.
+https://docs.particle.io/community/node-red/
