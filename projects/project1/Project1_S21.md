@@ -10,14 +10,15 @@
 
 1) [Follow these directions and install Node-RED locally on your laptop or desktop machine.](https://nodered.org/docs/getting-started/local)
 
-On Mac OSX, run the shell command
+    On Mac OSX, run the shell command
 ```
 sudo npm install -g --unsafe-perm node-red
 ```
 
-On Windows, run the shell command
+    On Windows, run the shell command
 ```
-   npm install -g --unsafe-perm node-red
+npm install -g --unsafe-perm node-red
+
 ```
 
 2) Execute Node-RED with the shell command
