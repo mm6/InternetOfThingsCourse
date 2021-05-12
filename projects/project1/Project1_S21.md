@@ -162,3 +162,81 @@ return msg;
 ```
 
 2) Add another function node that checks the timestamp. If the current message arrived late (after 12 seconds) then set a variable named "onTime" to false, otherwise set the "onTime" variable to true. Include the new "onTime" field and its value in the json message that leaves this node. Note: the very first message to arrive is never late. You can test this flow by unplugging your USB for 5 seconds or so and rebooting your Argon.
+
+### Part 3: Build a web site using Node.js
+
+0) We need to store our web artifacts in an empty directory. Create an empty directory named Project1_Part3.
+
+1) Within the directory, create a file named ViewHeartbeats.js with the following content:
+
+```
+// Display microcontroller heartbeats on a browser
+const http = require("http");
+const host = 'localhost';
+const port = 8000;
+// The req variable will hold request information from the browser.
+// The res variable is used to send results back to the browser.
+
+const argonRequestListener = function (req, res) {
+    res.writeHead(200);
+    res.end("Argon Heartbeats Status");
+};
+// Associate the server with the listener
+const server = http.createServer(argonRequestListener);
+
+// Begin handling browser visits
+server.listen(port, host, () => {
+    // runs when listening begins
+    console.log(`Server is running on http://${host}:${port}`);
+});
+
+```
+
+2) Run the server from the shell with the command:
+
+```
+node ViewHeartbeats.js
+
+```
+3) Test by using a browser to visit localhost:8000.
+
+4) Create a file named index.html with the following code:
+
+```
+
+<!DOCTYPE html>
+
+<head>
+    <title>Argon Heartbeat Status</title>
+</head>
+
+<body>    
+        <h1>Argon Heartbeat status</h1>
+</body>
+
+</html>
+
+
+```
+5) Near the top of the ViewHeartbeats.js file, add another constant to provide access to the file system:
+
+```
+const fs = require('fs').promises;
+
+```
+
+
+6) We need to get the file and send it to the browser on each visit. Modify the argonRequestListener to include the following code:
+
+```
+
+fs.readFile(__dirname + "/index.html")
+        .then(contents => {
+            res.setHeader("Content-Type", "text/html");
+            res.writeHead(200);
+            res.end(contents);
+        })
+
+```
+
+7) Test by using a browser to visit localhost:8000.
