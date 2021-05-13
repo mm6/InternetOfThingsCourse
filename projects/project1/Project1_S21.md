@@ -243,3 +243,9 @@ fs.readFile(__dirname + "/index.html")
 7) Test by using a browser to visit localhost:8000.
 
 ### Part 4: Build a web site using Node.js and Express
+
+### Part 5: Build a web site using a full page refresh with Express and Node-RED
+
+### Part 6: Build an AJAX web site using Express and Node-RED
+
+### Part 7: Build a websocket web site using Express and Node-RED
