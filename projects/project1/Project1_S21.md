@@ -269,6 +269,12 @@ npm install express --save
 
 ### Part 5: Build a web site using a full page refresh with Express and Node-RED
 
+In this Part, you will configure a node in Node-RED to maker HTTP calls to a web server developed using Node.js and Express.
+
 ### Part 6: Build an AJAX web site using Express and Node-RED
 
+In this Part, you will add AJAX (Asynchronous Javascript and XML) capabilities to the web site developed in Part 5.
+
 ### Part 7: Build a websocket web site using Express and Node-RED
+
+In this Part, you will add websockets to the web site developed in Part 5. This Part will not use AJAX.
