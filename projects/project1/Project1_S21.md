@@ -247,6 +247,8 @@ fs.readFile(__dirname + "/index.html")
 
 ### Part 4: Build a web site using Node.js and Express
 
+In this Part, you will build a simple web site using Node.js and the Express framework.
+
 0) Create an empty directory called Project1_Part4.
 1) Within the new directory, run the command:
 
