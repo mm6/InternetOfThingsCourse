@@ -245,6 +245,24 @@ fs.readFile(__dirname + "/index.html")
 
 ### Part 4: Build a web site using Node.js and Express
 
+0) Create an empty directory called Project1_Part4.
+1) Within the new directory, run the command:
+
+```
+npm init
+
+```
+and accept all of the defaults.
+
+2) Within the directory holding the package.json file (created by the previous command), install Express with the command:
+
+```
+npm install express --save
+
+```
+
+
+
 ### Part 5: Build a web site using a full page refresh with Express and Node-RED
 
 ### Part 6: Build an AJAX web site using Express and Node-RED
