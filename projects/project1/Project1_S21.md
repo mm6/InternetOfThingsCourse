@@ -167,6 +167,8 @@ return msg;
 
 ### Part 3: Build a web site using Node.js
 
+In this Part you will build as simple web server using Node.js.
+
 0) We need to store our web artifacts in an empty directory. Create an empty directory named Project1_Part3.
 
 1) Within the directory, create a file named ViewHeartbeats.js with the following content:
