@@ -377,11 +377,6 @@ app.listen(port, () => {
 
 ```
 
-
-
-
-
-
 ### Part 6: Build an AJAX web site using Express and Node-RED
 
 In this Part, you will add AJAX (Asynchronous Javascript and XML) capabilities to the web site developed in Part 5.
