@@ -342,7 +342,7 @@ app = express();
 var lastVisit = 0;
 
 // We need to parse the body of the post request
-// from the Argon
+// from Node-RED
 var bodyParser = require('body-parser')
 // and we need to parse JSON data
 app.use(bodyParser.json() );
