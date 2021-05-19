@@ -188,6 +188,7 @@ const simpleListener = function (req, res) {
     res.writeHead(200);
     res.end("A simple text message");
 };
+
 // Associate the server with the listener
 const server = http.createServer(simpleListener);
 
@@ -233,7 +234,7 @@ const fs = require('fs').promises;
 ```
 
 
-6) We need to get the file and send it to the browser on each visit. Modify the simpleListener to include the following code:
+6) We need to get the file and send it to the browser on each visit. Replace the code in simpleListener with the following code:
 
 ```
 
