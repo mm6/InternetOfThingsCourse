@@ -8,6 +8,7 @@
 #### Necessary Installations
 
 We need to install Node.js so that we can build web sites that interact with the IoT. We also need Node-RED installed so that we can process and route IoT related messages.
+We need to establish credentials at Particle and flash firmware to our device. 
 
 0) [Follow these directions and install Node.js.](https://nodejs.org/en/download/)
 
