@@ -35,7 +35,7 @@ npm install -g --unsafe-perm node-red
 ```
 
 #### Argon Setup, Particle IDE, and Particle CLI
-We will be programming the Argon by developing our firmware code in C++, compiling to machine code, and downloading via Particle's over the air (OTA) update.
+We will be programming the Argon microcontroller by developing our firmware code in C++, compiling to machine code, and downloading to the device via Particle's over the air (OTA) update.
 
 4) [Establish credentials at Particle.io](https://www.particle.io/)
 
