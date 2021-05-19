@@ -8,7 +8,7 @@
 #### Necessary Installations
 
 We need to install Node.js so that we can build web sites that interact with the IoT. We also need Node-RED installed so that we can process and route IoT related messages.
-We need to establish credentials at Particle and flash firmware to our device. 
+We need to establish credentials at Particle and flash firmware to our device.
 
 0) [Follow these directions and install Node.js.](https://nodejs.org/en/download/)
 
@@ -140,8 +140,7 @@ $particle update-cli     Update the CLI
 
 #### Using Node-RED, subscribe to the heartbeat messages that are being published to particle.
 
-11) Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Argon. We want Node-RED to hear about the heart beats. [Read about Node-RED and integrate Node-RED
-with the Particle console.](https://docs.particle.io/community/node-red/)
+11) Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Argon. We want Node-RED to hear about the heart beats. [This article introduces you to Node-RED and the "Particle Nodes" section specifically is where the user learns how to connect the Argon to Node-RED. Read about Node-RED and integrate Node-RED with the Particle console.](https://docs.particle.io/community/node-red/)
 
 
 12) After completing the work in step 11, you should have a Node-RED platform receiving messages from your Argon every 10 seconds or so. Each message should contain a JSON string with the device ID. Each message should appear in the right pane of the Node-RED UI.
@@ -166,7 +165,7 @@ msg.payload = JSON.stringify(newMessage);
 return msg;
 ```
 
-2) Add another function node that checks the timestamp. If the current message arrived late (after 12 seconds) then set a variable named "onTime" to false, otherwise set the "onTime" variable to true. Include the new "onTime" field and its value in the json message that leaves this node. Note: the very first message to arrive is never late. You can test this flow by unplugging your USB for 5 seconds or so and rebooting your Argon.
+2) Add another function node that checks the timestamp. If the current message arrived late (after 12 seconds) then set a variable named "onTime" to false, otherwise set the "onTime" variable to true. Include the new "onTime" field and its value in the json message that leaves this node. Note: the very first message to arrive is never late. You can test this flow by unplugging your USB for 5 seconds or so and rebooting your Argon. [In solving this problem, you may find this source to be helpful.](https://nodered.org/docs/user-guide/writing-functions#storing-data)
 
 ### Part 3: Build a web site using Node.js
 
