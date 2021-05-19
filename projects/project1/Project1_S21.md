@@ -7,6 +7,8 @@
 
 #### Necessary Installations
 
+We need to install Node.js so that we can build web sites that interact with the IoT. We also need Node-RED installed so that we can process and route IoT related messages.
+
 0) [Follow these directions and install Node.js.](https://nodejs.org/en/download/)
 
 1) The node package manager (npm) was installed as part of node.js in step 0. Next, use npm to install Node-RED locally on your laptop or desktop machine.
