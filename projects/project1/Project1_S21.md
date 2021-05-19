@@ -171,22 +171,23 @@ In this Part you will build as simple web server using Node.js.
 
 0) We need to store our web artifacts in an empty directory. Create an empty directory named Project1_Part3.
 
-1) Within the directory, create a file named ViewHeartbeats.js with the following content:
+1) Within the directory, create a file named ViewSimpleMessage.js with the following content:
 
 ```
-// Display microcontroller heartbeats on a browser
+// ViewSimpleMessage.js
+// Display a simple message on a browser
 const http = require("http");
 const host = 'localhost';
 const port = 8000;
 // The req variable will hold request information from the browser.
 // The res variable is used to send results back to the browser.
 
-const argonRequestListener = function (req, res) {
+const simpleListener = function (req, res) {
     res.writeHead(200);
-    res.end("Argon Heartbeats Status");
+    res.end("A simple text message");
 };
 // Associate the server with the listener
-const server = http.createServer(argonRequestListener);
+const server = http.createServer(simpleListener);
 
 // Begin handling browser visits
 server.listen(port, host, () => {
@@ -199,10 +200,10 @@ server.listen(port, host, () => {
 2) Run the server from the shell with the command:
 
 ```
-node ViewHeartbeats.js
+node ViewSimpleMessage.js
 
 ```
-3) Test by using a browser to visit localhost:8000.
+3) Test by using a browser to visit http://localhost:8000.
 
 4) Create a file named index.html with the following code:
 
@@ -211,18 +212,18 @@ node ViewHeartbeats.js
 <!DOCTYPE html>
 
 <head>
-    <title>Argon Heartbeat Status</title>
+    <title>Simple message in HTML</title>
 </head>
 
 <body>    
-        <h1>Argon Heartbeat status</h1>
+        <h1>Simple message in HTML</h1>
 </body>
 
 </html>
 
 
 ```
-5) Near the top of the ViewHeartbeats.js file, add another constant to provide access to the file system:
+5) Near the top of the ViewSimpleMessage.js file, add another constant to provide access to the file system:
 
 ```
 const fs = require('fs').promises;
@@ -230,7 +231,7 @@ const fs = require('fs').promises;
 ```
 
 
-6) We need to get the file and send it to the browser on each visit. Modify the argonRequestListener to include the following code:
+6) We need to get the file and send it to the browser on each visit. Modify the simpleListener to include the following code:
 
 ```
 
@@ -243,7 +244,7 @@ fs.readFile(__dirname + "/index.html")
 
 ```
 
-7) Test by using a browser to visit localhost:8000.
+7) Test by using a browser to visit http://localhost:8000.
 
 ### Part 4: Build a web site using Node.js and Express
 
@@ -256,7 +257,7 @@ In this Part, you will build a simple web site using Node.js and the Express fra
 npm init
 
 ```
-and accept all of the defaults.
+and accept all of the defaults except the entry point. Set the entry point to HelloWorld.js.
 
 2) Within the directory holding the package.json file (created by the previous command), install Express with the command:
 
@@ -264,12 +265,119 @@ and accept all of the defaults.
 npm install express --save
 
 ```
+This command will create a sub-directory named "node_modules". This sub-directory will contain modules that we can use.
+
+3) Create a file named HelloWorld.js and populate it with the code below:
+
+```
+// HelloWorld.js
+// Simple demonstration using Node.js and Express
+// run at the command prompt with
+// node HelloWorld.js
+// Visit at http://localhost:3000/HelloWorld
+
+const express = require('express');
+app = express();
+const port = 3000;
+
+app.get('/HelloWorld', (req, res) => {
+  console.log("We have a visitor");
+  res.send('Hello World From Node.js and Express');
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening for GET at http://localhost:${port}/HelloWorld`);
+})
+```
+
+4) Run node and Express with the command:
+
+```
+node HelloWorld.js
+
+```
+5) Visit the server with a browser and make a standard HTTP GET request to the following URL:
+
+```
+http://localhost:3000/HelloWorld
+
+```
+
+### Part 5: Configure Node-RED to make calls to a web site
+
+In this Part, you will configure a node in Node-RED to make HTTP calls to a web server developed using Node.js and Express.
+
+0) Create an empty directory called Project1_Part5.
+1) Within the new directory, run the command:
+
+```
+npm init
+
+```
+and accept all of the defaults except the entry point. Set the entry point to viewLastHeartBeat.js.
+
+2) Within the directory holding the package.json file (created by the previous command), install Express with the command:
+
+```
+npm install express --save
+
+```
+This command will create a sub-directory named "node_modules". This sub-directory will contain modules that we can use.
+
+3) Create a file named viewLastHeartBeat.js and populate it with the code below:
+
+```
+// viewLastHeartBeat.js
+// Use Express
+// Get the last heartbeat from Node-RED in the app.post
+// method. Record the lastHeartBeat time stamp in
+// the lastVisit variable.
+// When a browser visits with a GET request, display the
+// time of the last visit.
+const express = require('express')
+const port = 3000
+app = express();
+
+// initialize lastVisit
+var lastVisit = 0;
+
+// We need to parse the body of the post request
+// from the Argon
+var bodyParser = require('body-parser')
+// and we need to parse JSON data
+app.use(bodyParser.json() );
+
+// handle a visit from a browser
+// return the last visit
+app.get('/ViewLastHeartBeat', (req, res) => {
+  console.log('Browser visit for last visit time');
+  // respond to browser
+  res.send('Last time Argon visited ' + lastVisit);
+})
+
+// Called with an HTTP POST by Node-RED
+// The HTTP request has a content-type header set to
+// application/json.
+// The JSON data has deviceID, time, and onTime values.
+app.post('/SetNewHeartBeat', function (req, res) {
+  console.log('Visit from Argon ');
+  console.log(req.body);
+  console.log(req.body.deviceID)
+  lastVisit = req.body.time;
+  // respond to Node-RED
+  res.send('Argon visit')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}/ViewLastHeartBeat`)
+})
+
+```
 
 
 
-### Part 5: Build a web site using a full page refresh with Express and Node-RED
 
-In this Part, you will configure a node in Node-RED to maker HTTP calls to a web server developed using Node.js and Express.
+
 
 ### Part 6: Build an AJAX web site using Express and Node-RED
 
