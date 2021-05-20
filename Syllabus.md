@@ -129,18 +129,11 @@ Erick Rodriguez will arrange this.
 
 ### Recommended Text/Resources
 
-+ We will be using Node for web sites:[ Visit Node:](https://nodejs.org/en/about/)
++ We will be using Node for web sites:[ Visit Node](https://nodejs.org/en/about/)
 
 + We will be using Node-RED to build flows:[ Visit Node-RED]( https://nodered.org/)
 
-+ Building the Web of Things By Guinard and Trifa [Available here](https://webofthings.org/) For an online copy, click on the O’Reilly for [Education link](https://cmu.primo.exlibrisgroup.com/discovery/fulldisplay?context=PC&vid=01CMU_INST:01CMU&search_scope=MyInst_and_CI&tab=Everything&docid=cdi_safari_books_9781617292682). You want to select View Online option.
-
-You’ll get a “Select your institution” dropdown menu prompt. Select
-the “Not listed? Click here” option in that dropdown.
-
-Enter your Andrew email address and click “Let’s Go.” You’ll
-then get full text access to the book through the platform.
-
++ Building the Web of Things By Guinard and Trifa [Available here](https://webofthings.org/) For an online copy, click on the O’Reilly for [Education link](https://cmu.primo.exlibrisgroup.com/discovery/fulldisplay?context=PC&vid=01CMU_INST:01CMU&search_scope=MyInst_and_CI&tab=Everything&docid=cdi_safari_books_9781617292682). You want to select View Online option.You’ll get a “Select your institution” dropdown menu prompt. Select the “Not listed? Click here” option in that dropdown. Enter your Andrew email address and click “Let’s Go.” You’ll then get full text access to the book through the platform.
 
 ### Optional Text
 
