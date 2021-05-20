@@ -37,10 +37,12 @@ At the end of this course, the student will be able to:
 
 5. build firmware applications for a microcontroller.
 
-6. build firmware applications that interact with digital twins on the cloud.
+6. build Node-RED flows.
 
-7. develop web applications that are usable in real time IoT environments.
+7. build firmware applications that interact with digital twins on the cloud.
 
-8. appreciate the privacy and security issues associated with the IoT landscape.
+8. develop web applications that are usable in real time IoT environments.
 
-9. appreciate the importance of identity and identity management in the internet of things.
+9. appreciate the privacy and security issues associated with the IoT landscape.
+
+10. appreciate the importance of identity and identity management in the internet of things.
