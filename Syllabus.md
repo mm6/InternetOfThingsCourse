@@ -12,7 +12,7 @@ Email: mm6@andrew.cmu.edu
 
 Office: Hamburg Hall 3015
 
-Phone: 412-268-4657
+Phone: 412-268-4657 (Office)
 
 Officer Hours on Zoom: See Canvas
 
@@ -20,13 +20,19 @@ Zoom URL: See Canvas
 
 ### Teaching Assistant
 
-Name: TBA
+Name: Erick Rodriguez
 
-Email: TBA
+Email: erickger@andrew.cmu.edu
 
-Officer Hours on Zoom: TBA
+Officer Hours on Zoom: See Canvas
 
-Zoom URL: See Canvas or Piazza
+Zoom URL: See Canvas
+
+### Teaching Assistant
+
+Name: Kieran Walsh
+
+Email: kawalsh@andrew.cmu.edu
 
 ### Prerequisite
 
@@ -37,10 +43,7 @@ ability, speak with your instructor.
 
 ### Assignments
 
-There will be four programming projects equally weighted (60%). Three will be
-assigned by your instructor and one will be self-assigned. The self-assigned
-project (Project 4) will be demonstrated to the class during the final week of
-classes.
+There will be two programming projects equally weighted (60%).
 
 There will be four or five quizzes on the readings at the start of lecture with the low score dropped (15%).
 
@@ -51,19 +54,26 @@ There will be a closed Book Final Exam based on readings, lectures, and programm
 You have 7 grace days to spend. This policy is meant to cover such issues as job
 interviews, travel and so on. After the seven days are spent, there is a late penalty of 10% per day.
 
+If you elect to use the late days at the end of the course, alert your instructor before your final exam. An "I" grade will be submitted and changed to a normal grade when the work is complete.
+
 ### Policy on collaboration
 
-Unless otherwise noted, collaboration is not permitted. While it is fine to discuss projects with others it is a cheating violation when code is copied or shared. If a student is caught sharing his or her work with another, a failing grade may be assigned for the course. Likewise, if a student uses another's work when completing his or her own, a failing grade may be assigned for the course. In either case, the Dean will be notified. Note that github submissions and past student solutions are checked for cheating. In addition, the exams are designed to test your knowledge and coding skills.
+Any code copied from another source must be clearly cited. Provide as a comment in the code the exact URL where the code was copied from. Code that is provided by the instructor is allowed as long as the code is clearly cited as being provided by the instructor. Of course, if you have violated the spirit of the project, you will earn zero points. Copying code without citing it is cheating.
+
+A student who shares code with another student will be treated the same as the person who does the copying. Keep your own code safe.
+
+The penalty for each instance of cheating, whether on a quiz, exam, or homework project, will be a zero for that assignment and a lowering of the final grade by one letter (e.g. from B to C).
+
+In addition to any penalties imposed by the instructor, all cheating and plagiarism infractions will be reported in writing to the Associate Dean for the program, the Associate Dean of Faculty, the Dean of Student Affairs, and the Dean. They will review and determine if expulsion should be recommended. The report will become part of the student’s record.
 
 ### Policy on grading complaints
 
-
-Grading mistakes may occur. Please contact the TA who graded your assignment about grading mistakes. It will be up to the TA to handle the complaint. If you are still not satisfied with the TA's grade please contact me immediately. My initial reaction will be to support the TA's grade. In some cases, however, I might agree with the student and ask for the grade to be adjusted. Please make any grading concerns known to the TA immediately. Set up an appointment with the TA and get the matter resolved.
+Grading mistakes may occur. Please contact the TA who graded your assignment about grading mistakes. It will be up to the TA to handle the complaint. If you are still not satisfied with the TA's grade please contact me immediately. My initial reaction will be to support the TA's grade. In some cases, however, I might agree with the student and ask for the grade to be adjusted. Please make any grading concerns known to the TA immediately. Communicate with the TA and get the matter resolved.
 
 ### Use of Canvas
 
 
-There will be a Canvas site for the course. Grades will be posted there and assignments will be submitted there. We will also make good use of the discussion board on Piazza. It is far better to post a question to the discussion board than it is to send your instructor or TA an email. Answers posted there are available for all to see. The main site for the course (syllabus, course description and schedule) is this page.
+There will be a Canvas site for the course. Grades will be posted there and assignments will be submitted there. We will also make good use of the discussion board on Piazza or Slack. It is far better to post a question to the discussion board than it is to send your instructor or TA an email. Answers posted there are available for all to see. The main site for the course (syllabus, course description and schedule) is this page on GitHub.
 
 ### FERPA Statement
 
@@ -72,31 +82,30 @@ Classes will be recorded via Zoom so that students in this course (and only stud
 
 ### Software Requirements
 
-The student needs to download and install the most recent IntelliJ Ultimate IDE. Available here.
+You will need to install Node.js, Express, and Node-RED. Directions will be provided on the first project.
 
-[For server side coding use TomEE PlusAvailable here.](https://www.jetbrains.com/idea/)
-
-
+<!---
 [Installation instructions are available here.](http://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_Installs.pdf)
+
+-->
 
 ### Hardware Requirements
 
-The student needs to have access to a Particle Argon with Headers Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit)
+The student needs to have access to a Particle Argon IoT Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit)
 
 ### Delivery Mode REO
 
-Students will attend remotely (via zoom) during the course's scheduled
-meeting time.
+Students will attend remotely (via zoom) during the course's scheduled meeting time. The lectures will also be recorded for asynchronous delivery.
 
 
 ### Time
 
-T. R. 1:30 - 2:50 PM
+Wed.	09:30AM-12:20PM	Adelaide
 
 
 ### Review Session Time and place
 
-TBA
+Erick Rodriguez will arrange this.
 
 ### Grading Scale
 
@@ -118,9 +127,13 @@ TBA
 
 70.0 - 72.4 C-
 
-### Recommended Text
+### Recommended Text/Resources
 
-Building the Web of Things
++ Node: https://nodejs.org/
+
++ Node-RED: https://nodered.org/
+
++ Building the Web of Things
 
 By Guinard and Trifa [Available here](https://webofthings.org/)
 
@@ -135,7 +148,7 @@ then get full text access to the book through the platform.
 
 ### Optional Text
 
-Programming the World Wide Web, Eighth Edition
++ Programming the World Wide Web, Eighth Edition
 
 Robert W. Sebesta, University of Colorado, Colorado Springs
 
