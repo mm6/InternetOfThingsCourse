@@ -133,7 +133,7 @@ Erick Rodriguez will arrange this.
 
 + We will be using Node-RED to build flows:[ Visit Node-RED]( https://nodered.org/)
 
-+ Building the Web of Things By Guinard and Trifa is [available here](https://webofthings.org/). For an online copy, click on the O’Reilly for [Education link](https://www.oreilly.com/library/view/building-the-web/9781617292682/?ar). You want to select View Online option.You’ll get a “Select your institution” dropdown menu prompt. Select the “Not listed? Click here” option in that dropdown. Enter your Andrew email address and click “Let’s Go.” You’ll then get full text access to the book through the platform.
++ Building the Web of Things By Guinard and Trifa is [available here](https://webofthings.org/). For CMU students, a free online copy is available. Click on the O’Reilly for [Education link](https://www.oreilly.com/library/view/building-the-web/9781617292682/?ar). You want to select View Online option.You’ll get a “Select your institution” dropdown menu prompt. Select the “Not listed? Click here” option in that dropdown. Enter your Andrew email address and click “Let’s Go.” You’ll then get full text access to the book through the platform.
 
 ### Optional Text
 
