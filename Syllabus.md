@@ -137,14 +137,7 @@ Erick Rodriguez will arrange this.
 
 ### Optional Text
 
-+ Programming the World Wide Web, Eighth Edition
-
-Robert W. Sebesta, University of Colorado, Colorado Springs
-
-ISBN: 978-0-13-377598-3
-
-Publisher: Addison-Wesley
-[Available here.](https://www.amazon.com/Programming-World-Wide-Robert-Sebesta/dp/0201704846)
++ Programming the World Wide Web, Eighth Edition by Robert W. Sebesta, University of Colorado, Colorado Springs, ISBN: 978-0-13-377598-3, Publisher: Addison-Wesley[Available here.](https://www.amazon.com/Programming-World-Wide-Robert-Sebesta/dp/0201704846)
 
 ### Good health:
 
