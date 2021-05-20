@@ -28,7 +28,7 @@ Officer Hours on Zoom: See Canvas
 
 Zoom URL: See Canvas
 
-### Teaching Assistant
+### Teaching Assistant (grader)
 
 Name: Kieran Walsh
 
@@ -68,7 +68,7 @@ In addition to any penalties imposed by the instructor, all cheating and plagiar
 
 ### Policy on grading complaints
 
-Grading mistakes may occur. Please contact the TA who graded your assignment about grading mistakes. It will be up to the TA to handle the complaint. If you are still not satisfied with the TA's grade please contact me immediately. My initial reaction will be to support the TA's grade. In some cases, however, I might agree with the student and ask for the grade to be adjusted. Please make any grading concerns known to the TA immediately. Communicate with the TA and get the matter resolved.
+Grading mistakes may occur. Please email the TA who graded your assignment about grading mistakes. It will be up to the TA to handle the complaint. If you are still not satisfied with the TA's grade please contact me immediately. My initial reaction will be to support the TA's grade. In some cases, however, I might agree with the student and ask for the grade to be adjusted. Please make any grading concerns known to the TA immediately. Communicate with the TA and get the matter resolved.
 
 ### Use of Canvas
 
