@@ -1,14 +1,16 @@
 # 95-733 Internet of Things Wednesday, May 26, 2021
 
-# DRAFT   DRAFT  DRAFT
 ## Project 1  Due: 11:59 PM, Wednesday, June 9, 2021
 
-### Part 1: Programming a Particle Argon to report heartbeats to the Particle cloud and Node- RED
+### Part 1: Programming a Particle Argon to report heartbeats to the Particle cloud and Node-RED
 
-#### Necessary Installations
+#### Start up items
 
-We need to install Node.js so that we can build web sites that interact with the IoT. We also need Node-RED installed so that we can process and route IoT related messages.
-We need to establish credentials at Particle and flash firmware to our device.
+In order to quickly build web sites, we will use Node.js and Express.
+
+In order to route and process IoT messages, we will use Node-RED.
+
+The selected microcontroller that we will use is the Particle Argon. It has the ability to communicate via Bluetooth LE and Wi-Fi. So, we need to initialize the Argon and establish credentials at Particle. We will use the Particle cloud's over the air (OTA) update capability to flash firmware to the Argon.
 
 0) [Follow these directions and install Node.js.](https://nodejs.org/en/download/)
 
@@ -125,7 +127,7 @@ void loop() {
      }
 }
 ```
-8) Study the code above. After compiling and deploying the code to your Argon, use a shell and check if the CLI is working properly.
+8) ***Study the code above.*** After compiling and deploying the code to your Argon, use a shell and check if the CLI is working properly.
 
 9) The following are useful CLI commands.
 
@@ -140,32 +142,40 @@ $particle update-cli     Update the CLI
 
 #### Using Node-RED, subscribe to the heartbeat messages that are being published to particle.
 
-11) Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Argon. We want Node-RED to hear about the heart beats. [This article introduces you to Node-RED and the "Particle Nodes" section specifically is where the user learns how to connect the Argon to Node-RED. Read about Node-RED and integrate Node-RED with the Particle console.](https://docs.particle.io/community/node-red/)
+11) Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Argon. We want Node-RED to hear about the heart beats. [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Argon to Node-RED. Read about Node-RED and integrate Node-RED with the Particle console.](https://docs.particle.io/community/node-red/)
 
 
 12) After completing the work in step 11, you should have a Node-RED platform receiving messages from your Argon every 10 seconds or so. Each message should contain a JSON string with the device ID. Each message should appear in the right pane of the Node-RED UI.
 The Node-RED palette should have a subscribe node wired to a debug node.
 
+:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Argon. Name your screenshot Project1Part1.png.**
+
 ### Part 2: Node-RED Programming
 
 #### Working with flows
 
-0) The objective of this part is to gain skills in the creation and execution of Node-RED flows. We will work with the heartbeat data that we are receiving from our Particle Argon. [Follow this link for a good place to learn about Node-RED and its capabilities.](https://nodered.org/docs/)
+0) The objective of this part is to gain skills in the creation and execution of Node-RED flows. We will work with the heartbeat data that we are receiving from our Particle Argon. This is a continuation from our work in Part 1.
 
-1) Wire a function node in between your subscribe node and your debug node. The function node will add a timestamp to the incoming message. Use this code in your function node:
+[Follow this link for a good place to learn about Node-RED and its capabilities.](https://nodered.org/docs/)
+
+1) Wire a function node in between your subscribe node and your debug node. The function node will add a timestamp to the incoming message. Study this code and use it in your function node:
 
 ```
-// create a javascript object using the JSON message payload
+// The message has arrived in the msg object.
+// Create a javascript object using the JSON message payload.
 var newMessage = JSON.parse(msg.payload);
-// add a time field to the new object
+// Add a time field to the new object.
+// Use the current date and time.
 newMessage.time = new Date();
-// represent the new object as JSON
+// Represent the new object as JSON.
 msg.payload = JSON.stringify(newMessage);
 // pass it on to the next node
 return msg;
 ```
 
 2) Add another function node that checks the timestamp. If the current message arrived late (after 12 seconds) then set a variable named "onTime" to false, otherwise set the "onTime" variable to true. Include the new "onTime" field and its value in the json message that leaves this node. Note: the very first message to arrive is never late. You can test this flow by unplugging your USB for 5 seconds or so and rebooting your Argon. [In solving this problem, you may find this resource to be helpful.](https://nodered.org/docs/user-guide/writing-functions#storing-data)
+
+:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Argon. Name your screenshot Project1Part2.png.**
 
 ### Part 3: Build a web site using Node.js
 
@@ -186,7 +196,7 @@ const port = 8000;
 
 const simpleListener = function (req, res) {
     res.writeHead(200);
-    res.end("A simple text message");
+    res.end("A simple text message on a browser");
 };
 
 // Associate the server with the listener
@@ -215,11 +225,11 @@ node ViewSimpleMessage.js
 <!DOCTYPE html>
 
 <head>
-    <title>Simple message in HTML</title>
+    <title>Simple message in HTML from your name</title>
 </head>
 
 <body>    
-        <h1>Simple message in HTML</h1>
+        <h1>Simple message in HTML from your name</h1>
 </body>
 
 </html>
@@ -248,6 +258,9 @@ fs.readFile(__dirname + "/index.html")
 ```
 
 7) Test by using a browser to visit http://localhost:8000.
+
+:checkered_flag:**Take a screenshot showing the browser screen.  This screenshot will show the browser displaying an HTML document. It will include your name. Name your screenshot Project1Part3.png.**
+
 
 ### Part 4: Build a web site using Node.js and Express
 
@@ -305,10 +318,12 @@ node HelloWorld.js
 http://localhost:3000/HelloWorld
 
 ```
+:checkered_flag:**Take a screenshot showing the browser screen.  This screenshot will show the browser displaying an HTML document. Name your screenshot Project1Part4.png.**
+
 
 ### Part 5: Configure Node-RED to make calls to a web site
 
-In this Part, you will configure a node in Node-RED to make HTTP calls to a web server developed using Node.js and Express.
+In this Part, you will configure a node in Node-RED to make HTTP calls to a web server developed using Node.js and Express.This is a continuation from our work in Part 2.
 
 0) Create an empty directory called Project1_Part5.
 1) Within the new directory, run the command:
@@ -330,8 +345,9 @@ This command will create a sub-directory named "node_modules". This sub-director
 3) Create a file named viewLastHeartBeat.js and populate it with the code below:
 
 ```
-// viewLastHeartBeat.js
-// Use Express
+// Web site created with viewLastHeartBeat.js.
+// Allow Node-RED to visit as well.
+// Use Express to abstract away details.
 // Get the last heartbeat from Node-RED in the app.post
 // method. Record the lastHeartBeat time stamp in
 // the lastVisit variable.
@@ -350,15 +366,15 @@ var bodyParser = require('body-parser')
 // and we need to parse JSON data
 app.use(bodyParser.json() );
 
-// handle a visit from a browser
-// return the last visit
+// Handle a visit from a browser calling with GET.
+// return the last visit of Node-RED.
 app.get('/ViewLastHeartBeat', (req, res) => {
-  console.log('Browser visit for last visit time');
+  console.log('Browser visit for last heartbeat');
   // respond to browser
-  res.send('Last time Argon visited ' + lastVisit);
+  res.send('Last time Argon visited via Node-RED ' + lastVisit);
 })
 
-// Called with an HTTP POST by Node-RED
+// This function is called with an HTTP POST by Node-RED.
 // The HTTP request has a content-type header set to
 // application/json.
 // The JSON data has deviceID, time, and onTime values.
@@ -368,19 +384,47 @@ app.post('/SetNewHeartBeat', function (req, res) {
   console.log(req.body.deviceID)
   lastVisit = req.body.time;
   // respond to Node-RED
-  res.send('Argon visit')
+  res.send('Argon update received');
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}/ViewLastHeartBeat`)
+  console.log(`Browser views last heartbeat at http://localhost:${port}/ViewLastHeartBeat`)
 })
 
 ```
+4) At this point, you can test this web service with a browser. The browser will send an HTTP GET request and will execute the app.get() function. Our next problem is to visit this service from Node-RED and have Node-RED send an HTTP POST message with JSON data.
+
+5) Drag an HTTP Request node on to the Node-RED palette. Ensure that the following three properties are set in that node. The "method" property should be set to "-set by msg.method -". The
+"URL" property should contain "http://". The "Return" property should contain "a UTF-8 string".
+
+6) In another function node that will run ***prior to*** the HTTP Request node, use the following Javascript.
+
+```
+var newMessageObj = JSON.parse(msg.payload);
+msg.payload = JSON.stringify(newMessageObj);
+msg.method = "POST";
+msg.headers = {};
+msg.headers['content-type'] = 'application/json';
+msg.url= 'http://localhost:3000/SetNewHeartBeat'
+return msg;
+
+```
+7) Deploy the new flow. Vist the web service with a browser and monitor heartbeats.
+
+
+:checkered_flag:**Take two screenshots. One will show the browser screen. Name this screenshot Project1Part5Browser.png. The second will show the the Node-RED palette and the debug window with responses coming from the web service. Name this screenshot Project1Part5Node-RED.png. These screenshots should make it clear to the grader that you have a working system.**
 
 ### Part 6: Build an AJAX web site using Express and Node-RED
 
 In this Part, you will add AJAX (Asynchronous Javascript and XML) capabilities to the web site developed in Part 5.
 
+0) Create an empty directory named Project1_Part6
+
 ### Part 7: Build a websocket web site using Express and Node-RED
 
 In this Part, you will add websockets to the web site developed in Part 5. This Part will not use AJAX.
+
+0) Create an empty directory named Project1_Part7.
+
+1) npm init
+2)
