@@ -10,7 +10,7 @@ In order to quickly build web sites, we will use Node.js and Express.
 
 In order to route and process IoT messages, we will use Node-RED.
 
-The selected microcontroller that we will use is the Particle Argon. It has the ability to communicate via Bluetooth LE and Wi-Fi. So, we need to initialize the Argon and establish credentials at Particle. We will use the Particle cloud's over the air (OTA) update capability to flash firmware to the Argon.
+The selected microcontroller that we will use is the Particle Argon. It has the ability to communicate via Bluetooth LE and Wi-Fi. We need to initialize the Argon and establish credentials at Particle. We will use the Particle cloud's over the air (OTA) update capability to flash firmware to the Argon.
 
 0) [Follow these directions and install Node.js.](https://nodejs.org/en/download/)
 
