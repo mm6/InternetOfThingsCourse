@@ -423,6 +423,3 @@ In this Part, you will add AJAX (Asynchronous Javascript and XML) capabilities t
 In this Part, you will add websockets to the web site developed in Part 5. This Part will not use AJAX.
 
 0) Create an empty directory named Project1_Part7.
-
-1) npm init
-2)
