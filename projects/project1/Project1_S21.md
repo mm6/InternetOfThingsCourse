@@ -171,9 +171,9 @@ msg.payload = JSON.stringify(newMessage);
 return msg;
 ```
 
-2) Add another function node that checks the timestamp. If the current message arrived late (after 12 seconds) then set a variable named "onTime" to false, otherwise set the "onTime" variable to true. Include the new "onTime" field and its value in the json message that leaves this node. Note: the very first message to arrive is never late. You can test this flow by unplugging your USB for 5 seconds or so and rebooting your Argon. [In solving this problem, you may find this resource to be helpful.](https://nodered.org/docs/user-guide/writing-functions#storing-data)
+2) Add another function node that checks the timestamp. If the current message arrived late (after 12 seconds) then set a variable named "onTime" to false, otherwise set the "onTime" variable to true. Include the new "onTime" field and its value in the json message that leaves this node. Note: the very first message to arrive is never late. You can test this flow by unplugging your USB for 10 seconds or so and rebooting your Argon. You will need to think a bit about how to do this programming. [Here is a resource that you might find helpful.](https://nodered.org/docs/user-guide/writing-functions#storing-data)
 
-:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Argon. Name your screenshot Project1Part2.png.**
+:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Argon. The debug panel should show messages that were on time and some that were not on time. Name your screenshot Project1Part2.png.**
 
 ### Part 3: Build a web site using Node.js
 
