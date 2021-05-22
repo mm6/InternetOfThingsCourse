@@ -154,9 +154,7 @@ The Node-RED palette should have a subscribe node wired to a debug node.
 
 #### Working with flows
 
-0) The objective of this part is to gain skills in the creation and execution of Node-RED flows. We will work with the heartbeat data that we are receiving from our Particle Argon. This is a continuation from our work in Part 1.
-
-[Follow this link for a good place to learn about Node-RED and its capabilities.](https://nodered.org/docs/)
+0) The objective of this part is to gain skills in the creation and execution of Node-RED flows. We will work with the heartbeat data that we are receiving from our Particle Argon. This is a continuation from our work in Part 1. [Follow this link for a good place to learn about Node-RED and its capabilities.](https://nodered.org/docs/)
 
 1) Wire a function node in between your subscribe node and your debug node. The function node will add a timestamp to the incoming message. Study this code and use it in your function node:
 
