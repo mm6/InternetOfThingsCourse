@@ -410,7 +410,7 @@ return msg;
 7) Deploy the new flow. Vist the web service with a browser and monitor heartbeats.
 
 
-:checkered_flag:**Take two screenshots. One will show the browser screen. Name this screenshot Project1Part5Browser.png. The second will show the the Node-RED palette and the debug window with responses coming from the web service. Name this screenshot Project1Part5Node-RED.png. These screenshots should make it clear to the grader that you have a working system.**
+:checkered_flag:**Take two screenshots. One will show the browser screen. Name this screenshot Project1Part5Browser.png. The second will show the Node-RED palette and the debug window with responses coming from the web service. Name this screenshot Project1Part5Node-RED.png. These screenshots should make it clear to the grader that you have a working system.**
 
 ### Part 6: Build an AJAX web site using Express and Node-RED
 
