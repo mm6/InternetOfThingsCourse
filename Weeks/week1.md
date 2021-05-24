@@ -26,14 +26,17 @@ correct one to use in designing an interoperable internet of things - a web of t
 + [Smart Connected Products (Read up to but not including "Reshaping Industry Structure")](https://hbr.org/2014/11/how-smart-connected-products-are-transforming-competition)
 + [Enabling The Internet of Things](https://www.andrew.cmu.edu/user/mm6/95-733/iot/Enabling_the_Internet_of_Things.pdf)
 
+<!--
 + [AJAX Article from IBM By Philip McCarthy](http://www.ibm.com/developerworks/library/j-ajax1/?ca%3D)
 
 + [AJAX Code discussed in the article by Philip McCarthy](http://www.andrew.cmu.edu/user/mm6/95-733/Ajax/j-ajax1.zip)
 
 + [IntelliJ HTML5 Websocket example from Oracle](http://www.andrew.cmu.edu/user/mm6/95-733/Whiteboard_Instructions.txt)
 
+-->
 ## Project
 
+<!--
 + [IntelliJ installation and basic servlets](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_Installs.pdf)
 + [IntelliJ installation and basic servlets (video 1)](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/01fe4a45ac354a8a95556a0c16c490e41d)
 + [IntelliJ installation and basic servlets (video 2)](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/1bd644fe2faf43f1afc476fabc133e431d)
@@ -41,7 +44,8 @@ correct one to use in designing an interoperable internet of things - a web of t
 + [IntelliJ installation and basic servlets (video 4)](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/b7dfb095ffc24d0da1094007b1eadd9d1d)
 + [Fall 2020 Project 1 Servlets, AJAX, JSON, Web Sockets, Particle Argon Microcontroller](../projects/project1/Project1.md)
 
-+ [Spring 2021 Project 1 Argon Microcontroller and Node.js](../projects/project1/Project1_S21.md)
+-->
++ [Summer 2021 Project 1 Argon Microcontroller and Node.js](../projects/project1/Project1_S21.md)
 
 ## Quizzes
 
@@ -49,6 +53,7 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 ## Video Lectures
 
+<!--
 + [01_CourseAdministration](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/d682f3d740ee4288999ed1b32831b3681d)
 + [02_CourseOrganization](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/e40a7436891648c2a5474c927f5572371d)
 + [03_Lecture1](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/bc7f8e22e066467181ce64a47b4f8cd01d)
@@ -57,6 +62,7 @@ correct one to use in designing an interoperable internet of things - a web of t
 ## Video Demonstrations
 + [05_Lecture1_Demos](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/a9fe6d4a24e54cdf82514013f1ae409c1d)
 
+-->
 ## Optional Readings
 
 + [Discover IoT Journal Springer](https://link.springer.com/search?query=discover+iot)
@@ -75,9 +81,9 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 + [Find the lost dog](https://youtu.be/-Y77cUI_z30)
 
-
+<!--
 + [IntelliJ Alternative installation](https://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_Alternative_Startup.docx)
-
+-->
 + [Tile Bluetooth tracker](https://www.thetileapp.com/en-us/products)
 
 + [Scientific American on the Internet of Things](http://cba.mit.edu/docs/papers/04.10.i0.pdf)
@@ -90,18 +96,20 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 + [JavaScript Object Notation (JSON) Grammar](http://www.json.org/index.html)
 
+<!--
 + [Introductory servlets](http://proquestcombo.safaribooksonline.com/9780596516680)
 
 + [Java JSON API](http://www.oracle.com/technetwork/articles/java/json-1973242.html)
 
+-->
 + [Firefox Developer](https://www.mozilla.org/en-US/firefox/developer/)
 
 + [Debugging AJAX](http://www.youtube.com/watch?v=W4jXAaEMp2M)
-
+<!--
 + [Hello World Using JSON and AJAX](https://www.andrew.cmu.edu/user/mm6/95-733/JSONHelloWorld.txt)
 
 + [Simple JSONP example](https://www.andrew.cmu.edu/user/mm6/95-733/JSONP/JSONPDemo.txt)
-
+-->
 + [General viewing: Lynda and CMU Tutorials](http://www.cmu.edu/lynda/)
 
 + [General: Enterprise Integration Patterns](http://www.enterpriseintegrationpatterns.com)
