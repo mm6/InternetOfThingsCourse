@@ -2,6 +2,8 @@
 
 ## Project 1  Due: 11:59 PM, Wednesday, June 9, 2021
 
+:checkered_flag: Submit a single .pdf file named <LastNameFirstName>Project1.pdf. The single pdf will contain your responses to the questions marked with a checkered flag. It is important that you clearly label each answer with the project part number and that you provide your name and email address at the top of the .pdf.
+
 ### Part 1: Programming a Particle Argon to report heartbeats to the Particle cloud and Node-RED
 
 #### Start up items
