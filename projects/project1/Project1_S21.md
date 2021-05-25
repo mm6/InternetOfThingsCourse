@@ -396,7 +396,7 @@ app.listen(port, () => {
 ```
 4) Run the command "node viewLastHeartBeat". At this point, you can test this web service with a browser. The browser will send an HTTP GET request and will execute the app.get() function. But, we are not yet receiving heartbeats from the microcontroller. Our next problem is to visit this service from Node-RED and have Node-RED send an HTTP POST message with JSON data.
 
-5) Drag an HTTP Request node on to the Node-RED palette. Ensure that the following three properties are set in that node. The "method" property should be set to "-set by msg.method -". The
+5) Drag an HTTP Request node on to the Node-RED palette - the palette from Part 2. Ensure that the following three properties are set in that node. The "method" property should be set to "-set by msg.method -". The
 "URL" property should contain "http://". The "Return" property should contain "a UTF-8 string".
 
 6) Add another function node that will run ***prior to*** the HTTP Request node described in step 5. Use the following Javascript:
@@ -422,7 +422,7 @@ Note that in Part 5, in order to see the heartbeat status, we have to perform a 
 
 In this Part, AJAX (Asynchronous Javascript and XML) capabilities are added to the heartbeat application. An HTML page is sent to the browser and the web page contains Javascript code that will call the Javascript code on the server.
 
-0) Create an empty directory named Project1_Part6
+0) Create an empty directory named Project1_Part6.
 
 1) Add a subdirectory named "public". Inside the public directory, create an index.html file. This file will contain HTML as well as references to two Javascript files: Ajax.js and ArgonStatus.js. The index.html file appears next.
 
@@ -585,7 +585,7 @@ function getReadyStateHandler(req, responseXmlHandler) {
     }
 }
 ```
-4) In the directory just above public, in Project1_Part6, store the file named index.js. This file, when run with "node index.js" makes the files in the public directory available to browsers.
+4) In the directory just above public, in Project1_Part6, store the file named index.js. This file, when run with "node index.js" makes the files in the public directory available to browsers. Before running the index.js server, you will need to run "npm install express" in the Project1_Part6 directory.
 
 ```
 // index.js
@@ -826,6 +826,7 @@ server.listen(port, function() {
 ```
 npm init -y
 npm install websocket
+npm install ws
 npm install express
 npm install http
 node server.js
