@@ -12,14 +12,14 @@ Security and privacy are continuing concerns.
 
 We argue that, with the adoption of web standards, an interoperable internet of things is possible.
 
-The Particle IDE is introduced and over the air updates are described and shown. Micro controller to servlet interactions are demonstrated.  
+The Particle IDE is introduced and over the air updates are described and shown. Micro controller to Node-RED is demonstrated.
+Javascript is used to program individual nodes.
 
 + Enabling the Internet of Things
 + Four HTTP interaction patterns
-+ Server side AJAX in Java
-+ Demonstration: Websocket whiteboard
-+ Demonstration: Sharing the shopping cart
-+ Demonstration: Microcontroller to Servlet communication  
++ Demonstration: Server side AJAX in Node.js
++ Demonstration: Websockets and Node.js and a browser
++ Demonstration: Microcontroller to Node.js communications
 + Demonstration: The Particle IDE
 
 ## Slides
@@ -37,7 +37,9 @@ The Particle IDE is introduced and over the air updates are described and shown.
 
 + [Argon Kit ](https://store.particle.io/products/argon-kit)
 
+<!--
 + [Connect Photon to CMU Wi-Fi ](https://www.andrew.cmu.edu/user/mm6/95-733/Photon_Connect_CMU_Wi-Fi.txt)
+-->
 
 ## Project
 
@@ -45,24 +47,28 @@ The Particle IDE is introduced and over the air updates are described and shown.
 
 ## Quizzes
 
-+ Quiz 1 is on Canvas at the start of class.
++ Quiz 1 is on Canvas 24 hours prior to class
 + Quiz 1 Covers "Smart Connected Products" and "Enabling the Internet of Things".
 
 ## Video Lectures
+<!--
 + [06_ReviewQuiz_Week2](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/dddc9d7adb3e44eabb9ccb8a226e13ea1d)
 + [07_Lecture2](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/e7e80e8afad44277a86f935fb37c87f81d)
 + [08_Lecture2](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/a2b2886c525d453ab22a955f017986c91d)
 + [09_Lecture2](https://heinzcollege.mediasite.com/Mediasite/MyMediasite/presentations/4567e3ee057d4d2180ca1d59f0850fe71d)
+-->
 
 ## Optional Readings
 
+<!--
 + [Photons and Windows 10 Set up](https://www.andrew.cmu.edu/user/mm6/95-733/Photon/SetupParticlePhotoninWindows10.pdf)
+-->
 
 + [Photons Used by CheerLights and ThingSpeak](https://cheerlights.com)
 
 + [Micro bit ](http://microbit.org/)
 
-+ [Alternatives to Photon  ](https://thenewstack.io/10-diy-development-boards-iot-prototyping/)
++ [Microcontroller Alternatives ](https://thenewstack.io/10-diy-development-boards-iot-prototyping/)
 
 + [Site Reliability Engineering Book from Google](https://sre.google/books/)
 
