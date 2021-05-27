@@ -31,7 +31,6 @@ browser.
 
 + [People, Places, Things: Web Presence for the Real World](http://www.hpl.hp.com/techreports/2001/HPL-2001-279.pdf)
 
-+ [Working with websockets](http://www.byteslounge.com/tutorials/java-ee-html5-websockets-encoder-and-decoder-example)
 
 + [MQTT Tutorial](http://www.hivemq.com/mqtt-essentials/)
 
@@ -52,6 +51,8 @@ browser.
 + [13_Lecture3Demos](https://heinzcollege.mediasite.com/Mediasite/Play/7cf3ad7472814c9983fd7023b9333f941d)
 
 ## Optional Readings
+
++ [Working with websockets in Java](http://www.byteslounge.com/tutorials/java-ee-html5-websockets-encoder-and-decoder-example)
 
 + [MQTT Specification](http://public.dhe.ibm.com/software/dw/webservices/ws-mqtt/MQTT_V3.1_Protocol_Specific.pdf)
 

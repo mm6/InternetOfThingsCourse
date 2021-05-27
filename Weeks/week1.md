@@ -23,6 +23,8 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 + [Smart and Connected Products](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/01_IntroductionToIOT.pdf)
 
++ [Jeff Jaffe (W3C) at Industry of Things World video](https://www.w3.org/WoT/)
+
 ## Required readings
 
 + [Smart Connected Products (Read up to but not including "Reshaping Industry Structure")](https://hbr.org/2014/11/how-smart-connected-products-are-transforming-competition)

@@ -25,7 +25,6 @@ on the internet at large. Both protocols utilize service discovery.
 
 + [Industrial Internet of Things and SCADA](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_SCADA.pdf)
 
-+ [Jeff Jaffe (W3C) at Industry of Things World video](https://www.w3.org/WoT/)
 
 + [Microcontrollers, WPAN, and LPWAN Protocols](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Microcontrollers.pdf)
 
