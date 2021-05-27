@@ -1,9 +1,0 @@
-95-733 Video Demonstration for Project 1
-
-1. Show the how the command line is:
-   javac -version and java -version
-   both report the version number as 12.
-
-2. Show a Hello World program
-
-3. Demonstration of a Hello World IntelliJ/TomEE application
