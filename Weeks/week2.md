@@ -35,7 +35,6 @@ Javascript is used to program individual nodes.
 
 + [The Computer for the 21st Century Video ](https://www.youtube.com/watch?v=CkHALBOqn7s)
 
-+ [Argon Kit ](https://store.particle.io/products/argon-kit)
 
 <!--
 + [Connect Photon to CMU Wi-Fi ](https://www.andrew.cmu.edu/user/mm6/95-733/Photon_Connect_CMU_Wi-Fi.txt)
