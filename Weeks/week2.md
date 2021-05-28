@@ -23,6 +23,8 @@ Javascript is used to program individual nodes.
 + Demonstration: The Particle IDE
 
 ## Slides
++ [Project 1 Key Ideas](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/02_Project1_Key_Ideas.pdf)
+
 + [Enabling the Internet of Things](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/02_EnablingTheInternetOfThings.pdf)
 
 + [Four interaction styles](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/02_Four_Styles.pdf)
