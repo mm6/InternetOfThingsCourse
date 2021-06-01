@@ -29,8 +29,9 @@ Javascript is used to program individual nodes.
 
 + [Four interaction styles](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/02_Four_Styles.pdf)
 
+<!--
 + [Server side Java and server side AJAX](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/02_ServerSideJavaAndAJAX.pdf)
-
+-->
 ## Required readings
 
 + [The Computer for the 21st Century](https://www.andrew.cmu.edu/user/mm6/95-733/iot/The_Computer_For_The_21st_Century.pdf)
