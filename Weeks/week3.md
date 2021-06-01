@@ -37,18 +37,20 @@ browser.
 ## Project
 
 + [Project 2 Publish Subscribe](../projects/project2/Project2.md)
-+ Project 1 Due Midnight Tuesday
++ Project 1 Due Midnight Wednesday
 
 ## Quizzes
 
-+ Quiz 2 is on Canvas at the start of class.
++ Quiz 2 is on Canvas 24 hours prior to class
 + Quiz 2 is on "The Computer for the 21st Century"
 
 ## Video Lectures
+<!--
 + [10_Lecture3_QuizReview](https://heinzcollege.mediasite.com/Mediasite/Play/e96f9a1bac874d86892b02eefa9e5dac1d)
 + [11_Lecture3](https://heinzcollege.mediasite.com/Mediasite/Play/50a2ba3e20ec4f4497631c599f73cf261d)
 + [12_Lecture3MQTT](https://heinzcollege.mediasite.com/Mediasite/Play/6a8b1c0de3a644db90f80b08e43b69a81d)
 + [13_Lecture3Demos](https://heinzcollege.mediasite.com/Mediasite/Play/7cf3ad7472814c9983fd7023b9333f941d)
+-->
 
 ## Optional Readings
 
