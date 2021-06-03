@@ -205,7 +205,7 @@ Note too that the communication between the broker and the browsers is done with
 8. Your hardware setup should look like the following:
 ![Argon Light Monitor](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonLightMonitor.png?raw=true)
 
-9. We need to flash code that monitors light levels to the Argon. Use the Particle cloud to compile and deploy this firmware:
+9. We need to flash code that monitors light levels to the Argon. We will name this firmware "LightMonitor". Use the Particle cloud to compile and deploy this firmware to your microcontroller.
 
 ```
 // File name: LightMonitor
@@ -223,7 +223,7 @@ void setup() {
 }
 
 void loop() {
-    if(millis() - loop_timer >= 1000UL) {
+    if(millis() - loop_timer >= 5000UL) {
         loop_timer = millis();
         analogValue = analogRead(photoResistor);
         Serial.printlnf("AnalogValue == %u", analogValue);
@@ -232,8 +232,76 @@ void loop() {
 ```
 
 10. To monitor the Argon, run the command "particle serial monitor" from the command line interface.
-11. Test your system by changing your lighting and monitoring the numeric light levels on the command line interface.
 
+11. Test your system by changing your lighting and monitoring the numeric light levels on the command line interface. A value near 0 would signal no light and a value of 1000 or so would mean the photo resistor is near a light bulb.
+
+12. We are reading the light values every second and the values are available to the serial monitor. Next, we would like to transmit these values to Node-RED every 5 seconds. We will use standard HTTP and JSON messages to do so.
+
+13. Using the "Particle Libraries" icon (on the far left just above the question mark), add the httpclient library and include it in the LightMonitor project. Your code should now include the C++ statement:
+```
+#include <HttpClient.h>
+
+```
+
+14. Read over the following code. And add this code just above the setup() function:
+
+```
+// Define an http variable to be of type HttpClient.
+HttpClient http;
+
+// We always pass Http headers on each request to the Http Server
+// Here, we only define a single header. The NULL, NULL pair is
+// used
+// to terminate the list of headers.
+
+ // The Content-Type header is used to inform the server
+ // of the type of message that it will be receiving. Here,
+ // we tell the server to expect to receive data marked up in
+ // JSON.
+
+ http_header_t headers[] = {  
+    { "Content-Type", "application/json" },  
+    { NULL, NULL }   
+ };  
+
+ // Here we define structures to hold the request and the response data.
+ // These are declared with types defined in the header file included above.
+
+ http_request_t request;  
+ http_response_t response;
+
+ //A variable to hold the device unique ID
+ String deviceID = "";
+
+```
+15. Read over and then add this code to the setup() function:
+
+```
+// The IP address of the server running on our machine.
+// Do not use localhost. The microcontroller would attempt
+// to visit itself with localhost.
+request.ip = IPAddress(192,168,86,164);  
+
+// Specify the port that our server is listening on.
+request.port = 3000;
+
+// get the unique id of this device as 24 hex characters
+deviceID = System.deviceID().c_str();
+
+// display the id to the command line interface
+Serial.println(deviceID);  
+
+```
+16. Below the setup() function, add a new function designed to display the response data from an HTTP request.
+
+```
+// Provided with a response, display it to the command line interface.
+ void printResponse(http_response_t &response) {  
+   Serial.println("HTTP Response: ");  
+   Serial.println(response.status);  
+   Serial.println(response.body);  
+ }  
+```
 
 
 ### Part 3.
