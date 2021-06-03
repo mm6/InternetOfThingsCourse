@@ -75,7 +75,9 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 + [Coffee maker ransom machine](https://arstechnica.com/information-technology/2020/09/how-a-hacker-turned-a-250-coffee-maker-into-ransom-machine/)
 
-+ [IOT Security Labeling From CMU](https://cylab.cmu.edu/news/2020/05/27-iot-labels-consumers.html)
++ [IoT Security Labeling From CMU](https://cylab.cmu.edu/news/2020/05/27-iot-labels-consumers.html)
+
++ [Study on CMU's IoT security labels](https://www.cylab.cmu.edu/news/2021/05/26-label-risk.html)
 
 + [Described in "Smart Connected Products" : URIBeacon is now Eddystone - uses existing app on your phone](https://developers.google.com/beacons/)
 
