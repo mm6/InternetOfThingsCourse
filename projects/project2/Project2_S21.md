@@ -189,11 +189,52 @@ Create subdirectories and files as you did in part 2. This time, however, the we
 
 Note: MQTT is very fussy about client names. Each client that visits must present a unique name. In this part of Project 2, we need two names - one for the publisher and another for the subscriber. If you added several subscribers, you would need several names.
 
-Note too that the communication between the broker and the browsers is done with websockets but we have abstracted those details away. It is all hidden within the mqttws31.js library. By using "abstraction" we are hiding details and separating concerns - these are very important principles in computer science.
+Note too that the communication between the broker and the browsers is done with websockets but we have abstracted those details away. The details are all hidden within the mqttws31.js library. By using "abstraction" we are hiding details and separating concerns - these are very important principles in computer science and in many areas of engineering.
 
-### Part 2.
+### Part 2 Monitoring light levels with a microcontroller
 
+#### Hardware Set Up
+
+1. Hold the Argon breadboard so that row 1 is away and row 30 is near (on the bottom).
+2. Place the Argon bottom on row 26 of the breadboard.
+3. The Argon top will now just cover row 7.
+4. Be sure that you can read the writing on the Argon. It will be right side up.
+5. Place the long leg of the photo transistor in row 13, (A0) (on the left of the Argon).
+6. Place the short leg of the photo transistor in row 10 (3V3).
+7. Place a 220 ohm resistor in row 12 (GND) and in row 13 (A0).
+8. Your hardware setup should look like the following:
 ![Argon Light Monitor](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonLightMonitor.png?raw=true)
+
+9. We need to flash code that monitors light levels to the Argon. Use the Particle cloud to compile and deploy this firmware:
+
+```
+// File name: LightMonitor
+// View output from the command line with
+// particle serial monitor
+
+int photoResistor = A0;
+int analogValue;
+
+unsigned long loop_timer;
+
+void setup() {
+  Serial.println("Simple setup complete");
+  loop_timer = millis();
+}
+
+void loop() {
+    if(millis() - loop_timer >= 1000UL) {
+        loop_timer = millis();
+        analogValue = analogRead(photoResistor);
+        Serial.printlnf("AnalogValue == %u", analogValue);
+    }
+}
+```
+
+10. To monitor the Argon, run the command "particle serial monitor" from the command line interface.
+11. Test your system by changing your lighting and monitoring the numeric light levels on the command line interface.
+
+
 In Part 2, we will be communicating with Mosquitto in two ways. We will use Websockets from within
 our Javascript code - running within a browser. And we will also use standard TCP sockets (and a client
 library) from within a stand-alone Java program. In order to make this happen, we need to
