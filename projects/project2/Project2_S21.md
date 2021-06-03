@@ -193,7 +193,7 @@ Note too that the communication between the broker and the browsers is done with
 
 ### Part 2.
 
-![Argon Light Monitor](https://github.com/[mm6]/[InternetOfThingsCourse]/blob/master/images/ArgonLightMonitor.png?raw=true)
+![Argon Light Monitor](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonLightMonitor.png?raw=true)
 In Part 2, we will be communicating with Mosquitto in two ways. We will use Websockets from within
 our Javascript code - running within a browser. And we will also use standard TCP sockets (and a client
 library) from within a stand-alone Java program. In order to make this happen, we need to
