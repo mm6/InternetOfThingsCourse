@@ -7,6 +7,7 @@
 ### Topics: MQTT, Particle Argon, Node-RED, Node.js, Google Charts
 
 # DRAFT   DRAFT   DRAFT  DRAFT   DRAFT
+<!--
 Plan:
      Part 1. Preparation: Work with MQTT from the browser (Node.js)
      Part 2. Argon light values to Node-RED using HTTP
@@ -16,7 +17,7 @@ Plan:
              display using Googl Charts - Digital readout, gauge and line graph (all served up from Node.js).
      Part 5. (Optional but way cool) Transmit the light values to
              Node-RED using BLE
-
+-->
 Many IoT applications monitor real time data from sensors and
 transmit these data to a service offering publish and subscribe capabilities. The service behaves as a broker. The sensor plays the role of publisher and it may have no idea who its subscribers are. It simply transmits data to the broker. A subscriber subscribes to messages from the broker and, in this way, is able to consume data from the sensors.
 
