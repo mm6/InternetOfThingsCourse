@@ -184,6 +184,8 @@ Note too that the communication between the broker and the browsers is done with
 
 #### Hardware Set Up
 
+We would like to configure our microcontroller to sense or monitor changes in light. This has many applications from security to farming to home automation.
+
 1. Hold the Argon breadboard so that row 1 is away and row 30 is near (on the bottom).
 2. Place the Argon bottom on row 26 of the breadboard.
 3. The Argon top will now just cover row 7.
@@ -224,15 +226,15 @@ void loop() {
 
 11. Test your system by changing your lighting and monitoring the numeric light levels on the command line interface. A value near 0 would signal no light and a value of 1000 or so would mean the phototransistor is near a light bulb.
 
-12. We are reading the light values every 5 seconds and the values are available to the serial monitor. Next, we would like to transmit these values to Node-RED every 5 seconds. We will use standard HTTP and JSON messages to do so.
+12. We are reading the light values every 5 seconds and the values are available to the serial monitor. Next, we would like to transmit these values to Node-RED. We will use standard HTTP and JSON messages to do so.
 
-13. Using the "Particle Libraries" icon (on the far left just above the question mark), add the httpclient library and include it in the LightMonitor project. Your code should now include the C++ statement:
+13. Using the "Particle Libraries" icon (on the far left just above the question mark), search for and add the httpclient library and include it in the LightMonitor project. Your code should now include the C++ statement:
 ```
 #include <HttpClient.h>
 
 ```
 
-14. Read over the following code. And add this code just above the setup() function:
+14. Read over the following code. Add this code just above the setup() function:
 
 ```
 // Define an http variable to be of type HttpClient.
@@ -263,7 +265,7 @@ HttpClient http;
  String deviceID = "";
 
 ```
-15. Read over this code and then add it inside the setup() function:
+15. Read over this code and then add it ***inside*** the setup() function:
 
 ```
 // The IP address of the server running on our machine.
@@ -329,7 +331,7 @@ The requests should look as follows:
 
 ```
 
-19) To check this, get Node-RED running and receiving these requests. You will need to create three nodes: an "HTTP IN" node, an "HTTP out" node, and a "debug" node to view the messages that arrive from the Argon.
+19) To check this, get Node-RED running and receiving these requests. You will need to create three nodes: an "HTTP IN" node, an "HTTP out" node, and a "debug" node to view the messages that arrive from the Argon. Be sure to have this working before moving on.
 
 20) Your C++ assignment is to add the analog light level value to the JSON string. The final string will look like the following:
 
@@ -348,7 +350,7 @@ And you can add it to the JSON string like this:
 ```
 strcat(json,pchar);
 ```
-So, your C++ task is to add a JSON label, "lightReading" for this light level value.
+So, your C++ task is to add a JSON label, "lightReading" for this light level value. 
 
 Note that the Node-RED port needs to be specified in the firmware. On my my machine, my Node-RED port is 1880. Check your Node-RED browser URL to make sure the port is correct.
 
