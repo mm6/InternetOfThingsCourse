@@ -333,7 +333,16 @@ void doPostRequest() {
 }
 ```
 18) The code above should work, producing legal JSON post requests.
-Your assignment is to add the analog light value to the JSON string. The string will look like the following:
+The requests should look as follows:
+
+```
+{"deviceID":"e00fce68dfb40ca61243495e"}
+
+```
+
+19) To check this, get Node-RED running and receiving these requests. You will need to create three nodes: an "HTTP IN" node, an "HTTP out" node, and a "debug" node to view the messages that arrive from the Argon.
+
+20) Your C++ assignment is to add the analog light value to the JSON string. The final string will look like the following:
 
 ```
 {"deviceID":"e00fce68dfb40ca61243495e","lightReading":67}
@@ -350,13 +359,10 @@ And you can add it to the JSON string like this:
 ```
 strcat(json,pchar);
 ```
-So, your C++ task is to add a JSON label, "lightReading" for this value.
+So, your C++ task is to add a JSON label, "lightReading" for this light level value.
 
-Note that the Node-RED port needs to be specified in the firmware. On my my machine, my Node-RED port is 1880.
+Note that the Node-RED port needs to be specified in the firmware. On my my machine, my Node-RED port is 1880. Check your Node-RED browser URL to make sure the port is correct.
 
-Note too that prior to making the changes described in 18, you would be wise to get Node-RED running and receiving the limited post requests. That is, do step 19 first.
-
-19) Run Node-RED and create three nodes: an HTTP IN node, an HTTP out node, and a debug node to view the messages that arrive from the Argon.
 
 ### Part 3.
 
