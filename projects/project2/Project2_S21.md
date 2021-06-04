@@ -29,7 +29,7 @@ The publish subscribe design pattern is well established in the internet of thin
 
 One objective of this project is to learn to use an MQTT publish and subscribe broker. There are many implementations of MQTT. We will use a broker named Mosquitto.
 
-MQTT is targeted at low power, constrained, unreliable devices. It will likely play an important role in a mature IoT. In class, we will describe how many of the big players are leveraging MQTT.
+MQTT is targeted at low power, constrained, unreliable devices. It will likely play an important role in a mature IoT. In class, we will describe how MQTT works and how many of the big players are leveraging MQTT.
 
 The second objective is to learn the Google Charts Javascript library. The internet of things will rely heavily on real time visualizations in the browser. Google Charts will likely play a significant role in this area.
 
@@ -39,7 +39,7 @@ The third objective is to continue our work with the Particle Argon microcontrol
 ### Overview and setup
 
 
-This is a four part assignment. The first part involves setting up an MQTT broker and interacting with the broker using browsers and websockets. The web applications will be built with Node.js.
+This is a four part assignment. The first part involves setting up an MQTT broker and interacting with the broker using browsers and WebSockets. The web applications will be built with Node.js.
 
 The second part requires that you set up the appropriate hardware and program your Argon with firmware written in C++.
 
@@ -47,28 +47,18 @@ The third part involves the construction of a Node-RED flow that receives messag
 
 The fourth part involves a web application that subscribes to the Argon's messages and produces a graphical display using Google Charts.
 
-
 In Project 1, we monitored Argon heartbeats in real time with a browser. We leveraged WebSockets and wrote our own server side code that sent a message to all listeners.
 
-In Parts 1 and 2 of this project, we will not write our own server side code (as we did in Project 1). Instead, we will use Mosquitto - an open source MQTT broker. Download Mosquitto
+In much of this project, we will not write our own server side code (as we did in Project 1). Instead, we will use Mosquitto - an open source MQTT broker. Download Mosquitto
 [from here](http://mosquitto.org/download/).
 
-Note: In the past, some students had trouble with Mosquitto but had an easy time
-downloading Hive MQ's MQTT broker. The instructions below
-refer to my success in using Mosquito. Feel free to use whatever MQTT broker that
-you are comfortable with. You may use the local Hive MQ (downloaded to your machine
-or the remote version on the cloud.) Hive MQ's MQTT (both local and cloud) are
-available [from here](https://www.hivemq.com/try-out/).
+Note: In the past, some students had trouble with Mosquitto but had an easy time downloading Hive MQ's MQTT broker. The instructions below refer to my success in using Mosquito. Feel free to use whatever MQTT broker that you are comfortable with. You may use the local Hive MQ (downloaded to your machine
+or the remote version on the cloud.) Hive MQ's MQTT (both local and cloud) are available [from here](https://www.hivemq.com/try-out/).
 
-You can install Mosquitto on your MAC using brew. See [here](http://brew.sh) and then
-use "brew install mosquitto". There are directions on the mosquitto web site for
-Windows users.
+You can install Mosquitto on your MAC using brew. See [here](http://brew.sh) and then use "brew install mosquitto". There are directions on the mosquitto web site for Windows users.
 
-When you run mosquitto, it will run with its default configuration. We need to change
-its configuration to allow for WebSocket connections (we want to visit the server from
-Javascript). To change the configuration of Mosquitto, we can modify the configuration
-file found at /usr/local/etc/mosquitto/mosquitto.conf (on a MAC). My configuration file
-contains these lines:
+When you run mosquitto, it will run with its default configuration. We need to change its configuration to allow for WebSocket connections (we want to visit the server from
+Javascript). To change the configuration of Mosquitto, we can modify the configuration file found at /usr/local/etc/mosquitto/mosquitto.conf (on a MAC). My configuration file contains these lines:
 
 ```
 listener 1883
@@ -79,26 +69,23 @@ allow_anonymous true
 
 ```
 
-My copy of mosquitto is located at /usr/local/sbin. If I change to that
-directory, I can run mosquitto (picking up the configuration file) with the command
+My copy of mosquitto is located at /usr/local/sbin. If I change to that directory, I can run mosquitto (picking up the configuration file) with the command
 
 ```
 mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf -v
 
 ```
 
-Once you have Mosquitto running, we want to connect to the server from Javascript running
-in a browser. We do not want to write the client side MQTT code ourselves. Even though we have
+Once you have Mosquitto running, we want to connect to the server from Javascript running in a browser. We do not want to write the client side MQTT code ourselves. Even though we have
 easy access to WebSockets, it would be far better to use an existing Javascript library
 that provides a convenient API to MQTT. The implementation of the API will, of course,
-use websockets below the scenes.
+use WebSockets below the scenes.
 
 In our web pages, we will include the Javascript library from Paho. It is called mqttws31.js.
 
-To make use of the mqttws31.js library, there is a very nice "getting started" section at the following link. It has a simple example of a
-Javascript client that will run in a web page. It is very useful for us and is found [here.](https://eclipse.org/paho/clients/js/)
+To make use of the mqttws31.js library, there is a very nice "getting started" section at the following link. It has a simple example of a Javascript client that will run in a web page. It is very useful for us and is found [here.](https://eclipse.org/paho/clients/js/)
 
-I am including a copy of this client side Javascript here. Be sure to study how this works. You will need to incorporate it into your browser when you want your browser to communicate with an MQTT broker. Notice that it makes use of the Paho.MQTT library which we can include with a script tag shown below.
+I am including a copy of this client side Javascript here. Be sure to study how this works. You will need to incorporate it into your browser when you want your browser to communicate with an MQTT broker. Notice that it makes use of the Paho.MQTT library.  
 
 ```
 // Create a client instance
@@ -135,7 +122,7 @@ function onMessageArrived(message) {
 }
 ```
 
-The mqttws31.js Javascript library can be included in your HTML file with this script tag:
+The mqttws31.js file holds the Paho library and can be included in your HTML file with this script tag:
 
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
