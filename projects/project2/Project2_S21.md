@@ -1,8 +1,8 @@
 # DRAFT   DRAFT   DRAFT  DRAFT   DRAFT   
 
-# 95-733 Internet of Things   Wednesday, June 9, 2021
+# 95-733 Internet of Things Wednesday, June 9, 2021
 
-## Project 2 Due Date: 11:59 PM Wednesday,June 21, 2021
+# Project 2 Due: 11:59 PM Wednesday,June 21, 2021
 
 ### Topics: MQTT, Particle Argon, Node-RED, Node.js, Google Charts
 
@@ -309,8 +309,8 @@ Serial.println(deviceID);
 void doPostRequest() {
 
   // Provide the path to the service
-  // The HTTP IN node in Node-RED needs
-  // is configured with a URL of microcontrollerLightValue
+  // The "HTTP IN" node in Node-RED needs to be
+  // configured with a URL of microcontrollerLightValue
   request.path = "/microcontrollerLightValue";
 
   // Build the JSON request
