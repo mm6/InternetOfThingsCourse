@@ -350,9 +350,9 @@ And you can add it to the JSON string like this:
 ```
 strcat(json,pchar);
 ```
-So, your C++ task is to add a JSON label, "lightReading" for this light level value. 
+So, your C++ task is to add a JSON label, "lightReading" for this light level value.
 
-Note that the Node-RED port needs to be specified in the firmware. On my my machine, my Node-RED port is 1880. Check your Node-RED browser URL to make sure the port is correct.
+Note that the Node-RED port needs to be specified in the firmware. On my machine, my Node-RED port is 1880. Check your Node-RED browser's URL to make sure the port is correct.
 
 
 ### Part 3.
