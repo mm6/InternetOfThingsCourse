@@ -11,14 +11,14 @@ Plan:
      Part 1. Preparation: Work with MQTT from the browser (Node.js)
      Part 2. Argon light values to Node-RED using HTTP
              Hardware setup and firmware
-     Part 3. Node-RED adds JSON-LD and publishes to an MQTT broker
+     Part 3. Node-RED adds a timestamp and publishes to an MQTT broker
      Part 4. Several Browsers present a real time graphical
              display using Googl Charts - Digital readout, gauge and line graph (all served up from Node.js).
      Part 5. (Optional but way cool) Transmit the light values to
              Node-RED using BLE
 
-Many IoT applications collect real time data from sensors and
-transmits these data to a service offering publish and subscribe capabilities. The service behaves as a broker. The sensor plays the role of publisher and it may have no idea who its subscribers are. It simply transmits data to the broker. A subscriber subscribes to messages from the broker and, in this way, is able to consume data from the sensors.
+Many IoT applications monitor real time data from sensors and
+transmit these data to a service offering publish and subscribe capabilities. The service behaves as a broker. The sensor plays the role of publisher and it may have no idea who its subscribers are. It simply transmits data to the broker. A subscriber subscribes to messages from the broker and, in this way, is able to consume data from the sensors.
 
 The publish subscribe approach exemplifies loose coupling and provides for scalability.
 
@@ -32,21 +32,24 @@ appear to be off. Turn your fire wall back on after completing this assignment.
 
 One objective of this project is to learn to use an MQTT publish and subscribe broker. There are many implementations of MQTT. We will use a broker named Mosquitto.
 
-MQTT is targeted at low power, constrained, unreliable devices. It will likely play an important role in a mature IoT. In class, we will describe how many of the big players are using MQTT.
+MQTT is targeted at low power, constrained, unreliable devices. It will likely play an important role in a mature IoT. In class, we will describe how many of the big players are leveraging MQTT.
 
 The second objective is to learn the Google Charts Javascript library. The internet of things will rely heavily on real time visualizations in the browser. Google Charts will likely play a significant role in this area.
 
 The third objective is to continue our work with the Particle Argon microcontroller.
 
+
 ### Overview and setup
 
 
-This is a three part assignment. The first part asks that you develop a small
-system using Javascript and an MQTT broker. The second part asks that you
-build a small system using a Java program as a publisher to MQTT and a
-Javascript program as a subscriber to messages coming from MQTT. The third
-part asks that you create a simple application that will be deployed (flashed)
-to a Particle Argon. This application will make good use of MQTT.
+This is a four part assignment. The first part involves setting up an MQTT broker and interacting with the broker using browsers and websockets. The web applications will be built with Node.js.
+
+The second part requires that you set up the appropriate hardware and program your Argon with firmware written in C++.
+
+The third part involves the construction of a Node-RED flow that receives messages from the Argon via HTTP, makes modifications to the messages, and publishes the messages to MQTT.
+
+The fourth part involves a web application that subscribes to the Argon's messages and produces a graphical display using Google Charts.
+
 
 In Project 1, we monitored Argon heartbeats in real time with a browser. We leveraged WebSockets and wrote our own server side code that sent a message to all listeners.
 
@@ -342,7 +345,7 @@ The requests should look as follows:
 
 19) To check this, get Node-RED running and receiving these requests. You will need to create three nodes: an "HTTP IN" node, an "HTTP out" node, and a "debug" node to view the messages that arrive from the Argon.
 
-20) Your C++ assignment is to add the analog light value to the JSON string. The final string will look like the following:
+20) Your C++ assignment is to add the analog light level value to the JSON string. The final string will look like the following:
 
 ```
 {"deviceID":"e00fce68dfb40ca61243495e","lightReading":67}
