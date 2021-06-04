@@ -136,9 +136,9 @@ There is a nice discussion [here on MQTT.](https://developer.ibm.com/articles/io
 
 Your Part 1 we will experiment using real time data on the web.
 
-1. 5 Points. Create an empty directory named Project2_Part1.
+1. 5 Points. Create an empty directory named Project2_Part1_Question_1.
 Create a subdirectory named "public" and populate it with an index.html file. This fill contain the code found [here.](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousemove).
-In the Project2_Part1 directory, just above "public", create a file named index.js with the following code:
+In the Project2_Part1_Question_1 directory, just above "public", create a file named index.js with the following code:
 
 ```
 // index.js
@@ -156,7 +156,7 @@ app.listen(port, () => {
   console.log(`Mouse moving app listening at http://localhost:${port}/index.html`)
 })
 ```
-In the Project2_Part1 directory, run the following two commands:
+In the Project2_Part1_Question_1 directory, run the following two commands:
 
 ```
 npm init
@@ -164,21 +164,21 @@ node index.js
 ```
 You should be able to use a browser to visit http://localhost:3000/index.html.
 
-Take some time to study the html and Javascript in the index.html file.  
+It is important that you take some time to study the html and Javascript in the index.html file.  
 
 Note that every time the mouse moves (within the box) an event is generated
 and the x and y coordinates are displayed. It is required that you add your
 own detailed comments to this code - explaining clearly how it works. The grader
 will grade based on the quality of these comments.
 
-2. 15 Points. Here we want to sense the mouse movements and publish them to Mosquitto running MQTT. Create a new directory named Project2_Part2. Include the same index.js file that you used in Part 1. Create a subdirectory named "public" containing an index.html file that publishes each new mouse coordinate pair to your MQTT broker. Your solution must make good use of the Javascript library - mqttws31.js.
+2. 15 Points. Here we want to sense the mouse movements and publish them to Mosquitto running MQTT. Create a new directory named Project2_Part1_Question_2. Include the same index.js file that you used in Part 1. Create a subdirectory named "public" containing an index.html file that publishes each new mouse coordinate pair to your MQTT broker. Your solution must make good use of the Javascript library - mqttws31.js.
 
-3. 15 Points. Here we want to subscribe to the events being published in Part 2. Create a new directory named Project2_Part3.
-Create subdirectories and files as you did in part 2. This time, however, the web application will listen on port 3002. The index.html file will make good use of mqttws31.js. It will subscribe to events published to Mosquitto and it will display the coordinates being received (there will be no box, just text being displayed). Test your system by running two browsers at the same time. One browser will display the box (from Part 2) and the other will display rapidly changing coordinates as the user of the other browser moves the mouse within the box.
+3. 15 Points. Here we want to subscribe to the events being published in Part 1 Question 2. Create a new directory named Project2_Part1_Question_3.
+Create subdirectories and files as you did in Question 2. This time, however, the web application will listen on port 3002. The index.html file will make good use of mqttws31.js. It will subscribe to events published to Mosquitto and it will display the coordinates being received (there will be no box, just text being displayed). Test your system by running two browsers at the same time. One browser will display the box (from Question 2) and the other will display rapidly changing coordinates as the user of the other browser moves the mouse within the box.
 
-Note: MQTT is very fussy about client names. Each client that visits must present a unique name. In this part of Project 2, we need two names - one for the publisher and another for the subscriber. If you added several subscribers, you would need several names.
+Note: MQTT is very fussy about client names. Each client that visits must present a unique name. In this part of Project 2, we need two names - one for the publisher and another for the subscriber. If you add several subscribers, you will need several names.
 
-Note too that the communication between the broker and the browsers is done with websockets but we have abstracted those details away. The details are all hidden within the mqttws31.js library. By using "abstraction" we are hiding details and separating concerns - these are very important principles in computer science and in many areas of engineering.
+Note too that the communication between the broker and the browsers is done with WebSockets but we have abstracted those details away. The details are all hidden within the mqttws31.js library. By using "abstraction" we are hiding details and separating concerns - these are very important principles in computer science and in many areas of engineering.
 
 ### Part 2 Monitoring light levels with a microcontroller
 
