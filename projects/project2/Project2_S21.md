@@ -25,10 +25,6 @@ The publish subscribe approach exemplifies loose coupling and provides for scala
 
 The publish subscribe design pattern is well established in the internet of things.
 
-Note: In the section of this project where you work with the Particle Argon and MQTT, you may need to turn
-your fire wall off and then reboot your machine. Firewalls can be sticky and may only
-appear to be off. Turn your fire wall back on after completing this assignment.
-
 ### Objectives
 
 One objective of this project is to learn to use an MQTT publish and subscribe broker. There are many implementations of MQTT. We will use a broker named Mosquitto.
