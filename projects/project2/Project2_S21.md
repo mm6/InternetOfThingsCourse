@@ -199,8 +199,8 @@ Note too that the communication between the broker and the browsers is done with
 2. Place the Argon bottom on row 26 of the breadboard.
 3. The Argon top will now just cover row 7.
 4. Be sure that you can read the writing on the Argon. It will be right side up.
-5. Place the long leg of the photo transistor in row 13, (A0) (on the left of the Argon).
-6. Place the short leg of the photo transistor in row 10 (3V3).
+5. Place the long leg of the phototransistor in row 13, (A0) (on the left of the Argon).
+6. Place the short leg of the phototransistor in row 10 (3V3).
 7. Place a 220 ohm resistor in row 12 (GND) and in row 13 (A0).
 8. Your hardware setup should look like the following:
 ![Argon Light Monitor](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonLightMonitor.png?raw=true)
@@ -212,7 +212,7 @@ Note too that the communication between the broker and the browsers is done with
 // View output from the command line with
 // particle serial monitor
 
-int photoResistor = A0;
+int photoTransistor = A0;
 int analogValue;
 
 unsigned long loop_timer;
@@ -225,7 +225,7 @@ void setup() {
 void loop() {
     if(millis() - loop_timer >= 5000UL) {
         loop_timer = millis();
-        analogValue = analogRead(photoResistor);
+        analogValue = analogRead(photoTransistor);
         Serial.printlnf("AnalogValue == %u", analogValue);
     }
 }
@@ -233,9 +233,9 @@ void loop() {
 
 10. To monitor the Argon, run the command "particle serial monitor" from the command line interface.
 
-11. Test your system by changing your lighting and monitoring the numeric light levels on the command line interface. A value near 0 would signal no light and a value of 1000 or so would mean the photo resistor is near a light bulb.
+11. Test your system by changing your lighting and monitoring the numeric light levels on the command line interface. A value near 0 would signal no light and a value of 1000 or so would mean the phototransistor is near a light bulb.
 
-12. We are reading the light values every second and the values are available to the serial monitor. Next, we would like to transmit these values to Node-RED every 5 seconds. We will use standard HTTP and JSON messages to do so.
+12. We are reading the light values every 5 seconds and the values are available to the serial monitor. Next, we would like to transmit these values to Node-RED every 5 seconds. We will use standard HTTP and JSON messages to do so.
 
 13. Using the "Particle Libraries" icon (on the far left just above the question mark), add the httpclient library and include it in the LightMonitor project. Your code should now include the C++ statement:
 ```
@@ -274,16 +274,18 @@ HttpClient http;
  String deviceID = "";
 
 ```
-15. Read over and then add this code to the setup() function:
+15. Read over this code and then add it inside the setup() function:
 
 ```
 // The IP address of the server running on our machine.
 // Do not use localhost. The microcontroller would attempt
-// to visit itself with localhost.
+// to visit itself with localhost
+// Check your system to learn its IP address.
 request.ip = IPAddress(192,168,86,164);  
 
 // Specify the port that our server is listening on.
-request.port = 3000;
+// This will be in the browser where Node-RED is running.
+request.port = 1880;
 
 // get the unique id of this device as 24 hex characters
 deviceID = System.deviceID().c_str();
@@ -302,7 +304,59 @@ Serial.println(deviceID);
    Serial.println(response.body);  
  }  
 ```
+17. To make the HTTP POST request, we can use the following function:
+```
+void doPostRequest() {
 
+  // Provide the path to the service
+  // The HTTP IN node in Node-RED needs
+  // is configured with a URL of microcontrollerLightValue
+  request.path = "/microcontrollerLightValue";
+
+  // Build the JSON request
+  char json[1000] = "{\"deviceID\":\"";
+  // Add the deviceID data
+  strcat(json,deviceID);
+  // add the closing quotes
+  strcat(json,"\"");
+
+  // add the JSON ending
+  strcat(json,"}");
+
+  Serial.println(json);
+  // assign the JSON string to the HTTP request body
+  request.body = json;
+  // post the request
+  http.post(request, response, headers);
+  // show response
+  printResponse(response);
+}
+```
+18) The code above should work, producing legal JSON post requests.
+Your assignment is to add the analog light value to the JSON string. The string will look like the following:
+
+```
+{"deviceID":"e00fce68dfb40ca61243495e","lightReading":67}
+```
+In order to convert the light level reading to C++ string data, you can use the following code:
+
+```
+std::string analogValueString = std::to_string(analogValue);
+char const *pchar = analogValueString.c_str();
+
+```
+And you can add it to the JSON string like this:
+
+```
+strcat(json,pchar);
+```
+So, your C++ task is to add a JSON label, "lightReading" for this value.
+
+Note that the Node-RED port needs to be specified in the firmware. On my my machine, my Node-RED port is 1880.
+
+Note too that prior to making the changes described in 18, you would be wise to get Node-RED running and receiving the limited post requests. That is, do step 19 first.
+
+19) Run Node-RED and create three nodes: an HTTP IN node, an HTTP out node, and a debug node to view the messages that arrive from the Argon.
 
 ### Part 3.
 
