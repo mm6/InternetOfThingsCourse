@@ -35,6 +35,8 @@ The second objective is to learn the Google Charts Javascript library. The inter
 
 The third objective is to continue our work with the Particle Argon microcontroller.
 
+There will be some challenges along the way.
+
 
 ### Overview and setup
 
