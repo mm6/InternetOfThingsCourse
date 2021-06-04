@@ -366,63 +366,6 @@ Note that the Node-RED port needs to be specified in the firmware. On my my mach
 
 ### Part 3.
 
-In Part 3 we will experiment with MQTT and the Particle Argon.
-
-Imagine an IoT instructor who wants to call roll quickly. During class, each student has a Wifi
-connected Argon. In a few moments, the instructor has a roster of all students present. This roster
-is available on a web site accessible by the instructor.
-
-1. 15 Points. Using a Particle Argon, develop firmware that will publish your name and a URL to
-an MQTT service. Name this firmware file 'transmitid.ino'. Your name, URL pair will be published to the topic
-'student/id'. Use the IDE provided at build.particle.io. To get started making calls to MQTT from an
-Argon, use the code provided at Particle. In my solution, I worked from the example called
-'mqtttest.ino'. Write your firmware so that your name and URL is published every 5 seconds to the MQTT
-service. Note the call to 'client.loop()'. This is an important call to make in order for your client (Argon)
-and your server (MQTT) to stay connected. Whenever your Argon sends your name and URL to the
-server, it should blink a light. The light will remain on for one second - notifying the student that
-her transmission is taking place.
-
-It is important that you place your own comments in transmitid.ino. These comments should convince the
-reader that you understand what is going on in the code.
-
-The MQTT library is available by searching the libraries on Particle. You need to include MQTT.h and
-MQTT.cpp in your Particle Application. After selecting the library, you have to hit the
-'Include In Project' button. Your code will automatically receive the #include<MQTT.h> statement.
-
-The name, URL pair will be transmitted in JSON format. For example, in my solution I am sending
-the JSON object { "name":"Michael McCarthy", "URL":"http://www.andrew.cmu.edu/user/mm6"}. You are required
-to do the same. For your URL, choose http://www.andrew.cmu.edu/user/your_andrew_ID.
-
-2. 15 Points. Using IntelliJ, build a web project called ArgonMQTTSubscriber. Within this project,
-write an index.html file and javascript code that subscribes to your MQTT service. It will subscribe to any
-messages published to 'student/id'. When the Argon publishes a name and URL to the topic 'student/id', your
-web site will display the name and URL on the browser. You have to plan on many names being published (even
-though you only have one Argon to test with). If many names arrive, they should all be listed, as they
-arrive, on the browser. In order to do this, your Javascript will create a Set object. When a name
-arrives that is not in the set, display it on the browser. If a name arrives that is already in the set, simply ignore it. Test this by changing the name and url coming from your Argon. You will need to flash your firmware with a new name and URL.
-
-
-### Submission guide
-
-Documentation is required. Spend some time cleaning up your code and adding good comments to
-your code.
-
-Create a directory with your Andrew ID as the name. For example, my directory would
-be called mm6.
-
-Part 1:
-    Place the three projects into the directory.
-Part 2:
-    Place the four projects into the directory.
-Part 3:
-    Place the web project and a copy of transmitName.ino into the directory.
-
-Zip the directory. Submit a single zipped file to Canvas.
-
-We will require that you schedule some time during the instructor or TA office hours to demonstrate
-your solution. If you have difficulty running Mosquitto on your machine, see us soon. If we are unable
-to get Mosquitto running there is a free online version available (Hive MQ). Get started soon and use
-Hive if you are not able to run a local broker.
 
 ### Optional notes on Using a Remote Broker
 
