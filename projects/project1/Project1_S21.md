@@ -144,7 +144,7 @@ $particle update-cli     Update the CLI
 
 #### Using Node-RED, subscribe to the heartbeat messages that are being published to particle.
 
-11) Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Argon. We want Node-RED to hear about the heart beats. [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Argon to Node-RED. Read about Node-RED and integrate Node-RED with the Particle console.](https://docs.particle.io/community/node-red/)
+11) Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Argon. We want Node-RED to hear about the heart beats. [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Particle Cloud to Node-RED. Read about Node-RED and integrate Node-RED with the Particle Cloud.](https://docs.particle.io/community/node-red/)
 
 
 12) After completing the work in step 11, you should have a Node-RED platform receiving messages from your Argon every 10 seconds or so. Each message should contain a JSON string with the device ID. Each message should appear in the right pane of the Node-RED UI.
