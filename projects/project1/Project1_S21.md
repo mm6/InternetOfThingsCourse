@@ -163,6 +163,8 @@ The Node-RED palette should have a subscribe node wired to a debug node.
 ```
 // The message has arrived in the msg object.
 // Create a javascript object using the JSON message payload.
+// The payload is a simple JSON string and will be parsed
+// to create a Javascript object.
 var newMessage = JSON.parse(msg.payload);
 // Add a time field to the new object.
 // Use the current date and time.
