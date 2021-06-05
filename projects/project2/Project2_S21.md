@@ -14,7 +14,7 @@ Plan:
              Hardware setup and firmware
      Part 3. Node-RED adds a timestamp and publishes to an MQTT broker
      Part 4. Several Browsers present a real time graphical
-             display using Googl Charts - Digital readout, gauge and line graph (all served up from Node.js).
+             display using Google Charts - Digital readout, gauge and line graph (all served up from Node.js).
      Part 5. (Optional but way cool) Transmit the light values to
              Node-RED using BLE
 -->
@@ -184,7 +184,7 @@ Note too that the communication between the broker and the browsers is done with
 
 #### Hardware Set Up
 
-We would like to configure our microcontroller to sense or monitor changes in light. This has many applications from security to farming to home automation.
+We would like to configure our microcontroller to sense or monitor changes in light. Light monitoring has many applications from security to smart farming to home automation to industrial IoT.
 
 1. Hold the Argon breadboard so that row 1 is away and row 30 is near (on the bottom).
 2. Place the Argon bottom on row 26 of the breadboard.
@@ -222,140 +222,166 @@ void loop() {
 }
 ```
 
-10. To monitor the Argon, run the command "particle serial monitor" from the command line interface.
+10. To monitor the Argon locally, run the command "particle serial monitor" from the command line interface.
 
-11. Test your system by changing your lighting and monitoring the numeric light levels on the command line interface. A value near 0 would signal no light and a value of 1000 or so would mean the phototransistor is near a light bulb.
+11. Test your system by changing the lighting near the phototransistor and monitoring the numeric light levels on the command line interface. A value near 0 would signal no light and a value of 1000 or so would mean the phototransistor is near a light bulb.
 
-12. We are reading the light values every 5 seconds and the values are available to the serial monitor. Next, we would like to transmit these values to Node-RED. We will use standard HTTP and JSON messages to do so.
+12. We are reading the light values every 5 seconds and the values are available locally on the serial monitor. Next, we would like to transmit these values to the internet where Node-RED will be listening. We will use standard HTTP and JSON messages to do so.
 
 13. Using the "Particle Libraries" icon (on the far left just above the question mark), search for and add the httpclient library and include it in the LightMonitor project. Your code should now include the C++ statement:
 ```
 #include <HttpClient.h>
 
 ```
-
-14. Read over the following code. Add this code just above the setup() function:
+14. Copy the following code and paste it over the light monitor code in Question 9. It is almost the same code but we have added the logic to perform HTTP post requests with JSON data.
 
 ```
-// Define an http variable to be of type HttpClient.
-HttpClient http;
+// This #include statement was automatically added by the Particle IDE.
+#include <HttpClient.h>
 
-// We always pass Http headers on each request to the Http Server
-// Here, we only define a single header. The NULL, NULL pair is
-// used
-// to terminate the list of headers.
+// File name: ArgonSimpleLightMonitor
+// View output from the command line with
+// particle serial monitor
+
+ // Define the http variable to be of type HttpClient.
+ HttpClient http;
+
+ // We always pass Http headers on each request to the Http Server
+ // Here, we only define a single header. The NULL, NULL pair is used
+ // to terminate the list of headers.
 
  // The Content-Type header is used to inform the server
  // of the type of message that it will be receiving. Here,
  // we tell the server to expect to receive data marked up in
  // JSON.
 
- http_header_t headers[] = {  
-    { "Content-Type", "application/json" },  
-    { NULL, NULL }   
- };  
+ http_header_t headers[] = {
+    { "Content-Type", "application/json" },
+    { NULL, NULL }
+ };
 
  // Here we define structures to hold the request and the response data.
  // These are declared with types defined in the header file included above.
 
- http_request_t request;  
+ http_request_t request;
  http_response_t response;
 
  //A variable to hold the device unique ID
  String deviceID = "";
 
-```
-15. Read over this code and then add it ***inside*** the setup() function:
+// We want to read A0
+int photoResistor = A0;
+int analogValue;
 
-```
-// The IP address of the server running on our machine.
-// Do not use localhost. The microcontroller would attempt
-// to visit itself with localhost
-// Check your system to learn its IP address.
-request.ip = IPAddress(192,168,86,164);  
+unsigned long loop_timer;
 
-// Specify the port that our server is listening on.
-// This will be in the browser where Node-RED is running.
-request.port = 1880;
 
-// get the unique id of this device as 24 hex characters
-deviceID = System.deviceID().c_str();
+ void setup() {
 
-// display the id to the command line interface
-Serial.println(deviceID);  
+   // Specify the speed with which we will talk to the serial interface.
+   // The serial interface is associated with our shell or command line interface.
 
-```
-16. Below the setup() function, add a new function designed to display the response data from an HTTP request.
+   Serial.begin(9600);
 
-```
-// Provided with a response, display it to the command line interface.
- void printResponse(http_response_t &response) {  
-   Serial.println("HTTP Response: ");  
-   Serial.println(response.status);  
-   Serial.println(response.body);  
- }  
-```
-17. To make the HTTP POST request, we can use the following function:
-```
-void doPostRequest() {
+   // The IP address of the server running on our machine.
+   // Do not use localhost. The microcontroller would attempt
+   // to visit itself with localhost.
+   request.ip = IPAddress(192,168,86,232);
 
-  // Provide the path to the service
-  // The "HTTP IN" node in Node-RED needs to be
-  // configured with a URL of microcontrollerLightValue
-  request.path = "/microcontrollerLightValue";
+   // Specify the port that our server is listening on.
+   request.port = 1880;
 
-  // Build the JSON request
-  char json[1000] = "{\"deviceID\":\"";
-  // Add the deviceID data
-  strcat(json,deviceID);
-  // add the closing quotes
-  strcat(json,"\"");
+   // get the unique id of this device as 24 hex characters
+   deviceID = System.deviceID().c_str();
 
-  // add the JSON ending
-  strcat(json,"}");
+   // display the id to the command line interface
+   Serial.println(deviceID);
 
-  Serial.println(json);
-  // assign the JSON string to the HTTP request body
-  request.body = json;
-  // post the request
-  http.post(request, response, headers);
-  // show response
-  printResponse(response);
+
+   // initialize the loop_timer variable to the current time
+   loop_timer = millis();
+
+   Serial.println("Light monitor setup complete");
+ }
+
+ // Provided with a response, display it to the command line interface.
+ void printResponse(http_response_t &response) {
+   Serial.println("HTTP Response: ");
+   Serial.println(response.status);
+   Serial.println(response.body);
+ }
+
+ void doPostRequest() {
+
+     // buf will hold the JSON string
+     char json[1000] = {0};
+
+    // This class makes handling JSON data easy.
+    // Associate it with the buf array of char.
+    JSONBufferWriter writer(json, sizeof(json)-1);
+
+    Serial.println("About to post");
+   // Provide the path to the service
+   // The HTTP IN node in Node-RED needs
+   // is configured with a URL of microcontrollerLightValue
+   request.path = "/microcontrollerLightValue";
+
+   // convert the integer analogValue to a string
+   std::string analogValueString = std::to_string(analogValue);
+   char const *analogValueStr = analogValueString.c_str();  
+
+   // build a JSON string
+   writer.beginObject();
+   writer.name("deviceID").value(deviceID);
+   writer.name("lightReading").value(analogValueStr);
+   writer.endObject();
+
+   // for debugging, view the JSON on the CLI
+   Serial.println("JSON String");
+   Serial.println(json);
+   // assign the JSON string to the HTTP request body
+   request.body = json;
+   // post the request
+   http.post(request, response, headers);
+   // show response
+   printResponse(response);
+
+   // clear the buffer holding the JSON request
+   writer.buffer()[std::min(writer.bufferSize(), writer.dataSize())] = 0;
+ }
+
+void loop() {
+    // every 5 seconds send an http post request
+    if(millis() - loop_timer >= 5000UL) {
+        loop_timer = millis();
+        // read the light value from the phototransistor
+        analogValue = analogRead(photoResistor);
+        Serial.printlnf("AnalogValue == %u", analogValue);
+        doPostRequest();
+    }
 }
 ```
-18) The code above should work, producing legal JSON post requests.
-The requests should look as follows:
+15. To check this solution, get Node-RED running and receiving these requests. You will need to create three nodes: an "HTTP IN" node, an "HTTP out" node, and a "debug" node to view the messages that arrive from the Argon. Be sure to have this working before moving on.
+
+16. Add a function node in between the "HTTP IN" node and the "debug" node. This function node will add a timestamp to messages going through. Since the microcontroller has specified that the messages are "application/json", Node-RED passes a Javascript object in the msg.payload. In order to complete this function, you will need to review the Javascript code on Project 1 Part 2. But keep in mind that a Javascript object is already available. Name this node "Add Timestamp".
+
+17. Deploy your flow and check if your debug node is generating text such as this:
 
 ```
-{"deviceID":"e00fce68dfb40ca61243495e"}
-
+"{"deviceID":"e00fce68dfb40ca61243495e","lightReading":"89","time":"2021-06-05T21:00:09.832Z"}"
 ```
 
-19) To check this, get Node-RED running and receiving these requests. You will need to create three nodes: an "HTTP IN" node, an "HTTP out" node, and a "debug" node to view the messages that arrive from the Argon. Be sure to have this working before moving on.
 
-20) Your C++ assignment is to add the analog light level value to the JSON string. The final string will look like the following:
+### Part 3. Publishing Light Levels to MQTT
 
-```
-{"deviceID":"e00fce68dfb40ca61243495e","lightReading":67}
-```
-In order to convert the light level reading to C++ string data, you can use the following code:
+1. Add an "MQTT OUT" node to the Node-RED palette. Configure the new node to publish to the topic "argonLightLevel". The quality of service is 0 and Mosquitto's port is 1883 running on localhost. The name of this Node is "To MQTT".
 
-```
-std::string analogValueString = std::to_string(analogValue);
-char const *pchar = analogValueString.c_str();
-
-```
-And you can add it to the JSON string like this:
-
-```
-strcat(json,pchar);
-```
-So, your C++ task is to add a JSON label, "lightReading" for this light level value.
-
-Note that the Node-RED port needs to be specified in the firmware. On my machine, my Node-RED port is 1880. Check your Node-RED browser's URL to make sure the port is correct.
+2. Connect your "HTTP IN" node to the "Add Timestamp" node. Connect the "Add Timestamp" node to the "To MQTT" node. Run mosquitto and deploy the flow. You should see events being published to mosquitto every 5 seconds or so.
 
 
-### Part 3.
+### Part 4. Several browsers subscribe to light levels
+
+
 
 
 ### Optional notes on Using a Remote Broker
