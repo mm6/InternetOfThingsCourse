@@ -87,7 +87,7 @@ In our web pages, we will include the Javascript library from Paho. It is called
 
 To make use of the mqttws31.js library, there is a very nice "getting started" section at the following link. It has a simple example of a Javascript client that will run in a web page. It is very useful for us and is found [here.](https://eclipse.org/paho/clients/js/)
 
-I am including a copy of this client side Javascript here. Be sure to study how this works. You will need to incorporate it into your browser when you want your browser to communicate with an MQTT broker. Notice that it makes use of the Paho.MQTT library.  
+I am including a copy of this client side Javascript here. Be sure to study how this works. You will need to incorporate it into your browser when you want your browser to communicate with an MQTT broker. Notice that it makes use of the Paho.MQTT library.
 
 ```
 // Create a client instance
@@ -175,6 +175,12 @@ will grade based on the quality of these comments.
 
 3. 15 Points. Here we want to subscribe to the events being published in Part 1 Question 2. Create a new directory named Project2_Part1_Question_3.
 Create subdirectories and files as you did in Question 2. This time, however, the web application will listen on port 3002. The index.html file will make good use of mqttws31.js. It will subscribe to events published to Mosquitto and it will display the coordinates being received (there will be no box, just text being displayed). Test your system by running two browsers at the same time. One browser will display the box (from Question 2) and the other will display rapidly changing coordinates as the user of the other browser moves the mouse within the box.
+
+In my solution, I use the following to connect to MQTT:
+
+```
+client = new Paho.MQTT.Client('localhost', Number(9002), "MouseTrackerSubscriber");
+```
 
 Note: MQTT is very fussy about client names. Each client that visits must present a unique name. In this part of Project 2, we need two names - one for the publisher and another for the subscriber. If you add several subscribers, you will need several names.
 
@@ -380,6 +386,7 @@ void loop() {
 
 
 ### Part 4. Several browsers subscribe to light levels
+
 
 
 
