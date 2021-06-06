@@ -659,7 +659,7 @@ app.listen(port, () => {
 
 ### Part 7: Build a websocket web site using Express and Node-RED
 
-In this Part, you will add websockets to our heartbeat application. This Part will not use AJAX. Instead, we are looking for real time updates from the service. The user of the browser will be able to sit back and view the updates.
+In this Part, you will add WebSockets to our heartbeat application. This Part will not use AJAX. Instead, we are looking for real time updates from the service. The user of the browser will be able to sit back and view the updates.
 
 0) Create an empty directory named Project1_Part7.
 
@@ -787,13 +787,13 @@ function updateStatus(msg) {
     }
 ```
 
-6) You should now be able to run the server provided in the HTMLClient directory. However, tt will not be able to connect to a websocket and will generate an error in a pop up window when the browser visits http://localhost:8080.
+6) You should now be able to run the server provided in the HTMLClient directory. However, it will not be able to connect to a websocket and will generate an error in a pop up window when the browser visits http://localhost:8080.
 
 ```
 node server.js
 
 ```
-7) We need to have a websocket service for our browser to connect to. Go into the subdirectory named "UsedByHTML" created back in step 1.
+7) We need to have a WebSocket service for our browser to connect to. Go into the subdirectory named "UsedByHTML" created back in step 1.
 
 8) Create the file server.js with the following content:
 
@@ -835,9 +835,9 @@ node server.js
 
 ```
 
-10) We should now be able to run our browser and visit  http://localhost:8080 without an error. The web page should connect to the bidirectional web socket on port 6969. But, we are missing the updates from Node-RED. We need to add a websocket node to the Node-RED palette so that the microcontroller's updates arrive.
+10) We should now be able to run our browser and visit  http://localhost:8080 without an error. The web page should connect to the bidirectional web socket on port 6969. But, we are missing the updates from Node-RED. We need to add a WebSocket node to the Node-RED palette so that the microcontroller's updates arrive.
 
-11) In Node-RED, disable the HTTP Request node and the function node that prepares the HTTP request. Add a new websocket out node named "Node-RED to websocket". The type property should be "Connect to". The url field should be ws://localhost:6969 (note, we are using the "ws" scheme and not the "http" scheme).
+11) In Node-RED, disable the HTTP Request node and the function node that prepares the HTTP request. Add a new WebSocket out node named "Node-RED to WebSocket". The type property should be "Connect to". The url field should be ws://localhost:6969 (note, we are using the "ws" scheme and not the "http" scheme).
 
 12) Vist the web site at http://localhost:8080 and heartbeats should appear on the Microcontroller Status Page as they arrive.
 
