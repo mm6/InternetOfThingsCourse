@@ -396,7 +396,7 @@ void loop() {
 
 1) [Spend some time learning Google Charts.](https://developers.google.com/chart)
 
-2) Write a web application using Node.js that subscribes to the MQTT argonLightLevel topic. Use Google Charts to visualize the data with these three charts: gauge, line chart, and animated line chart.
+2) Write a web application using Node.js that subscribes to the MQTT argonLightLevel topic. Use Google Charts to visualize the data with these three charts: gauge, line chart, and animated line chart. They should all appear on the browser at the same time and several browser should be able to visit at the same time.
 
 
 ### Optional notes on Using a remote (rather than local) MQTT broker
