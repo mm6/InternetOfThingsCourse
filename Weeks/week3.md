@@ -36,7 +36,7 @@ browser.
 
 ## Project
 
-+ [Project 2 Publish Subscribe](../projects/project2/Project2.md)
++ [Summer 2021 Project 2 Publish subscribe](../projects/project1/Project2_S21.md)
 + Project 1 Due Midnight Wednesday
 
 ## Quizzes
