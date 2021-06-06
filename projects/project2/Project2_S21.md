@@ -19,6 +19,9 @@ Plan:
      Part 5. (Optional but way cool) Transmit the light values to
              Node-RED using BLE
 -->
+
+:checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project2.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
+
 Many IoT applications monitor real time data from sensors and
 transmit these data to a service offering publish and subscribe capabilities. The service behaves as a broker. The sensor plays the role of publisher and it may have no idea who its subscribers are. It simply transmits data to the broker. A subscriber subscribes to messages from the broker and, in this way, is able to consume data from the sensors.
 
@@ -172,6 +175,10 @@ and the x and y coordinates are displayed. It is required that you add your
 own detailed comments to this code - explaining clearly how it works. The grader
 will grade based on the quality of these comments.
 
+:checkered_flag:**Take a screenshot showing the browser screen.  Name your screenshot Project2Part1Question1.png.**
+:checkered_flag:**Include your HTML and Javascript with comments.  Name your file Project2Part1Question1.html.**
+
+
 2. 15 Points. Here we want to sense the mouse movements and publish them to Mosquitto running MQTT. Create a new directory named Project2_Part1_Question_2. Include the same index.js file that you used in Part 1. Create a subdirectory named "public" containing an index.html file that publishes each new mouse coordinate pair to your MQTT broker. Your solution must make good use of the Javascript library - mqttws31.js.
 
 3. 15 Points. Here we want to subscribe to the events being published in Part 1 Question 2. Create a new directory named Project2_Part1_Question_3.
@@ -186,6 +193,9 @@ client = new Paho.MQTT.Client('localhost', Number(9002), "MouseTrackerSubscriber
 Note: MQTT is very fussy about client names. Each client that visits must present a unique name. In this part of Project 2, we need two names - one for the publisher and another for the subscriber. If you add several subscribers, you will need several names.
 
 Note too that the communication between the broker and the browsers is done with WebSockets but we have abstracted those details away. The details are all hidden within the mqttws31.js library. By using "abstraction" we are hiding details and separating concerns - these are very important principles in computer science and in many areas of engineering.
+
+:checkered_flag:**Take a screenshot showing two browser screens.  Name your screenshot Project2Part1Questions2And3.png.**
+:checkered_flag:**Include your HTML and Javascript with comments.  Name your files Project2Part1Question2.html and Project2Part1Question3.html**
 
 ### Part 2 Monitoring light levels with a microcontroller
 
@@ -377,14 +387,17 @@ void loop() {
 ```
 "{"deviceID":"e00fce68dfb40ca61243495e","lightReading":"89","time":"2021-06-05T21:00:09.832Z"}"
 ```
+:checkered_flag:**Take a screenshot showing the Node-RED flow and the debug window showing JSON strings. Name your screenshot Project2Part2.png.**
 
 
 ### Part 3. Publishing Light Levels to MQTT
 
-1. Add an "MQTT OUT" node to the Node-RED palette. Configure the new node to publish to the topic "argonLightLevel". The quality of service is 0 and Mosquitto's port is 1883 running on localhost. The name of this Node is "To MQTT".
+1. Add an "MQTT OUT" node to the Node-RED palette. Configure the new node to publish to the topic "argonLightLevel". The quality of service (QoS) is 0 and Mosquitto's port is 1883 running on localhost. The name of this Node is "To MQTT".
 
 2. Connect your "HTTP IN" node to the "Add Timestamp" node. Connect the "Add Timestamp" node to the "To MQTT" node. Run mosquitto and deploy the flow. You should see events being published to mosquitto every 5 seconds or so.
 
+:checkered_flag:**Take a screenshot showing the Node-RED flow and the MQTT window as it receives visits. Name your screenshot Project2Part3.png.**
+:checkered_flag:**Create a text file with the Javascript code that is inside your timestamp function node. Name this file Project2Part3.js.**
 
 ### Part 4. Several browsers subscribe to microcontroller light levels
 
@@ -392,12 +405,17 @@ void loop() {
 
 2) When the HTML runs in the browser, ask the user to provide a client side name. This name will be used to provide the client with a unique identifier as it connects to MQTT. If we do not change the name for each client, MQTT will assume that separate visits are all from the same client and will only respond to the last visitor. In other words, we would only be able to subscribe from one browser instance. We want to have several simultaneous visitors. How you design this input request is in your hands. You will need to work a bit with the HTML and Javascript.
 
+:checkered_flag:**Take a screenshot showing more than one browser receiving the same data from the broker. Name your screenshot Project2Part4.png.**
+:checkered_flag:**Create a text file with the HTML and Javascript  code that is inside your index.html file. Name this file Project2Part4.html.**
+
 ### Part 5. Subscribe to MQTT and visualize with Google Charts
 
 1) [Spend some time learning Google Charts.](https://developers.google.com/chart)
 
 2) Write a web application using Node.js that subscribes to the MQTT argonLightLevel topic. Use Google Charts to visualize the data with these three charts: gauge, line chart, and animated line chart. They should all appear on the browser at the same time and several browser should be able to visit at the same time.
 
+:checkered_flag:**Take a screenshot showing the visualization. Name your screenshot Project2Part5.png.**
+:checkered_flag:**Create a text file with the HTML and Javascript  code that is inside your index.html file. Name this file Project2Part5.html.**
 
 ### Optional notes on Using a remote (rather than local) MQTT broker
 
