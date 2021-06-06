@@ -13,8 +13,9 @@ Plan:
      Part 2. Argon light values to Node-RED using HTTP
              Hardware setup and firmware
      Part 3. Node-RED adds a timestamp and publishes to an MQTT broker
-     Part 4. Several Browsers present a real time graphical
-             display using Google Charts - Digital readout, gauge and line graph (all served up from Node.js).
+     Part 4. Web application: Several Browsers visit MQTT for subscriptions.
+     Part 5. Web application: Present a real time graphical
+             display using Google Charts - Output includes a Digital readout, gauge, and line graph.
      Part 5. (Optional but way cool) Transmit the light values to
              Node-RED using BLE
 -->
@@ -385,17 +386,22 @@ void loop() {
 2. Connect your "HTTP IN" node to the "Add Timestamp" node. Connect the "Add Timestamp" node to the "To MQTT" node. Run mosquitto and deploy the flow. You should see events being published to mosquitto every 5 seconds or so.
 
 
-### Part 4. Several browsers subscribe to light levels
+### Part 4. Several browsers subscribe to microcontroller light levels
+
+1) Write a web application using Node.js that includes Javascript that subscribes to the topic "argonLightLevel". The Javascript will be included in an HTML file and the browser display will show the changing values as they are reported from the Argon.
+
+2) When the HTML runs in the browser, ask the user to provide a client side name. This name will be used to provide the client with a unique identifier as it connects to MQTT. If we do not change the name for each client, MQTT will assume that separate visits are all from the same client and will only respond to the last visitor. In other words, we would only be able to subscribe from one browser instance. We want to have several simultaneous visitors. How you design this input request is in your hands. You will need to work a bit with the HTML and Javascript.
+
+### Part 5. Subscribe to MQTT and visualize with Google Charts
+
+1) [Spend some time learning Google Charts.](https://developers.google.com/chart)
+
+2) Write a web application using Node.js that subscribes to the MQTT argonLightLevel topic. Use Google Charts to visualize the data with these three charts: gauge, line chart, and animated line chart.
 
 
+### Optional notes on Using a remote (rather than local) MQTT broker
 
-
-
-### Optional notes on Using a Remote Broker
-
-
-If you are unable to install Mosquito on your local machine, I have had success with the following
-broker on the cloud:
+If you are unable to install Mosquito on your local machine, I have had success with the following broker on the cloud:
 
 broker.hivemq.com  for MQTT use port  1883
 and for Websockets use port  8000
@@ -405,21 +411,19 @@ In my Javascript, I am using a line like this:
 
  var loc = {'hostname' : 'broker.hivemq.com', 'port' : '8000' };
 ```
-In my Java code, I am using a line like this:
+When programming in Java, I would use a line like this:
 
 ```
 String broker  = "tcp://broker.hivemq.com:1883";
 ```
 
-Mosquito is fussy about the client ID. In the following line of code,
-I have used my Andrew ID. You should do that as well. In this way, we will
-not step on each other.
+Mosquito is fussy about the client ID. In the following line of code, I have used my Andrew ID.
 
 ```
 client = new Paho.MQTT.Client(loc.hostname, Number(loc.port), 'mm6');
 ```
 
-### Optional notes on Installing Mosquito on a  PC
+### Optional notes on Installing Mosquito on a Windows machine
 
 
 Download mosquitto setup file from [here.](http://www.eclipse.org/downloads/download.php?file=/mosquitto/binary/win32/mosquitto-1.4.10-install-win32.exe)
@@ -434,7 +438,7 @@ Copy libeay32.dll and ssleay32.dll from C:\temp\OpenSSL-Win32\bin to C:\Program 
 
 Download pthreadVC2.dll from [here.](ftp://sources.redhat.com/pub/pthreads-win32/dll-latest/dll/x86/ and Copy it to C:\Program Files (x86)\mosquitto)
 
-### Optional notes on PC Testing
+### Optional notes on testing on a Windows machine
 
 open command prompt and run the following commands
 
