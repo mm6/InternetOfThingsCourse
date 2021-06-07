@@ -16,7 +16,7 @@ Plan:
      Part 4. Web application: Several Browsers visit MQTT for subscriptions.
      Part 5. Web application: Present a real time graphical
              display using Google Charts - Output includes a Digital readout, gauge, and line graph.
-     Part 5. (Optional but way cool) Transmit the light values to
+     Part 6. (Optional but way cool) Transmit the light values to
              Node-RED using BLE
 -->
 
@@ -410,9 +410,9 @@ void loop() {
 
 ### Part 5. Subscribe to MQTT and visualize with Google Charts
 
-1) [Spend some time learning Google Charts.](https://developers.google.com/chart)
+1) [Spend some time learning Google Charts.](https://developers.google.com/chart). In particular, we are interested in the Gauge Chart.
 
-2) Write a web application using Node.js that subscribes to the MQTT argonLightLevel topic. Use Google Charts to visualize the data with these three charts: gauge, line chart, and animated line chart. They should all appear on the browser at the same time and several browser should be able to visit at the same time.
+2) Write a web application using Node.js. The web application will deliver HTML and Javascript to the browser and the the browser will subscribe to the MQTT "argonLightLevel" topic. Use Google Charts to visualize the data with a gauge chart. Several browser should be able to visit at the same time and view the same gauge.
 
 :checkered_flag:**Take a screenshot showing the visualization. Name your screenshot Project2Part5.png.**
 :checkered_flag:**Create a text file with the HTML and Javascript  code that is inside your index.html file. Name this file Project2Part5.html.**
