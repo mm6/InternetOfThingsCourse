@@ -400,7 +400,7 @@ void loop() {
 
 ### Part 5. Subscribe to MQTT and visualize with Google Charts
 
-1) [Spend some time learning Google Charts.](https://developers.google.com/chart). In particular, we are interested in the Gauge Chart.
+1) [Spend some time reviewing Google Charts.](https://developers.google.com/chart) In particular, we are interested in the Gauge Chart.
 
 2) Write a web application using Node.js. The web application will deliver HTML and Javascript to the browser and the the browser will subscribe to the MQTT "argonLightLevel" topic. Use Google Charts to visualize the data with a gauge chart. Several browser should be able to visit at the same time and view the same gauge.
 
