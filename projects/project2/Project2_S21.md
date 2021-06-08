@@ -120,7 +120,7 @@ The mqttws31.js file holds the Paho library and can be included in your HTML fil
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
 ```
 
-There is a nice discussion [here on MQTT.](https://developer.ibm.com/articles/iot-mqtt-why-good-for-iot/). It explains the publish subscribe patterns and shows an example using sensors.
+There is a nice discussion [here on MQTT.](https://developer.ibm.com/articles/iot-mqtt-why-good-for-iot/) It explains the publish subscribe patterns and shows an example using sensors.
 
 ### Part 1.
 
