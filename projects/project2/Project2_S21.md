@@ -1,4 +1,3 @@
-# DRAFT   DRAFT   DRAFT  DRAFT   DRAFT   
 
 # 95-733 Internet of Things Wednesday, June 9, 2021
 
@@ -6,19 +5,6 @@
 
 ### Topics: MQTT, Particle Argon, Node-RED, Node.js, Google Charts
 
-# DRAFT   DRAFT   DRAFT  DRAFT   DRAFT
-<!--
-Plan:
-     Part 1. Preparation: Work with MQTT from the browser (Node.js)
-     Part 2. Argon light values to Node-RED using HTTP
-             Hardware setup and firmware
-     Part 3. Node-RED adds a timestamp and publishes to an MQTT broker
-     Part 4. Web application: Several Browsers visit MQTT for subscriptions.
-     Part 5. Web application: Present a real time graphical
-             display using Google Charts - Output includes a Digital readout, gauge, and line graph.
-     Part 6. (Optional but way cool) Transmit the light values to
-             Node-RED using BLE
--->
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project2.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
@@ -64,7 +50,7 @@ or the remote version on the cloud.) Hive MQ's MQTT (both local and cloud) are a
 You can install Mosquitto on your MAC using brew. See [here](http://brew.sh) and then use "brew install mosquitto". There are directions on the mosquitto web site for Windows users.
 
 When you run mosquitto, it will run with its default configuration. We need to change its configuration to allow for WebSocket connections (we want to visit the server from
-Javascript). To change the configuration of Mosquitto, we can modify the configuration file found at /usr/local/etc/mosquitto/mosquitto.conf (on a MAC). My configuration file contains these lines:
+Javascript). To change the configuration of Mosquitto, we can modify the configuration file found at /usr/local/etc/mosquitto/mosquitto.conf (on a MAC). My configuration file contains these lines at the very end of the file:
 
 ```
 listener 1883
@@ -81,6 +67,7 @@ My copy of mosquitto is located at /usr/local/sbin. If I change to that director
 mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf -v
 
 ```
+Other students have their configuration file stored in /opt/homebrew/etc/mosquitto/mosquitto.conf. You may have to look around a bit.
 
 Once you have Mosquitto running, we want to connect to the server from Javascript running in a browser. We do not want to write the client side MQTT code ourselves. Even though we have
 easy access to WebSockets, it would be far better to use an existing Javascript library
@@ -160,10 +147,11 @@ app.listen(port, () => {
   console.log(`Mouse moving app listening at http://localhost:${port}/index.html`)
 })
 ```
-In the Project2_Part1_Question_1 directory, run the following two commands:
+In the Project2_Part1_Question_1 directory, run the following three commands:
 
 ```
-npm init
+npm init               note: accept the defaults
+npm install express
 node index.js
 ```
 You should be able to use a browser to visit http://localhost:3000/index.html.
@@ -182,13 +170,14 @@ will grade based on the quality of these comments.
 2. 15 Points. Here we want to sense the mouse movements and publish them to Mosquitto running MQTT. Create a new directory named Project2_Part1_Question_2. Include the same index.js file that you used in Part 1. Create a subdirectory named "public" containing an index.html file that publishes each new mouse coordinate pair to your MQTT broker. Your solution must make good use of the Javascript library - mqttws31.js.
 
 3. 15 Points. Here we want to subscribe to the events being published in Part 1 Question 2. Create a new directory named Project2_Part1_Question_3.
-Create subdirectories and files as you did in Question 2. This time, however, the web application will listen on port 3002. The index.html file will make good use of mqttws31.js. It will subscribe to events published to Mosquitto and it will display the coordinates being received (there will be no box, just text being displayed). Test your system by running two browsers at the same time. One browser will display the box (from Question 2) and the other will display rapidly changing coordinates as the user of the other browser moves the mouse within the box.
+Create subdirectories and files as you did in Question 2. This time, however, the web application will listen on port 3002. In the index.js file, change the listening port from 3000 to 3002. This is so that we do not interfere with the server in Question 2. The index.html file will make good use of mqttws31.js. It will subscribe to events published to Mosquitto and it will display the coordinates being received (there will be no box, just text being displayed). Test your system by running two browsers at the same time. One browser will display the box (from Question 2) and the other will display rapidly changing coordinates as the user of the other browser moves the mouse within the box.
 
-In my solution, I use the following to connect to MQTT:
+In my solution, I included the following code before any Javascript code that makes use of it. This code is used to establish a connection to MQTT:
 
 ```
 client = new Paho.MQTT.Client('localhost', Number(9002), "MouseTrackerSubscriber");
 ```
+
 
 Note: MQTT is very fussy about client names. Each client that visits must present a unique name. In this part of Project 2, we need two names - one for the publisher and another for the subscriber. If you add several subscribers, you will need several names.
 
