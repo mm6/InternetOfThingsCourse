@@ -33,7 +33,7 @@ This is a five part assignment. The first part involves setting up an MQTT broke
 
 The second part requires that you set up the appropriate hardware and program your Argon with firmware written in C++. The C++ code is provided but worth studying.
 
-The third part involves the construction of a Node-RED flow that receives messages from the Argon via HTTP, makes modifications to the messages, and publishes the messages to MQTT.
+The third part involves the construction of a Node-RED flow that receives messages from the Argon via HTTP, makes modifications to the messages, and publishes the messages to MQTT. Note that we are not routing our messages through the Particle Cloud - as we did in Project 1.
 
 The fourth part involves writing a web application that provides browser code that subscribes to the Argon's messages from MQTT and produces a textual display.
 
