@@ -29,13 +29,15 @@ There will be some challenges along the way.
 ### Overview and setup
 
 
-This is a four part assignment. The first part involves setting up an MQTT broker and interacting with the broker using browsers and WebSockets. The web applications will be built with Node.js.
+This is a five part assignment. The first part involves setting up an MQTT broker and interacting with the broker using browsers and WebSockets. The web applications will be built with Node.js.
 
-The second part requires that you set up the appropriate hardware and program your Argon with firmware written in C++.
+The second part requires that you set up the appropriate hardware and program your Argon with firmware written in C++. The C++ code is provided but worth studying.
 
 The third part involves the construction of a Node-RED flow that receives messages from the Argon via HTTP, makes modifications to the messages, and publishes the messages to MQTT.
 
-The fourth part involves a web application that subscribes to the Argon's messages and produces a graphical display using Google Charts.
+The fourth part involves writing a web application that provides browser code that subscribes to the Argon's messages from MQTT and produces a textual display.
+
+Part 5 is the same as Part 4 but includes Google Charts for visualization.
 
 In Project 1, we monitored Argon heartbeats in real time with a browser. We leveraged WebSockets and wrote our own server side code that sent a message to all listeners.
 
