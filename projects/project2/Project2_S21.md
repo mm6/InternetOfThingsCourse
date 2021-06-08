@@ -11,9 +11,7 @@
 Many IoT applications monitor real time data from sensors and
 transmit these data to a service offering publish and subscribe capabilities. The service behaves as a broker. The sensor plays the role of publisher and it may have no idea who its subscribers are. It simply transmits data to the broker. A subscriber subscribes to messages from the broker and, in this way, is able to consume data from the sensors.
 
-The publish subscribe approach exemplifies loose coupling and provides for scalability.
-
-The publish subscribe design pattern is well established in the internet of things.
+The publish subscribe approach exemplifies loose coupling, provides for scalability, and is well established in the internet of things.
 
 ### Objectives
 
