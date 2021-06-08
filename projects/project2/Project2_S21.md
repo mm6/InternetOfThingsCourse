@@ -162,9 +162,9 @@ and the x and y coordinates are displayed. It is required that you add your
 own detailed comments to this code - explaining clearly how it works. The grader
 will grade based on the quality of these comments.
 
-:checkered_flag:**Take a screenshot showing the browser screen.  Name your screenshot Project2Part1Question1.png.**
+:checkered_flag: **Take a screenshot showing the browser screen.  Name your screenshot Project2Part1Question1.png.**
 
-:checkered_flag:**Include your HTML and Javascript with comments.  Name your file Project2Part1Question1.html.**
+:checkered_flag: **Include your HTML and Javascript with comments.  Name your file Project2Part1Question1.html.**
 
 2. 15 Points. Here we want to sense the mouse movements and publish them to Mosquitto running MQTT. Create a new directory named Project2_Part1_Question_2. Include the same index.js file that you used in Part 1. Create a subdirectory named "public" containing an index.html file that publishes each new mouse coordinate pair to your MQTT broker. Your solution must make good use of the Javascript library - mqttws31.js.
 
