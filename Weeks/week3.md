@@ -21,9 +21,9 @@ browser.
 
 ## Slides
 
-
+<!--
 + [Websockets in Java](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/03_AJAXJavascriptWebsocket.pdf)
-
+-->
 + [Publish/Subscribe with MQTT](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/03_MQTT.pdf)
 
 
