@@ -405,6 +405,7 @@ void loop() {
 2) Write a web application using Node.js. The web application will deliver HTML and Javascript to the browser and the the browser will subscribe to the MQTT "argonLightLevel" topic. Use Google Charts to visualize the data with a gauge chart. Several browser should be able to visit at the same time and view the same gauge.
 
 :checkered_flag:**Take a screenshot showing the visualization. Name your screenshot Project2Part5.png.**
+
 :checkered_flag:**Create a text file with the HTML and Javascript  code that is inside your index.html file. Name this file Project2Part5.html.**
 
 ### Optional notes on Using a remote (rather than local) MQTT broker
