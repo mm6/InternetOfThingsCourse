@@ -169,7 +169,7 @@ will grade based on the quality of these comments.
 2. 15 Points. Here we want to sense the mouse movements and publish them to Mosquitto running MQTT. Create a new directory named Project2_Part1_Question_2. Include the same index.js file that you used in Part 1. Create a subdirectory named "public" containing an index.html file that publishes each new mouse coordinate pair to your MQTT broker. Your solution must make good use of the Javascript library - mqttws31.js.
 
 3. 15 Points. Here we want to subscribe to the events being published in Part 1 Question 2. Create a new directory named Project2_Part1_Question_3.
-Create subdirectories and files as you did in Question 2. This time, however, the web application will listen on port 3002. In the index.js file, change the listening port from 3000 to 3002. This is so that we do not interfere with the server in Question 2. The index.html file will make good use of mqttws31.js. It will subscribe to events published to Mosquitto and it will display the coordinates being received (there will be no box, just text being displayed). Test your system by running two browsers at the same time. One browser will display the box (from Question 2) and the other will display rapidly changing coordinates as the user of the other browser moves the mouse within the box.
+Create subdirectories and files as you did in Question 2. This time, however, the web application will listen on port . In the index.js file, change the listening port from 3000 to . This is so that we do not interfere with the server in Question 2. The index.html file will make good use of mqttws31.js. It will subscribe to events published to Mosquitto and it will display the coordinates being received (there will be no box, just text being displayed). Test your system by running two browsers at the same time. One browser will display the box (from Question 2) and the other will display rapidly changing coordinates as the user of the other browser moves the mouse within the box.
 
 In my solution, I included the following code before any Javascript code that makes use of it. This code is used to establish a connection to MQTT:
 
@@ -196,8 +196,8 @@ We would like to configure our microcontroller to sense or monitor changes in li
 2. Place the Argon bottom on row 26 of the breadboard.
 3. The Argon top will now just cover row 7.
 4. Be sure that you can read the writing on the Argon. It will be right side up.
-5. Place the long leg of the phototransistor in row 13, (A0) (on the left of the Argon).
-6. Place the short leg of the phototransistor in row 10 (3V3).
+5. Place the long leg of the photodiode in row 13, (A0) (on the left of the Argon).
+6. Place the short leg of the photodiode in row 10 (3V3).
 7. Place a 220 ohm resistor in row 12 (GND) and in row 13 (A0).
 8. Your hardware setup should look like the following:
 ![Argon Light Monitor](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonLightMonitor.png?raw=true)
@@ -209,7 +209,7 @@ We would like to configure our microcontroller to sense or monitor changes in li
 // View output from the command line with
 // particle serial monitor
 
-int photoTransistor = A0;
+int photodiode = A0;
 int analogValue;
 
 unsigned long loop_timer;
@@ -222,7 +222,7 @@ void setup() {
 void loop() {
     if(millis() - loop_timer >= 5000UL) {
         loop_timer = millis();
-        analogValue = analogRead(photoTransistor);
+        analogValue = analogRead(photodiode);
         Serial.printlnf("AnalogValue == %u", analogValue);
     }
 }
@@ -230,7 +230,7 @@ void loop() {
 
 10. To monitor the Argon locally, run the command "particle serial monitor" from the command line interface.
 
-11. Test your system by changing the lighting near the phototransistor and monitoring the numeric light levels on the command line interface. A value near 0 would signal no light and a value of 1000 or so would mean the phototransistor is near a light bulb.
+11. Test your system by changing the lighting near the photodiode and monitoring the numeric light levels on the command line interface. A value near 0 would signal no light and a value of 1000 or so would mean the photodiode is near a light bulb.
 
 12. We are reading the light values every 5 seconds and the values are available locally on the serial monitor. Next, we would like to transmit these values to the internet where Node-RED will be listening. We will use standard HTTP and JSON messages to do so.
 
@@ -360,7 +360,7 @@ void loop() {
     // every 5 seconds send an http post request
     if(millis() - loop_timer >= 5000UL) {
         loop_timer = millis();
-        // read the light value from the phototransistor
+        // read the light value from the photodiode
         analogValue = analogRead(photoResistor);
         Serial.printlnf("AnalogValue == %u", analogValue);
         doPostRequest();
