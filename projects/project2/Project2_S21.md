@@ -41,7 +41,7 @@ Part 5 is the same as Part 4 but includes Google Charts for visualization.
 
 In Project 1, we monitored Argon heartbeats in real time with a browser. We leveraged WebSockets and wrote our own server side code that sent a message to all listeners.
 
-In much of this project, we will not write our own server side code (as we did in Project 1). Instead, we will use Mosquitto - an open source MQTT broker. [Download Mosquitto from here.](http://mosquitto.org/download/).
+In much of this project, we will not write our own server side code (as we did in Project 1). Instead, we will use Mosquitto - an open source MQTT broker. [Download Mosquitto from here.](http://mosquitto.org/download/)
 
 Note: In the past, some students had trouble with Mosquitto but had an easy time downloading Hive MQ's MQTT broker. The instructions below refer to my success in using Mosquito. Feel free to use whatever MQTT broker that you are comfortable with. You may use the local Hive MQ (downloaded to your machine
 or the remote version on the cloud.) Hive MQ's MQTT (both local and cloud) are available [from here](https://www.hivemq.com/try-out/).
