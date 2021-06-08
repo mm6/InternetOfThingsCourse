@@ -127,7 +127,7 @@ There is a nice discussion [here on MQTT.](https://developer.ibm.com/articles/io
 Your Part 1 we will experiment using real time data on the web.
 
 1. 5 Points. Create an empty directory named Project2_Part1_Question_1.
-Create a subdirectory named "public" and populate it with an index.html file. This fill contain the code found [here.](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousemove).
+Create a subdirectory named "public" and populate it with an index.html file. [This file contains the code found here.](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousemove)
 In the Project2_Part1_Question_1 directory, just above "public", create a file named index.js with the following code:
 
 ```
