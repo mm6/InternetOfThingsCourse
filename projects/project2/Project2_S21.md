@@ -178,7 +178,7 @@ client = new Paho.MQTT.Client('localhost', Number(9002), "MouseTrackerSubscriber
 ```
 
 
-Note: MQTT is very fussy about client names. Each client that visits must present a unique name. In this part of Project 2, we need two names - one for the publisher and another for the subscriber. If you add several subscribers, you will need several names.
+Note: MQTT is very fussy about client names. Each client that visits must present a unique name. In this part of Project 2, we need two names - one for the publisher and another for the subscriber. If you add several subscribers, you will need several names. The client shown just above has the name "MouseTrackerSubscriber".
 
 Note too that the communication between the broker and the browsers is done with WebSockets but we have abstracted those details away. The details are all hidden within the mqttws31.js library. By using "abstraction" we are hiding details and separating concerns - these are very important principles in computer science and in many areas of engineering.
 
