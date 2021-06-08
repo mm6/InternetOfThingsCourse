@@ -183,6 +183,7 @@ Note: MQTT is very fussy about client names. Each client that visits must presen
 Note too that the communication between the broker and the browsers is done with WebSockets but we have abstracted those details away. The details are all hidden within the mqttws31.js library. By using "abstraction" we are hiding details and separating concerns - these are very important principles in computer science and in many areas of engineering.
 
 :checkered_flag:**Take a screenshot showing two browser screens.  Name your screenshot Project2Part1Questions2And3.png.**
+
 :checkered_flag:**Include your HTML and Javascript with comments.  Name your files Project2Part1Question2.html and Project2Part1Question3.html**
 
 ### Part 2 Monitoring light levels with a microcontroller
