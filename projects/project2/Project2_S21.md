@@ -442,16 +442,16 @@ Download mosquitto setup file from [here.](http://www.eclipse.org/downloads/down
 Run the setup file and follow the steps to complete the installation.
 note: Default destination folder is C:\Program Files (x86)\mosquitto
 
-Download and Install Win32 OpenSSL v1.0.2h from [here](http://slproweb.com/products/Win32OpenSSL.html
-Install it to C:\temp\OpenSSL-Win32)
+[Download and Install Win32 OpenSSL v1.0.2h from here.](http://slproweb.com/products/Win32OpenSSL.html
+Install it to C:\temp\OpenSSL-Win32).
 
 Copy libeay32.dll and ssleay32.dll from C:\temp\OpenSSL-Win32\bin to C:\Program Files (x86)\mosquitto
 
-Download pthreadVC2.dll from [here.](ftp://sources.redhat.com/pub/pthreads-win32/dll-latest/dll/x86/ and Copy it to C:\Program Files (x86)\mosquitto)
+[Download pthreadVC2.dll from here.](ftp://sources.redhat.com/pub/pthreads-win32/dll-latest/dll/x86/ and Copy it to C:\Program Files (x86)\mosquitto)
 
 ### Optional notes on testing on a Windows machine
 
-open command prompt and run the following commands
+Open a command prompt and run the following commands:
 
 ```
 cd C:\Program Files (x86)\mosquitto
@@ -459,7 +459,7 @@ cd C:\Program Files (x86)\mosquitto
 mosquitto.exe -v -c mosquitto.conf
 ```
 
-You should get messages similar to this
+You should get messages similar to this:
 1474406476: mosquitto version 1.4.10 (build date 24/08/2016 21:03:24.73) starting
 1474406476: Config loaded from mosquitto.conf.
 1474406476: Opening ipv6 listen socket on port 1883.
