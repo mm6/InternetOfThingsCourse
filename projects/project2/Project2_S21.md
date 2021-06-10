@@ -407,6 +407,7 @@ void loop() {
 
 ![Two browsers subscribe with different ID's.](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/TwoBrowsersSubscribe.png?raw=true)
 
+These two browsers are each subscribing with a different client ID.
 
 3) Add an additional Google Chart to the same web page. This would be any chart that you select (other than Gauge).
 
