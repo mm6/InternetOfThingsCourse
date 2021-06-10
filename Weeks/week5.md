@@ -7,10 +7,11 @@
 In week 5, two use cases are introduced, Sensor Andrew and OpenChirp. Both of these
 are IoT initiatives built at Carnegie Mellon. Sensor Andrew's use of XMPP is highlighted and so is OpenChirp's use of LoRa and LoRaWan.
 
+<!--
 The publish/subscribe pattern is revisited using HTTP Webhooks. Thingspeak Webhooks are used in Project 3.
 
 Project 3 also demonstrates how a microcontroller can act as a Bluetooth Low Energy peripheral.
-
+-->
 We also discuss service discovery and the REST architectural style. CoAp is introduced as RESTful protocol and three Web of Things integration patterns are highlighted.
 
 The Web of Things Architecture from W3C and Mozilla are introduced.
