@@ -5,7 +5,6 @@
 
 ### Topics: MQTT, Particle Argon, Node-RED, Node.js, Google Charts
 
-
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project2.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
 Many IoT applications monitor real time data from sensors and
