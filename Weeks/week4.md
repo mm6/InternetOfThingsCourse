@@ -47,6 +47,8 @@ on the internet at large. Both protocols utilize service discovery.
 
 + Quiz 3 is on "People, Places, Things: Web Presence for the Real World"
 
++ Next week's quiz covers Sensor Andrew and OpenChirp.
+
 ## Video Lectures
 
 <!--

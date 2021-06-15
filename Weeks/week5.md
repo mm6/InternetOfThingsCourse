@@ -42,19 +42,20 @@ Particle cloud using CoAp.
 + [Web of Things Architecture Matthias Kovatsch(W3C) Video Lecture](https://www.youtube.com/watch?v=xgkglOZiF9M)
 
 ## Projects
+<!--
 + [Project 3 Webhooks and ThingSpeak and BLE ](../projects/project3/Project3.md)
 + [Project 3 Webhooks and ThingSpeak Photon Only ](../projects/project3/Project3_Photon.md)
 + [Project 4 Student defined project - due in one week](../projects/project4/Project4.md)
-
+-->
 ## Quizzes
 
 + Quiz 4 on OpenChirp and Sensor Andrew
 
 ## Video Lectures
-
+<!--
 + [16_Lecture5](https://heinzcollege.mediasite.com/Mediasite/Play/302ca40f3f3b4a9880d09901989a13721d)
 + [17_Lecture5](https://heinzcollege.mediasite.com/Mediasite/Play/251d1c7c5320408f9ded1c75fc7a53d81d)
-
+-->
 ## Optional Readings
 
 + [LoRa and LoRaWAN Video](https://youtu.be/6WMzRrmMjQU)
