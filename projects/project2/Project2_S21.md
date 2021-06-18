@@ -238,7 +238,7 @@ void loop() {
 #include <HttpClient.h>
 
 ```
-14. Copy the following code and paste it over the light monitor code in Question 9. It is almost the same code but we have added the logic to perform HTTP post requests with JSON data.
+14. Copy the following code and paste it over the light monitor code in Question 9. It is almost the same code but we have added the logic to perform HTTP post requests with JSON data. The IP address of your machine needs to be included in this code. "Localhost" will not work. "Localhost" would refer to the Argon's IP address.
 
 ```
 // This #include statement was automatically added by the Particle IDE.
