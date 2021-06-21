@@ -366,7 +366,7 @@ void loop() {
     }
 }
 ```
-15. To check this solution, get Node-RED running and receiving these requests. You will need to create three nodes: an "HTTP IN" node, an "HTTP out" node, and a "debug" node to view the messages that arrive from the Argon. Be sure to have this working before moving on.
+15. To check this solution, get Node-RED running and receiving these requests. You will need to create three nodes: an "HTTP IN" node, an "HTTP Response" node, and a "debug" node to view the messages that arrive from the Argon. Be sure to have this working before moving on.
 
 16. Add a function node in between the "HTTP IN" node and the "debug" node. This function node will add a timestamp to messages going through. Since the microcontroller has specified that the messages are "application/json", Node-RED passes a Javascript object in the msg.payload. In other words, Node-RED has already parsed the incoming string and created a Javascript object. In order to complete this function, you will need to review the Javascript code on Project 1 Part 2. But keep in mind that a Javascript object is already available. Name this node "Add Timestamp".
 
