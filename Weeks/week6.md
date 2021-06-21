@@ -6,7 +6,7 @@
 
 This is the final exam week. The final will be held during the first hour and the remaining time will be for our guest speaker.
 
-Andrew King works for Slalom. He teaches embedded systems and has a recent book on IoT published by O'Rielly.
+Andrew King works for Slalom. He teaches embedded systems and has a recent book on IoT published by O'Reilly.
 <!--
 In week 6 we discuss Self-Sovereign Identity (SSI) using blockchain technology.
 We consider how SSI might be used in IoT.
