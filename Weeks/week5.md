@@ -27,17 +27,17 @@ Particle cloud using CoAp.
 
 ## Slides
 
-+ [W3C Web of Things Architecture](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_W3C_Architecture.pdf)
-
 + [Webhooks](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_WebhooksPublishSubscribe.pdf)
 
-+ [XMPP Overview](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP_Overview.pdf)
++ [XMPP Brief](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP_Overview.pdf)
 
 <!--
 + [XMPP Programming and Sensor Andrew ](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP.pdf)
 -->
 
-+ [REST, Integration Patterns, and CoAP](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_RESTandCoAP.pdf)
++ [REST, Integration Patterns, and CoAP brief](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_RESTandCoAP.pdf)
+
++ [W3C Web of Things Architecture](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_W3C_Architecture.pdf)
 
 ## Required readings
 
