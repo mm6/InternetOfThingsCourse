@@ -42,7 +42,7 @@ Particle cloud using CoAp.
 + [Jonathan Zittrain US Senate Testimony](https://www.andrew.cmu.edu/user/mm6/95-733/iot/Jonathan_Zittrain_Testimony.pdf)
 
 + [Web of Things Architecture at W3C](https://www.w3.org/TR/wot-architecture/)
-+  WoT Architecture Use Cases Section 4, WoT Architecture Section 6, WoT Architecture Building blocks Section 7
++  From WoT Architecture, read Use Cases Section 4, WoT Architecture Section 6, WoT Architecture Building blocks Section 7.
 + [Web of Things Architecture Matthias Kovatsch(W3C) Video Lecture](https://www.youtube.com/watch?v=xgkglOZiF9M)
 
 ## Projects
