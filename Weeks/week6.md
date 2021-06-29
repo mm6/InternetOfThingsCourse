@@ -6,7 +6,7 @@
 
 This is the final exam week. The final will be held during the first hour and the remaining time will be for our guest speaker.
 
-Andrew King works for Slalom as an IoT Director. He teaches embedded systems at Northeastern University and has a very recent book on IoT published by O'Reilly. The book is titled "Programming the Internet of Things" and is available [at this link] (https://www.oreilly.com/library/view/programming-the-internet/9781492081401/)
+Andrew King works for Slalom as an IoT Director. He teaches embedded systems at Northeastern University and has a very recent book on IoT published by O'Reilly. The book is titled "Programming the Internet of Things" and is available [at this link](https://www.oreilly.com/library/view/programming-the-internet/9781492081401/)
 
 <!--
 In week 6 we discuss Self-Sovereign Identity (SSI) using blockchain technology.
