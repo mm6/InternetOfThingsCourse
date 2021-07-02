@@ -13,6 +13,10 @@
 
 ### Part 1. An Argon BLE peripheral sending data to a Node.js BLE Central
 
-### Part 2. Publishing the data to MQTT
+#### The Argon is using a constrained network
 
-### Part 3. Subscribing to MQTT with InfluxDB and the web
+#### Node.js is acting as a gateway device
+
+### Part 2. Node.js publishes the data to MQTT for publish/subscribe
+
+### Part 3. Two subscribers - InfluxDB and the World Wide Web
