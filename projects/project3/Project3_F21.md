@@ -11,9 +11,9 @@
 
 ### Overview and setup
 
-### Part 1. An Argon BLE peripheral sending data to a Node.js BLE Central
+### Part 1. The Argon as a BLE peripheral and Node.js as a BLE Central
 
-#### The Argon is using a constrained network
+#### The Argon is using a constrained network - Bluetooth Low Energy
 
 #### Node.js is acting as a gateway device
 
