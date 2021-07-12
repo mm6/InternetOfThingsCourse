@@ -3,7 +3,7 @@
 
 # Project 3 Due: 11:59 PM Fall 2021
 
-### Topics: BLE, Node RED, MQTT, and InfluxDB
+### Topics: BLE, Node RED, MQTT, the Web, and InfluxDB
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project3.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
@@ -139,11 +139,14 @@ uint32_t ieee11073_from_float(float temperature) {
 
 :checkered_flag: Take two screenshots showing LightBlue connected to your Argon. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Argon. You will need to subscribe to receive these values.
 
+### Part 2. Using Node RED to act as a gateway device
 
-#### The Argon is using a constrained network - Bluetooth Low Energy
+1. Install the BLE Nodes in Node RED
 
-#### Node RED is acting as a gateway device
+### Part 3. Node RED publishes the data to MQTT for publish/subscribe
 
-### Part 2. Node.js publishes the data to MQTT for publish/subscribe
+1. Run mosquitto
 
-### Part 3. Two subscribers - InfluxDB and the World Wide Web
+### Part 4. Two subscribers - InfluxDB and the World Wide Web
+
+1. Install InfluxDB
