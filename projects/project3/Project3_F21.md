@@ -11,19 +11,17 @@
 
 ### Overview and setup
 
-### Part 1. The Argon as a BLE peripheral and Node RED as a BLE Central
+### Part 1. Programming the Argon to behave as a BLE peripheral device and installing LightBlue to behave as a BLE central device.
 
-#### Place BLE Peripheral Code on your Argon
+#### Move the Argon's antennae from its Wi-fi connection to the BLE connection.
 
-This code is from the [Argon/BLE tutorial](https://docs.particle.io/tutorials/device-os/bluetooth-le/). Flash this code to your Argon.
+#### Place this BLE Peripheral Code on your Argon.
+
+This code is adapted from the [Argon/BLE tutorial](https://docs.particle.io/tutorials/device-os/bluetooth-le/). Study this code and flash it to your Argon.
 
 
 ```
 #include "Particle.h"
-
-// This example does not require the cloud so you can run it in manual mode or
-// normal cloud-connected mode
-// SYSTEM_MODE(MANUAL);
 
 SerialLogHandler logHandler(LOG_LEVEL_TRACE);
 
@@ -140,7 +138,7 @@ uint32_t ieee11073_from_float(float temperature) {
 ```
 [Install LightBlue Punchthrough](https://punchthrough.com/lightblue/) on your phone and connect to your Argon.
 
-
+:checkered_flag: Take two screenshots showing LightBlue connected to your Argon. The first screenshot (named LightBlue1.jpg)will contain the Advertisement Data showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/indicated values - it is important that you display the values arriving on your phone from the Argon.
 
 
 #### The Argon is using a constrained network - Bluetooth Low Energy
