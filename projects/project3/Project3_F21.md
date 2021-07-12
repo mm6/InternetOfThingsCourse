@@ -137,7 +137,7 @@ uint32_t ieee11073_from_float(float temperature) {
 ```
 3. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon. This may require a bit of browsing with LightBlue to find the right BLE source.
 
-:checkered_flag: Take two screenshots showing LightBlue connected to your Argon. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/indicated values - it is important that you display the values arriving on your phone from the Argon.
+:checkered_flag: Take two screenshots showing LightBlue connected to your Argon. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Argon. You will need to subscribe to receive these values.
 
 
 #### The Argon is using a constrained network - Bluetooth Low Energy
