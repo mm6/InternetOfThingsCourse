@@ -138,7 +138,7 @@ uint32_t ieee11073_from_float(float temperature) {
 }
 
 ```
-
+[Install LightBlue Punchthrough](https://punchthrough.com/lightblue/) on your phone and connect to your Argon.
 
 
 
