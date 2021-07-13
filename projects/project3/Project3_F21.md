@@ -27,6 +27,7 @@ SerialLogHandler logHandler(LOG_LEVEL_TRACE);
 const unsigned long UPDATE_INTERVAL_MS = 2000;
 unsigned long lastUpdate = 0;
 
+// in C++, declare functions before use
 float getTempC();
 uint32_t ieee11073_from_float(float temperature);
 
