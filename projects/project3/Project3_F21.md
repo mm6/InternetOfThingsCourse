@@ -155,10 +155,10 @@ This may require a bit of browsing with LightBlue to find the right BLE source. 
 
 ### Part 3. Using Node RED to act as a gateway device
 
-1. The goal is to establish a connection with the Argon over BLE. Install two BLE Nodes in Node-RED with the following shell commands:
+1. The goal is to establish a connection between Node-RED and the Argon using BLE. Install two BLE Nodes in Node-RED with the following shell commands:
 ```
-cd ~/.node-red
-npm install node-red-contrib-generic-ble
+$cd ~/.node-red
+$npm install node-red-contrib-generic-ble
 ```
 
 2. Test if the two nodes were properly installed by running Node-RED from a shell:
@@ -167,16 +167,16 @@ npm install node-red-contrib-generic-ble
 $node-red
 
 ```
-With a browser visit:
+and with a browser visit:
 
 ```
 http://127.0.0.1:1880/
 
 ```
 
-Expand the "Network" icon on the left and verify the two BLE nodes:
-Generic BLE In and Generic BLE out. 
+Within Node-RED, expand the "Network" icon on the left and verify the presence of two BLE nodes: Generic BLE In and Generic BLE out. 
 
+3.
 
 ### Part 4. Node RED publishes the data to MQTT for publish/subscribe
 
