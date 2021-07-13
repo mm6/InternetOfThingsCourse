@@ -143,7 +143,7 @@ This may require a bit of browsing with LightBlue to find the right BLE source. 
 
 ### Part 2. Transmit text over BLE
 
-1. Make minimal modifications to the firmware in Part 1 so that the LightBlue BLE screen displays "Hello" followed by your name. In other words, we will not be receiving temperature updates but, instead, we will be receiving a personalized greeting over BLE.
+1. Experiment by making minimal modifications to the firmware in Part 1 so that the LightBlue BLE screen displays "Hello" followed by your name. In other words, we will not be receiving temperature updates but, instead, we will be receiving a personalized greeting over BLE.
 
 2. My solution looks like the following:
 
