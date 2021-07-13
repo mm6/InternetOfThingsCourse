@@ -141,14 +141,23 @@ This may require a bit of browsing with LightBlue to find the right BLE source. 
 
 :checkered_flag: Take two screenshots showing LightBlue connected to your Argon. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Argon. You will need to subscribe to receive these values.
 
-### Part 2. Using Node RED to act as a gateway device
+### Part 2. BLE Device says "Hello <YourName>"
+
+1. Make minimal modifications to the firmware in Part 1 so that the LightBlue BLE screen displays "Hello <Your Name>". In other words, we will not be receiving temperature updates but, instead, we will be receiving a greeting over BLE.
+
+2. My solution looks like the following:
+![Argon Light Monitor](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/Hello_Michael_LightBlue.jpg?raw=true)
+
+:checkered_flag: Submit two files. The first will be a copy of the modified firmware and the second will be a screen capture of your phone running LightBlue and showing your name in the hello greeting.
+
+### Part 3. Using Node RED to act as a gateway device
 
 1. Install the BLE Nodes in Node RED
 
-### Part 3. Node RED publishes the data to MQTT for publish/subscribe
+### Part 4. Node RED publishes the data to MQTT for publish/subscribe
 
 1. Run mosquitto
 
-### Part 4. Two subscribers - InfluxDB and the World Wide Web
+### Part 5. Two subscribers - InfluxDB and the World Wide Web
 
 1. Install InfluxDB
