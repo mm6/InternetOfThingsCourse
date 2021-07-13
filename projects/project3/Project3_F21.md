@@ -145,11 +145,10 @@ This may require a bit of browsing with LightBlue to find the right BLE source. 
 
 1. Make minimal modifications to the firmware in Part 1 so that the LightBlue BLE screen displays "Hello <Your Name>". In other words, we will not be receiving temperature updates but, instead, we will be receiving a greeting over BLE.
 
-<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/Hello_Michael_LightBlue.jpg" alt="drawing" width="200"/>
-
-
 2. My solution looks like the following:
-![Argon Light Monitor](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/Hello_Michael_LightBlue.jpg?raw=true)
+
+<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/Hello_Michael_LightBlue.jpg" alt="BLE Greeting" width="400"/>
+
 
 :checkered_flag: Submit two files. The first will be a copy of the modified firmware and the second will be a screen capture of your phone running LightBlue and showing your name in the hello greeting.
 
