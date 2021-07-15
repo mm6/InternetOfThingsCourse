@@ -155,6 +155,9 @@ This may require a bit of browsing with LightBlue to find the right BLE source. 
 
 ### Part 3. Using Node RED to act as a gateway device
 
+0. Restore the firmaware to its original state. That is, remove the code that we used to generate a personalized greeting over BLE.
+We are back to generating random temperature values.
+
 1. The goal is to establish a connection between Node-RED and the Argon using BLE. Install two BLE Nodes in Node-RED with the following shell commands:
 ```
 $cd ~/.node-red
@@ -174,9 +177,35 @@ http://127.0.0.1:1880/
 
 ```
 
-Within Node-RED, expand the "Network" icon on the left and verify the presence of two BLE nodes: Generic BLE In and Generic BLE out. 
+Within Node-RED, expand the "Network" icon on the left and verify the presence of two BLE nodes: "Generic BLE In" and "Generic BLE out".  
 
-3.
+3. Using the "+" sign, create a new flow entitled "BLE Test".
+4. Add an inject node to the palette.
+5. In the Inject Node, set the message payload to JSON and set the message payload text to the following JSON message. This message will tell the "BLE In" node to listen for notify messages coming from the BLE connection.  
+
+```
+{"notify": true, "period": 0 }
+
+```
+
+6. Drag the "BLE In" node onto the palette. Create a wire from the "Inject" node in step 5 to the new "BLE In" node.
+
+7. Double click the "BLE In" node and select the pencil symbol to edit the properties. Select the "BLE Scanning" check box and select "Apply".
+
+8. Run the BLE firmware on the Argon and select the Argon in the Properties box of the Edit Generic BLE node. Be sure that the Emit Notify Events check box is selected.
+
+9. Drag a debug node onto the palette and connect the Generic BLE
+In node to it.
+
+10. Deploy the flow. To start listening for notifications, click on the far left slice of the Inject node icon. With the Argon running, you should see the publications (notifications) from the Argon in the debug window.
+
+11. Add a new Inject node and set the msg.topic to the value disconnect.
+
+12. Add a new Inject node and set the msg.top to connect.
+
+13. See the following image and wire the two new Inject nodes to the input of the Generic BLE In node. The BLE In node should now have three inject nodes wired to it. Experiment. Start and stop the connection using these new nodes. After the connection is started, inject a listening request from the middle inject node. Watch the output from the debug node.
+
+<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonToNodeREDBLEFlow.png" alt="BLE Greeting" width="400" height="800"/>
 
 ### Part 4. Node RED publishes the data to MQTT for publish/subscribe
 
