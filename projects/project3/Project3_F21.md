@@ -13,9 +13,9 @@
 
 ### Part 1. Programming the Argon to behave as a BLE peripheral device and installing LightBlue to behave as a BLE central device
 
-1. Move the Argon's antennae from its Wi-fi connection to the BLE connection.
+0. Notice that the Argon's antennae can be plugged into a Wi-fi connection or a BLE connection. Both are available on the Argon.
 
-2. Study the following BLE peripheral code and flash it to your Argon.
+1. Study the following BLE peripheral code and flash it to your Argon.
 
 This code is adapted from the [Argon/BLE tutorial](https://docs.particle.io/tutorials/device-os/bluetooth-le/).
 
@@ -136,7 +136,7 @@ uint32_t ieee11073_from_float(float temperature) {
 }
 
 ```
-3. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon.
+2. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon.
 
 This may require a bit of browsing with LightBlue to find the right BLE source. The dBm value (decibels relative to one milliwatt) is used to define the strength of the BLE signal. Anything greater than -75 dBm is considered a reliable signal. The closer that you get to 0, the more reliable the signal. On the PunchThrough application, you can use signal strength to help locate which signal is coming from your Argon.
 
@@ -144,9 +144,9 @@ This may require a bit of browsing with LightBlue to find the right BLE source. 
 
 ### Part 2. Transmit text over BLE
 
-1. Experiment by making minimal modifications to the firmware in Part 1 so that the LightBlue BLE screen displays "Hello" followed by your name. In other words, we will not be receiving temperature updates but, instead, we will be receiving a personalized greeting over BLE.
+0. Experiment by making minimal modifications to the firmware in Part 1 so that the LightBlue BLE screen displays "Hello" followed by your name. In other words, we will not be receiving temperature updates but, instead, we will be receiving a personalized greeting over BLE.
 
-2. My solution looks like the following:
+1. My solution looks like the following:
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/Hello_Michael_LightBlue.jpg" alt="BLE Greeting" width="400" height="800"/>
 
