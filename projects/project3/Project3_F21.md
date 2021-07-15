@@ -221,8 +221,11 @@ In node to it.
 
 ### Part 5. Node RED publishes the data to MQTT for publish/subscribe
 
-1. Run mosquitto
+0. Run MQTT using mosquitto.
+1. Publish light values from Node-RED to MQTT.
 
 ### Part 6. Two subscribers - InfluxDB and the World Wide Web
 
-1. Install InfluxDB
+0. Install InfluxDB
+1. Configure InfluxDB to subscribe to mosquitto.
+3. Write a web application that also subscribes to mosquitto using Node.js and websockets. The browser will display the light values that were originally sent by the Argon over BLE.
