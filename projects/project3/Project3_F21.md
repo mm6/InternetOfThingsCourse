@@ -207,10 +207,22 @@ In node to it.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonToNodeREDBLEFlow.png" alt="BLE Greeting" width="400" height="400"/>
 
-### Part 4. Node RED publishes the data to MQTT for publish/subscribe
+### Part 4. A BLE Exercise
+
+0. Recall the LightMonitor firmware from Part 2 of Project 2. In that code, we transmitted light values via HTTP to Node-RED. Here, we will do the same but with BLE. Note that we want to transmit far fewer bytes than we did when using HTTP over TCP sockets.
+
+1. Write the necessary firmware to communicate light values to the LightBlue application. The hardware will be configured as in Project 2, Part 2.
+
+:checkered_flag: Submit a screenshot showing LightBlue receiving the light values from the Argon.
+
+2. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette.
+
+:checkered_flag: Submit a screenshot showing Node-RED receiving the light values from the Argon. Be sure to capture the entire screen - showing the Node-RED flow and the debug window.
+
+### Part 5. Node RED publishes the data to MQTT for publish/subscribe
 
 1. Run mosquitto
 
-### Part 5. Two subscribers - InfluxDB and the World Wide Web
+### Part 6. Two subscribers - InfluxDB and the World Wide Web
 
 1. Install InfluxDB
