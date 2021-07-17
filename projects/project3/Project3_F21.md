@@ -211,7 +211,16 @@ In node to it.
 
 0. Recall the LightMonitor firmware from Part 2 of Project 2. In that code, we transmitted light values via HTTP to Node-RED. Here, we will do the same but with BLE. Note that we want to transmit far fewer bytes than we did when using HTTP over TCP sockets.
 
-1. Write the necessary firmware to communicate light values to the LightBlue application running on your phone. The hardware will be configured as in Project 2, Part 2.
+1. We need to define our own UUID's for our proprietary light value service and light value characteristic. You should get your UUID's from [this web site.](https://www.uuidgenerator.net/)
+
+2. In the C++ code, you can establish proprietary UUID's with a constructor like this (but use your own UUID's from the generator mentioned in step 1.)
+
+```
+BleUuid lightValueService("beb5483e-36e1-4688-b7f5-ea07361b26a8");
+
+```
+
+3. Write the necessary firmware to communicate light values to the LightBlue application running on your phone. The hardware will be configured as in Project 2, Part 2.
 
 :checkered_flag: Submit a screenshot showing the LightBlue application receiving the light values from the Argon.
 
