@@ -13,7 +13,7 @@
 
 ### Part 1. Programming the Argon to behave as a BLE peripheral device and installing LightBlue to behave as a BLE central device
 
-0. Notice that the Argon's antennae can be plugged into a Wi-fi connection or a BLE connection. Both are available on the Argon.
+0. Notice that the Argon's antennae can be plugged into a Wi-Fi connection or a BLE connection. Both are available on the Argon. In my work, I found that I was able leave the antennae connected to Wi-Fi only.
 
 1. Study the following BLE peripheral code and flash it to your Argon.
 
@@ -192,7 +192,7 @@ Within Node-RED, expand the "Network" icon on the left and verify the presence o
 
 7. Double click the "BLE In" node and select the pencil symbol to edit the properties. Select the "BLE Scanning" check box and select "Apply".
 
-8. Run the BLE firmware on the Argon and select the Argon in the Properties box of the Edit Generic BLE node. Be sure that the Emit Notify Events check box is selected.
+8. Run the BLE firmware on the Argon and select the Argon in the Properties box of the Edit Generic BLE node. Be sure that the Emit Notify Events check box is selected. Note that the "Edit Generic BLE node" pane populates the UUID field.
 
 9. Drag a debug node onto the palette and connect the Generic BLE
 In node to it.
@@ -224,14 +224,20 @@ BleUuid lightValueService("beb5483e-36e1-4688-b7f5-ea07361b26a8");
 
 :checkered_flag: Submit a screenshot showing the LightBlue application receiving the light values from the Argon.
 
-2. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette.
+2. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following: (for a light value of 17). You will use a function node to extract the data from msg.payload and create a new value for msg.payload.
+
+msg.payload : string[17]
+"{"lightValue":11}"
 
 :checkered_flag: Submit a screenshot showing Node-RED receiving the light values from the Argon. Be sure to capture the entire screen - showing the Node-RED flow and the debug window.
+
+:checkered_flag: Submit a screenshot showing the Javascript code that you wrote for the function node of Node-RED. This is the function that extracts the light value and passes the JSON string onto the debug node.
 
 ### Part 5. Node RED publishes the data to MQTT for publish/subscribe
 
 0. Run MQTT using mosquitto.
 1. Publish light values from Node-RED to MQTT.
+
 
 ### Part 6. Two subscribers - InfluxDB and the World Wide Web
 
