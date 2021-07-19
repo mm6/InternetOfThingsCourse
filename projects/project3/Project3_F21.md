@@ -243,21 +243,6 @@ msg.payload : string[17]
 
 :checkered_flag: Submit a screenshot showing Node-RED receiving the light values from the Argon and publishing JSON strings to MQTT. The MQTT window should be visible in your screenshot.
 
-### Part 6. Two subscribers - InfluxDB and the World Wide Web
+### Part 6. Subscribe to MQTT with Node-RED and write to InfluxDB
 
-PLAN:
 0. [Visit this page and install InfluxDB on your machine.](https://docs.influxdata.com/influxdb/v2.0/install/)
-
-
-
-
-
-
-
-
-
-
-
-
-1. Configure InfluxDB to subscribe to mosquitto.
-3. Write a web application that also subscribes to mosquitto using Node.js and websockets. The browser will display the light values that were originally sent by the Argon over BLE.
