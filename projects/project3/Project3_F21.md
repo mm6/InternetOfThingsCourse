@@ -224,7 +224,7 @@ BleUuid lightValueService("beb5483e-36e1-4688-b7f5-ea07361b26a8");
 
 :checkered_flag: Submit a screenshot showing the LightBlue application receiving the light values from the Argon.
 
-2. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following: (for a light value of 17). You will use a function node to extract the data from msg.payload and create a new value for msg.payload.
+2. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following (for a light value of 17). You will use a function node to extract the data from msg.payload and create a new value for msg.payload.
 
 ```
 msg.payload : string[17]
