@@ -208,6 +208,9 @@ In node to it.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonToNodeREDBLEFlow.png" alt="BLE Greeting" width="400" height="400"/>
 
+<b>BLE connecting, listening, and disconnecting with Node-RED </b>
+
+
 ### Part 4. A BLE Exercise
 
 0. Recall the LightMonitor firmware from Part 2 of Project 2. In that code, we transmitted light values via HTTP to Node-RED. Here, we will do the same but with BLE. Note that we want to transmit far fewer bytes than we did when using HTTP over TCP sockets.
