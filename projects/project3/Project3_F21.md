@@ -269,3 +269,5 @@ http://localhost:8086
 5. In Node-RED, drag a InfluxDB out node onto the palette.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonOverBLE_to_NR_to_MQTT_to_NR_to_Influxdb.png" alt="InfluxDB Graph of Light Values" width="800" height="400"/>
+
+<b>An InfluxDB graph displaying light values from Node-RED</b>
