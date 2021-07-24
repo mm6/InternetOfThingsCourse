@@ -260,7 +260,7 @@ http://localhost:8086
 
 2. [Install the InfluxDB nodes for Node-RED.](https://flows.nodered.org/node/node-red-contrib-influxdb)
 
-3. Check if "influx" appears under the node_modules directory and check if Node-RED has new nodes: "influxdb in", "influxdb out" and "influx batch". You may ignore errors if these nodes are in place on Node-RED.
+3. Using the file system, check if "influx" appears under the node_modules directory and check if the Node-RED palette has new nodes: "influxdb in", "influxdb out" and "influx batch". You may ignore errors if these nodes are on the palette in Node-RED.
 
 4. In Node-Red, drag an "mqtt in" node onto the palette. This begins a new flow but may appear on the same palette as your previous work. This node will subscribe to the topic "lightValues" that are being published by the "mqtt out" node from Part 5. Connect the "mqtt in" node to a debug node.
 
@@ -270,10 +270,12 @@ http://localhost:8086
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/SecondFlowToSubcribeAndWriteToInfluxDB.png" alt="Two flows in Node-RED" width="800" height="400"/>
 
-<b>Two Node_RED flows writing data to InfluxDB</b>
+<b>Two Node_RED flows. The bottom flow is writing data to InfluxDB</b>
 
-6. Install InfluxDB and generate a graph of the light values.
+6. Using InfluxDB, generate a graph of the light values.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonOverBLE_to_NR_to_MQTT_to_NR_to_Influxdb.png" alt="InfluxDB Graph of Light Values" width="800" height="400"/>
 
 <b>An InfluxDB graph displaying light values from Node-RED</b>
+
+:checkered_flag: Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED.
