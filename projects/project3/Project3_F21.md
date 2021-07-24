@@ -207,7 +207,6 @@ In node to it.
 13. See the following image and wire the two new Inject nodes to the input of the Generic BLE In node. The BLE In node should now have three inject nodes wired to it. Experiment. Start and stop the connection using these new nodes. After the connection is started, inject a listening request from the middle inject node. Watch the output from the debug node.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonToNodeREDBLEFlow.png" alt="BLE Greeting" width="400" height="400"/>
-
 <b>BLE connecting, listening, and disconnecting with Node-RED </b>
 
 
