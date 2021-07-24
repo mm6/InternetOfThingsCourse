@@ -266,7 +266,13 @@ http://localhost:8086
 
 :checkered_flag: Submit a screenshot showing a Node-RED flow receiving the light values from the Argon and publishing JSON strings to MQTT. A second flow will be on the Node-RED palette and this flow will subscribe to the values being published by the first flow. The output of the second flow will appear on the debug pane.
 
-5. In Node-RED, drag a InfluxDB out node onto the palette.
+5. In Node-RED, drag an "InfluxDB out" node onto the palette. Use this new node to write data values to InfluxDB.
+
+<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/SecondFlowToSubcribeAndWriteToInfluxDB.png" alt="Two flows in Node-RED" width="800" height="400"/>
+
+<b>Two Node_RED flows writing data to InfluxDB</b>
+
+6. Install InfluxDB and generate a graph of the light values.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonOverBLE_to_NR_to_MQTT_to_NR_to_Influxdb.png" alt="InfluxDB Graph of Light Values" width="800" height="400"/>
 
