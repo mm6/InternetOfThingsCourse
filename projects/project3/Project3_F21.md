@@ -239,10 +239,30 @@ msg.payload : string[17]
 ### Part 5. Node RED publishes the data to MQTT for publish/subscribe
 
 0. See Project 2 and run an instance of MQTT.
-1. Using the Node-RED flow from Part 4, publish the light values read from the sensor on the Argon to MQTT.
+
+1. Using the Node-RED flow from Part 4, publish the light values read from the sensor on the Argon to MQTT. Use an "mqtt out" node and publish to the topic "lightValues" with a quality of service equal to 0.
 
 :checkered_flag: Submit a screenshot showing Node-RED receiving the light values from the Argon and publishing JSON strings to MQTT. The MQTT window should be visible in your screenshot.
 
 ### Part 6. Subscribe to MQTT with Node-RED and write to InfluxDB
 
 0. [Visit this page and install InfluxDB on your machine.](https://docs.influxdata.com/influxdb/v2.0/install/)
+
+1. Check if InfluxDB is running by visiting:
+
+```
+http://localhost:8086
+
+```
+
+2. [Install the InfluxDB nodes for Node-RED.](https://flows.nodered.org/node/node-red-contrib-influxdb)
+
+3. Check if "influx" appears under the node_modules directory and check if Node-RED has new nodes: "influxdb in", "influxdb out" and "influx batch". You may ignore errors if these nodes are in place on Node-RED.
+
+4. In Node-Red, drag an "mqtt in" node onto the palette. This begins a new flow but may appear on the same palette as your previous work. This node will subscribe to the topic "lightValues" that are being published by the "mqtt out" node from Part 5. Connect the "mqtt in" node to a debug node.
+
+:checkered_flag: Submit a screenshot showing a Node-RED flow receiving the light values from the Argon and publishing JSON strings to MQTT. A second flow will be on the Node-RED palette and this flow will subscribe to the values being published by the first flow. The output of the second flow will appear on the debug pane.
+
+5. In Node-RED, drag a InfluxDB out node onto the palette.
+
+<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonOverBLE_to_NR_to_MQTT_to_NR_to_Influxdb.png" alt="InfluxDB Graph of Light Values" width="400" height="400"/>
