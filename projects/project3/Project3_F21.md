@@ -149,7 +149,8 @@ This may require a bit of browsing with LightBlue to find the right BLE source. 
 1. My solution looks like the following:
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/Hello_Michael_LightBlue.jpg" alt="BLE Greeting" width="400" height="800"/>
-Screen scrape of LightBlue on an Android Phone
+
+<b>Screen scrape of LightBlue on an Android Phone</b>
 
 :checkered_flag: Submit two files. The first will be a copy of the modified firmware and the second will be a screen capture of your phone running LightBlue and showing your name in the hello greeting.
 
