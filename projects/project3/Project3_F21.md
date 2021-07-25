@@ -156,7 +156,7 @@ This may require a bit of browsing with LightBlue to find the right BLE source. 
 
 ### Part 3. Using Node RED to act as a gateway device
 
-0. Restore the firmaware to its original state. That is, remove the code that we used to generate a personalized greeting over BLE.
+0. Restore the firmware to its original state. That is, remove the code that we used to generate a personalized greeting over BLE.
 We are back to generating random temperature values.
 
 1. The goal is to establish a connection between Node-RED and the Argon using BLE. Install two BLE Nodes in Node-RED with the following shell commands:
