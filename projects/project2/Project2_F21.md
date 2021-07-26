@@ -1,7 +1,7 @@
 
-# 95-733 Internet of Things Wednesday, June 9, 2021
+# 95-733 Internet of Things Fall 2021
 
-# Project 2 Due: 11:59 PM Wednesday,June 21, 2021
+# Project 2 Due: Fall 2021
 
 ### Topics: MQTT, Particle Argon, Node-RED, Node.js, Google Charts
 

@@ -49,7 +49,7 @@ correct one to use in designing an interoperable internet of things - a web of t
 + [Fall 2020 Project 1 Servlets, AJAX, JSON, Web Sockets, Particle Argon Microcontroller](../projects/project1/Project1.md)
 
 -->
-+ [Summer 2021 Project 1 Argon Microcontroller and Node.js](../projects/project1/Project1_S21.md)
++ [Project 1 Argon Microcontroller and Node.js](../projects/project1/Project1_F21.md)
 
 ## Quizzes
 

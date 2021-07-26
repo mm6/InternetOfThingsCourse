@@ -36,7 +36,7 @@ browser.
 
 ## Project
 
-+ [Summer 2021 Project 2 Publish subscribe](../projects/project2/Project2_S21.md)
++ [Project 2 Publish subscribe](../projects/project2/Project2_F21.md)
 
 + Project 1 Due Midnight next Wednesday
 
