@@ -267,13 +267,15 @@ http://localhost:8086
 
 5. In Node-RED, drag an "InfluxDB out" node onto the palette. Use this new node to write data values to InfluxDB.
 
-<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/SecondFlowToSubcribeAndWriteToInfluxDB.png" alt="Two flows in Node-RED" width="800" height="400"/>
-<em>Two Node_RED flows. The bottom flow is writing data to InfluxDB</em>  
+<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/SecondFlowToSubcribeAndWriteToInfluxDB.png" alt="Two flows in Node-RED" width="800" height="400"/>  
 
-	
+<em>Two Node_RED flows. The bottom flow is writing data to InfluxDB</em>   
+
+
 6. Using InfluxDB, generate a graph of the light values.
 
-<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonOverBLE_to_NR_to_MQTT_to_NR_to_Influxdb.png" alt="InfluxDB Graph of Light Values" width="800" height="400"/>
+<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonOverBLE_to_NR_to_MQTT_to_NR_to_Influxdb.png" alt="InfluxDB Graph of Light Values" width="800" height="400"/>  
+  
 <em>An InfluxDB graph displaying light values from Node-RED</em>
 
 :checkered_flag: Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED.
