@@ -453,6 +453,7 @@ Install it to C:\temp\OpenSSL-Win32.
 Copy libeay32.dll and ssleay32.dll from C:\temp\OpenSSL-Win32\bin to C:\Program Files x86\mosquitto
 
 Download [pthreadVC2.dll from here.](ftp://sources.redhat.com/pub/pthreads-win32/dll-latest/dll/x86/)
+Download and Install Win32 OpenSSL v1.0.2h [from here.](http://slproweb.com/products/Win32OpenSSL.html)
 
 
 Copy pthreadVC2.dll to C:\Program Files (x86)\mosquitto)
