@@ -268,8 +268,7 @@ http://localhost:8086
 5. In Node-RED, drag an "InfluxDB out" node onto the palette. Use this new node to write data values to InfluxDB.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/SecondFlowToSubcribeAndWriteToInfluxDB.png" alt="Two flows in Node-RED" width="800" height="400"/>
-<em>Two Node_RED flows. The bottom flow is writing data to InfluxDB</em>
-
+<em>Two Node_RED flows. The bottom flow is writing data to InfluxDB</em>  
 
 6. Using InfluxDB, generate a graph of the light values.
 
