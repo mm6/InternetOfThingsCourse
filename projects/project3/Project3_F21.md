@@ -7,9 +7,15 @@
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project3.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
-### Objectives (To be completed)
+### Overview
 
-### Overview (To be completed)
+In class, we have reviewed the architecture of several IoT platforms: Google Cloud IoT, AWS IoT, IBM's Watson IoT, CMU's Sensor Andrew, and CMU's OpenChirp. Each of these included a constrained networking area (the edge), a gateway layer, a publish/subscribe broker, analytics capabilities, and a web front end.
+
+In this project, we will build our own system using the same architecture. The constrained area will use Bluetooth Low Energy. The gateway will use Node-RED. We will use MQTT as our broker and InfluxDB for analytics and the web dashboard.
+
+### Objectives
+
+
 
 ### Part 1. Programming the Argon to behave as a BLE peripheral device and installing LightBlue to behave as a BLE central device
 
