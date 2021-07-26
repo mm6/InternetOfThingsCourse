@@ -48,6 +48,8 @@ Particle cloud using CoAp.
 + [Web of Things Architecture Matthias Kovatsch(W3C) Video Lecture](https://www.youtube.com/watch?v=xgkglOZiF9M)
 
 ## Projects
+
++ [Project 3 BLE and Time Series Database](../projects/project3/Project3_F21.md)
 <!--
 + [Project 3 Webhooks and ThingSpeak and BLE ](../projects/project3/Project3.md)
 + [Project 3 Webhooks and ThingSpeak Photon Only ](../projects/project3/Project3_Photon.md)
