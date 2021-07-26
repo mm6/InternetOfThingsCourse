@@ -272,10 +272,10 @@ http://localhost:8086
 <em>Two Node_RED flows. The bottom flow is writing data to InfluxDB</em>   
 
 
-6. Using InfluxDB, generate a graph of the light values.
+6. Using InfluxDB, build a simple query in the "Data Explorer", hit the "Submit" button and generate a graph of the light values.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonOverBLE_to_NR_to_MQTT_to_NR_to_Influxdb.png" alt="InfluxDB Graph of Light Values" width="800" height="400"/>  
-  
+
 <em>An InfluxDB graph displaying light values from Node-RED</em>
 
-:checkered_flag: Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED.
+:checkered_flag: Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED. Note, this question is asking for a gauge rather than a graph.
