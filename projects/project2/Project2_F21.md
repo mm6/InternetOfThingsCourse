@@ -470,8 +470,12 @@ mosquitto.exe -v -c mosquitto.conf
 
 You should get messages similar to this:  
 
-1474406476: mosquitto version 1.4.10 (build date 24/08/2016 21:03:24.73) starting
-1474406476: Config loaded from mosquitto.conf.
-1474406476: Opening ipv6 listen socket on port 1883.
-1474406476: Opening ipv4 listen socket on port 1883.
+1474406476: mosquitto version 1.4.10 (build date 24/08/2016 21:03:24.73) starting  
+
+1474406476: Config loaded from mosquitto.conf.  
+
+1474406476: Opening ipv6 listen socket on port 1883.  
+
+1474406476: Opening ipv4 listen socket on port 1883.  
+
 1474406479: mosquitto version 1.4.10 terminating
