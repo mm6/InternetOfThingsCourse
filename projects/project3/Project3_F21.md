@@ -181,8 +181,8 @@ http://127.0.0.1:1880/
 Within Node-RED, expand the "Network" icon on the left and verify the presence of two BLE nodes: "Generic BLE In" and "Generic BLE out".  
 
 3. Using the "+" sign, create a new flow entitled "BLE Test".
-4. Add an inject node to the palette.
-5. In the Inject Node, set the message payload to JSON and set the message payload text to the following JSON message. This message will tell the "BLE In" node to listen for notify messages coming from the BLE connection.  
+4. Add an "Inject node" to the palette.
+5. In the "Inject node", set the message payload to JSON and set the message payload text to the following JSON message. This message will tell the "BLE In" node to listen for notify messages coming from the BLE connection.   
 
 ```
 {"notify": true, "period": 0 }
@@ -193,21 +193,20 @@ Within Node-RED, expand the "Network" icon on the left and verify the presence o
 
 7. Double click the "BLE In" node and select the pencil symbol to edit the properties. Select the "BLE Scanning" check box and select "Apply".
 
-8. Run the BLE firmware on the Argon and select the Argon in the Properties box of the Edit Generic BLE node. Be sure that the Emit Notify Events check box is selected. Note that the "Edit Generic BLE node" pane populates the UUID field.
+8. Run the BLE firmware on the Argon and select the Argon in the Properties box of the Edit Generic BLE node. Be sure that the "Emit Notify Events" check box is selected. Note that the "Edit Generic BLE node" pane populates the UUID field.
 
-9. Drag a debug node onto the palette and connect the Generic BLE
-In node to it.
+9. Drag a debug node onto the palette and connect it to the output of the "Generic BLE In" node. In this way, the data that is received over BLE will appear in the debug pane on the right.
 
-10. Deploy the flow. To start listening for notifications, click on the far left slice of the Inject node icon. With the Argon running, you should see the publications (notifications) from the Argon in the debug window.
+10. Deploy the flow. To start listening for notifications, click on the far left side of the "Inject node" icon. With the Argon running, you should see the publications (notifications) from the Argon in the debug window.
 
-11. Add a new Inject node and set the msg.topic to the value disconnect.
+11. Add a new "Inject node" and set the msg.topic to the value "disconnect" - without the quotes.
 
-12. Add a new Inject node and set the msg.top to connect.
+12. Add a new "Inject node" and set the msg.top to "connect" - without the quotes.
 
-13. See the following image and wire the two new Inject nodes to the input of the Generic BLE In node. The BLE In node should now have three inject nodes wired to it. Experiment. Start and stop the connection using these new nodes. After the connection is started, inject a listening request from the middle inject node. Watch the output from the debug node.
+13. See the following image and wire the two new "Inject nodes" to the input of the "Generic BLE In" node. The "BLE In" node should now have three inject nodes wired to it. Experiment. Start and stop the connection using these new nodes. After the connection is started, inject a listening request from the middle inject node. Watch the output from the debug node.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonToNodeREDBLEFlow.png" alt="BLE Greeting" width="400" height="400"/>
-<b>BLE connecting, listening, and disconnecting with Node-RED </b>
+*BLE connecting, listening, and disconnecting with Node-RED*
 
 
 ### Part 4. A BLE Exercise
