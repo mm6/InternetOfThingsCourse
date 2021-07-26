@@ -11,7 +11,7 @@
 
 In class, we have reviewed the architecture of several IoT platforms: Google Cloud IoT, AWS IoT, IBM's Watson IoT, CMU's Sensor Andrew, and CMU's OpenChirp. Each of these included a constrained networking area (the edge), a gateway layer, a publish/subscribe broker, a persistence layer, analytics capabilities and a web front end.
 
-In this project, we will build our own system using the same architecture. The constrained area will use Bluetooth Low Energy (BLE). The gateway tier will use Node-RED. We will use MQTT as our broker and InfluxDB for analytics and the web dashboard.
+In this project, we will build our own system using the same architecture. The constrained area will use Bluetooth Low Energy (BLE). The gateway tier will use Node-RED. We will use MQTT as our broker and InfluxDB for analytics, storage, and the web dashboard.
 
 ### Objectives
 
