@@ -15,7 +15,7 @@ In this project, we will build our own system using the same architecture. The c
 
 ### Objectives
 
-
+Our objective is to gain hands-on experience with a small implementation that includes important pieces of real world systems. It should be noted that we are not building a secure system - using physical hardening, encryption, and authentication logic.
 
 ### Part 1. Programming the Argon to behave as a BLE peripheral device and installing LightBlue to behave as a BLE central device
 
