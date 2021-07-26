@@ -446,7 +446,8 @@ Download mosquitto setup file from [here.](http://www.eclipse.org/downloads/down
 Run the setup file and follow the steps to complete the installation.
 note: Default destination folder is C:\Program Files (x86)\mosquitto
 
-[Download and Install Win32 OpenSSL v1.0.2h from here.](http://slproweb.com/products/Win32OpenSSL.html
+Download and Install Win32 OpenSSL v1.0.2h [from here.](http://slproweb.com/products/Win32OpenSSL.html  
+  
 Install it to C:\temp\OpenSSL-Win32).
 
 Copy libeay32.dll and ssleay32.dll from C:\temp\OpenSSL-Win32\bin to C:\Program Files (x86)\mosquitto
