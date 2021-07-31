@@ -11,17 +11,17 @@
 
 In class, we have reviewed the architecture of several IoT platforms: Google's Cloud IoT, AWS's IoT, IBM's Watson IoT, CMU's Sensor Andrew, and CMU's OpenChirp. Each of these included a constrained networking area (the edge), a gateway layer, a publish/subscribe broker, a persistence layer, analytics capabilities and a web front end.
 
-In this project, we will build our own system using the same architecture. The constrained area will use Bluetooth Low Energy (BLE). The gateway tier will use Node-RED. We will use MQTT as our broker and InfluxDB for analytics, storage, and the web dashboard.
+In this project, you will build your own system using the same architecture. The constrained area will use Bluetooth Low Energy (BLE). The gateway tier will use Node-RED. You will use MQTT as your broker and InfluxDB for analytics, storage, and the web dashboard.
 
-### Objectives
+### Objective
 
-Our objective is to gain hands-on experience with a small implementation that includes several important pieces organized in a particular manner - the manner of real world IoT systems. It should be noted that we are not building a secure system - using physical hardening, encryption, and authentication logic.
+The objective is to gain hands-on experience with a small implementation that includes several important pieces organized in a particular manner - the manner of real world IoT systems. It should be noted that you are not building a secure system - using physical hardening, encryption, and authentication logic.
 
 ### Part 1. Programming the Argon to behave as a BLE peripheral device and installing LightBlue to behave as a BLE central device
 
 A BLE peripheral device offering a service periodically announces its availability to the local environment (a distance of about 10 meters). A central device scans for these advertisements and may chooses to connect to the peripheral. After a connection is established, the peripheral stops advertising its capabilities and begins to behave as a service to the central device - acting as a client.
 
-In Part 1, we will deploy code to the Argon so that it behaves as a peripheral. We will use a phone application as a central device. We will connect to the Argon and receive notifications that will be displayed on the phone.
+In Part 1, you will deploy code to the Argon so that it behaves as a peripheral. You will use a phone application as a central device. You will connect to the Argon and receive notifications that will be displayed on the phone.
 
 The Argon will provide two services but advertise only one. The services will each make available values (called BLE characteristics). Both services and characteristics are associated with unique UUID's.
 
