@@ -5,11 +5,11 @@
 
 ### Topics: BLE, Node RED, MQTT, the Web, and InfluxDB
 
-:checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project3.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
+:checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project3.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and question number and that you provide your name and email address at the top of the .pdf.
 
 ### Overview
 
-In class, we have reviewed the architecture of several IoT platforms: Google Cloud IoT, AWS IoT, IBM's Watson IoT, CMU's Sensor Andrew, and CMU's OpenChirp. Each of these included a constrained networking area (the edge), a gateway layer, a publish/subscribe broker, a persistence layer, analytics capabilities and a web front end.
+In class, we have reviewed the architecture of several IoT platforms: Google's Cloud IoT, AWS's IoT, IBM's Watson IoT, CMU's Sensor Andrew, and CMU's OpenChirp. Each of these included a constrained networking area (the edge), a gateway layer, a publish/subscribe broker, a persistence layer, analytics capabilities and a web front end.
 
 In this project, we will build our own system using the same architecture. The constrained area will use Bluetooth Low Energy (BLE). The gateway tier will use Node-RED. We will use MQTT as our broker and InfluxDB for analytics, storage, and the web dashboard.
 
@@ -18,6 +18,13 @@ In this project, we will build our own system using the same architecture. The c
 Our objective is to gain hands-on experience with a small implementation that includes several important pieces organized in a particular manner - the manner of real world IoT systems. It should be noted that we are not building a secure system - using physical hardening, encryption, and authentication logic.
 
 ### Part 1. Programming the Argon to behave as a BLE peripheral device and installing LightBlue to behave as a BLE central device
+
+A BLE peripheral device offering a service periodically announces its availability to the local environment (a distance of about 10 meters). A central device scans for these advertisements and may chooses to connect to the peripheral. After a connection is established, the peripheral stops advertising its capabilities and begins to behave as a service to the central device - acting as a client.
+
+In Part 1, we will deploy code to the Argon so that it behaves as a peripheral. We will use a phone application as a central device. We will connect to the Argon and receive notifications that will be displayed on the phone.
+
+The Argon will provide two services but advertise only one. The services will each make available values (called BLE characteristics). Both services and characteristics are associated with unique UUID's.
+
 
 0. Notice that the Argon's antennae can be plugged into a Wi-Fi connection or a BLE connection. Both are available on the Argon. In my work, I found that I was able leave the antennae connected to Wi-Fi only.
 
@@ -142,13 +149,15 @@ uint32_t ieee11073_from_float(float temperature) {
 }
 
 ```
-2. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon.
+2. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon. LightBlue will act as a BLE central device and will scan for peripheral advertisements.
 
-This may require a bit of browsing with LightBlue to find the right BLE source. The dBm value (decibels relative to one milliwatt) is used to define the strength of the BLE signal. Anything greater than -75 dBm is considered a reliable signal. The closer that you get to 0, the more reliable the signal. On the PunchThrough application, you can use signal strength to help locate which signal is coming from your Argon.
+Note that this may require a bit of browsing with LightBlue to find the right BLE source. The dBm value (decibels relative to one milliwatt) is used to define the strength of the BLE signal. Anything greater than -75 dBm is considered a reliable signal. The closer that you get to 0, the more reliable the signal. On the PunchThrough application, you can use signal strength to help locate which signal is coming from your Argon.
 
 :checkered_flag: Take two screenshots showing LightBlue connected to your Argon. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Argon. Using LightBlue, you will need to use the subscribe feature to receive these values.
 
 ### Part 2. Transmit text over BLE
+
+In Part 2, you will experiment and make minimal changes to the code running on the Argon. This will require that you understand the code running in Part 1.
 
 0. Experiment by making minimal modifications to the firmware in Part 1 so that the LightBlue BLE screen displays "Hello" followed by your name. In other words, we will not be receiving temperature updates but, instead, we will be receiving a personalized greeting over BLE.
 
@@ -161,6 +170,8 @@ This may require a bit of browsing with LightBlue to find the right BLE source. 
 :checkered_flag: Submit two files. The first will be a copy of the modified firmware (named HelloCode.txt) and the second will be a screen capture (named LightBlue3.jpg) of your phone running LightBlue and showing your name in the hello greeting.
 
 ### Part 3. Using Node RED to act as a gateway device
+
+In Parts 1 and 2 we used LightBlue as the central device. In Part 3, we will use a Node-RED node to behave as a central device.
 
 0. Restore the firmware to its original state. That is, remove the code that we used to generate a personalized greeting over BLE.
 We are back to generating random temperature values.
@@ -199,7 +210,7 @@ Within Node-RED, expand the "Network" icon on the left and verify the presence o
 
 7. Double click the "BLE In" node and select the pencil symbol to edit the properties. Select the "BLE Scanning" check box and select "Apply".
 
-8. Run the BLE firmware on the Argon and select the Argon in the Properties box of the Edit Generic BLE node. Be sure that the "Emit Notify Events" check box is selected. Note that the "Edit Generic BLE node" pane populates the UUID field.
+8. Run the BLE firmware on the Argon and select the Argon in the Properties box of the "Edit Generic BLE node" pane. Be sure that the "Emit Notify Events" check box is selected. Note that the "Edit Generic BLE node" pane populates the UUID field.
 
 9. Drag a debug node onto the palette and connect it to the output of the "Generic BLE In" node. In this way, the data that is received over BLE will appear in the debug pane on the right.
 
@@ -207,7 +218,7 @@ Within Node-RED, expand the "Network" icon on the left and verify the presence o
 
 11. Add a new "Inject node" and set the msg.topic to the value "disconnect" - without the quotes.
 
-12. Add a new "Inject node" and set the msg.top to "connect" - without the quotes.
+12. Add a new "Inject node" and set the msg.topic to "connect" - without the quotes.
 
 13. See the following image and wire the two new "Inject nodes" to the input of the "Generic BLE In" node. The "BLE In" node should now have three inject nodes wired to it. Experiment. Start and stop the connection using these new nodes. After the connection is started, inject a listening request from the middle inject node. Watch the output from the debug node.
 
@@ -217,11 +228,15 @@ Within Node-RED, expand the "Network" icon on the left and verify the presence o
 
 ### Part 4. A BLE Exercise
 
-0. Recall the LightMonitor firmware from Part 2 of Project 2. In that code, we transmitted light values via HTTP to Node-RED. Here, we will do the same but with BLE. Note that we want to transmit far fewer bytes than we did when using HTTP over TCP sockets.
+In Part 4 you will first write code that communicates with the LightBlue phone application (for testing) and then write a Node-RED flow that displays the arriving values on a debug window. In Part 5, this flow will be extended to include an MQTT broker.
+
+Note that the BLE standards body provides some UUID's that are fixed. In the example code of Part 1, the "Health Thermometer service" is represented as the value "0x1809". If you were to build a new health thermometer, you would likely use 0x1809 as your UUID so that other devices, perhaps not manufactured by you, would recognize the service that your new device provides. In Part 4, you will choose your own UUID and use it to represent your service. This is necessary because the BLE standard body does not provide a unique code for a simple light value service. Since this will be a proprietary service, you will use a full 16 bytes to represent the service - not two bytes such as 0x1809.
+
+0. Recall the LightMonitor firmware from Part 2 of Project 2. In that code, we transmitted light values via HTTP to Node-RED. Here, we will do the same but with BLE. Note that we want to transmit far fewer bytes (over BLE) than we did when using HTTP messages over TCP sockets.
 
 1. We need to define our own UUID's for our proprietary light value service and light value characteristic. You should get your UUID's from [this web site.](https://www.uuidgenerator.net/)
 
-2. In the C++ code, you can establish proprietary UUID's with a constructor like this (but use your own UUID's from the generator mentioned in step 1.)
+2. In the C++ code, you can establish proprietary UUID's with a constructor like this (but use your own UUID's from the generator mentioned in step 1.) These are hexadecimal digits represented in the 4-2-2-2-6 format.
 
 ```
 BleUuid lightValueService("beb5483e-36e1-4688-b7f5-ea07361b26a8");
@@ -232,7 +247,7 @@ BleUuid lightValueService("beb5483e-36e1-4688-b7f5-ea07361b26a8");
 
 :checkered_flag: Submit a screenshot (named LightBlue4.jpg) showing the LightBlue application receiving the light values from the Argon.
 
-4. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following (for a light value of 17). You will use a function node to extract the data from msg.payload and create a new value for msg.payload.
+4. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following (for a light value of 17). You will use a function node to extract the data from msg.payload and create a new output value for msg.payload.
 
 ```
 msg.payload : string[17]
@@ -247,6 +262,8 @@ msg.payload : string[17]
 
 ### Part 5. Node RED publishes the data to MQTT for publish/subscribe
 
+In Part 5 write a Node-RED flow so that Node-RED becomes a gateway device - taking in BLE signals and generating publications to MQTT. The publications to MQTT will be over TCP/IP. Thus, the MQTT service itself might reside anywhere on the internet. We are taking data from a constrained network (BLE - measured in meters) and moving it to the internet.
+
 0. See Project 2 and run an instance of MQTT.
 
 1. Using the Node-RED flow from Part 4, publish the light values read from the sensor on the Argon to MQTT. Use an "mqtt out" node and publish to the topic "lightValues" with a quality of service equal to 0.
@@ -254,6 +271,8 @@ msg.payload : string[17]
 :checkered_flag: Submit a screenshot showing Node-RED receiving the light values from the Argon and publishing JSON strings to MQTT. The MQTT window should be visible in your screenshot. Name the file "Node-RED2.jpg".
 
 ### Part 6. Subscribe to MQTT with Node-RED and write to InfluxDB
+
+Finally, to complete our system, we include a time series database named InfluxDB (see OpenChirp). This database can generate analytics of various sorts as well as providing storage and web visualizations. 
 
 0. [Visit this page and install InfluxDB on your machine.](https://docs.influxdata.com/influxdb/v2.0/install/)
 
