@@ -311,12 +311,21 @@ http://localhost:8086
 FILE                 ABBREVIATED DESCRIPTION
 
 LightBlue1.jpg       Screen shot of phone connection
+
 LightBlue2.jpg       Screen shot of phone details
+
 HelloCode.txt        Firmware code for Hello
+
 LightBlue3.jpg       Hello shown on LightBLUE
+
 LightBlue4.jpg       Light values in LightBlue
+
 Node-RED1.jpg        Light value flow with debug pane
+
 Javascript1.jpg      Node-RED function node Javascript
+
 Node-RED2.jpg        NR to MQTT screenshot
+
 Node-RED3.jpg        containing two flows - pub and sub
+
 InfluxDBGauge.jpg    an InfluxDB Gauge
