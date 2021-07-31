@@ -302,7 +302,7 @@ http://localhost:8086
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonOverBLE_to_NR_to_MQTT_to_NR_to_Influxdb.png" alt="InfluxDB Graph of Light Values" width="800" height="400"/>  
 
-<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An InfluxDB graph displaying light values from Node-RED</em>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An InfluxDB graph displaying light values from Node-RED</em>
 
 :checkered_flag: Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED. Note, this question is asking for a gauge rather than a graph. Name the file "InfluxDBGauge.jpg".
 
