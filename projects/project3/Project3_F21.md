@@ -306,9 +306,9 @@ http://localhost:8086
 
 :checkered_flag: Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED. Note, this question is asking for a gauge rather than a graph. Name the file "InfluxDBGauge.jpg".
 
-:checkered_flag: Summary: On a single pdf named Your_Last_Name_First_Name_Project3.pdf, include the following clearly labelled files:
+:checkered_flag: Summary: On a single pdf named Your_Last_Name_First_Name_Project3.pdf, include the following clearly labelled files (10 points each):
 
-FILE                 ABBREVIATED DESCRIPTION
+
 
 LightBlue1.jpg       Screen shot of phone connection
 
