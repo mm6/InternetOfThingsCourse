@@ -302,7 +302,7 @@ http://localhost:8086
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonOverBLE_to_NR_to_MQTT_to_NR_to_Influxdb.png" alt="InfluxDB Graph of Light Values" width="800" height="400"/>  
 
-<em>An InfluxDB graph displaying light values from Node-RED</em>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;An InfluxDB graph displaying light values from Node-RED</em>
 
 :checkered_flag: Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED. Note, this question is asking for a gauge rather than a graph. Name the file "InfluxDBGauge.jpg".
 
@@ -310,22 +310,22 @@ http://localhost:8086
 
 
 
-LightBlue1.jpg       Screen shot of phone connection
+LightBlue1.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Screen shot of phone connection
 
-LightBlue2.jpg       Screen shot of phone details
+LightBlue2.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Screen shot of phone details
 
-HelloCode.txt        Firmware code for Hello
+HelloCode.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Firmware code for Hello
 
-LightBlue3.jpg       Hello shown on LightBLUE
+LightBlue3.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Hello shown on LightBLUE
 
-LightBlue4.jpg       Light values in LightBlue
+LightBlue4.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Light values in LightBlue
 
-Node-RED1.jpg        Light value flow with debug pane
+Node-RED1.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Light value flow with debug pane
 
-Javascript1.jpg      Node-RED function node Javascript
+Javascript1.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      Node-RED function node Javascript
 
-Node-RED2.jpg        NR to MQTT screenshot
+Node-RED2.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        NR to MQTT screenshot
 
-Node-RED3.jpg        containing two flows - pub and sub
+Node-RED3.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        containing two flows - pub and sub
 
-InfluxDBGauge.jpg    an InfluxDB Gauge
+InfluxDBGauge.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    an InfluxDB Gauge
