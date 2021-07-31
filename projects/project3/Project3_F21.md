@@ -272,7 +272,7 @@ In Part 5 write a Node-RED flow so that Node-RED becomes a gateway device - taki
 
 ### Part 6. Subscribe to MQTT with Node-RED and write to InfluxDB
 
-Finally, to complete our system, we include a time series database named InfluxDB (see OpenChirp). This database can generate analytics of various sorts as well as providing storage and web visualizations. 
+Finally, to complete our system, we include a time series database named InfluxDB (see OpenChirp). This database can generate analytics of various sorts as well as providing storage and web visualizations.
 
 0. [Visit this page and install InfluxDB on your machine.](https://docs.influxdata.com/influxdb/v2.0/install/)
 
@@ -305,3 +305,18 @@ http://localhost:8086
 <em>An InfluxDB graph displaying light values from Node-RED</em>
 
 :checkered_flag: Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED. Note, this question is asking for a gauge rather than a graph. Name the file "InfluxDBGauge.jpg".
+
+:checkered_flag: Summary: On a single pdf named Your_Last_Name_First_Name_Project3.pdf, include the following clearly labelled files:
+
+FILE                 ABBREVIATED DESCRIPTION
+
+LightBlue1.jpg       Screen shot of phone connection
+LightBlue2.jpg       Screen shot of phone details
+HelloCode.txt        Firmware code for Hello
+LightBlue3.jpg       Hello shown on LightBLUE
+LightBlue4.jpg       Light values in LightBlue
+Node-RED1.jpg        Light value flow with debug pane
+Javascript1.jpg      Node-RED function node Javascript
+Node-RED2.jpg        NR to MQTT screenshot
+Node-RED3.jpg        containing two flows - pub and sub
+InfluxDBGauge.jpg    an InfluxDB Gauge
