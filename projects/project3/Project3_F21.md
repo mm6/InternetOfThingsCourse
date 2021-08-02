@@ -251,21 +251,14 @@ BleUuid lightValueService("beb5483e-36e1-4688-b7f5-ea07361b26a8");
 
 :checkered_flag: Submit a screenshot (named LightBlue4.jpg) showing the LightBlue application receiving the light values from the Argon.
 
-4. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following (for a light value of 17). You will use a function node to extract the data from msg.payload and create a new output value for msg.payload. The function node programming is a bit of a challenge.
-
-```
-msg.payload : string[17]
-
-"{"lightValue":11}"
-
-```
+4. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following (for various light values. You will use a function node to extract the data from msg.payload and create a new output value for msg.payload. The function node programming is a bit of a challenge.
 
 Your debug node and debug output will appear as in the following picture:
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/DebugNodeAndOutput.png" alt="Debug Node" width="400" height="400"/>
 <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Debug Node and Output</em>  
 
-
+<p></p>
 
 :checkered_flag: Submit a screenshot showing Node-RED receiving the light values from the Argon. Be sure to capture the entire screen - showing the Node-RED flow and the debug window. Name the file "Node-RED1.jpg".
 
