@@ -263,7 +263,8 @@ msg.payload : string[17]
 Your debug node and debug output will appear as in the following picture:
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/DebugNodeAndOutput.png" alt="Debug Node" width="400" height="400"/>
-<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Debug Node and Output</em>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Debug Node and Output</em>  
+
 
 
 :checkered_flag: Submit a screenshot showing Node-RED receiving the light values from the Argon. Be sure to capture the entire screen - showing the Node-RED flow and the debug window. Name the file "Node-RED1.jpg".
