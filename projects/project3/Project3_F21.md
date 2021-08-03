@@ -154,7 +154,7 @@ uint32_t ieee11073_from_float(float temperature) {
 2. Note, in particular, how the array named "buf" is defined and used in various places in the code:
 
 ```
-uint8_t buf[6];   // create the array of 8 bit bytes
+uint8_t buf[6];   // create the array of six 8-bit bytes
 
 buf[0] = 0x04;    // assign a particular code in buf[0]
 
