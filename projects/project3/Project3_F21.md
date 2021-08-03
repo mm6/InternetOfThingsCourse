@@ -151,9 +151,23 @@ uint32_t ieee11073_from_float(float temperature) {
 ```
 <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Argon code to behave as a BLE peripheral </em>
 
+2. Note, in particular, how the array named "buf" is defined and used.
 
+```
+uint8_t buf[6];
 
-2. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon. LightBlue will act as a BLE central device and will scan for peripheral advertisements.
+buf[0] = 0x04;
+
+uint32_t value = ieee11073_from_float(getTempC());
+
+memcpy(&buf[1], &value, 4);
+```
+
+The buf array is used to hold the data that is passed over BLE. The memcpy() call places 4 bytes from the "value" variable into the array starting at position 1. These four bytes will change often. The buf array at positions 0 and 5 are set according to standard settings for temperature settings. They will remain constant and are used for metadata, e.g., the temperature was taken in celsius and was monitored from the mouth.  
+
+The buf array is the array of bytes that are passed over the BLE signal. This buf array needs to be populated with the data that is to be transmitted. The receiver will have to know how to interpret the arriving bits.
+
+3. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon. LightBlue will act as a BLE central device and will scan for peripheral advertisements.
 
 Note that this may require a bit of browsing with LightBlue to find the right BLE source. The dBm value (decibels relative to one milliwatt) is used to define the strength of the BLE signal. Anything greater than -75 dBm is considered a reliable signal. The closer that you get to 0, the more reliable the signal. On the PunchThrough application, you can use signal strength to help locate which signal is coming from your Argon.
 
@@ -234,7 +248,7 @@ Within Node-RED, expand the "Network" icon on the left and verify the presence o
 
 In Part 4 you will first write code that communicates with the LightBlue phone application (for testing) and then write a Node-RED flow that displays the arriving values on a debug window. In Part 5, this flow will be extended to include an MQTT broker.
 
-Note that the BLE standards body provides some UUID's that are fixed. In the example code of Part 1, the "Health Thermometer service" is represented as the value "0x1809". If you were to build a new health thermometer, you would likely use 0x1809 as your UUID so that other devices, perhaps not manufactured by you, would recognize the service that your new device provides. In Part 4, you will choose your own UUID and use it to represent your service. This is necessary because the BLE standard body does not provide a unique code for a simple light value service. Since this will be a proprietary service, you will use a full 16 bytes to represent the service - not two bytes such as 0x1809.
+Note that the BLE standards body provides some UUID's that are fixed. In the example code of Part 1, the "Health Thermometer service" is represented as the value "0x1809". If you were to build a new health thermometer, you would likely use "0x1809" as your UUID so that other devices, perhaps not manufactured by you, would recognize the service that your new device provides. In Part 4, you will choose your own UUID's and use them to represent your service and its characteristics. This is necessary because the BLE standard body does not provide a unique code for a simple light value service. Since this will be a proprietary service, you will use a full 16 bytes to represent the service - not two bytes such as "0x1809". The UUID for the service that you offer will differ from the UUID that is used to refer to a characteristic.
 
 0. Recall the LightMonitor firmware from Part 2 of Project 2. In that code, we transmitted light values via HTTP to Node-RED. Here, we will do the same but with BLE. Note that we want to transmit far fewer bytes (over BLE) than we did when using HTTP messages over TCP sockets.
 
