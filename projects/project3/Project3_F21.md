@@ -156,16 +156,16 @@ uint32_t ieee11073_from_float(float temperature) {
 ```
 uint8_t buf[6];   // create the array of six 8-bit bytes
 
-buf[0] = 0x04;    // assign a particular code in buf[0]
+buf[0] = 0x04;    // a standard code is placed in buf[0]
 
 // compute the current temperature and convert the float to a
 // 32 bit integer
 uint32_t value = ieee11073_from_float(getTempC());
 
-// copy the 32 bit integer into buf[1],buf[2],buf[3], and buf[4]
+// copy the 32 bit integer (four bytes) into buf[1],buf[2],buf[3], and buf[4]
 memcpy(&buf[1], &value, 4);
 
-buf[5] = 6; // buf[5] is used to hold a code for body location
+buf[5] = 6; // buf[5] is used to hold a standard code for body location
 
 ```
 
