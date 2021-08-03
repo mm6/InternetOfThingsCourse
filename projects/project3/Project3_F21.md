@@ -169,9 +169,7 @@ buf[5] = 6; // buf[5] is used to hold a standard code for body location
 
 ```
 
-The buf array is used to hold the data that is passed over BLE. The memcpy() call places 4 bytes from the "value" variable into the array starting at position 1. These four bytes will change often. The buf array at positions 0 and 5 are set according to standard settings for body temperature sensors. They will remain constant and are used for metadata, e.g., the temperature was taken in celsius and was monitored from the mouth.  
-
-The buf array is the array of bytes that are passed over the BLE signal. The buf array needs to be populated with the data that is to be transmitted. The receiver will have to know how to interpret the arriving bits.
+The buf array is used to hold the data that is passed over the BLE signal. The memcpy() call places 4 bytes from the "value" variable into the array starting at position 1. These four bytes will change often. The buf array at positions 0 and 5 are set according to standard settings for body temperature sensors. They will remain constant and are used for metadata, e.g., the temperature was taken in celsius and was monitored from the mouth. The receiver will have to know how to interpret the arriving bits.
 
 3. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon. LightBlue will act as a BLE central device and will scan for peripheral advertisements.
 
