@@ -151,21 +151,27 @@ uint32_t ieee11073_from_float(float temperature) {
 ```
 <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Argon code to behave as a BLE peripheral </em>
 
-2. Note, in particular, how the array named "buf" is defined and used.
+2. Note, in particular, how the array named "buf" is defined and used in various places in the code:
 
 ```
-uint8_t buf[6];
+uint8_t buf[6];   // create the array of 8 bit bytes
 
-buf[0] = 0x04;
+buf[0] = 0x04;    // assign a particular code in buf[0]
 
+// compute the current temperature and convert the float to a
+// 32 bit integer
 uint32_t value = ieee11073_from_float(getTempC());
 
+// copy the 32 bit integer into buf[1],buf[2],buf[3], and buf[4]
 memcpy(&buf[1], &value, 4);
+
+buf[5] = 6; // buf[5] is used to hold a code for body location
+
 ```
 
-The buf array is used to hold the data that is passed over BLE. The memcpy() call places 4 bytes from the "value" variable into the array starting at position 1. These four bytes will change often. The buf array at positions 0 and 5 are set according to standard settings for temperature settings. They will remain constant and are used for metadata, e.g., the temperature was taken in celsius and was monitored from the mouth.  
+The buf array is used to hold the data that is passed over BLE. The memcpy() call places 4 bytes from the "value" variable into the array starting at position 1. These four bytes will change often. The buf array at positions 0 and 5 are set according to standard settings for body temperature sensors. They will remain constant and are used for metadata, e.g., the temperature was taken in celsius and was monitored from the mouth.  
 
-The buf array is the array of bytes that are passed over the BLE signal. This buf array needs to be populated with the data that is to be transmitted. The receiver will have to know how to interpret the arriving bits.
+The buf array is the array of bytes that are passed over the BLE signal. The buf array needs to be populated with the data that is to be transmitted. The receiver will have to know how to interpret the arriving bits.
 
 3. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon. LightBlue will act as a BLE central device and will scan for peripheral advertisements.
 
