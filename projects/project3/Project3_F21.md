@@ -299,7 +299,7 @@ In Part 5 write a Node-RED flow so that Node-RED becomes a gateway device - taki
 
 0. See Project 2 and run an instance of MQTT.
 
-1. Using the Node-RED flow from Part 4, publish the light values read from the sensor on the Argon to MQTT. Use an "mqtt out" node and publish to the topic "lightValues" with a quality of service equal to 0.
+1. Using the Node-RED flow from Part 4, publish the light values read from the sensor on the Argon to MQTT. Use an "mqtt out" node and publish to the topic "lightValues" with a quality of service equal to 0. Set the sever to “localhost:1883” on the "mqtt out" node. This assumes that mosquito is running on that port.
 
 :checkered_flag: Submit a screenshot showing Node-RED receiving the light values from the Argon and publishing JSON strings to MQTT. The MQTT window should be visible in your screenshot. Name the file "Node-RED2.jpg".
 
@@ -316,22 +316,23 @@ http://localhost:8086
 
 ```
 
-2. [Install the InfluxDB nodes for Node-RED.](https://flows.nodered.org/node/node-red-contrib-influxdb)
+2. Make sure that you are in the ~/.node-red directory and [Install the InfluxDB nodes for Node-RED.](https://flows.nodered.org/node/node-red-contrib-influxdb)
 
 3. Using the file system, check if "influx" appears under the node_modules directory and check if the Node-RED palette has new nodes: "influxdb in", "influxdb out" and "influx batch". You may ignore errors if these nodes are on the palette in Node-RED.
 
-4. In Node-Red, drag an "mqtt in" node onto the palette. This begins a new flow but may appear on the same palette as your previous work. This node will subscribe to the topic "lightValues" that are being published by the "mqtt out" node from Part 5. Connect the "mqtt in" node to a debug node.
+4. In Node-RED, drag an "mqtt in" node onto the palette. This begins a new flow but may appear on the same palette as your previous work. This node will subscribe to the topic "lightValues" that are being published by the "mqtt out" node from Part 5. The output of the "mqtt in" node should be set to "parsed JSON object". Connect the "mqtt in" node to a debug node.
 
 :checkered_flag: Submit a screenshot showing a Node-RED flow receiving the light values from the Argon and publishing JSON strings to MQTT. A second flow will also be on the Node-RED palette and this flow will subscribe to the values being published by the first flow. The output of the second flow will appear on the debug pane. Name the file "Node-RED3.jpg".
 
-5. In Node-RED, drag an "InfluxDB out" node onto the palette. Use this new node to write data values to InfluxDB. See the image below.
+5. In Node-RED, drag an "InfluxDB out" node onto the palette. Use this new node to write data values to InfluxDB. The "InfluxDB out" node should have its version set to 2.0 in settings. See the image below.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/SecondFlowToSubcribeAndWriteToInfluxDB.png" alt="Two flows in Node-RED" width="800" height="400"/>  
 
 <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two Node_RED flows. The bottom flow is writing data to InfluxDB</em>   
 
+6. You will need to make an account when you run InfluxDB for the first time. You will also need to generate a token for Node-RED: go to data tab -> tokens -> copy generated token and paste the token into the Node-RED "InfluxDB out" node settings.
 
-6. Using InfluxDB, build a simple query in the "Data Explorer", hit the "Submit" button, and generate a graph of the light values.
+7. Using InfluxDB, build a simple query in the "Data Explorer" and generate visualizations of the light value data. To execute an InfluxDB query, you will select a "From" bucket, the "_measurement" of "lightValue" and the "filter" of "lightValue". Hit the submit button and generate a graph of light values.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonOverBLE_to_NR_to_MQTT_to_NR_to_Influxdb.png" alt="InfluxDB Graph of Light Values" width="800" height="400"/>  
 
@@ -340,7 +341,6 @@ http://localhost:8086
 :checkered_flag: Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED. Note, this question is asking for a gauge rather than a graph. Name the file "InfluxDBGauge.jpg".
 
 :checkered_flag: Summary: On a single pdf named Your_Last_Name_First_Name_Project3.pdf, include the following clearly labelled files (10 points each):
-
 
 
 LightBlue1.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Screen shot of phone connection
