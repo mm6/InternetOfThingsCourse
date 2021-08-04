@@ -151,7 +151,7 @@ uint32_t ieee11073_from_float(float temperature) {
 ```
 <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Argon code to behave as a BLE peripheral </em>
 
-2. Note, in particular, how the array named "buf" is defined and used in various places in the code:
+2. Note, in particular, how the array named "buf" is defined and used in specific places in the code:
 
 ```
 uint8_t buf[6];   // create the array of six 8-bit bytes
@@ -173,17 +173,26 @@ The buf array is used to hold the data that is passed over the BLE signal. The m
 
 3. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon. LightBlue will act as a BLE central device and will scan for peripheral advertisements.
 
-Note that this may require a bit of browsing with LightBlue to find the right BLE source. The dBm value (decibels relative to one milliwatt) is used to define the strength of the BLE signal. Anything greater than -75 dBm is considered a reliable signal. The closer that you get to 0, the more reliable the signal. On the PunchThrough application, you can use signal strength to help locate which signal is coming from your Argon.
+Note that this may require a bit of browsing with LightBlue to find the right BLE source. The dBm value (decibels relative to one milliwatt) is used to define the strength of the BLE signal. Anything greater than -75 dBm is considered a reliable signal. The closer that you get to 0, the more reliable the signal. On LightBlue's PunchThrough application, you can use signal strength to help locate which signal is coming from your Argon.  
 
-:checkered_flag: Take two screenshots showing LightBlue connected to your Argon. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Argon. Using LightBlue, you will need to use the subscribe feature to receive these values.
+Within the firmware, there is code that defines the temperature characteristic as a "notify" characteristic. This means that a client does not have to perform explicit read requests. The client can sit back and receive the temperature values.
+
+```
+BleCharacteristicProperty::NOTIFY
+
+```
+
+Using LightBlue, you will need to use the "subscribe" or "listen" selection to receive these values.
+
+:checkered_flag: Take two screenshots showing LightBlue connected to your Argon. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Argon.
 
 ### Part 2. Transmit text over BLE
 
-In Part 2, you will experiment and make minimal changes to the code running on the Argon. This will require that you understand the code running in Part 1.
+0. Experiment by making modifications to the firmware in Part 1 so that the LightBlue BLE screen displays "Hello" followed by your name. In other words, we will not be receiving temperature updates but, instead, we will be receiving a personalized greeting over BLE.
 
-0. Experiment by making minimal modifications to the firmware in Part 1 so that the LightBlue BLE screen displays "Hello" followed by your name. In other words, we will not be receiving temperature updates but, instead, we will be receiving a personalized greeting over BLE.
+1. Your changes to the code in Part 1 should be minimal. This can be done easily by assigning letters to the buf array. For example, your solution would assign the value 'H' to buf[0] and 'e' to buf[1], etc.
 
-1. My solution looks like the following:
+2. My solution looks like the following:
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/Hello_Michael_LightBlue.jpg" alt="BLE Greeting" width="400" height="800"/>
 
@@ -230,19 +239,21 @@ Within Node-RED, expand the "Network" icon on the left and verify the presence o
 
 6. Drag the "BLE In" node onto the palette. Create a wire from the "Inject" node in step 5 to the new "BLE In" node.
 
-7. Double click the "BLE In" node and select the pencil symbol to edit the properties. Select the "BLE Scanning" check box and select "Apply".
+7. Doble click the "BLE In" node and select the two check boxes: "Stringify in payload" and "Emit notify events".
 
-8. Run the BLE firmware on the Argon and select the Argon in the Properties box of the "Edit Generic BLE node" pane. Be sure that the "Emit Notify Events" check box is selected. Note that the "Edit Generic BLE node" pane populates the UUID field.
+8. Double click the "BLE In" node and select the pencil symbol to edit the properties. Select the "BLE Scanning" check box and select "Apply".
 
-9. Drag a debug node onto the palette and connect it to the output of the "Generic BLE In" node. In this way, the data that is received over BLE will appear in the debug pane on the right.
+9. Run the BLE firmware on the Argon and select the Argon in the Properties box of the "Edit Generic BLE node" pane. Be sure that the "Emit Notify Events" check box is selected. Note that the "Edit Generic BLE node" pane populates the UUID field.
 
-10. Deploy the flow. To start listening for notifications, click on the far left side of the "Inject node" icon. With the Argon running, you should see the publications (notifications) from the Argon in the debug window.
+10. Drag a debug node onto the palette and connect it to the output of the "Generic BLE In" node. In this way, the data that is received over BLE will appear in the debug pane on the right.
 
-11. Add a new "Inject node" and set the msg.topic to the value "disconnect" - without the quotes.
+11. Deploy the flow. To start listening for notifications, click on the far left side of the "Inject node" icon. With the Argon running, you should see the publications (notifications) from the Argon in the debug window.
 
-12. Add a new "Inject node" and set the msg.topic to "connect" - without the quotes.
+12. Add a new "Inject node" and set the msg.topic to the value "disconnect" - without the quotes.
 
-13. See the following image and wire the two new "Inject nodes" to the input of the "Generic BLE In" node. The "BLE In" node should now have three inject nodes wired to it. Experiment. Start and stop the connection using these new nodes. After the connection is started, inject a listening request from the middle inject node. Watch the output from the debug node.
+13. Add a new "Inject node" and set the msg.topic to "connect" - without the quotes.
+
+14. See the following image and wire the two new "Inject nodes" to the input of the "Generic BLE In" node. The "BLE In" node should now have three inject nodes wired to it. Experiment. Start and stop the connection using these new nodes. After the connection is started, inject a listening request from the middle inject node. Watch the output from the debug node.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonToNodeREDBLEFlow.png" alt="BLE Greeting" width="400" height="400"/>
 <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BLE connecting, listening, and disconnecting with Node-RED</em>
@@ -269,7 +280,7 @@ BleUuid lightValueService("beb5483e-36e1-4688-b7f5-ea07361b26a8");
 
 :checkered_flag: Submit a screenshot (named LightBlue4.jpg) showing the LightBlue application receiving the light values from the Argon.
 
-4. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following (for various light values. You will use a function node to extract the data from msg.payload and create a new output value for msg.payload. The function node programming is a bit of a challenge.
+4. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following (for various light values. You will use a function node to extract the data from msg.payload and create a new output value for msg.payload. The function node programming is a small exercise.
 
 Your debug node and debug output will appear as in the following picture:
 
