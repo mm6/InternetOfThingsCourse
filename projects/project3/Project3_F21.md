@@ -330,7 +330,7 @@ http://localhost:8086
 
 <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two Node_RED flows. The bottom flow is writing data to InfluxDB</em>   
 
-6. You will need to make an account when you run InfluxDB for the first time. You will also need to generate a token for Node-RED: go to data tab -> tokens -> copy generated token and paste the token into the Node-RED "InfluxDB out" node settings.
+6. You will need to make an account when you run InfluxDB for the first time. You will also need to generate a token for Node-RED. To do so, use the "data" tab and choose "tokens" and copy the generated value. Paste this token into the Node-RED "InfluxDB out" node settings.
 
 7. Using InfluxDB, build a simple query in the "Data Explorer" and generate visualizations of the light value data. To execute an InfluxDB query, you will select a "From" bucket, the "_measurement" of "lightValue" and the "filter" of "lightValue". Hit the submit button and generate a graph of light values.
 
