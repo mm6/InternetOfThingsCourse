@@ -305,7 +305,11 @@ In Part 5 write a Node-RED flow so that Node-RED becomes a gateway device - taki
 
 ### Part 6. Subscribe to MQTT with Node-RED and write to InfluxDB
 
-Finally, to complete our system, we include a time series database named InfluxDB (see OpenChirp). This database can generate analytics of various sorts as well as providing storage and web visualizations.
+Finally, to complete our system, we include a time series database named InfluxDB (used by CMU's OpenChirp). A time series database is not built on the traditional relational model. Instead, each element has a timestamp and the database is optimized to query the data over specified periods of time.
+
+A time series database such as InfluxDB can generate analytics of various sorts as well as providing storage and web visualizations.
+
+With respect to IoT, time series databases are used mainly for anomaly detection and prediction. Anomaly detection and prediction have a wide variety of use cases. Here, we will use the web visualization and storage capabilities of InfluxDB.  
 
 0. [Visit this page and install InfluxDB on your machine.](https://docs.influxdata.com/influxdb/v2.0/install/)
 
