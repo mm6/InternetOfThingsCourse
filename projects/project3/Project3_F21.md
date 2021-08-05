@@ -5,7 +5,7 @@
 
 ### Topics: BLE, Node RED, MQTT, the Web, and InfluxDB
 
-:checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project3.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and question number and that you provide your name and email address at the top of the .pdf.
+:checkered_flag:**Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project3.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you <em>clearly label</em> each answer with the project part number and question number and that you provide your name and email address at the top of the .pdf.**
 
 ### Overview
 
@@ -184,7 +184,7 @@ BleCharacteristicProperty::NOTIFY
 
 Using LightBlue, you will need to use the "subscribe" or "listen" selection to receive these values.
 
-:checkered_flag: Take two screenshots showing LightBlue connected to your Argon. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Argon.
+:checkered_flag:**Take two screenshots showing LightBlue connected to your Argon. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Argon.**
 
 ### Part 2. Transmit text over BLE
 
@@ -278,7 +278,7 @@ BleUuid lightValueService("beb5483e-36e1-4688-b7f5-ea07361b26a8");
 
 3. Write the necessary firmware to communicate light values to the LightBlue application running on your phone. The hardware will be configured as in Project 2, Part 2.
 
-:checkered_flag: Submit a screenshot (named LightBlue4.jpg) showing the LightBlue application receiving the light values from the Argon.
+:checkered_flag:**Submit a screenshot (named LightBlue4.jpg) showing the LightBlue application receiving the light values from the Argon.**
 
 4. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following (for various light values. You will use a function node to extract the data from msg.payload and create a new output value for msg.payload. The function node programming is a small exercise.
 
@@ -289,9 +289,9 @@ Your debug node and debug output will appear as in the following picture:
 
 <p></p>
 
-:checkered_flag: Submit a screenshot showing Node-RED receiving the light values from the Argon. Be sure to capture the entire screen - showing the Node-RED flow and the debug window. Name the file "Node-RED1.jpg".
+:checkered_flag:**Submit a screenshot showing Node-RED receiving the light values from the Argon. Be sure to capture the entire screen - showing the Node-RED flow and the debug window. Name the file "Node-RED1.jpg".**
 
-:checkered_flag: Submit a screenshot showing the Javascript code that you wrote for the function node of Node-RED. This is the function that extracts the light value and passes the JSON string onto the debug node. Name the file "Javascript1.jpg".
+:checkered_flag:**Submit a screenshot showing the Javascript code that you wrote for the function node of Node-RED. This is the function that extracts the light value and passes the JSON string onto the debug node. Name the file "Javascript1.jpg".**
 
 ### Part 5. Node RED publishes the data to MQTT for publish/subscribe
 
@@ -301,7 +301,7 @@ In Part 5 write a Node-RED flow so that Node-RED becomes a gateway device - taki
 
 1. Using the Node-RED flow from Part 4, publish the light values read from the sensor on the Argon to MQTT. Use an "mqtt out" node and publish to the topic "lightValues" with a quality of service equal to 0. Set the sever to “localhost:1883” on the "mqtt out" node. This assumes that mosquito is running on that port.
 
-:checkered_flag: Submit a screenshot showing Node-RED receiving the light values from the Argon and publishing JSON strings to MQTT. The MQTT window should be visible in your screenshot. Name the file "Node-RED2.jpg".
+:checkered_flag:**Submit a screenshot showing Node-RED receiving the light values from the Argon and publishing JSON strings to MQTT. The MQTT window should be visible in your screenshot. Name the file "Node-RED2.jpg".**
 
 ### Part 6. Subscribe to MQTT with Node-RED and write to InfluxDB
 
@@ -326,7 +326,7 @@ http://localhost:8086
 
 4. In Node-RED, drag an "mqtt in" node onto the palette. This begins a new flow but may appear on the same palette as your previous work. This node will subscribe to the topic "lightValues" that are being published by the "mqtt out" node from Part 5. The output of the "mqtt in" node should be set to "parsed JSON object". Connect the "mqtt in" node to a debug node.
 
-:checkered_flag: Submit a screenshot showing a Node-RED flow receiving the light values from the Argon and publishing JSON strings to MQTT. A second flow will also be on the Node-RED palette and this flow will subscribe to the values being published by the first flow. The output of the second flow will appear on the debug pane. Name the file "Node-RED3.jpg".
+:checkered_flag:**Submit a screenshot showing a Node-RED flow receiving the light values from the Argon and publishing JSON strings to MQTT. A second flow will also be on the Node-RED palette and this flow will subscribe to the values being published by the first flow. The output of the second flow will appear on the debug pane. Name the file "Node-RED3.jpg".**
 
 5. In Node-RED, drag an "InfluxDB out" node onto the palette. Use this new node to write data values to InfluxDB. The "InfluxDB out" node should have its version set to 2.0 in settings. See the image below.
 
@@ -342,9 +342,9 @@ http://localhost:8086
 
 <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An InfluxDB graph displaying light values from Node-RED</em>
 
-:checkered_flag: Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED. Note, this question is asking for a gauge rather than a graph. Name the file "InfluxDBGauge.jpg".
+:checkered_flag:**Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED. Note, this question is asking for a gauge rather than a graph. Name the file "InfluxDBGauge.jpg".**
 
-:checkered_flag: Summary: On a single pdf named Your_Last_Name_First_Name_Project3.pdf, include the following clearly labelled files (10 points each):
+:checkered_flag:**Summary: On a single pdf named Your_Last_Name_First_Name_Project3.pdf, include the following clearly labelled files (10 points each):**
 
 
 LightBlue1.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Screen shot of phone connection
