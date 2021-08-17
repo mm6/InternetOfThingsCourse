@@ -21,7 +21,7 @@ but we will do so in a way that is based on sound architectural principles.
 
 The internet of things has countless applications and so should be of interest to a wide variety of students. Anyone interested in such topics as internet technologies, product design, city planning, sensor networks or software design, should find the course to be of interest.
 
-We will be making use of three different programming languages in this course. Primarily these three are Java, C++, and Javascript. But the course is designed with only one prerequisite in mind - the student should be comfortable writing computer programs in some programming language. The course itself will introduce the necessary constructs in the languages the student may not have used before.
+We will be making use of two different programming languages in this course. Primarily these are Javascript (using node.js and Node-RED) and C++ (on a microcontroller). But the course is designed with only one prerequisite in mind - the student should be comfortable writing computer programs in some programming language. The course itself will introduce the necessary constructs in the languages the student may not have used before.
 
 ### Learning Outcomes
 
