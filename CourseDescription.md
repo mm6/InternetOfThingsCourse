@@ -33,7 +33,7 @@ At the end of this course, the student will be able to:
 
 3. appreciate the differences in message formats, such as binary and textual, and be able to select which is appropriate in different settings.
 
-4. will understand several important IoT protocols. We will study MQTT, XMPP, CoAP, and HTTP.
+4. will understand several important IoT protocols. We will study MQTT, XMPP, CoAP, HTTP, and BLE.
 
 5. build firmware applications for a microcontroller.
 
