@@ -19,17 +19,12 @@ Officer Hours on Zoom: See Canvas
 Zoom URL: See Canvas
 
 ### Teaching Assistant
-
+<!---
 Name: Erick Rodriguez
 
 Email: erickger@andrew.cmu.edu
 
-Officer Hours on Zoom: See Canvas
-
-Zoom URL: See Canvas
-
-### Teaching Assistant (grader)
-
+-->
 Name: Kieran Walsh
 
 Email: kawalsh@andrew.cmu.edu
@@ -43,7 +38,7 @@ ability, speak with your instructor.
 
 ### Assignments
 
-There will be two programming projects equally weighted (60%).
+There will be three programming projects equally weighted (60%).
 
 There will be four or five quizzes on the readings at the start of lecture with the low score dropped (15%).
 
@@ -93,20 +88,21 @@ You will need to install Node.js, Express, and Node-RED. Directions will be prov
 
 The student needs to have access to a Particle Argon IoT Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit)
 
-### Delivery Mode REO
+### Delivery Mode: In Person Only
 
+<!--
 Students will attend remotely (via zoom) during the course's scheduled meeting time. The lectures will also be recorded for asynchronous delivery.
-
+-->
 
 ### Time
 
-Wed.	09:30AM-12:20PM	Adelaide
+Tuesday, Thursday 4:40-6:00 HBH 1007
 
-
+<!--
 ### Review Session Time and place
 
 Erick Rodriguez will arrange this.
-
+-->
 ### Grading Scale
 
 97.5 - 100 A+
