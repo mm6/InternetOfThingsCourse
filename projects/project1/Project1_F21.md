@@ -1,6 +1,6 @@
 # 95-733 Internet of Things Fall 2021
 
-## Project 1  Due: Fall 2021
+## Project 1  Due: Tuesday, September 14, Fall 2021
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project1.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 

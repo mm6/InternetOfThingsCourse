@@ -14,9 +14,7 @@ Office: Hamburg Hall 3015
 
 Phone: 412-268-4657 (Office)
 
-Officer Hours on Zoom: See Canvas
-
-Zoom URL: See Canvas
+Officer Hours: Tuesday and Thursday from 1:00 - 3:00 PM
 
 ### Teaching Assistant
 <!---
@@ -29,6 +27,10 @@ Name: Kieran Walsh
 
 Email: kawalsh@andrew.cmu.edu
 
+### Communication
+
+Please see Mike McCarthy during office hours or by appointment for person to person meetings. Kieran Walsh will be grading projects and will be your main source of contact on Piazza.  Please contact either of us by email but only for messages that are clearly inappropriate for Piazza. The lectures will all be recorded and available on Canvas under the zoom link.
+
 ### Prerequisite
 
 The ability to program is the main prerequisite.  The student may be asked to learn and work
@@ -39,6 +41,9 @@ ability, speak with your instructor.
 ### Assignments
 
 There will be three programming projects equally weighted (60%).
+You may replace the third project with a presentation on an IoT related topic. The presentation might demonstrate an interesting technology in action or might be a review of a published paper.
+
+If you plan on replacing Project 3 with a presentation, be sure to discuss the topic with me two weeks prior to the end of the mini.
 
 There will be four or five quizzes on the readings at the start of lecture with the low score dropped (15%).
 
@@ -86,7 +91,7 @@ You will need to install Node.js, Express, and Node-RED. Directions will be prov
 
 ### Hardware Requirements
 
-The student needs to have access to a Particle Argon IoT Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit)
+The student needs to have access to a Particle Argon IoT Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit). These will be provided to you for free as long as supplies last.
 
 ### Delivery Mode: In Person Only
 
