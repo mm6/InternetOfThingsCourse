@@ -91,7 +91,7 @@ You will need to install Node.js, Express, and Node-RED. Directions will be prov
 
 ### Hardware Requirements
 
-The student needs to have access to a Particle Argon IoT Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit). These will be provided to you for free as long as supplies last.
+The student needs to have access to a Particle Argon IoT Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit) These will be provided to you for free as long as supplies last.
 
 ### Delivery Mode: In Person Only
 
