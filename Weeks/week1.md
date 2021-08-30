@@ -23,7 +23,7 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 + [Smart and Connected Products](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/01_IntroductionToIOT.pdf)
 
-+ [Jeff Jaffe (W3C) at Industry of Things World video](https://www.w3.org/WoT/)
++ [Jeff Jaffe (W3C) at Industry of Things World video](https://www.youtube.com/watch?list=PLEyJjfPQS2aCnJ7fktjgmnwvl_RmsvQbd&v=VKKxnk-aRhY)
 
 ## Required readings for next week's quiz
 
