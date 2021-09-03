@@ -44,6 +44,7 @@ npm install -g --unsafe-perm node-red
 [If you plan to use the Argon on Campus - with CMU's Wi-Fi, you will need to register the Argon as a wireless device.](https://www.cmu.edu/computing/services/endpoint/network-access/wireless/how-to/cmudevice.html)
 
 [The actual registration page is here.](https://getonline.cmu.edu/)
+Choose the wireless block.
 
 We will be programming the Argon microcontroller by developing our firmware code in C++, compiling to machine code, and downloading to the device via Particle's over the air (OTA) update.
 
