@@ -41,10 +41,6 @@ npm install -g --unsafe-perm node-red
 
 #### Argon Setup, Particle IDE, and Particle CLI
 
-[If you plan to use the Argon on Campus - with CMU's Wi-Fi, you will need to register the Argon as a wireless device.](https://www.cmu.edu/computing/services/endpoint/network-access/wireless/how-to/cmudevice.html)
-
-[The actual registration page is here.](https://getonline.cmu.edu/)
-Choose the wireless block.
 
 We will be programming the Argon microcontroller by developing our firmware code in C++, compiling to machine code, and downloading to the device via Particle's over the air (OTA) update.
 
@@ -52,12 +48,28 @@ We will be programming the Argon microcontroller by developing our firmware code
 
 5) [Install the Particle Command Line Interface (CLI) by following these directions.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
-6) [Set up your Particle Argon.](https://docs.particle.io/quickstart/argon/)
+#### On Campus CMU Wi-Fi registration needs performed once only
+
+6) [If you plan to use the Argon on Campus - with CMU's Wi-Fi, you will need to register the Argon as a wireless device.](https://www.cmu.edu/computing/services/endpoint/network-access/wireless/how-to/cmudevice.html) Do this only after you have a working CLI.
+
+[The actual registration page is here.](https://getonline.cmu.edu/)
+Choose the wireless block. Your MAC address can be retrieved from your Argon by entering the command:
+
+```
+particle serial mac
+
+```
+You will need to wait (an hour or more) for your device to be registered. You only need to do this once.
+
+#### Setting up for home or campus Wi-Fi
+
+7) [Connect your Particle Argon to a Wi-Fi router.](https://docs.particle.io/quickstart/argon/)
+
 It is recommended that you complete this tutorial. That is, blink an LED on your microcontroller as per the instructions in the Argon Quickstart. In addition, carefully read over the documentation in the firmware.
 
 #### Publish heartbeat messages to the Particle console
 
-7) Use the code below to publish heartbeat messages to the Particle console.
+8) Use the code below to publish heartbeat messages to the Particle console.
 
 ```
 /*
@@ -135,9 +147,15 @@ void loop() {
      }
 }
 ```
-8) ***Study the code above.*** After compiling and deploying the code to your Argon, use a shell and check if the CLI is working properly.
+9) ***Study the code above.*** After compiling and deploying the code to your Argon, use a shell and check if the CLI is working properly.
 
-9) The following are useful CLI commands.
+```
+particle serial monitor
+
+```
+
+
+10) The following are some useful CLI commands.
 
 ```
 $particle login          Login to Particle
@@ -146,14 +164,14 @@ $particle update-cli     Update the CLI
 ```
 [There are plenty of additional CLI commands.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
-10) Using the Particle console, verify that it is receiving the heartbearts from the Argon.
+11) Using the Particle console on the cloud, verify that it is receiving the heartbearts from the Argon.
 
 #### Using Node-RED, subscribe to the heartbeat messages that are being published to particle.
 
-11) Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Argon. We want Node-RED to hear about the heart beats. [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Particle Cloud to Node-RED. Read about Node-RED and integrate Node-RED with the Particle Cloud.](https://docs.particle.io/community/node-red/)
+12) Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Argon. We want Node-RED to hear about the heart beats. [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Particle Cloud to Node-RED. Read about Node-RED and integrate Node-RED with the Particle Cloud.](https://docs.particle.io/community/node-red/)
 
 
-12) After completing the work in step 11, you should have a Node-RED platform receiving messages from your Argon every 10 seconds or so. Each message should contain a JSON string with the device ID. Each message should appear in the right pane of the Node-RED UI.
+13) After completing the work in step 11, you should have a Node-RED platform receiving messages from your Argon every 10 seconds or so. Each message should contain a JSON string with the device ID. Each message should appear in the right pane of the Node-RED UI.
 The Node-RED palette should have a subscribe node wired to a debug node.
 
 :checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Argon. Name your screenshot Project1Part1.png.**
