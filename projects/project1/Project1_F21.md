@@ -164,6 +164,8 @@ $particle update-cli     Update the CLI
 ```
 [There are plenty of additional CLI commands.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
+[If your Argon appears to be unusable (e.g. blinking red) these directions have been very helpful.](https://support.particle.io/hc/en-us/articles/360045547634-How-can-I-set-up-my-Argon-or-Boron-via-USB-) 
+
 11) Using the Particle console on the cloud, verify that it is receiving the heartbearts from the Argon.
 
 #### Using Node-RED, subscribe to the heartbeat messages that are being published to particle.
