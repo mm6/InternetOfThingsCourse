@@ -164,7 +164,7 @@ $particle update-cli     Update the CLI
 ```
 [There are plenty of additional CLI commands.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
-[If your Argon appears to be unusable (e.g. blinking red) these directions have been very helpful.](https://support.particle.io/hc/en-us/articles/360045547634-How-can-I-set-up-my-Argon-or-Boron-via-USB-) 
+[If your Argon appears to be unusable (e.g. blinking red) these directions have been very helpful.](https://support.particle.io/hc/en-us/articles/360045547634-How-can-I-set-up-my-Argon-or-Boron-via-USB-)
 
 11) Using the Particle console on the cloud, verify that it is receiving the heartbearts from the Argon.
 
@@ -425,7 +425,7 @@ app.listen(port, () => {
 4) Run the command "node viewLastHeartBeat". At this point, you can test this web service with a browser. The browser will send an HTTP GET request and will execute the app.get() function. But, we are not yet receiving heartbeats from the microcontroller. Our next problem is to visit this service from Node-RED and have Node-RED send an HTTP POST message with JSON data.
 
 5) Drag an HTTP Request node on to the Node-RED palette - the palette from Part 2. Ensure that the following three properties are set in that node. The "method" property should be set to "-set by msg.method -". The
-"URL" property should contain "http://". The "Return" property should contain "a UTF-8 string".
+"URL" property should contain "http://localhost:3000/SetNewHeartBeat". The "Return" property should contain "a UTF-8 string".
 
 6) Add another function node that will run ***prior to*** the HTTP Request node described in step 5. Use the following Javascript:
 
@@ -434,7 +434,6 @@ app.listen(port, () => {
 msg.method = "POST";
 msg.headers = {};
 msg.headers['content-type'] = 'application/json';
-msg.url= 'http://localhost:3000/SetNewHeartBeat'
 return msg;
 ```
 
