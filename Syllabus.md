@@ -14,22 +14,22 @@ Office: Hamburg Hall 3015
 
 Phone: 412-268-4657 (Office)
 
-Officer Hours: Tuesday and Thursday from 1:00 - 3:00 PM
+Officer Hours: By appointment on Thursday mornings (See Canvas for zoom links)
 
 ### Teaching Assistant
-<!---
+
 Name: Erick Rodriguez
 
 Email: erickger@andrew.cmu.edu
 
--->
+<!--
 Name: Kieran Walsh
 
 Email: kawalsh@andrew.cmu.edu
-
+-->
 ### Communication
 
-Please see Mike McCarthy during office hours or by appointment for person to person meetings. Kieran Walsh will be grading projects and will be your main source of contact on Piazza.  Please contact either of us by email but only for messages that are clearly inappropriate for Piazza. The lectures will all be recorded and available on Canvas under the zoom link.
+Please contact your TA or instructor by email but only for messages that are clearly inappropriate for Piazza. The lectures will all be recorded and available on Canvas under the zoom link.
 
 ### Prerequisite
 
