@@ -78,7 +78,7 @@ Particle. Our goal is to establish these new Particle nodes and make them availa
     Select I've copied my Secret
 
 8) Now, to simulate an Argon, we need to publish events to Particle. Drag an inject node onto the Node-RED palette.
-Double click this node for node configuration. Configure it with a message.payload of {"deviceID":6502}. The type of this payload is string. Select inject once every 10 seconds with a repeat interval of every 10 seconds. Drag a second node onto the palette. This node will be a Particle publish node. Double click it and choose the pencil icon next to the Auth text box. Fill in the client ID and client secret (you should have copied these in step 7). Connect the inject node to the publish node. Deploy the flow to the Node-RED server. You should now be publishing heartbeats to Particle every 10 seconds.
+Double click this node for node configuration. Configure it with a message.payload of {"deviceID":"650234"}. The type of this payload is string. Select inject once every 10 seconds with a repeat interval of every 10 seconds. Drag a second node onto the palette. This node will be a Particle publish node. Double click it and choose the pencil icon next to the Auth text box. Fill in the client ID and client secret (you should have copied these in step 7). Connect the inject node to the publish node. Deploy the flow to the Node-RED server. You should now be publishing heartbeats to Particle every 10 seconds.
 
 
 9) Using the Particle console on the cloud, verify that it is receiving the heartbeats from the Node-RED node.
