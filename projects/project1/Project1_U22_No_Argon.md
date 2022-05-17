@@ -48,7 +48,7 @@ npm install -g --unsafe-perm node-red
 5) Our goal is for Node-RED to publish messages to and receive messages from the Particle console. These heartbeat messages will be published to the Particle console by Node-RED. The publications will be used to simulate an Argon. And we want Node-RED to hear about (subscribe to) these messages (heartbeats). [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Particle Cloud to Node-RED. Read about Node-RED and how Node-RED can be integrated with the Particle Cloud.](https://docs.particle.io/community/node-red/)
 
 6) Particle provides a set of nodes that can be used in a Node-RED flow to communicate with
-Particle. Our goal is to establish these new Particle nodes and make them available to Node-RED:
+Particle. Our goal is to establish these new Particle nodes and make them available to Node-RED.
 
     In Node-RED, do the following:
 
@@ -74,7 +74,7 @@ Particle. Our goal is to establish these new Particle nodes and make them availa
     Copy the Client ID to your machine
 
     Copy the Client Secret to your machine
-    
+
     Select I've copied my Secret
 
 8) Now, to simulate an Argon, we need to publish events to Particle. Drag an inject node onto the Node-RED palette.
