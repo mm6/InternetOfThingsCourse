@@ -40,11 +40,14 @@ ability, speak with your instructor.
 
 ### Assignments
 
-There will be three programming projects equally weighted (60%).
+There will be two programming projects equally weighted (60%).
+
+<!--
 You may replace the third project with a presentation on an IoT related topic. The presentation might demonstrate an interesting technology in action or might be a review of a published paper.
 
-If you plan on replacing Project 3 with a presentation, be sure to discuss the topic with me two weeks prior to the end of the mini.
 
+If you plan on replacing Project 3 with a presentation, be sure to discuss the topic with me two weeks prior to the end of the mini.
+-->
 There will be four or five quizzes on the readings at the start of lecture with the low score dropped (15%).
 
 There will be a closed Book Final Exam based on readings, lectures, and programming (25%).
@@ -93,21 +96,23 @@ You will need to install Node.js, Express, and Node-RED. Directions will be prov
 
 The student needs to have access to a Particle Argon IoT Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit) These will be provided to you for free as long as supplies last.
 
-### Delivery Mode: In Person Only
+If you are not able to get access to an Argon, directions will be provided to simulate the device.
+
+### Delivery Mode: Remote Only
 
 <!--
 Students will attend remotely (via zoom) during the course's scheduled meeting time. The lectures will also be recorded for asynchronous delivery.
 -->
 
-### Time
+### Time and Place
 
-Tuesday, Thursday 4:40-6:00 HBH 1007
+Wednesday 09:30AM	12:20PM Adelaide Campus
 
-<!--
+
 ### Review Session Time and place
 
 Erick Rodriguez will arrange this.
--->
+
 ### Grading Scale
 
 97.5 - 100 A+
