@@ -170,6 +170,7 @@
 
 ### Review Project 1
 
++ Publish/subscribe using Particle
 + AJAX
 + JSON and XML compared
 + Websockets use case
