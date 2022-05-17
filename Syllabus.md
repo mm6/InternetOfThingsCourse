@@ -40,7 +40,7 @@ ability, speak with your instructor.
 
 ### Assignments
 
-There will be two programming projects equally weighted (60%).
+There will be two programming projects equally weighted (40%).
 
 <!--
 You may replace the third project with a presentation on an IoT related topic. The presentation might demonstrate an interesting technology in action or might be a review of a published paper.
@@ -50,7 +50,7 @@ If you plan on replacing Project 3 with a presentation, be sure to discuss the t
 -->
 There will be four or five quizzes on the readings at the start of lecture with the low score dropped (15%).
 
-There will be a closed Book Final Exam based on readings, lectures, and programming (25%).
+There will be a closed Book Final Exam based on readings, lectures, and programming (45%).
 
 ### Late Assignment Policy
 
