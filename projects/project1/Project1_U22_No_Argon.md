@@ -53,19 +53,28 @@ Particle. Our goal is to establish these new Particle nodes and make them availa
     In Node-RED, do the following:
 
     Hamburger icon/Manage Palette/User Settings/Install
+
     In the search box enter Particle
+
     Install @particle/node-red-contrib-particle-official
+
     Close
+
 
 7) Before configuring a Particle node in Node-RED, we need to establish the node's credentials at Particle.
 
     On Particle.io, do the following:
 
     console.particle.io/devices/authentication/new client
+
     New OAuth Client window/ Two-Legged Auth (Server)/provide name
+
     Get client ID and secret
+
     Copy the Client ID to your machine
+
     Copy the Client Secret to your machine
+    
     Select I've copied my Secret
 
 8) Now, to simulate an Argon, we need to publish events to Particle. Drag an inject node onto the Node-RED palette.
