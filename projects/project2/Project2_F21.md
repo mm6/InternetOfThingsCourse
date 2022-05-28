@@ -1,7 +1,7 @@
 
-# 95-733 Internet of Things Fall 2021
+# 95-733 Internet of Things Adelaiide 2022
 
-# Project 2 Due: Thursday, September 30, Fall 2021
+# Project 2 Due: Wednesday, June 15, 2022
 
 ### Topics: MQTT, Particle Argon, Node-RED, Node.js, Google Charts
 
