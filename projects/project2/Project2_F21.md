@@ -1,5 +1,5 @@
 
-# 95-733 Internet of Things Adelaiide 2022
+# 95-733 Internet of Things Adelaide 2022
 
 # Project 2 Due: Wednesday, June 15, 2022
 
