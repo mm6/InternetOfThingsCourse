@@ -188,7 +188,7 @@ Note too that the communication between the broker and the browsers is done with
 ### Part 2 Monitoring light levels by simulating a microcontroller
 
 
-1. Our goal is to build a Node-RED flow with a final debug node generating text such as this:
+1. Our goal is to build a Node-RED flow with a final debug node repeatedly showing text such as this:
 
 ```
 "{"deviceID":"e00fce68dfb40ca61243495e","lightReading":"89","time":"2021-06-05T21:00:09.832Z"}"
