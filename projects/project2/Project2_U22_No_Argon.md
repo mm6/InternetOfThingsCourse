@@ -196,7 +196,7 @@ Note too that the communication between the broker and the browsers is done with
 
 2. We need random light values between 0 and 200. In Node-RED, use the hamburger icon and select manage palette. Choose to install
 a node. The node that we want is called node-red-node-random. This needs to be fetched from the web. It should be installed and visible
-as a function node named "random". Configure the node with the name "LightLevelSimulator". Configure so that it generates random
+as a function node named "random". Configure the node with the name "LightLevelSimulator". Configure it so that it generates random
 values between 0 and 200.
 
 3. Drag an inject node onto your flow. It should be configured to repeat every 5 seconds. Its name will be "Interval" and its message.payload
