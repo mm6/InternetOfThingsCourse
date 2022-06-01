@@ -29,7 +29,8 @@ browser.
 
 ## Required readings
 
-+ [People, Places, Things: Web Presence for the Real World](http://www.hpl.hp.com/techreports/2001/HPL-2001-279.pdf)
++ [People, Places, Things: Web Presence for the Real World](https://www.hpl.hp.com/techreports/2001/HPL-2001-279.pdf)
+
 
 
 + [MQTT Tutorial](http://www.hivemq.com/mqtt-essentials/)
