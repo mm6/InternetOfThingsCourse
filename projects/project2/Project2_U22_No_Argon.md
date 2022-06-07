@@ -58,14 +58,12 @@ protocol websockets
 allow_anonymous true
 
 ```
-
-My copy of mosquitto is located at /usr/local/sbin. If I change to that directory, I can run mosquitto (picking up the configuration file) with the command
-
-```
-mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf -v
+My copy of mosquitto is located at /opt/homebrew/sbin. If I change to that directory, I can run mosquitto (picking up the configuration file) with the command
 
 ```
-Other students have their configuration file stored in /opt/homebrew/etc/mosquitto/mosquitto.conf. You may have to look around a bit.
+mosquitto -c /opt/homebrew/etc/mosquitto/mosquitto.conf -v
+
+```
 
 Once you have Mosquitto running, we want to connect to the server from Javascript running in a browser. We do not want to write the client side MQTT code ourselves. Even though we have
 easy access to WebSockets, it would be far better to use an existing Javascript library
