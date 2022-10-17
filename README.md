@@ -5,7 +5,7 @@
 
 + [Course Description](./CourseDescription.md)
 + [Syllabus](./Syllabus.md)
-+ Class meeting times: Tuesday, Thursday 4:00 PM - 6:00 PM HBH 1004
++ Class meeting times: Tuesday, Thursday 4:40 PM - 6:00 PM HBH 1004
 + [Week 1](./Weeks/week1.md) T. October 25, R. October 27
 + [Week 2](./Weeks/week2.md) T. November 1, R. November 3
 + [Week 3](./Weeks/week3.md) T. November 8, R. November 10
