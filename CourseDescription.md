@@ -1,11 +1,11 @@
 # Carnegie Mellon University
 
-# 95-733 Internet of Things
+# 95-733 and 95-433 Internet of Things
 
 ### Course Description
 
 Traditional products are becoming smart products and smart products are becoming
-connected. From smart homes to smart cities, this trend in product development
+connected. From smart homes to smart cities to smart farms, this trend in product development
 and design is likely to have a profound impact on our future.
 
 This course takes the view that the internet of things is best viewed as an extension
@@ -13,7 +13,7 @@ of the World Wide Web. So, throughout this course, we will consider how the Web 
 designed and how its principles can be used to design the internet of things.
 
 The course combines weekly readings from journal articles with hands-on
-exercises and programming. The student will work with modern IOT technologies,
+exercises and programming. The student will work with modern IoT technologies,
 standards, and platforms. We will connect sensors and actuators to the cloud
 but we will do so in a way that is based on sound architectural principles.
 
