@@ -14,13 +14,13 @@ Office: Hamburg Hall 3015
 
 Phone: 412-268-4657 (Office)
 
-Officer Hours: By appointment on Thursday mornings (See Canvas for zoom links)
+Officer Hours: Tuesday and Thursday (1:00 PM - 3:00 PM)
 
 ### Teaching Assistant
 
-Name: Erick Rodriguez
+Name: Wei Hao Chu
 
-Email: erickger@andrew.cmu.edu
+Email: weihaoch@andrew.cmu.edu
 
 <!--
 Name: Kieran Walsh
@@ -40,7 +40,7 @@ ability, speak with your instructor.
 
 ### Assignments
 
-There will be two programming projects equally weighted (40%).
+There will be three programming projects equally weighted (40%).
 
 <!--
 You may replace the third project with a presentation on an IoT related topic. The presentation might demonstrate an interesting technology in action or might be a review of a published paper.
@@ -61,11 +61,11 @@ If you elect to use the late days at the end of the course, alert your instructo
 
 ### Policy on collaboration
 
-Any code copied from another source must be clearly cited. Provide as a comment in the code the exact URL where the code was copied from. Code that is provided by the instructor is allowed as long as the code is clearly cited as being provided by the instructor. Of course, if you have violated the spirit of the project, you will earn zero points. Copying code without citing it is cheating.
+Any code copied from another source must be clearly cited. Provide as a comment in the code the exact URL where the code was copied from. Code that is provided by the instructor is allowed as long as the code is clearly cited as being provided by the instructor. Of course, if you have copied an excessive amount of code and violated the spirit of the project, you will earn zero points. Copying code without citing it is cheating.
 
 A student who shares code with another student will be treated the same as the person who does the copying. Keep your own code safe.
 
-The penalty for each instance of cheating, whether on a quiz, exam, or homework project, will be a zero for that assignment and a lowering of the final grade by one letter (e.g. from B to C).
+The penalty for each instance of cheating, whether on a quiz, exam, or homework project, will be a zero for that assignment and a lowering of the final grade by one letter (e.g. from B to C). The lowering of the course grade will occur after the zero for the assignment is applied.
 
 In addition to any penalties imposed by the instructor, all cheating and plagiarism infractions will be reported in writing to the Associate Dean for the program, the Associate Dean of Faculty, the Dean of Student Affairs, and the Dean. They will review and determine if expulsion should be recommended. The report will become part of the student’s record.
 
@@ -76,21 +76,17 @@ Grading mistakes may occur. Please email the TA who graded your assignment about
 ### Use of Canvas
 
 
-There will be a Canvas site for the course. Grades will be posted there and assignments will be submitted there. We will also make good use of the discussion board on Piazza or Slack. It is far better to post a question to the discussion board than it is to send your instructor or TA an email. Answers posted there are available for all to see. The main site for the course (syllabus, course description and schedule) is this page on GitHub.
+There will be a Canvas site for the course. Grades will be posted there and assignments will be submitted there. We will also make good use of the discussion board on Piazza. It is far better to post a question to the discussion board than it is to send your instructor or TA an email. Answers posted there are available for all to see. The main site for the course (syllabus, course description and schedule) is this page on GitHub.
 
 ### FERPA Statement
 
-Classes will be recorded via Zoom so that students in this course (and only students in this course) can watch or re-watch past  sessions. Please note that breakout rooms will not be recorded. These recordings will be available on Canvas as soon as possible after each session. Please note that you are not allowed to share these recordings. This is to protect your FERPA rights and those of your fellow students.
+Classes will be recorded via Zoom so that students in this course (and only students in this course) can watch or re-watch past  sessions. These recordings will be available on Canvas as soon as possible after each session. Please note that you are not allowed to share these recordings. This is to protect your FERPA rights and those of your fellow students.
 
 
 ### Software Requirements
 
-You will need to install Node.js, Express, and Node-RED. Directions will be provided on the first project.
+You will need to install Node.js, Express (a web framework for Node.js), and Node-RED. Directions will be provided on the first project.
 
-<!---
-[Installation instructions are available here.](http://www.andrew.cmu.edu/user/mm6/95-733/IntelliJ_Installs.pdf)
-
--->
 
 ### Hardware Requirements
 
@@ -98,20 +94,17 @@ The student needs to have access to a Particle Argon IoT Starter Kit. [Available
 
 If you are not able to get access to an Argon, directions will be provided to simulate the device.
 
-### Delivery Mode: Remote Only
+### Delivery Mode:
 
-<!--
-Students will attend remotely (via zoom) during the course's scheduled meeting time. The lectures will also be recorded for asynchronous delivery.
--->
+In Person Expectation
+
 
 ### Time and Place
 
-Wednesday 09:30AM	12:20PM Adelaide Campus
+Fall 2022 Mini 2
 
+Tuesday, Thursday 4:40 PM - 6:00 PM HBH Room 1004
 
-### Review Session Time and place
-
-Erick Rodriguez will arrange this.
 
 ### Grading Scale
 
@@ -164,5 +157,3 @@ If the situation is life threatening, call the police:
 On campus: CMU Police: 412-268-2323
 
 Off campus in Pittsburgh: 911
-
-Off campus in Adelaide: 131 444
