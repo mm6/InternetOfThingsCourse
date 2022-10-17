@@ -22,6 +22,8 @@ Name: Wei Hao Chu
 
 Email: weihaoch@andrew.cmu.edu
 
+Office Hours: TBA
+
 <!--
 Name: Kieran Walsh
 
