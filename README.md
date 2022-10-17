@@ -1,7 +1,7 @@
 
 # Carnegie Mellon University
 
-# 95-733 Internet of Things Outline
+# 95-733/95-433 Fall 2022 Mini 2 Internet of Things Outline
 
 + [Course Description](./CourseDescription.md)
 + [Syllabus](./Syllabus.md)
