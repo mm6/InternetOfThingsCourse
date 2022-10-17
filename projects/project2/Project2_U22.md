@@ -1,7 +1,7 @@
 
-# 95-733 Internet of Things Adelaide 2022
+# 95-733/95-433 Internet of Things Fall 2022
 
-# Project 2 Due: Wednesday, June 15, 2022
+# Project 2 Due:
 
 ### Topics: MQTT, Particle Argon, Node-RED, Node.js, Google Charts
 

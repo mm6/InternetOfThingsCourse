@@ -50,9 +50,10 @@ correct one to use in designing an interoperable internet of things - a web of t
 + [Fall 2020 Project 1 Servlets, AJAX, JSON, Web Sockets, Particle Argon Microcontroller](../projects/project1/Project1.md)
 
 -->
-+ [Project 1 Argon Microcontroller and Node.js](../projects/project1/Project1_U22.md)
++ [Project 1 Argon Microcontroller and Node.js](../projects/project1/Project1_F22.md)
+<!--
 + [Project 1 With No Argon Microcontroller and Node.js](../projects/project1/Project1_U22_No_Argon.md)
-
+-->
 ## Quizzes
 
 + No quizzes during the first week of class.
