@@ -102,6 +102,7 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 + [Wot and IoT](https://webofthings.org/2016/01/23/wot-vs-iot-12/)
 
++ [Node Wot Video from Sienens](https://www.youtube.com/watch?v=NkVrqSs-KOs)
 
 + [JavaScript Object Notation (JSON) Grammar](http://www.json.org/index.html)
 
