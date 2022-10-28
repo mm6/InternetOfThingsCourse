@@ -61,8 +61,6 @@ particle serial mac
 ```
 You will need to wait (an hour or more) for your device to be registered. You only need to do this once.
 
-For students in Adelaide, see your TA for help with connecting to campus Wi_Fi.
-
 #### Setting up for home Wi-Fi
 
 7) [Connect your Particle Argon to a Wi-Fi router.](https://docs.particle.io/quickstart/argon/)
