@@ -178,7 +178,7 @@ Adding credentials for the Node-RED node on Particle.io.
 
 In Particle.io:
 
-    console.particle.io/devices/authentication/new client
+    console.particle.io/authentication/new client
     New OAuth Client window/ Two-Legged Auth (Server)/provide name
     Get client ID and secret
     Copy the Client ID to your machine
