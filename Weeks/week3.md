@@ -38,9 +38,9 @@ browser.
 ## Project
 
 + [Project 2 Publish subscribe](../projects/project2/Project2_U22.md)
-+ [Project 2 Publish subscribe with No Argon](../projects/project2/Project2_U22_No_Argon.md)
 
-+ Project 1 Due Midnight Thursday, September 16, 2021
+
++ Project 1 Due Midnight November 8, 2022
 
 ## Quizzes
 
