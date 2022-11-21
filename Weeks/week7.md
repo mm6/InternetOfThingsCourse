@@ -4,8 +4,8 @@
 
 ## Topics
 
-+ Week 7 is our student presentation week. We will also review material on smart cities, flow
-based programming (FBP), and edge analytics.
++ This is the final exam week. The final will be a closed notes and closed web Canvas exam.
+Final Exam Scheduled for Thursday 12/15/2022 01:00PM	HBH 1004
 
 ## Slides
 
