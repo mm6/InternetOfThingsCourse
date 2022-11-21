@@ -1,5 +1,5 @@
 
-# 95-733 Internet of Things Fall 2021
+# 95-733 Internet of Things
 
 # Project 3 Due: Thursday, December 8 11:59 PM Fall 2022
 
