@@ -1,9 +1,7 @@
 
 # 95-733 Internet of Things Fall 2021
 
-# Project 3 Due: Thursday, October 14 11:59 PM Fall 2021
-
-# Be sure to choose between Project 3 and a Presentation
+# Project 3 Due: Thursday, December 8 11:59 PM Fall 2022
 
 ### Topics: BLE, Node RED, MQTT, the Web, and InfluxDB
 
