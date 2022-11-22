@@ -303,7 +303,7 @@ In Part 5 write a Node-RED flow so that Node-RED becomes a gateway device - taki
 
 :checkered_flag:**Submit a screenshot showing Node-RED receiving the light values from the Argon and publishing JSON strings to MQTT. The MQTT window should be visible in your screenshot. Name the file "Node-RED2.jpg".**
 
-### Part 6. Subscribe to MQTT with Node-RED and write to InfluxDB
+### Part 6. Subscribe to MQTT with Node-RED and write to InfluxDB Cloud
 
 Finally, to complete our system, we include a time series database named InfluxDB (used by CMU's OpenChirp). A time series database is not built on the traditional relational model. Instead, each element has a timestamp and the database is optimized to query the data over specified periods of time.
 
@@ -311,30 +311,40 @@ A time series database such as InfluxDB can generate analytics of various sorts 
 
 With respect to IoT, time series databases are used mainly for anomaly detection and prediction. Anomaly detection and prediction have a wide variety of use cases. Here, we will use the web visualization and storage capabilities of InfluxDB.  
 
-0. [Visit this page and install InfluxDB on your machine.](https://docs.influxdata.com/influxdb/v2.0/install/)
+0. Make sure that you are in the ~/.node-red directory and [Install the InfluxDB nodes for Node-RED.](https://flows.nodered.org/node/node-red-contrib-influxdb)
 
-1. Check if InfluxDB is running by visiting:
+1. Using the file system, check if "influx" appears under the node_modules directory and check if the Node-RED palette has new nodes: "influxdb in", "influxdb out" and "influx batch". You may ignore errors if these nodes are on the palette in Node-RED.
 
+2. [Visit this page and create an account on InfluxDB](https://www.influxdata.com/)
+
+3. Choose "Get InfluxDB". Choose "Sign Up". After signing up, notice the URL in your browser. It will
+read something like the following:
 ```
-http://localhost:8086
-
+https://us-central1-1.gcp.cloud2.influxdata.com/orgs/b89e7673bd88ee8c
 ```
 
-2. Make sure that you are in the ~/.node-red directory and [Install the InfluxDB nodes for Node-RED.](https://flows.nodered.org/node/node-red-contrib-influxdb)
+4. In this example, the organization is b89e7673bd88ee8c. Make a copy of your organization string. This will
+be needed when you configure the InfluxDB out node.
 
-3. Using the file system, check if "influx" appears under the node_modules directory and check if the Node-RED palette has new nodes: "influxdb in", "influxdb out" and "influx batch". You may ignore errors if these nodes are on the palette in Node-RED.
+5. In this example, the URL is https://us-central1-1.gcp.cloud2.influxdata.com/. Make a copy of your URL string. This will be needed when you configure the InfluxDB out node.
 
-4. In Node-RED, drag an "mqtt in" node onto the palette. This begins a new flow but may appear on the same palette as your previous work. This node will subscribe to the topic "lightValues" that are being published by the "mqtt out" node from Part 5. The output of the "mqtt in" node should be set to "parsed JSON object". Connect the "mqtt in" node to a debug node.
+6. Using InfluxDB, create a bucket with a name with no spaces. For example, a bucket name might be "MyCoolBucket".
+This will also be needed in the InfluxDB out node.
+
+7. Using InfluxDB, create an API token. This will also be needed in the InfluxDB out node.
+
+To create an API token, use the "data" tab and choose "tokens" and copy the generated value. You will paste this token into the Node-RED "InfluxDB out" node settings.
+
+8. In Node-RED, drag an "mqtt in" node onto the palette. This begins a new flow but may appear on the same palette as your previous work. This node will subscribe to the topic "lightValues" that are being published by the "mqtt out" node from Part 5. The output of the "mqtt in" node should be set to "parsed JSON object". Connect the "mqtt in" node to a debug node.
 
 :checkered_flag:**Submit a screenshot showing a Node-RED flow receiving the light values from the Argon and publishing JSON strings to MQTT. A second flow will also be on the Node-RED palette and this flow will subscribe to the values being published by the first flow. The output of the second flow will appear on the debug pane. Name the file "Node-RED3.jpg".**
 
-5. In Node-RED, drag an "InfluxDB out" node onto the palette. Use this new node to write data values to InfluxDB. The "InfluxDB out" node should have its version set to 2.0 in settings. See the image below.
+9. In Node-RED, drag an "InfluxDB out" node onto the palette. Use this new node to write data values to InfluxDB. The "InfluxDB out" node should have its version set to 2.0 in settings. See the image below.
 
 <img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/SecondFlowToSubcribeAndWriteToInfluxDB.png" alt="Two flows in Node-RED" width="800" height="400"/>  
 
 <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two Node_RED flows. The bottom flow is writing data to InfluxDB</em>   
 
-6. You will need to make an account when you run InfluxDB for the first time. You will also need to generate a token for Node-RED. To do so, use the "data" tab and choose "tokens" and copy the generated value. Paste this token into the Node-RED "InfluxDB out" node settings.
 
 7. Using InfluxDB, build a simple query in the "Data Explorer" and generate visualizations of the light value data. To execute an InfluxDB query, you will select a "From" bucket, the "_measurement" of "lightValue" and the "filter" of "lightValue". Hit the submit button and generate a graph of light values.
 
