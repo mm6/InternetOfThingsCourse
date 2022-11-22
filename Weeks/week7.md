@@ -7,6 +7,8 @@
 + This is the final exam week. The final will be a closed notes and closed web Canvas exam.
 Final Exam Scheduled for Thursday 12/15/2022 01:00PM	HBH 1004
 
+[The Final Exam is closed book, closed notes. It is Canvas based. See the Review for final exam.](../Review.md)
+
 ## Slides
 
 + [Smart Cities](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_Smart_Cities.pdf)

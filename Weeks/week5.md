@@ -50,6 +50,7 @@ Particle cloud using CoAp.
 ## Projects
 
 + [Project 3 BLE and Time Series Database](../projects/project3/Project3_F21.md)
+
 <!--
 + [Project 3 Webhooks and ThingSpeak and BLE ](../projects/project3/Project3.md)
 + [Project 3 Webhooks and ThingSpeak Photon Only ](../projects/project3/Project3_Photon.md)
@@ -65,6 +66,8 @@ Particle cloud using CoAp.
 + [17_Lecture5](https://heinzcollege.mediasite.com/Mediasite/Play/251d1c7c5320408f9ded1c75fc7a53d81d)
 -->
 ## Optional Readings
+
++ [Node-Red and InfluxDB](https://www.influxdata.com/blog/iot-easy-node-red-influxdb/)
 
 + [LoRa and LoRaWAN Video](https://youtu.be/6WMzRrmMjQU)
 
