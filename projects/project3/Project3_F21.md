@@ -355,10 +355,15 @@ To create an API token, use the "data" tab and choose "tokens" and copy the gene
 8. Real time data is also available on InfluxDB.
 
 a. You will notice that your graph is updated only after hitting the submit button. In order to see a live graph, we will build a dashboard.
+
 b. Select the “Boards” icon on the left. On the “Dashboards” screen, select “+ Create Dashboard”. This button is on the top right. Choose “New Dashboard”. Name this dashboard “LivelyDashboard”. Do this naming on the upper left.
+
 c. Choose “add cell” and name the cell “LivelyGaugeDashboardCell”. Select the Gauge option.
+
 d. Create a query for light values as you did before. Select the Aggregate Function as “last”. Click “Submit” and click the checkmark.
+
 e.	Click “Enable Auto Refresh” and choose to refresh every 5 seconds. After you click “confirm”, the cell in your dashboard should now refresh every 5 seconds.
+
 f. It is an easy matter to create several dashboards - all changing as events arrive.
 
 :checkered_flag:**Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED. Note, this question is asking for a gauge rather than a graph. Name the file "InfluxDBGauge.jpg".**
