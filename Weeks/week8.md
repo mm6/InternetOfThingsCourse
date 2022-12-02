@@ -30,3 +30,5 @@ There is no quiz this week. There is a final exam.
 
 
 ## Optional Readings
+
+There are no optional readings this week.
