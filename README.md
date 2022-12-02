@@ -13,4 +13,4 @@
 + [Week 5](./Weeks/week5.md) T. November 22, T. November 29
 + [Week 6](./Weeks/week6.md) R. December 1, T. December 6
 + [Week 7](./Weeks/week7.md) R. December 8
-+ [Week 8](./Weeks.week8.md) December 15 Final Exam 1:00 - 3:00 HBH 1004
++ [Week 8](./Weeks/week8.md) December 15 Final Exam 1:00 - 3:00 HBH 1004
