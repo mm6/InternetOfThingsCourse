@@ -35,8 +35,7 @@
 ### Four styles of web interaction using HTTP lecture notes
 
 + Traditional request response
-+ AJAX  (study example shopping cart)
-+ JSONP
++ AJAX interactions
 + WebSockets
 
 ### Web sockets lecture notes
@@ -125,6 +124,7 @@
 + SSI Offline
 + SSI Online
 + Existing systems and standards
++ blockchains
 
 ### Smart cities lecture notes
 
@@ -170,20 +170,25 @@
 
 ### Review Project 1
 
-+ Publish/subscribe using Particle
-+ AJAX
-+ JSON and XML compared
-+ Websockets use case
++ Heartbeat firmware for the microcontroller
++ Node-RED flows and JavaScript
++ Build a web site using Node.js
++ Design a node-red flow that makes HTTP requests to Node.js
++ AJAX and Node.js
++ Websocket programming using Node.js and Node-RED
+
 
 ### Review Project 2
 
 + MouseTracker Publish/Subscribe using MQTT
-+ Java TemperatureSensor using MQTT and MQTT topics
-+ Java DiceRolling using MQTT and GoogleCharts
-+ Argon publisher sending a name to MQTT
++ Monitoring light levels with a microcontroller
++ Making HTTP requests from a microcontroller
++ Publishing light levels with Node-RED to MQTT
++ Multiple subscribers to MQTT
++ Visualization with Google Charts
 
 ### Review Project 3
 
-+ Webhooks
-+ Particle Cloud
-+ Thing Speak
++ BLE and the LightBlue phone application
++ BLE to a Node-RED gateway
++ Collection and visualization of light values with a time series database on the cloud
