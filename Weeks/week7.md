@@ -8,9 +8,9 @@
 
 ## Slides
 
-+ [Smart Cities](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_Smart_Cities.pdf)
-
 + [IoT and Self Sovereign Identity](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_IoTandSelfSovereignIdentity.pdf)
+
++ [Smart Cities](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_Smart_Cities.pdf)
 
 
 <!--
@@ -18,8 +18,6 @@
 -->
 
 ## Required readings
-
-+ [Self Sovereign Identity and IoT](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_IoTandSelfSovereignIdentity.pdf)
 
 + [Smart Cities and IoT](https://www.tandfonline.com/doi/full/10.1080/15228053.2019.1587572)
 
