@@ -4,7 +4,7 @@
 
 ## Topics
 
-In Week 7 we discuss W3C architecture patterns for the Web of Things.
+In Week 6 we discuss W3C architecture patterns for the Web of Things.
 
 ## Slides
 
