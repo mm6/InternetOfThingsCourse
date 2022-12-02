@@ -4,10 +4,7 @@
 
 ## Topics
 
-In week 6 we discuss Self-Sovereign Identity (SSI) using blockchain technology.
-We consider how SSI might be used in IoT.
-
-+ Self-sovereign Identity
+In Week 7 we discuss W3C architecture patterns for the Web of Things.
 
 ## Slides
 
@@ -15,7 +12,6 @@ We consider how SSI might be used in IoT.
 
 
 ## Required readings
-
 
 + [Self-sovereign identity at Computerworld](https://www.computerworld.com/article/3244128/how-blockchain-makes-self-sovereign-identities-possible.html)
 
@@ -27,9 +23,9 @@ We consider how SSI might be used in IoT.
 
 + Quiz 5: WoT Architecture Use Cases Section 4, WoT Architecture Section 6, WoT Architecture Building blocks Section 7, Senate Testimony of Jonathan_Zittrain.
 
+<!--
 ## Video Lectures
 
-<!--
 + [18_Lecture6](https://heinzcollege.mediasite.com/Mediasite/Play/af6b402ca8f44635ac308d229d5ce3531d)
 + [19_Lecture6](https://heinzcollege.mediasite.com/Mediasite/Play/1f08f85d38674d2eb1fcc95238a47d121d)
 
