@@ -14,8 +14,6 @@ We consider how SSI might be used in IoT.
 + [W3C Web of Things Architecture](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_W3C_Architecture.pdf)
 
 
-
--->
 ## Required readings
 
 

@@ -37,7 +37,6 @@ Particle cloud using CoAp.
 
 + [REST, Integration Patterns, and CoAP brief](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_RESTandCoAP.pdf)
 
-+ [W3C Web of Things Architecture](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_W3C_Architecture.pdf)
 
 ## Required readings
 
