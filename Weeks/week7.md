@@ -29,6 +29,7 @@
 
 + Quiz 6 on self-sovereign identity article from Computerworld.
 
+<!--
 ## Video Lectures
 
 + [20_Lecture7](https://heinzcollege.mediasite.com/Mediasite/Play/2935e6dcc4d945b89ca9c3bb0ff9e43e1d)
@@ -36,7 +37,7 @@
 ## Student presentations
 
 + [21_StudentPresentations](https://heinzcollege.mediasite.com/Mediasite/Play/32d1d07e8dfe4280aa1d56064b9983e91d)
-
+-->
 ## Optional Readings
 
 + [Flow Based Programming by J. Paul Rodker Morrison](https://youtu.be/up2yhNTsaDs)
