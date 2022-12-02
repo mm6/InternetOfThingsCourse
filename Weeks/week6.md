@@ -4,12 +4,6 @@
 
 ## Topics
 
-
-
-<!--
-Andrew King works for Slalom as an IoT Director. He teaches embedded systems at Northeastern University and has a very recent book on IoT published by O'Reilly. The book is titled "Programming the Internet of Things" and is available [at this link.](https://www.oreilly.com/library/view/programming-the-internet/9781492081401/)
--->
-<!--
 In week 6 we discuss Self-Sovereign Identity (SSI) using blockchain technology.
 We consider how SSI might be used in IoT.
 
@@ -19,14 +13,14 @@ We consider how SSI might be used in IoT.
 
 + [W3C Web of Things Architecture](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_W3C_Architecture.pdf)
 
-+ [Self Sovereign Identity and IoT](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_IoTandSelfSovereignIdentity.pdf)
+
 
 -->
 ## Required readings
 
-<!--
+
 + [Self-sovereign identity at Computerworld](https://www.computerworld.com/article/3244128/how-blockchain-makes-self-sovereign-identities-possible.html)
--->
+
 ## Project
 
 + There is no project assigned during week 6.

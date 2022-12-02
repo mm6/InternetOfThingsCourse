@@ -4,17 +4,22 @@
 
 ## Topics
 
-+ This is the final exam week. The final will be a closed notes and closed web Canvas exam.
-Final Exam Scheduled for Thursday 12/15/2022 01:00PM	HBH 1004
 
-[The Final Exam is closed book, closed notes. It is Canvas based. See the Review for final exam.](../Review.md)
 
 ## Slides
 
 + [Smart Cities](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_Smart_Cities.pdf)
+
++ [IoT and Self Sovereign Identity](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_IoTandSelfSovereignIdentity.pdf)
+
+
+<!--
 + [Flow Programming and Edge Analytics](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/07_FlowProgramming.pdf)
+-->
 
 ## Required readings
+
++ [Self Sovereign Identity and IoT](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_IoTandSelfSovereignIdentity.pdf)
 
 + [Smart Cities and IoT](https://www.tandfonline.com/doi/full/10.1080/15228053.2019.1587572)
 
@@ -24,7 +29,7 @@ Final Exam Scheduled for Thursday 12/15/2022 01:00PM	HBH 1004
 
 ## Quizzes
 
-+ Quiz 6 on self-sovereign identity
++ Quiz 6 on self-sovereign identity article from Computerworld.
 
 ## Video Lectures
 

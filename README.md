@@ -12,8 +12,5 @@
 + [Week 4](./Weeks/week4.md) T. November 15, R. November 17
 + [Week 5](./Weeks/week5.md) T. November 22, T. November 29
 + [Week 6](./Weeks/week6.md) R. December 1, T. December 6
-+ [Week 7](./Weeks/week7.md) R. December 8, Dec. 12 - 16 Final Exam Week Time is TBA
-
-<!---
-[Week 7 Tuesday, March 16 (Project 4 presentations) Thursday, March 18 (Final Exam)](./Weeks/week7.md))
-[Week 7 Thursday, March 18 Final Exam](./Weeks/week8.md) -->
++ [Week 7](./Weeks/week7.md) R. December 8
++ [Week 8](./Weeks.week8.md) December 15 Final Exam 1:00 - 3:00 HBH 1004
