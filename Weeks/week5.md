@@ -48,7 +48,7 @@ Particle cloud using CoAp.
 
 ## Projects
 
-+ [Project 3 BLE and Time Series Database](../projects/project3/Project3_F21.md)
++ [Project 3 BLE and Time Series Database](../projects/project3/Project3.md)
 
 <!--
 + [Project 3 Webhooks and ThingSpeak and BLE ](../projects/project3/Project3.md)
