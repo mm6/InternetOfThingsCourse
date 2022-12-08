@@ -37,7 +37,7 @@ browser.
 
 ## Project
 
-+ [Project 2 Publish subscribe](../projects/project2/Project2_U22.md)
++ [Project 2 Publish subscribe](../projects/project2/Project2.md)
 
 
 + Project 1 Due Midnight November 8, 2022
