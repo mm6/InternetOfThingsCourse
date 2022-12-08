@@ -13,6 +13,8 @@ In class, we have reviewed the architecture of several IoT platforms: Google's C
 
 In this project, you will build your own system using the same architecture. The constrained area will use Bluetooth Low Energy (BLE). The gateway tier will use Node-RED. You will use MQTT as your broker and InfluxDB for analytics, storage, and the web dashboard.
 
+If you are using an Apple MAC, be sure that you have installed Xcode from Apple.
+
 ### Objective
 
 The objective is to gain hands-on experience with a small implementation that includes several important pieces organized in a particular manner - the manner of real world IoT systems. It should be noted that you are not building a secure system - using physical hardening, encryption, and authentication logic.
