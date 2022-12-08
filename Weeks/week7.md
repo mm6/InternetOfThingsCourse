@@ -7,6 +7,8 @@
 In week 7 we discuss Self-Sovereign Identity (SSI) using blockchain technology.
 We consider how SSI might be used in IoT.
 
+We also discuss smart city use cases and we review for the final exam.
+
 ## Slides
 
 + [IoT and Self Sovereign Identity](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_IoTandSelfSovereignIdentity.pdf)
