@@ -85,7 +85,7 @@
 + Publish/Subscribe messaging
 + Jabber JID
 + XML document transfer in XMPP
-+ <stream>, <Presence>, <IQ>, <Message>
++ XMPP elements: stream element, presence element, IQ element, Message element
 + XML Schema for XMPP
 
 ### Primary article: OpenChirp at Carnegie Mellon
@@ -165,8 +165,7 @@
 
 ### Flow Programming and Edge Analytics
 
-+ Node-Red (Javascript)
-+ Apache Edgent (Java)
++ Node-Red 
 
 ### Review Project 1
 
