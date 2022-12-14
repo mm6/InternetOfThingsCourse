@@ -141,7 +141,7 @@
 ### Argon microntroller lecture notes
 
 + What is firmware?
-+ How did our Argon communicate with our servlets?
++ How did our Argon communicate with our node.js server??
 + Be able to read and interpret a simple firmware application.
 + The Particel Device Cloud
 
