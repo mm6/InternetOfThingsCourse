@@ -392,3 +392,6 @@ Node-RED2.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        NR to MQTT screenshot
 Node-RED3.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        containing two flows - pub and sub
 
 InfluxDBGauge.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    an InfluxDB Gauge
+
+
+[Troubleshooting BLE on Windows](../projects/project3/WindowsBLEHelp.pdf)
