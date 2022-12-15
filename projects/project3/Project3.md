@@ -394,4 +394,4 @@ Node-RED3.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        containing two flows - 
 InfluxDBGauge.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    an InfluxDB Gauge
 
 
-[Troubleshooting BLE on Windows](../projects/project3/WindowsBLEHelp.pdf)
+[Troubleshooting BLE on Windows](https://github.com/mm6/InternetOfThingsCourse/blob/master/projects/project3/WindowsBLEHelp.pdf)
