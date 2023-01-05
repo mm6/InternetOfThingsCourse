@@ -1,16 +1,16 @@
 
 # Carnegie Mellon University
 
-# 95-733/95-433 Fall 2022 Mini 2 Internet of Things Outline
+# 95-733/95-433 Spring 2023 Mini 3 Internet of Things Outline
 
 + [Course Description](./CourseDescription.md)
 + [Syllabus](./Syllabus.md)
-+ Class meeting times: Tuesday, Thursday 4:40 PM - 6:00 PM HBH 1004
-+ [Week 1](./Weeks/week1.md) T. October 25, R. October 27
-+ [Week 2](./Weeks/week2.md) T. November 1, R. November 3
-+ [Week 3](./Weeks/week3.md) T. November 8, R. November 10
-+ [Week 4](./Weeks/week4.md) T. November 15, R. November 17
-+ [Week 5](./Weeks/week5.md) T. November 22, T. November 29
-+ [Week 6](./Weeks/week6.md) R. December 1, T. December 6
-+ [Week 7](./Weeks/week7.md) R. December 8
-+ [Week 8](./Weeks/week8.md) December 15 Final Exam 1:00 - 3:00 HBH 1004
++ Class meeting times: Monday, Wednesday 11:00 - 12:20 PM HBH 1004
++ [Week 1](./Weeks/week1.md) W. January 18, M. January 23
++ [Week 2](./Weeks/week2.md) W. January 25, M. January 30
++ [Week 3](./Weeks/week3.md) W. February 1, M. February 6
++ [Week 4](./Weeks/week4.md) W. February 8, M. February 13
++ [Week 5](./Weeks/week5.md) W. February 15, M. February 20
++ [Week 6](./Weeks/week6.md) W. February 22, M. February 27
++ [Week 7](./Weeks/week7.md) W. March 1
++ [Week 8](./Weeks/week8.md) Saturday March 4 Final Exam Time TBA

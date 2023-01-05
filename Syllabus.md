@@ -18,11 +18,11 @@ Officer Hours: Tuesday and Thursday (1:00 PM - 3:00 PM)
 
 ### Teaching Assistant
 
-Name: Wei Hao Chu
+Name: Ashish Nair
 
-Email: weihaoch@andrew.cmu.edu
+Email: ashishn@andrew.cmu.edu
 
-Office Hours: TBA
+Office Hours: See Canvas
 
 <!--
 Name: Kieran Walsh
@@ -103,9 +103,9 @@ In Person Expectation
 
 ### Time and Place
 
-Fall 2022 Mini 2
+Spring 2023 Mini 3
 
-Tuesday, Thursday 4:40 PM - 6:00 PM HBH Room 1004
+Monday, Wednesday 11:00 AM - 12:20 PM HBH Room 1004
 
 
 ### Grading Scale
