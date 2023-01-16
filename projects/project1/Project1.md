@@ -1,6 +1,6 @@
-# 95-733/95-433 Internet of Things Fall Mini 2, 2022
+# 95-733/95-433 Internet of Things, Spring Mini 3, 2023
 
-## Project 1  Due: Tuesday, November 8, 2022
+## Project 1  Due: Wednesday, February 1, 2023
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project1.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
