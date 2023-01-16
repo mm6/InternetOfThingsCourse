@@ -31,7 +31,7 @@ Email: kawalsh@andrew.cmu.edu
 -->
 ### Communication
 
-Please contact your TA or instructor by email but only for messages that are clearly inappropriate for Piazza. The lectures will all be recorded and available on Canvas under the zoom link.
+Please contact your TA or instructor by email but only for messages that are clearly inappropriate for Piazza. The lectures will normally be recorded and available on Canvas under the zoom link.
 
 ### Prerequisite
 
