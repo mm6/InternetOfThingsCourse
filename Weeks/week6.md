@@ -40,3 +40,4 @@ In Week 6 we discuss W3C architecture patterns for the Web of Things.
 + [Convergence of IOT and Blockchain (Microsoft)](https://azure.microsoft.com/en-us/solutions/blockchain/)
 + [IOT Device to Ethereum - Cool Example](https://hackaday.com/2017/11/09/iot-with-the-ethereum-blockchain/)
 + [Save the planet with sensors and Algorand blockchain](https://explorer.planetwatch.io/)
++ [More citizen science](https://www.citizenscience.gov/#)
