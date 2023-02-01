@@ -40,11 +40,10 @@ browser.
 + [Project 2 Publish subscribe](../projects/project2/Project2.md)
 
 
-+ Project 2 Due Midnight February 1, 2023
++ Project 1 Due Midnight February 1, 2023
 
 ## Quizzes
 
-+ Quiz 2 is on Canvas 24 hours prior to class
 + Quiz 2 is on "The Computer for the 21st Century"
 
 ## Video Lectures
