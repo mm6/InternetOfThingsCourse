@@ -40,7 +40,7 @@ browser.
 + [Project 2 Publish subscribe](../projects/project2/Project2.md)
 
 
-+ Project 1 Due Midnight November 8, 2022
++ Project 2 Due Midnight February 1, 2023
 
 ## Quizzes
 
