@@ -1,7 +1,7 @@
 
-# 95-733/95-433 Internet of Things Fall 2022
+# 95-733/95-433 Internet of Things Spring 2023
 
-# Project 2 Due: Tuesday, November 22, 2022
+# Project 2 Due: Wednesday, February 15, 2023
 
 ### Topics: MQTT, Particle Argon, Node-RED, Node.js, Google Charts
 
