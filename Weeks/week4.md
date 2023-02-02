@@ -58,6 +58,8 @@ on the internet at large. Both protocols utilize service discovery.
 
 ## Optional Readings
 
++ [LoRaWan vs Cellular](https://www.particle.io/iot-guides-and-resources/particle-cellular-iot-vs-lorawan/)
+
 + [InfluxDB time series database chosen for OpenChirp](https://www.influxdata.com/time-series-database/)
 
 + [What is Ladder Logic](https://www.youtube.com/watch?v=qaI48NCUvkA)
