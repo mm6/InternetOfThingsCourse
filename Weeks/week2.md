@@ -86,4 +86,4 @@ Javascript is used to program individual nodes.
 
 + [Kudelski on IoT Security](https://www.kudelski-iot.com/)
 
-+ [Connectivity Standars Alliance](https://www.kudelski-iot.com/)
++ [Connectivity Standards Alliance](https://csa-iot.org/)
