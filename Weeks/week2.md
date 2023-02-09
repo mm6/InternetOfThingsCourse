@@ -83,3 +83,5 @@ Javascript is used to program individual nodes.
 + [IOT Security Standards body](https://www.ioxtalliance.org/)
 
 + [European Union Agency for CyberSecurity - IoT Security](https://www.enisa.europa.eu/publications/guidelines-for-securing-the-internet-of-things)
+
++ [Kudelski on IoT Security](https://www.kudelski-iot.com/)
