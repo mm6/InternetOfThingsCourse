@@ -86,4 +86,6 @@ Javascript is used to program individual nodes.
 
 + [Kudelski on IoT Security](https://www.kudelski-iot.com/)
 
++ [The dark web and IoT](https://www.cnbc.com/2023/01/09/the-dark-webs-criminal-minds-see-iot-as-the-next-big-hacking-prize.html)
+
 + [Connectivity Standards Alliance](https://csa-iot.org/)
