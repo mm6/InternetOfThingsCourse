@@ -4,7 +4,7 @@
 
 + This is the final exam week.
 
-+ The Final Exam is Scheduled for Saturday March 4. The Final Exam Time is TBA.
++ The Final Exam is Scheduled for Friday March 3. The Final Exam time is 9:30 AM in Room HBH 1004.
 
 + [The Final Exam is closed book, closed notes. It is Canvas based. See the Review for final exam.](../Review.md)
 
