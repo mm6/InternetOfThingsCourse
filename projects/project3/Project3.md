@@ -76,8 +76,10 @@ void setup() {
 	BLE.addCharacteristic(temperatureMeasurementCharacteristic);
 	BLE.addCharacteristic(batteryLevelCharacteristic);
 	
+	// Make available the lastBattery variable
 	batteryLevelCharacteristic.setValue(&lastBattery, 1);
 
+	// We need an object to provide advertisements
 	BleAdvertisingData advData;
 
 	// While we support both the health thermometer service and the battery service, we
