@@ -72,7 +72,7 @@ void setup() {
 
 	BLE.on();
 
-    // Add two characteristics - temperature and battery
+	// Add two characteristics - temperature and battery
 	BLE.addCharacteristic(temperatureMeasurementCharacteristic);
 	BLE.addCharacteristic(batteryLevelCharacteristic);
 	
