@@ -1,7 +1,7 @@
 
 # 95-733 Internet of Things
 
-# Project 3 Due: Thursday, December 8 11:59 PM Fall 2022
+# Project 3 Due: Wednesday, March 1 11:59 PM Spring 2023
 
 ### Topics: BLE, Node RED, MQTT, the Web, and InfluxDB
 
