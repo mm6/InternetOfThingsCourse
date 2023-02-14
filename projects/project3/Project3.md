@@ -96,6 +96,7 @@ void loop() {
 		lastUpdate = millis();
 
 		if (BLE.connected()) {
+			// a 6 byte buffer to transmit
 			uint8_t buf[6];
 
 			// The Temperature Measurement characteristic data is defined here:
@@ -118,8 +119,11 @@ void loop() {
 			// <Enumeration key="7" value="Rectum" />
 			// <Enumeration key="8" value="Toe" />
 			// <Enumeration key="9" value="Tympanum (ear drum)" />
+			
+			// Let's go with mouth
 			buf[5] = 6; // Mouth
 
+			// Make available the 6 byte buf of the encoded 48 bits
 			temperatureMeasurementCharacteristic.setValue(buf, sizeof(buf));
 
 			// The battery starts at 100% and drops to 10% then will jump back up again
