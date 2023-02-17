@@ -13,6 +13,7 @@ In Week 6 we discuss W3C architecture patterns for the Web of Things.
 
 ## Required readings
 
+
 + [Self-sovereign identity at Computerworld](https://www.computerworld.com/article/3244128/how-blockchain-makes-self-sovereign-identities-possible.html)
 
 ## Project
@@ -32,6 +33,7 @@ In Week 6 we discuss W3C architecture patterns for the Web of Things.
 -->
 ## Optional Readings
 
++ [WoT Architecture at InfoQ](https://www.infoq.com/articles/web-of-things-iot-apps/)
 + [W3C Decentralized Identifiers](https://www.w3.org/TR/did-core/)
 + [W3C Verifiable Credentials Use Cases](https://www.w3.org/TR/vc-use-cases/)
 + [Understanding Decentralized ID's](https://medium.com/@adam_14796/understanding-decentralized-ids-dids-839798b91809)
