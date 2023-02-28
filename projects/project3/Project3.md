@@ -400,5 +400,15 @@ Node-RED3.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        containing two flows - 
 
 InfluxDBGauge.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    an InfluxDB Gauge
 
+### Troubleshooting
 
 [Troubleshooting BLE on Windows](https://github.com/mm6/InternetOfThingsCourse/blob/master/projects/project3/WindowsBLEHelp.pdf)
+
+If unable to install the ble node in node-red, make sure your using the correct version of npm and node. The error message should show the proper version.
+
+You will need to have X-Code installed on a MAC.
+
+If your command prompt says (base), that will be a problem. Remove (base) from the command prompt.
+
+
+
