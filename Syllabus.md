@@ -14,13 +14,13 @@ Office: Hamburg Hall 3015
 
 Phone: 412-268-4657 (Office)
 
-Officer Hours: Tuesday and Thursday (1:00 PM - 3:00 PM)
+Officer Hours: Monday and Wednesday 12:00 PM - 1:50 PM
 
 ### Teaching Assistant
 
-Name: Ashish Nair
+Name: TBA
 
-Email: ashishn@andrew.cmu.edu
+Email: TBA
 
 Office Hours: See Canvas
 
@@ -31,7 +31,7 @@ Email: kawalsh@andrew.cmu.edu
 -->
 ### Communication
 
-Please contact your TA or instructor by email but only for messages that are clearly inappropriate for Piazza. The lectures will normally be recorded and available on Canvas under the zoom link.
+Please contact your TA or instructor by email but only for messages that are clearly inappropriate for Piazza.
 
 ### Prerequisite
 
@@ -71,7 +71,7 @@ The penalty for each instance of cheating, whether on a quiz, exam, or homework 
 
 In addition to any penalties imposed by the instructor, all cheating and plagiarism infractions will be reported in writing to the Associate Dean for the program, the Associate Dean of Faculty, the Dean of Student Affairs, and the Dean. They will review and determine if expulsion should be recommended. The report will become part of the student’s record.
 
-### Using AI
+### Policy on using AI
 
 You may choose to use a large language model to assist with your programming work. Note that LLMs often make mistakes. You are responsible for any errors or problems that may be present in the code that you submit. The closed book exam is designed to test your knowledge and coding skills. So, if you do use a large language model, be sure to master the material and truly understand the code, before taking an exam.
 
@@ -104,13 +104,11 @@ If you are not able to get access to an Argon, directions will be provided to si
 
 In Person Expectation
 
-
 ### Time and Place
 
-Spring 2023 Mini 3
+Fall 2023 Mini 1
 
-Monday, Wednesday 11:00 AM - 12:20 PM HBH Room 1004
-
+Tuesday, Thursday 5:00 PM - 6:20 PM HBH Room 1005
 
 ### Grading Scale
 
