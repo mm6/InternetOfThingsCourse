@@ -71,6 +71,12 @@ The penalty for each instance of cheating, whether on a quiz, exam, or homework 
 
 In addition to any penalties imposed by the instructor, all cheating and plagiarism infractions will be reported in writing to the Associate Dean for the program, the Associate Dean of Faculty, the Dean of Student Affairs, and the Dean. They will review and determine if expulsion should be recommended. The report will become part of the student’s record.
 
+### Using AI
+
+You may choose to use a large language model to assist with your programming work. Note that LLMs often make mistakes. You are responsible for any errors or problems that may be present in the code that you submit. The closed book exam is designed to test your knowledge and coding skills. So, if you do use a large language model, be sure to master the material and truly understand the code, before taking an exam.
+
+Be sure to note that you must follow the academic integrity guidelines of the university. If you use a generative AI tool to develop content for an assignment, you are required to cite the tool’s contribution to your work, just as you should cite code acquired from any other source.
+
 ### Policy on grading complaints
 
 Grading mistakes may occur. Please email the TA who graded your assignment about grading mistakes. It will be up to the TA to handle the complaint. If you are still not satisfied with the TA's grade please contact me immediately. My initial reaction will be to support the TA's grade. In some cases, however, I might agree with the student and ask for the grade to be adjusted. Please make any grading concerns known to the TA immediately. Communicate with the TA and get the matter resolved.
