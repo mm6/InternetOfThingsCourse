@@ -88,13 +88,11 @@ There will be a Canvas site for the course. Grades will be posted there and assi
 
 ### FERPA Statement
 
-Classes will be recorded via Zoom so that students in this course (and only students in this course) can watch or re-watch past  sessions. These recordings will be available on Canvas as soon as possible after each session. Please note that you are not allowed to share these recordings. This is to protect your FERPA rights and those of your fellow students.
-
+Some classes may be recorded via Zoom so that students in this course (and only students in this course) can watch or re-watch past  sessions. These recordings will be available on Canvas. Please note that you are not allowed to share these recordings. This is to protect your FERPA rights and those of your fellow students.
 
 ### Software Requirements
 
 You will need to install Node.js, Express (a web framework for Node.js), and Node-RED. Directions will be provided on the first project.
-
 
 ### Hardware Requirements
 
