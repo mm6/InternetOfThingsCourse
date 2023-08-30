@@ -104,6 +104,8 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 + [Node Wot Video from Siemens](https://www.youtube.com/watch?v=NkVrqSs-KOs)
 
++ [Web of Things at Embedded Computing](https://embeddedcomputing.com/technology/iot/introduction-to-web-of-things-wot-heres-everything-you-need-to-know)
+
 + [JavaScript Object Notation (JSON) Grammar](http://www.json.org/index.html)
 
 <!--
