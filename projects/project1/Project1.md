@@ -19,7 +19,8 @@ The selected microcontroller that we will use is the Particle Argon. It has the 
 
 1) The node package manager (npm) was installed as part of node.js in step 0. Next, use npm to install Node-RED locally on your laptop or desktop machine.
 
-But note that we must first downgrade our npm.
+But note that we must first downgrade our npm. The default that comes with Node.js
+is too high of a version.
 
 On Mac OSX, downgrade our npm by running the shell command:
 ```
