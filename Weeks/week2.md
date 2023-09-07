@@ -8,6 +8,9 @@ In week 2 we consider how the design of the World Wide Web provides guidance on 
 
 We look at three interaction patterns provided by HTTP. These are the standard request and response, asynchronous JavaScript and XML (AJAX), and websockets.
 
+We also discuss the publish/subscribe model by publishing events to the Particle cloud
+and subscribing to those events with Node-RED.
+
 Security and privacy are continuing concerns.
 
 We argue that, with the adoption of web standards, an interoperable internet of things is possible.
@@ -16,7 +19,7 @@ The Particle IDE is introduced and over the air updates are described and shown.
 Javascript is used to program individual nodes.
 
 + Enabling the Internet of Things
-+ Four HTTP interaction patterns
++ HTTP interaction patterns
 + Demonstration: Server side AJAX in Node.js
 + Demonstration: Websockets and Node.js and a browser
 + Demonstration: Microcontroller to Node.js communications
