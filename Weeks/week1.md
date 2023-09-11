@@ -98,7 +98,8 @@ correct one to use in designing an interoperable internet of things - a web of t
 + [Scientific American on the Internet of Things](http://cba.mit.edu/docs/papers/04.10.i0.pdf)
 
 
-+ [Industrial Internet Consortium](https://www.trusted-iot.org)
++ [Industrial Internet Consortium](https://www.iiconsortium.org/)
+
 
 + [Wot and IoT](https://webofthings.org/2016/01/23/wot-vs-iot-12/)
 
