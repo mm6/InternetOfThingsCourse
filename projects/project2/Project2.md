@@ -1,7 +1,7 @@
 
-# 95-733/95-433 Internet of Things Spring 2023
+# 95-733/95-433 Internet of Things Fall 2023
 
-# Project 2 Due: Wednesday, February 15, 2023
+# Project 2 Due: Tuesday, September 26, 2023
 
 ### Topics: MQTT, Particle Argon, Node-RED, Node.js, Google Charts
 
@@ -10,7 +10,8 @@
 Many IoT applications monitor real time data from sensors and
 transmit these data to a service offering publish and subscribe capabilities. The service behaves as a broker. The sensor plays the role of publisher and it may have no idea who its subscribers are. It simply transmits data to the broker. A subscriber subscribes to messages from the broker and, in this way, is able to consume data from the sensors.
 
-The publish subscribe approach exemplifies loose coupling, provides for scalability, and is well established in the internet of things.
+The publish subscribe approach exemplifies loose coupling, provides for scalability, and is well established in the internet of things. In Project 1, we used Particle as our broker. Here,
+we will use MQTT.
 
 ### Objectives
 
@@ -42,7 +43,7 @@ In Project 1, we monitored Argon heartbeats in real time with a browser. We leve
 
 In much of this project, we will not write our own server side code (as we did in Project 1). Instead, we will use Mosquitto - an open source MQTT broker. [Download Mosquitto from here.](http://mosquitto.org/download/)
 
-Note: In the past, some students had trouble with Mosquitto but had an easy time downloading Hive MQ's MQTT broker. The instructions below refer to my success in using Mosquito. Feel free to use whatever MQTT broker that you are comfortable with. You may use the local Hive MQ (downloaded to your machine
+Note: In the past, some students had trouble with Mosquitto but had an easy time downloading Hive MQ's MQTT broker. The instructions below refer to my success in using Mosquito. Feel free to use whatever MQTT broker that you are comfortable with (there are many to choose from). You may use the local Hive MQ (downloaded to your machine
 or the remote version on the cloud.) Hive MQ's MQTT (both local and cloud) are available [from here](https://www.hivemq.com/try-out/).
 
 You can install Mosquitto on your MAC using brew. See [here](http://brew.sh) and then use "brew install mosquitto". There are directions on the mosquitto web site for Windows users.
