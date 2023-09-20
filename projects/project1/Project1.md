@@ -716,7 +716,7 @@ app.listen(port, () => {
 ```
 5) The above code should work but we are only reporting the failure status as viewed by Node-RED and Node-RED only updates the service when a message arrives from the microcontroller. Make the necessary modifications to index.js so that it displays "Suspected Failure" if the microcontroller (or Node-RED) has not been seen in 12 seconds or more.
 
-:checkered_flag:**Take three screenshots. The first will show the browser screen with a button and a timestamp of a recent visit. The second will show a "suspected failure" message. Name these screenshots Project1Part6BrowserA.png and Project1Part6BrowserB.png. The third will show the Node-RED palette and the debug window with responses coming from the web service. Name this screenshot Project1Part5Node-RED.png. These screenshots should make it clear to the grader that you have a working system. In addition, provide a copy of the modified index.js - with the suspected failure logic described in step 5.**
+:checkered_flag:**Take three screenshots. The first will show the browser screen with a button and a timestamp of a recent visit. The second will show a "suspected failure" message. Name these screenshots Project1Part6BrowserA.png and Project1Part6BrowserB.png. The third will show the Node-RED palette and the debug window with responses coming from the web service. Name this screenshot Project1Part6Node-RED.png. These screenshots should make it clear to the grader that you have a working system. In addition, provide a copy of the modified index.js - with the suspected failure logic described in step 5.**
 
 ### Part 7: Build a websocket web site using Express and Node-RED
 
