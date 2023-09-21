@@ -64,7 +64,7 @@ We will be programming the Argon microcontroller by developing our firmware code
 
 #### On Campus CMU Wi-Fi registration needs performed once only
 
-6) [For students in Pittsburgh, if you plan to use the Argon on Campus - with CMU's Wi-Fi, you will need to register the Argon as a wireless device.](https://www.cmu.edu/computing/services/endpoint/network-access/wireless/how-to/cmudevice.html) Do this only after you have a working CLI.
+6) [If you plan to use the Argon on Campus - with CMU's Wi-Fi, the device needs to be registered as a wireless device on CMU-DEVICE.](https://www.cmu.edu/computing/services/endpoint/network-access/wireless/how-to/cmudevice.html) Do this only after you have a working CLI.
 
 [For students in Pittsburgh, the actual registration page is here.](https://getonline.cmu.edu/)
 Choose the wireless block. Your MAC address can be retrieved from your Argon by entering the command:
@@ -73,7 +73,9 @@ Choose the wireless block. Your MAC address can be retrieved from your Argon by 
 particle serial mac
 
 ```
-You will need to wait (an hour or more) for your device to be registered. You only need to do this once.
+You will need to wait (an hour or more) for your device to be registered. You only need to do this once. Your instructor may have already performed this step for a device passed out in class.
+
+To set up your device to be used on Campus, [use this link for the setup](https://docs.particle.io/tools).
 
 #### Setting up for home Wi-Fi
 
