@@ -75,7 +75,7 @@ particle serial mac
 ```
 You will need to wait (an hour or more) for your device to be registered. You only need to do this once. Your instructor may have already performed this step for a device passed out in class.
 
-To set up your device to be used on Campus, [use this link for the setup](https://docs.particle.io/tools).
+To set up your device to be used on Campus, [use this link for the setup](https://docs.particle.io/tools). Select Device Doctor.
 
 #### Setting up for home Wi-Fi
 
