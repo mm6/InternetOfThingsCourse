@@ -46,6 +46,7 @@ We also discuss smart city use cases and we review for the final exam.
 ## Optional Readings
 + [IoT Reference Architecture from IBM](https://www.ibm.com/cloud/architecture/architectures/iotArchitecture/reference-architecture/)
 + [IoT Reference Architecture from Microsoft](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/iot)
++ [IoT Connected Vehicle Reference Architecture from AWS](https://docs.aws.amazon.com/architecture-diagrams/latest/aws-connected-vehicle/aws-connected-vehicle.html)
 + [Flow Based Programming by J. Paul Rodker Morrison](https://youtu.be/up2yhNTsaDs)
 + [HyperCat](https://youtu.be/6Ps8iEGRi1U)
 + [Eclipse Kura Video](https://www.youtube.com/watch?v=ia8cLnR1uFI)
