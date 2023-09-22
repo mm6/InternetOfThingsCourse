@@ -44,7 +44,7 @@ We also discuss smart city use cases and we review for the final exam.
 + [21_StudentPresentations](https://heinzcollege.mediasite.com/Mediasite/Play/32d1d07e8dfe4280aa1d56064b9983e91d)
 -->
 ## Optional Readings
-
++ [IoT Reference Architecture from IBM](https://www.ibm.com/cloud/architecture/architectures/iotArchitecture/reference-architecture/)
 + [Flow Based Programming by J. Paul Rodker Morrison](https://youtu.be/up2yhNTsaDs)
 + [HyperCat](https://youtu.be/6Ps8iEGRi1U)
 + [Eclipse Kura Video](https://www.youtube.com/watch?v=ia8cLnR1uFI)
