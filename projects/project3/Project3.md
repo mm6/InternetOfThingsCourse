@@ -1,7 +1,7 @@
 
 # 95-733 Internet of Things
 
-# Project 3 Due: Wednesday, March 1 11:59 PM Spring 2023
+# Project 3 Due: Thursday, October 12, 2023
 
 ### Topics: BLE, Node RED, MQTT, the Web, and InfluxDB
 
@@ -75,7 +75,7 @@ void setup() {
 	// Add two characteristics - temperature and battery
 	BLE.addCharacteristic(temperatureMeasurementCharacteristic);
 	BLE.addCharacteristic(batteryLevelCharacteristic);
-	
+
 	// Make available the lastBattery variable
 	batteryLevelCharacteristic.setValue(&lastBattery, 1);
 
@@ -119,7 +119,7 @@ void loop() {
 			// <Enumeration key="7" value="Rectum" />
 			// <Enumeration key="8" value="Toe" />
 			// <Enumeration key="9" value="Tympanum (ear drum)" />
-			
+
 			// Let's go with mouth
 			buf[5] = 6; // Mouth
 
@@ -409,6 +409,3 @@ If unable to install the ble node in node-red, make sure your using the correct 
 You will need to have X-Code installed on a MAC.
 
 If your command prompt says (base), that will be a problem. Remove (base) from the command prompt.
-
-
-
