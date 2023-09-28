@@ -182,7 +182,13 @@ The buf array is used to hold the data that is passed over the BLE signal. The m
 
 3. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon. LightBlue will act as a BLE central device and will scan for peripheral advertisements.
 
-Note that this may require a bit of browsing with LightBlue to find the right BLE source. The dBm value (decibels relative to one milliwatt) is used to define the strength of the BLE signal. Anything greater than -75 dBm is considered a reliable signal. The closer that you get to 0, the more reliable the signal. On LightBlue's PunchThrough application, you can use signal strength to help locate which signal is coming from your Argon.  
+Note that this may require a bit of browsing with LightBlue to find the right BLE source. The dBm value (decibels relative to one milliwatt) is used to define the strength of the BLE signal. Anything greater than -75 dBm is considered a reliable signal. The closer that you get to 0, the more reliable the signal. On LightBlue's PunchThrough application, you can use signal strength to help locate which signal is coming from your Argon.
+
+To help you connect with LightBlue, you might also want to look at the BLE MAC address being used by your Argon. A device may have several different MAC addresses. To view your BLE MAC in a terminal, you can use this line of C++ code in your firmware:
+```
+Serial.printlnf("BLE MAC address: %s ",BLE.address().toString().c_str());
+
+```
 
 Within the firmware, there is code that defines the temperature characteristic as a "notify" characteristic. This means that a client does not have to perform explicit read requests. The client can sit back and receive the temperature values.
 
