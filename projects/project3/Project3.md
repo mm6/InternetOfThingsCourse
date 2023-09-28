@@ -412,6 +412,18 @@ InfluxDBGauge.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    an InfluxDB Gauge
 
 If unable to install the ble node in node-red, make sure your using the correct version of npm and node. The error message should show the proper version.
 
-You will need to have X-Code installed on a MAC.
+My node version looks like this:
+```
+node --version
+v16.15.0
+```
+My npm version looks like this:
+```
+npm --version
+8.5.5
+```
+
+
+On a MAC, you will need to have X-Code installed.
 
 If your command prompt says (base), that will be a problem. Remove (base) from the command prompt.
