@@ -4,7 +4,7 @@
 
 + This is the final exam week.
 
-+ The Final Exam time and date is to be announced.
++ Final Exam Date and Time: Internet of Things 10/13/23	03:30PM	04:50PM	HBH 2008
 
 + [The Final Exam is closed book, closed notes. It is Canvas based. See the Review for final exam.](../Review.md)
 
