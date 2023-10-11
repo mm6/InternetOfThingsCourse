@@ -28,7 +28,7 @@ In Part 1, you will deploy code to the Argon so that it behaves as a peripheral.
 The Argon will provide two services but advertise only one. The services will each make available values (called BLE characteristics). Both services and characteristics are associated with unique UUID's.
 
 
-0. Notice that the Argon's antennae can be plugged into a Wi-Fi connection or a BLE connection. Both are available on the Argon. In my work, I found that I was able leave the antennae connected to Wi-Fi only.
+0. Notice that the Argon's antennae can be plugged into a Wi-Fi connection or a BLE connection. Both are available on the Argon. In my work, I found that I was able leave the antennae connected to Wi-Fi only. But others find that it works best if you switch the antennae to BLE. You would switch it back to Wi-Fi before flashing firmware.
 
 1. Study the following BLE peripheral code and flash it to your Argon.
 
@@ -100,8 +100,9 @@ void loop() {
 			uint8_t buf[6];
 
 			// The Temperature Measurement characteristic data is defined here:
-			// https://www.bluetooth.com/wp-content/uploads/Sitecore-Media-Library/Gatt/Xml/Characteristics/org.bluetooth.characteristic.temperature_measurement.xml
-
+			/*
+			https://github.com/sputnikdev/bluetooth-gatt-parser/blob/master/src/main/resources/gatt/characteristic/org.bluetooth.characteristic.temperature_measurement.xml
+      */
 			// First byte is flags. We're using Celsius (bit 0b001 == 0), no timestamp (bit 0b010 == 0), with temperature type (bit 0b100), so the flags are 0x04.
 			buf[0] = 0x04;
 
