@@ -30,7 +30,7 @@ on the internet at large. Both protocols utilize service discovery.
 
 + [Bluetooth](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Bluetooth.pdf)
 
-+ [Free gas using Bluetooth](https://www.youtube.com/watch?v=psXnAT0YAVQ)
+
 
 
 ## Required readings
@@ -59,6 +59,8 @@ on the internet at large. Both protocols utilize service discovery.
 -->
 
 ## Optional Readings
+
++ [Free gas using Bluetooth](https://www.youtube.com/watch?v=psXnAT0YAVQ)
 
 + [LoRaWan vs Cellular](https://www.particle.io/iot-guides-and-resources/particle-cellular-iot-vs-lorawan/)
 
