@@ -30,6 +30,8 @@ on the internet at large. Both protocols utilize service discovery.
 
 + [Bluetooth](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Bluetooth.pdf)
 
++ [Free gas using Bluetooth](https://www.youtube.com/watch?v=psXnAT0YAVQ)
+
 
 ## Required readings
 
