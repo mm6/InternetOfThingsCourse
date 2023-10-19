@@ -44,6 +44,8 @@ We also discuss smart city use cases and we review for the final exam.
 + [21_StudentPresentations](https://heinzcollege.mediasite.com/Mediasite/Play/32d1d07e8dfe4280aa1d56064b9983e91d)
 -->
 ## Optional Readings
+
++ [NYC Smart City](https://www.smartcitiesdive.com/news/nyc-smart-city-testbed-technology-first-pilots/696366?utm_source=Sailthru&utm_medium=email&utm_campaign=Issue:%202023-1012%20Smart%20Cities%20Dive%20Newsletter%20%5Bissue:55414%5D&utm_term=Smart%20Cities%20Dive)
 + [IoT Reference Architecture from IBM](https://www.ibm.com/cloud/architecture/architectures/iotArchitecture/reference-architecture/)
 + [IoT Reference Architecture from Microsoft](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/iot)
 + [IoT Connected Vehicle Reference Architecture from AWS](https://docs.aws.amazon.com/architecture-diagrams/latest/aws-connected-vehicle/aws-connected-vehicle.html)
