@@ -14,7 +14,7 @@ Office: Hamburg Hall 3015
 
 Phone: 412-268-4657 (Office)
 
-Officer Hours: Monday and Wednesday 12:00 PM - 1:50 PM
+Officer Hours: Monday and Wednesday 2:00 PM - 4:00 PM
 
 ### Teaching Assistant
 
@@ -31,7 +31,7 @@ Email: kawalsh@andrew.cmu.edu
 -->
 ### Communication
 
-Please contact your TA or instructor by email but only for messages that are clearly inappropriate for Piazza.
+We will use Piazza rather than email for most of our course related communications.
 
 ### Prerequisite
 
@@ -63,26 +63,20 @@ If you elect to use the late days at the end of the course, alert your instructo
 
 ### Policy on collaboration
 
-Any code copied from another source must be clearly cited. Provide as a comment in the code the exact URL where the code was copied from. Code that is provided by the instructor is allowed as long as the code is clearly cited as being provided by the instructor. Of course, if you have copied an excessive amount of code and violated the spirit of the project, you will earn zero points. Copying code without citing it is cheating.
+You may work with other students when doing your projects. You may also use such tools as Stack Overflow and large language models. It is required that you cite the source of any code that you do not write yourself.
 
-A student who shares code with another student will be treated the same as the person who does the copying. Keep your own code safe.
+Note that if you get help from a colleague or use a large language model, be sure to master the material and truly understand the code. You will not have access to a large language model or colleagues on the exam.
 
-The penalty for each instance of cheating, whether on a quiz, exam, or homework project, will be a zero for that assignment and a lowering of the final grade by one letter (e.g. from B to C). The lowering of the course grade will occur after the zero for the assignment is applied.
-
-In addition to any penalties imposed by the instructor, all cheating and plagiarism infractions will be reported in writing to the Associate Dean for the program, the Associate Dean of Faculty, the Dean of Student Affairs, and the Dean. They will review and determine if expulsion should be recommended. The report will become part of the student’s record.
-
-### Policy on using AI
-
-You may choose to use a large language model to assist with your programming work. Note that LLMs often make mistakes. You are responsible for any errors or problems that may be present in the code that you submit. The closed book exam is designed to test your knowledge and coding skills. So, if you do use a large language model, be sure to master the material and truly understand the code, before taking an exam.
+Note that LLMs often make mistakes. You are responsible for any errors or problems that may be present in the code that you submit. The closed book exam is designed to test your knowledge and coding skills.
 
 Be sure to note that you must follow the academic integrity guidelines of the university. If you use a generative AI tool to develop content for an assignment, you are required to cite the tool’s contribution to your work, just as you should cite code acquired from any other source.
 
+
 ### Policy on grading complaints
 
-Grading mistakes may occur. Please email the TA who graded your assignment about grading mistakes. It will be up to the TA to handle the complaint. If you are still not satisfied with the TA's grade please contact me immediately. My initial reaction will be to support the TA's grade. In some cases, however, I might agree with the student and ask for the grade to be adjusted. Please make any grading concerns known to the TA immediately. Communicate with the TA and get the matter resolved.
+Grading mistakes may occur. Please email the TA who graded your assignment about grading mistakes. It will be up to the TA to handle the complaint. If you are still not satisfied with the TA's grade please contact me immediately. My initial reaction will be to support the TA's grade. In some cases, however, I might agree with the student and ask for the grade to be adjusted. Please make any grading concerns known to the TA immediately. Communicate with the TA and get the matter resolved as soon as possible.
 
 ### Use of Canvas
-
 
 There will be a Canvas site for the course. Grades will be posted there and assignments will be submitted there. We will also make good use of the discussion board on Piazza. It is far better to post a question to the discussion board than it is to send your instructor or TA an email. Answers posted there are available for all to see. The main site for the course (syllabus, course description and schedule) is this page on GitHub.
 
@@ -96,9 +90,9 @@ You will need to install Node.js, Express (a web framework for Node.js), and Nod
 
 ### Hardware Requirements
 
-The student needs to have access to a Particle Argon IoT Starter Kit. [Available here.](https://store.particle.io/collections/dev-kits/products/argon-kit) These will be provided to you for free as long as supplies last.
+The student needs to have access to a Particle Photon 2 and the Edge ML Kit for Photon 2. [Available here.](https://store.particle.io/products/edge-ai-kit-for-photon-2) These will be provided to you in class for free.
 
-If you are not able to get access to an Argon, directions will be provided to simulate the device.
+If you are not able to get access to a Photon 2, directions will be provided to simulate the device.
 
 ### Delivery Mode:
 
@@ -106,7 +100,7 @@ In Person Expectation
 
 ### Time and Place
 
-Fall 2023 Mini 1
+Fall 2024 Mini 1
 
 Tuesday, Thursday 5:00 PM - 6:20 PM HBH Room 1005
 

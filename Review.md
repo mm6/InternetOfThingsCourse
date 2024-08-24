@@ -138,12 +138,12 @@
 + Google Charts basics
 + Google charts in course project
 
-### Argon microntroller lecture notes
+### Photon 2 microcontroller lecture notes
 
 + What is firmware?
-+ How did our Argon communicate with our node.js server??
++ How did our Photon 2 communicate with our node.js server?
 + Be able to read and interpret a simple firmware application.
-+ The Particel Device Cloud
++ The Particle Device Cloud
 
 ### Industrial Internet of Things (IIOT) lecture notes
 
@@ -165,7 +165,7 @@
 
 ### Flow Programming and Edge Analytics
 
-+ Node-Red 
++ Node-Red
 
 ### Review Project 1
 
