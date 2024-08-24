@@ -2,7 +2,7 @@
 
 # 95-733 Internet of Things
 
-### Review Notes for Final Exam
+### Review Notes for Final Exam (subject to change)
 
 ### Primary article: Enabling the Internet of Things
 
