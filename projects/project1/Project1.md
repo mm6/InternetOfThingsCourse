@@ -1,6 +1,6 @@
-# 95-733/95-433 Internet of Things, Fall Mini 1, 2023
+# 95-733/95-433 Internet of Things, Fall Mini 1, 2024
 
-## Project 1  Due: Tuesday, September 12, 2023
+## Project 1  Due: Tuesday, September 10, 2024
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project1.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
@@ -12,7 +12,7 @@ In order to quickly build web sites, we will use Node.js and Express.
 
 In order to route and process IoT messages, we will use Node-RED.
 
-The selected microcontroller that we will use is the Particle Argon. It has the ability to communicate via Bluetooth LE and Wi-Fi. We need to initialize the Argon and establish credentials at Particle. We will use the Particle cloud's over the air (OTA) update capability to flash firmware to the Argon.
+The selected microcontroller that we will use is the Particle Photon 2. It has the ability to communicate via Bluetooth LE and Wi-Fi. We need to initialize the Photon 2 and establish credentials at Particle. We will use the Particle cloud's over the air (OTA) update capability to flash firmware to the Photon 2.
 
 
 0) [Follow these directions and install Node.js.](https://nodejs.org/en/download/)
@@ -56,18 +56,18 @@ npm install -g --unsafe-perm node-red
 
 4) [Establish credentials at Particle.io](https://www.particle.io/)
 
-#### Argon Setup, Particle IDE, and Particle CLI
+#### Photon 2 Setup, Particle IDE, and Particle CLI
 
-We will be programming the Argon microcontroller by developing our firmware code in C++, compiling to machine code, and downloading to the device via Particle's over the air (OTA) update.
+We will be programming the Photon 2 microcontroller by developing our firmware code in C++, compiling to machine code, and downloading to the device via Particle's over the air (OTA) update.
 
 5) [Install the Particle Command Line Interface (CLI) by following these directions.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
 #### On Campus CMU Wi-Fi registration needs performed once only
 
-6) [If you plan to use the Argon on Campus - with CMU's Wi-Fi, the device needs to be registered as a wireless device on CMU-DEVICE.](https://www.cmu.edu/computing/services/endpoint/network-access/wireless/how-to/cmudevice.html) Do this only after you have a working CLI.
+6) [If you plan to use the Photon 2 on Campus - with CMU's Wi-Fi, the device needs to be registered as a wireless device on CMU-DEVICE.](https://www.cmu.edu/computing/services/endpoint/network-access/wireless/how-to/cmudevice.html) Do this only after you have a working CLI.
 
 [For students in Pittsburgh, the actual registration page is here.](https://getonline.cmu.edu/)
-Choose the wireless block. Your MAC address can be retrieved from your Argon by entering the command:
+Choose the wireless block. Your MAC address can be retrieved from your Photon 2 by entering the command:
 
 ```
 particle serial mac
@@ -79,18 +79,18 @@ To set up your device to be used on Campus, [use this link for the setup](https:
 
 #### Setting up for home Wi-Fi
 
-7) [Connect your Particle Argon to a Wi-Fi router.](https://docs.particle.io/quickstart/argon/)
+7) [Connect your Particle Photon 2 to a Wi-Fi router.](https://docs.particle.io/quickstart/Photon 2/)
 
-It is recommended that you complete this tutorial. That is, blink an LED on your microcontroller as per the instructions in the Argon Quickstart. In addition, carefully read over the documentation in the firmware.
+It is recommended that you complete this tutorial. That is, blink an LED on your microcontroller as per the instructions in the Photon 2 Quickstart. In addition, carefully read over the documentation in the firmware.
 
-#### Publish heartbeat messages to the Particle console with an Argon
+#### Publish heartbeat messages to the Particle console with an Photon 2
 
 8) Use the code below to publish heartbeat messages to the Particle console.
 
 ```
 /*
 Author: mm6 with various code snippets taken from Particle.io.
-This firmware generates periodic heartbeats from an Argon to
+This firmware generates periodic heartbeats from an Photon 2 to
 the Particle cloud using Particle.publish(string name,string value).
 The first argument will be the name of the event. The event name is
 'heartbeat'. The second argument will be a JSON string holding
@@ -163,7 +163,7 @@ void loop() {
      }
 }
 ```
-9) ***Study the code above.*** After compiling and deploying the code to your Argon, use a shell and check if the CLI is working properly.
+9) ***Study the code above.*** After compiling and deploying the code to your Photon 2, use a shell and check if the CLI is working properly.
 
 ```
 particle serial monitor
@@ -180,13 +180,13 @@ $particle update-cli     Update the CLI
 ```
 [There are plenty of additional CLI commands.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
-[If your Argon appears to be unusable (e.g. blinking red) these directions have been very helpful.](https://support.particle.io/hc/en-us/articles/360045547634-How-can-I-set-up-my-Argon-or-Boron-via-USB-)
+[If your Photon 2 appears to be unusable (e.g. blinking red) these directions have been very helpful.](https://support.particle.io/hc/en-us/articles/360045547634-How-can-I-set-up-my-Photon 2-or-Boron-via-USB-)
 
-11) Using the Particle console on the cloud, verify that it is receiving the heartbeats from the Argon.
+11) Using the Particle console on the cloud, verify that it is receiving the heartbeats from the Photon 2.
 
 #### Using Node-RED, subscribe to the heartbeat messages that are being published to particle.
 
-12) Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Argon. We want Node-RED to hear about the heart beats. [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Particle Cloud to Node-RED. Read about Node-RED and integrate Node-RED with the Particle Cloud.](https://docs.particle.io/community/node-red/)
+12) Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Photon 2. We want Node-RED to hear about the heart beats. [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Particle Cloud to Node-RED. Read about Node-RED and integrate Node-RED with the Particle Cloud.](https://docs.particle.io/community/node-red/)
 
 Here are my notes on setting up a Node-RED Particle node and establishing the node's credentials at Particle:
 
@@ -210,17 +210,17 @@ In Node-RED:
     Install @particle/node-red-contrib-particle-official
     Close
 
-13) After completing the work in step 12, you should have a Node-RED platform receiving messages from your Argon every 10 seconds or so. Each message should contain a JSON string with the device ID. Each message should appear in the right pane of the Node-RED UI.
+13) After completing the work in step 12, you should have a Node-RED platform receiving messages from your Photon 2 every 10 seconds or so. Each message should contain a JSON string with the device ID. Each message should appear in the right pane of the Node-RED UI.
 
 The Node-RED palette should have a subscribe node wired to a debug node.
 
-:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Argon. Name your screenshot Project1Part1.png.**
+:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Photon 2. Name your screenshot Project1Part1.png.**
 
 ### Part 2: Node-RED Programming
 
 #### Working with flows
 
-0) The objective of this part is to gain skills in the creation and execution of Node-RED flows. We will work with the heartbeat data that we are receiving from our Particle Argon. This is a continuation from our work in Part 1. [Follow this link for a good place to learn about Node-RED and its capabilities.](https://nodered.org/docs/)
+0) The objective of this part is to gain skills in the creation and execution of Node-RED flows. We will work with the heartbeat data that we are receiving from our Particle Photon 2. This is a continuation from our work in Part 1. [Follow this link for a good place to learn about Node-RED and its capabilities.](https://nodered.org/docs/)
 
 1) Wire a function node in between your subscribe node and your debug node. The function node will add a timestamp to the incoming message. Study this code and use it in your function node:
 
@@ -239,9 +239,9 @@ msg.payload = JSON.stringify(newMessage);
 return msg;
 ```
 
-2) Add another function node that checks the timestamp. If the current message arrived late (after 12 seconds) then set a variable named "onTime" to false, otherwise set the "onTime" variable to true. Include the new "onTime" field and its value in the json message that leaves this node. Note: the very first message to arrive is never late. You can test this flow by unplugging your USB for 10 seconds or so and rebooting your Argon. You will need to think a bit about how to do this programming. Javascript is good at handling dates and it is easy to subtract one date from another. But you will need to research this a bit. [Here is another resource that you might find helpful.](https://nodered.org/docs/user-guide/writing-functions#storing-data)
+2) Add another function node that checks the timestamp. If the current message arrived late (after 12 seconds) then set a variable named "onTime" to false, otherwise set the "onTime" variable to true. Include the new "onTime" field and its value in the json message that leaves this node. Note: the very first message to arrive is never late. You can test this flow by unplugging your USB for 10 seconds or so and rebooting your Photon 2. You will need to think a bit about how to do this programming. Javascript is good at handling dates and it is easy to subtract one date from another. But you will need to research this a bit. [Here is another resource that you might find helpful.](https://nodered.org/docs/user-guide/writing-functions#storing-data)
 
-:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Argon. The debug panel should show messages that were on time and some that were not on time. Name your screenshot Project1Part2.png.**
+:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Photon 2. The debug panel should show messages that were on time and some that were not on time. Name your screenshot Project1Part2.png.**
 
 ### Part 3: Build a web site using Node.js
 
@@ -439,7 +439,7 @@ app.use(bodyParser.json() );
 app.get('/ViewLastHeartBeat', (req, res) => {
   console.log('Browser visit for last heartbeat');
   // respond to browser
-  res.send('Last time Argon visited via Node-RED ' + lastVisit);
+  res.send('Last time Photon 2 visited via Node-RED ' + lastVisit);
 })
 
 // This function is called with an HTTP POST by Node-RED.
@@ -447,12 +447,12 @@ app.get('/ViewLastHeartBeat', (req, res) => {
 // application/json.
 // The JSON data has deviceID, time, and onTime values.
 app.post('/SetNewHeartBeat', function (req, res) {
-  console.log('Visit from Argon ');
+  console.log('Visit from Photon 2 ');
   console.log(req.body);
   console.log(req.body.deviceID)
   lastVisit = req.body.time;
   // respond to Node-RED
-  res.send('Argon update received');
+  res.send('Photon 2 update received');
 })
 
 app.listen(port, () => {
@@ -489,7 +489,7 @@ In this Part, AJAX (Asynchronous Javascript and XML) capabilities are added to t
 
 0) Create an empty directory named Project1_Part6.
 
-1) Add a subdirectory named "public". Inside the public directory, create an index.html file. This file will contain HTML as well as references to two Javascript files: Ajax.js and ArgonStatus.js. The index.html file appears next.
+1) Add a subdirectory named "public". Inside the public directory, create an index.html file. This file will contain HTML as well as references to two Javascript files: Ajax.js and Photon 2Status.js. The index.html file appears next.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -498,7 +498,7 @@ In this Part, AJAX (Asynchronous Javascript and XML) capabilities are added to t
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <script type="text/javascript" language="javascript" src="Ajax.js"></script>
-  <script type="text/javascript" language="javascript" src="ArgonStatus.js"></script>
+  <script type="text/javascript" language="javascript" src="Photon 2Status.js"></script>
   <style>
   .button {
     border: none;
@@ -518,7 +518,7 @@ In this Part, AJAX (Asynchronous Javascript and XML) capabilities are added to t
 <body>
 <button onClick="getStatus()" class="button button1">Get Device Update</button>
 <div>
-  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Argon Status using AJAX</h2>
+  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Photon 2 Status using AJAX</h2>
   <table>
     <thead>
       <th>Device ID</th>
@@ -544,10 +544,10 @@ In this Part, AJAX (Asynchronous Javascript and XML) capabilities are added to t
 </html>
 
 ```
-2) ArgonStatus.js appears next. Be sure to study this code.
+2) Photon 2Status.js appears next. Be sure to study this code.
 
 ```
-// ArgonStatus.js
+// Photon 2Status.js
 
 // A call on getStatus causes an HTTP GET request back to the server.
 // The response data is available to the updateStatus function.
@@ -684,7 +684,7 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json() );
 
 // handle an AJAX visit from a browser
-// return the last visit of the Argon
+// return the last visit of the Photon 2
 app.get('/getStatusInJSON', (req, res) => {
   console.log('Browser AJAX for last visit time');
   storedDate = new Date(); // current time
@@ -699,7 +699,7 @@ app.get('/getStatusInJSON', (req, res) => {
 // application/json.
 // The JSON data has deviceID, time, and onTime values.
 app.post('/SetNewHeartBeat', function (req, res) {
-  console.log('Visit from Argon ');
+  console.log('Visit from Photon 2 ');
   console.log(req.body);
   console.log(req.body.deviceID)
   lastVisit = req.body.time;
@@ -709,7 +709,7 @@ app.post('/SetNewHeartBeat', function (req, res) {
   console.log("On time == " + onTime);
 
   // respond to Node-RED
-  res.send('Argon visit')
+  res.send('Photon 2 visit')
 })
 
 app.listen(port, () => {
