@@ -1,7 +1,7 @@
 
 # 95-733/95-433 Internet of Things Fall 2024
 
-# Project 2 Due: To bee announced
+# Project 2 Due: September 24, 2024  NOT YET ASSIGNED
 
 ### Topics: MQTT, Particle Photon 2, Node-RED, Node.js, Google Charts
 

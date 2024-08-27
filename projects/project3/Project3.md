@@ -1,7 +1,7 @@
 
-# 95-733 Internet of Things
+# 95-733 Internet of Things  NOT YET ASSIGNED
 
-# Project 3 Due: Thursday, October 12, 2023
+# Project 3 Due: Tuesday, October 8, 2024
 
 ### Topics: BLE, Node RED, MQTT, the Web, and InfluxDB
 
