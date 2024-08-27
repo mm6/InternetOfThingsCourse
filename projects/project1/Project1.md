@@ -1,6 +1,6 @@
 # 95-733/95-433 Internet of Things, Fall Mini 1, 2024
 
-## Project 1  Due: Tuesday, September 10, 2024
+## Project 1  NOT YET ASSIGNED Due: Tuesday, September 10, 2024
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project1.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
@@ -54,7 +54,7 @@ npm install -g --unsafe-perm node-red
    http://127.0.0.1:1880/
 ```
 
-4) [Establish credentials at Particle.io](https://www.particle.io/)
+4) [Establish credentials at Particle.io](https://www.particle.io/). Our primary tool at Particle will be the web IDE.
 
 #### Photon 2 Setup, Particle IDE, and Particle CLI
 
