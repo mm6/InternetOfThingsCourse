@@ -1,9 +1,9 @@
 
-# 95-733/95-433 Internet of Things Fall 2023
+# 95-733/95-433 Internet of Things Fall 2024
 
-# Project 2 Due: Tuesday, September 26, 2023
+# Project 2 Due: To bee announced
 
-### Topics: MQTT, Particle Argon, Node-RED, Node.js, Google Charts
+### Topics: MQTT, Particle Photon 2, Node-RED, Node.js, Google Charts
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project2.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
@@ -21,7 +21,7 @@ MQTT is targeted at low power, constrained, unreliable devices. It will likely p
 
 The second objective is to learn the Google Charts Javascript library. The internet of things will rely heavily on real time visualizations in the browser. Google Charts will likely play a significant role in this area.
 
-The third objective is to continue our work with the Particle Argon microcontroller.
+The third objective is to continue our work with the Particle Photon 2 microcontroller.
 
 There will be some challenges along the way.
 
@@ -31,15 +31,15 @@ There will be some challenges along the way.
 
 This is a five part assignment. The first part involves setting up an MQTT broker and interacting with the broker using browsers and WebSockets. The web applications will be built with Node.js.
 
-The second part requires that you set up the appropriate hardware and program your Argon with firmware written in C++. The C++ code is provided but worth studying.
+The second part requires that you set up the appropriate hardware and program your Photon 2 with firmware written in C++. The C++ code is provided but worth studying.
 
-The third part involves the construction of a Node-RED flow that receives messages from the Argon via HTTP, makes modifications to the messages, and publishes the messages to MQTT. Note that we are not routing our messages through the Particle Cloud - as we did in Project 1.
+The third part involves the construction of a Node-RED flow that receives messages from the Photon 2 via HTTP, makes modifications to the messages, and publishes the messages to MQTT. Note that we are not routing our messages through the Particle Cloud - as we did in Project 1.
 
-The fourth part involves writing a web application that provides browser code that subscribes to the Argon's messages from MQTT and produces a textual display.
+The fourth part involves writing a web application that provides browser code that subscribes to the Photon 2's messages from MQTT and produces a textual display.
 
 Part 5 is the same as Part 4 but includes Google Charts for visualization.
 
-In Project 1, we monitored Argon heartbeats in real time with a browser. We leveraged WebSockets and wrote our own server side code that sent a message to all listeners.
+In Project 1, we monitored Photon 2 heartbeats in real time with a browser. We leveraged WebSockets and wrote our own server side code that sent a message to all listeners.
 
 In much of this project, we will not write our own server side code (as we did in Project 1). Instead, we will use Mosquitto - an open source MQTT broker. [Download Mosquitto from here.](http://mosquitto.org/download/)
 
@@ -191,17 +191,17 @@ Note too that the communication between the broker and the browsers is done with
 
 We would like to configure our microcontroller to sense or monitor changes in light. Light monitoring has many applications from security to smart farming to home automation to industrial IoT.
 
-1. Hold the Argon breadboard so that row 1 is away and row 30 is near (on the bottom).
-2. Place the Argon bottom on row 26 of the breadboard.
-3. The Argon top will now just cover row 7.
-4. Be sure that you can read the writing on the Argon. It will be right side up.
-5. Place the long leg of the photodiode in row 13, (A0) (on the left of the Argon).
+1. Hold the Photon 2 breadboard so that row 1 is away and row 30 is near (on the bottom).
+2. Place the Photon 2 bottom on row 26 of the breadboard.
+3. The Photon 2 top will now just cover row 7.
+4. Be sure that you can read the writing on the Photon 2. It will be right side up.
+5. Place the long leg of the photodiode in row 13, (A0) (on the left of the Photon 2).
 6. Place the short leg of the photodiode in row 10 (3V3).
 7. Place a 220 ohm resistor in row 12 (GND) and in row 13 (A0).
 8. Your hardware setup should look like the following:
-![Argon Light Monitor](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonLightMonitor.png?raw=true)
+![Photon 2 Light Monitor](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/Photon 2LightMonitor.png?raw=true)
 
-9. We need to flash code that monitors light levels to the Argon. We will name this firmware "LightMonitor". Use the Particle cloud to compile and deploy this firmware to your microcontroller.
+9. We need to flash code that monitors light levels to the Photon 2. We will name this firmware "LightMonitor". Use the Particle cloud to compile and deploy this firmware to your microcontroller.
 
 ```
 // File name: LightMonitor
@@ -227,7 +227,7 @@ void loop() {
 }
 ```
 
-10. To monitor the Argon locally, run the command "particle serial monitor" from the command line interface.
+10. To monitor the Photon 2 locally, run the command "particle serial monitor" from the command line interface.
 
 11. Test your system by changing the lighting near the photodiode and monitoring the numeric light levels on the command line interface. A value near 0 would signal no light and a value of 1000 or so would mean the photodiode is near a light bulb.
 
@@ -238,13 +238,13 @@ void loop() {
 #include <HttpClient.h>
 
 ```
-14. Copy the following code and paste it over the light monitor code in Question 9. It is almost the same code but we have added the logic to perform HTTP post requests with JSON data. The IP address of your machine needs to be included in this code. "Localhost" will not work. "Localhost" would refer to the Argon's IP address.
+14. Copy the following code and paste it over the light monitor code in Question 9. It is almost the same code but we have added the logic to perform HTTP post requests with JSON data. The IP address of your machine needs to be included in this code. "Localhost" will not work. "Localhost" would refer to the Photon 2's IP address.
 
 ```
 // This #include statement was automatically added by the Particle IDE.
 #include <HttpClient.h>
 
-// File name: ArgonSimpleLightMonitor
+// File name: Photon 2SimpleLightMonitor
 // View output from the command line with
 // particle serial monitor
 
@@ -366,7 +366,7 @@ void loop() {
     }
 }
 ```
-15. To check this solution, get Node-RED running and receiving these requests. You will need to create three nodes: an "HTTP IN" node, an "HTTP Response" node, and a "debug" node to view the messages that arrive from the Argon. Be sure to have this working before moving on.
+15. To check this solution, get Node-RED running and receiving these requests. You will need to create three nodes: an "HTTP IN" node, an "HTTP Response" node, and a "debug" node to view the messages that arrive from the Photon 2. Be sure to have this working before moving on.
 
 16. Add a function node in between the "HTTP IN" node and the "debug" node. This function node will add a timestamp to messages going through. Since the microcontroller has specified that the messages are "application/json", Node-RED passes a Javascript object in the msg.payload. In other words, Node-RED has already parsed the incoming string and created a Javascript object. In order to complete this function, you will need to review the Javascript code on Project 1 Part 2. But keep in mind that a Javascript object is already available. Name this node "Add Timestamp".
 
@@ -380,7 +380,7 @@ void loop() {
 
 ### Part 3. Publishing Light Levels to MQTT
 
-1. Add an "MQTT OUT" node to the Node-RED palette. Configure the new node to publish to the topic "argonLightLevel". The quality of service (QoS) is 0 and Mosquitto's port is 1883 running on localhost. The name of this Node is "To MQTT".
+1. Add an "MQTT OUT" node to the Node-RED palette. Configure the new node to publish to the topic "Photon 2LightLevel". The quality of service (QoS) is 0 and Mosquitto's port is 1883 running on localhost. The name of this Node is "To MQTT".
 
 2. Connect your "HTTP IN" node to the "Add Timestamp" node. Connect the "Add Timestamp" node to the "To MQTT" node. Run mosquitto and deploy the flow. You should see events being published to mosquitto every 5 seconds or so.
 
@@ -390,7 +390,7 @@ void loop() {
 
 ### Part 4. Several browsers subscribe to microcontroller light levels
 
-1. Write a web application using Node.js that includes Javascript that subscribes to the topic "argonLightLevel". The Javascript will be included in an HTML file and the browser display will show the changing values as they are reported from the Argon.
+1. Write a web application using Node.js that includes Javascript that subscribes to the topic "Photon 2LightLevel". The Javascript will be included in an HTML file and the browser display will show the changing values as they are reported from the Photon 2.
 
 2. When the HTML runs in the browser, ask the user to provide a client side name. This name will be used to provide the client with a unique identifier as it connects to MQTT. If we do not change the name for each client, MQTT will assume that separate visits are all from the same client and will only respond to the last visitor. In other words, we would only be able to subscribe from one browser instance. We want to have several simultaneous visitors. How you design this input request is in your hands. You will need to work a bit with the HTML and Javascript.
 
@@ -402,7 +402,7 @@ void loop() {
 
 1) [Spend some time reviewing Google Charts.](https://developers.google.com/chart) In particular, we are interested in the Gauge Chart.
 
-2) Write a web application using Node.js. The web application will deliver HTML and Javascript to the browser and the the browser will subscribe to the MQTT "argonLightLevel" topic. Use Google Charts to visualize the data with a gauge chart. Several browser should be able to visit at the same time and view the same gauge.
+2) Write a web application using Node.js. The web application will deliver HTML and Javascript to the browser and the the browser will subscribe to the MQTT "Photon 2LightLevel" topic. Use Google Charts to visualize the data with a gauge chart. Several browser should be able to visit at the same time and view the same gauge.
 
 ![Two browsers subscribe with different ID's.](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/TwoBrowsersSubscribe.png?raw=true)
 
