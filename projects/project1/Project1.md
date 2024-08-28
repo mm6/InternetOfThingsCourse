@@ -79,9 +79,9 @@ To set up your device to be used on Campus, [use this link for the setup](https:
 
 #### Setting up for home Wi-Fi
 
-7) [Connect your Particle Photon 2 to a Wi-Fi router.](https://docs.particle.io/quickstart/Photon 2/)
+7) [Set up your Photon 2](https://docs.particle.io/photon-2/)
 
-It is recommended that you complete this tutorial. That is, blink an LED on your microcontroller as per the instructions in the Photon 2 Quickstart. In addition, carefully read over the documentation in the firmware.
+It is recommended that you complete a tutorial. That is, blink an LED on your microcontroller as per the instructions [here](https://docs.particle.io/getting-started/hardware-tutorials/hardware-examples/)
 
 #### Publish heartbeat messages to the Particle console with an Photon 2
 
@@ -180,7 +180,7 @@ $particle update-cli     Update the CLI
 ```
 [There are plenty of additional CLI commands.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
-[If your Photon 2 appears to be unusable (e.g. blinking red) these directions have been very helpful.](https://support.particle.io/hc/en-us/articles/360045547634-How-can-I-set-up-my-Photon 2-or-Boron-via-USB-)
+[If your Photon 2 appears to be unusable (e.g. blinking red) [these instructions may be of value.](https://docs.particle.io/troubleshooting/guides/device-management/how-can-i-set-up-my-argon-or-boron-via-usb/)
 
 11) Using the Particle console on the cloud, verify that it is receiving the heartbeats from the Photon 2.
 
