@@ -90,7 +90,7 @@ It is recommended that you complete a tutorial. That is, blink an LED on your mi
 ```
 /*
 Author: mm6 with various code snippets taken from Particle.io.
-This firmware generates periodic heartbeats from an Photon 2 to
+This firmware generates periodic heartbeats from a Photon 2 to
 the Particle cloud using Particle.publish(string name,string value).
 The first argument will be the name of the event. The event name is
 'heartbeat'. The second argument will be a JSON string holding
@@ -489,7 +489,7 @@ In this Part, AJAX (Asynchronous Javascript and XML) capabilities are added to t
 
 0) Create an empty directory named Project1_Part6.
 
-1) Add a subdirectory named "public". Inside the public directory, create an index.html file. This file will contain HTML as well as references to two Javascript files: Ajax.js and Photon 2Status.js. The index.html file appears next.
+1) Add a subdirectory named "public". Inside the public directory, create an index.html file. This file will contain HTML as well as references to two Javascript files: Ajax.js and MicrocontrollerStatus.js. The index.html file appears next.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -544,10 +544,10 @@ In this Part, AJAX (Asynchronous Javascript and XML) capabilities are added to t
 </html>
 
 ```
-2) Photon 2Status.js appears next. Be sure to study this code.
+2) MicrocontrollerStatus.js appears next. Be sure to study this code.
 
 ```
-// Photon 2Status.js
+// MicrocontrollerStatus.js
 
 // A call on getStatus causes an HTTP GET request back to the server.
 // The response data is available to the updateStatus function.
