@@ -14,7 +14,7 @@ Office: Hamburg Hall 3015
 
 Phone: 412-268-4657 (Office)
 
-Officer Hours: Monday and Wednesday 2:00 PM - 4:00 PM
+Officer Hours: Tuesday and Thursday 2:00 PM - 4:00 PM
 
 ### Teaching Assistant
 
