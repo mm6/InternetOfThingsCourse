@@ -498,7 +498,7 @@ In this Part, AJAX (Asynchronous Javascript and XML) capabilities are added to t
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <script type="text/javascript" language="javascript" src="Ajax.js"></script>
-  <script type="text/javascript" language="javascript" src="Photon 2Status.js"></script>
+  <script type="text/javascript" language="javascript" src="MicrocontrollerStatus.js"></script>
   <style>
   .button {
     border: none;
