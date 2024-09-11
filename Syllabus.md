@@ -54,6 +54,8 @@ There will be four or five quizzes on the readings at the start of lecture with 
 
 There will be a closed Book Final Exam based on readings, lectures, and programming (45%).
 
+The Final Exam is scheduled on Friday, October 11, 11:00-12:20 PM Room: TBA
+
 ### Late Assignment Policy
 
 You have 7 grace days to spend. This policy is meant to cover such issues as job
