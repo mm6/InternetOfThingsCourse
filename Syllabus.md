@@ -54,7 +54,7 @@ There will be four or five quizzes on the readings at the start of lecture with 
 
 There will be a closed Book Final Exam based on readings, lectures, and programming (45%).
 
-The Final Exam is scheduled on Friday, October 11, 11:00-12:20 PM Room: TBA
+The Final Exam is scheduled on Thursday, October 10, 5:00-6:20 PM Room: HBH 1005
 
 ### Late Assignment Policy
 
