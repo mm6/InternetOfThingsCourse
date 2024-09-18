@@ -404,7 +404,7 @@ void loop() {
 
 2) Write a web application using Node.js. The web application will deliver HTML and Javascript to the browser and the the browser will subscribe to the MQTT "Photon2LightLevel" topic. Use Google Charts to visualize the data with a gauge chart. Several browser should be able to visit at the same time and view the same gauge.
 
-[Two browsers subscribe with different ID's.](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/TwoBrowsersSubscribe.png?raw=true)
+![Two browsers subscribe with different ID's.](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/TwoBrowsersSubscribe.png?raw=true)
 
 These two browsers are each subscribing with a different client ID.
 
