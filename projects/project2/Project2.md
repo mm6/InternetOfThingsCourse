@@ -198,7 +198,7 @@ We would like to configure our microcontroller to sense or monitor changes in li
 5. Place the long leg of the photodiode in row 13, (A0) (on the left of the Photon 2).
 6. Place the short leg of the photodiode in row 10 (3V3).
 7. Place a 230 Ohm resistor (Orange, Orange, Brown, Gold) in row 12 (GND) and in row 13 (A0).
-8. Your hardware setup should look like the following: (Note: The setup on the Argon will be the same as on the Photon 2)
+8. Your hardware setup should look like the following: 
 ![Microcontroller Light Monitor](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/Photon2LightMonitor.jpg?raw=true)
 
 9. We need to flash code that monitors light levels to the microcontroller. We will name this firmware "LightMonitor". Use the Particle cloud to compile and deploy this firmware to your microcontroller.
