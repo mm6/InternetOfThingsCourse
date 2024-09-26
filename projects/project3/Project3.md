@@ -253,7 +253,7 @@ Within Node-RED, expand the "Network" icon on the left and verify the presence o
 
 6. Drag the "BLE In" node onto the palette. Create a wire from the "Inject" node in step 5 to the new "BLE In" node.
 
-7. Doble click the "BLE In" node and select the two check boxes: "Stringify in payload" and "Emit notify events".
+7. Double click the "BLE In" node and select the two check boxes: "Stringify in payload" and "Emit notify events".
 
 8. Double click the "BLE In" node and select the pencil symbol to edit the properties. Select the "BLE Scanning" check box and select "Apply".
 
