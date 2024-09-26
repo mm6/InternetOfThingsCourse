@@ -257,7 +257,7 @@ Within Node-RED, expand the "Network" icon on the left and verify the presence o
 
 8. Double click the "BLE In" node and select the pencil symbol to edit the properties. Select the "BLE Scanning" check box and select "Apply".
 
-9. Run the BLE firmware on the Photon 2 and select the device in the Properties box of the "Edit Generic BLE node" pane. Be sure that the "Emit Notify Events" check box is selected. Note that the "Edit Generic BLE node" pane populates the UUID field.
+9. Run the BLE firmware on the Photon 2 and select the device in the Properties box of the "Edit Generic BLE node" pane. Be sure that the "Emit Notify Events" check box is selected. Note that the "Edit Generic BLE node" pane populates the UUID field. Also note that since there may be many devices around, it may be hard to figure out which one is the Photon 2. In the Generic BLE In node, you can enter the mac address of the device, separated by colons. This will filter on the MAC address.
 
 10. Drag a debug node onto the palette and connect it to the output of the "Generic BLE In" node. In this way, the data that is received over BLE will appear in the debug pane on the right.
 
