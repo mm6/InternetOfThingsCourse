@@ -324,8 +324,7 @@ Finally, to complete our system, use a browser to subscribe to the light values 
 The design of the display is in your hands. GoogleCharts may be used but a real time text display is also sufficient.
 
 
-:checkered_flag:**Submit a screenshot showing a Node-RED flow receiving the light values from the Photon 2 and publishing JSON strings to MQTT. Name the file "Node-RED3.jpg". In edition, provide a screenshot showing the light values displayed on a browser.**
-
+:checkered_flag:**Submit a screenshot showing a Node-RED flow receiving the light values from the Photon 2 and publishing JSON strings to MQTT. Name the file "Node-RED3.jpg". In addition, provide a screenshot showing the light values displayed on a browser. Name this screenshot browser1.jpg.**
 
 ### Troubleshooting
 
