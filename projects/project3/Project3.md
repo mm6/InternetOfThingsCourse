@@ -1,9 +1,9 @@
 
-# 95-733 Internet of Things  NOT YET ASSIGNED
+# 95-733 Internet of Things  
 
-# Project 3 Due: Tuesday, October 8, 2024
+# Project 3 Due: Thursday, October 10, 2024
 
-### Topics: BLE, Node RED, MQTT, the Web, and InfluxDB
+### Topics: BLE, Node RED, MQTT, and the Web
 
 :checkered_flag:**Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project3.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you <em>clearly label</em> each answer with the project part number and question number and that you provide your name and email address at the top of the .pdf.**
 
@@ -11,7 +11,7 @@
 
 In class, we have reviewed the architecture of several IoT platforms: Google's Cloud IoT, AWS's IoT, IBM's Watson IoT, CMU's Sensor Andrew, and CMU's OpenChirp. Each of these included a constrained networking area (the edge), a gateway layer, a publish/subscribe broker, a persistence layer, analytics capabilities and a web front end.
 
-In this project, you will build your own system using the same architecture. The constrained area will use Bluetooth Low Energy (BLE). The gateway tier will use Node-RED. You will use MQTT as your broker and InfluxDB for analytics, storage, and the web dashboard.
+In this project, you will build your own system using the same architecture. The constrained area will use Bluetooth Low Energy (BLE). The gateway tier will use Node-RED. You will use MQTT as your broker and a browser for a web dashboard.
 
 If you are using an Apple MAC, be sure that you have installed Xcode from Apple.
 
@@ -19,18 +19,16 @@ If you are using an Apple MAC, be sure that you have installed Xcode from Apple.
 
 The objective is to gain hands-on experience with a small implementation that includes several important pieces organized in a particular manner - the manner of real world IoT systems. It should be noted that you are not building a secure system - using physical hardening, encryption, and authentication logic.
 
-### Part 1. Programming the Argon to behave as a BLE peripheral device and installing LightBlue to behave as a BLE central device
+### Part 1. Programming the Photon 2 to behave as a BLE peripheral device and installing LightBlue to behave as a BLE central device
 
 A BLE peripheral device offering a service periodically announces its availability to the local environment (a distance of about 10 meters). A central device scans for these advertisements and may chooses to connect to the peripheral. After a connection is established, the peripheral stops advertising its capabilities and begins to behave as a service to the central device - acting as a client.
 
-In Part 1, you will deploy code to the Argon so that it behaves as a peripheral. You will use a phone application as a central device. You will connect to the Argon and receive notifications that will be displayed on the phone.
+In Part 1, you will deploy code to the Photon 2 so that it behaves as a peripheral. You will use a phone application as a central device. You will connect to the Photon 2 and receive notifications that will be displayed on the phone.
 
-The Argon will provide two services but advertise only one. The services will each make available values (called BLE characteristics). Both services and characteristics are associated with unique UUID's.
+The Photon 2 will provide two services but advertise only one. The services will each make available values (called BLE characteristics). Both services and characteristics are associated with unique UUID's.
 
 
-0. Notice that the Argon's antennae can be plugged into a Wi-Fi connection or a BLE connection. Both are available on the Argon. In my work, I found that I was able leave the antennae connected to Wi-Fi only. But others find that it works best if you switch the antennae to BLE. You would switch it back to Wi-Fi before flashing firmware.
-
-1. Study the following BLE peripheral code and flash it to your Argon.
+1. Study the following BLE peripheral code and flash it to your Photon 2.
 
 This code is adapted from the [Argon/BLE tutorial](https://docs.particle.io/tutorials/device-os/bluetooth-le/).
 
@@ -151,7 +149,7 @@ float getTempC() {
 uint32_t ieee11073_from_float(float temperature) {
 	// This code is from the ARM mbed temperature demo:
 	// https://github.com/ARMmbed/ble/blob/master/ble/services/HealthThermometerService.h
-	// I'm pretty sure this only works for positive values of temperature, but that's OK for the health thermometer.
+
 	uint8_t  exponent = 0xFE; // Exponent is -2
 	uint32_t mantissa = (uint32_t)(temperature * 100);
 
@@ -159,7 +157,7 @@ uint32_t ieee11073_from_float(float temperature) {
 }
 
 ```
-<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Argon code to behave as a BLE peripheral </em>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Photon 2 code to behave as a BLE peripheral </em>
 
 2. Note, in particular, how the array named "buf" is defined and used in specific places in the code:
 
@@ -200,7 +198,7 @@ BleCharacteristicProperty::NOTIFY
 
 Using LightBlue, you will need to use the "subscribe" or "listen" selection to receive these values.
 
-:checkered_flag:**Take two screenshots showing LightBlue connected to your Argon. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Argon.**
+:checkered_flag:**Take two screenshots showing LightBlue connected to your Photn 2. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Photon 2.**
 
 ### Part 2. Transmit text over BLE
 
@@ -223,7 +221,7 @@ In Parts 1 and 2 we used LightBlue as the central device. In Part 3, we will use
 0. Restore the firmware to its original state. That is, remove the code that we used to generate a personalized greeting over BLE.
 We are back to generating random temperature values.
 
-1. The goal is to establish a connection between Node-RED and the Argon using BLE. Install two BLE Nodes in Node-RED with the following shell commands:
+1. The goal is to establish a connection between Node-RED and the Photon 2 using BLE. Install two BLE Nodes in Node-RED with the following shell commands:
 ```
 $cd ~/.node-red
 $npm install node-red-contrib-generic-ble
@@ -259,11 +257,11 @@ Within Node-RED, expand the "Network" icon on the left and verify the presence o
 
 8. Double click the "BLE In" node and select the pencil symbol to edit the properties. Select the "BLE Scanning" check box and select "Apply".
 
-9. Run the BLE firmware on the Argon and select the Argon in the Properties box of the "Edit Generic BLE node" pane. Be sure that the "Emit Notify Events" check box is selected. Note that the "Edit Generic BLE node" pane populates the UUID field.
+9. Run the BLE firmware on the Photon 2 and select the device in the Properties box of the "Edit Generic BLE node" pane. Be sure that the "Emit Notify Events" check box is selected. Note that the "Edit Generic BLE node" pane populates the UUID field.
 
 10. Drag a debug node onto the palette and connect it to the output of the "Generic BLE In" node. In this way, the data that is received over BLE will appear in the debug pane on the right.
 
-11. Deploy the flow. To start listening for notifications, click on the far left side of the "Inject node" icon. With the Argon running, you should see the publications (notifications) from the Argon in the debug window.
+11. Deploy the flow. To start listening for notifications, click on the far left side of the "Inject node" icon. With the Photon 2 running, you should see the publications (notifications) from the Photon 2 in the debug window.
 
 12. Add a new "Inject node" and set the msg.topic to the value "disconnect" - without the quotes.
 
@@ -294,9 +292,9 @@ BleUuid lightValueService("beb5483e-36e1-4688-b7f5-ea07361b26a8");
 
 3. Write the necessary firmware to communicate light values to the LightBlue application running on your phone. The hardware will be configured as in Project 2, Part 2.
 
-:checkered_flag:**Submit a screenshot (named LightBlue4.jpg) showing the LightBlue application receiving the light values from the Argon.**
+:checkered_flag:**Submit a screenshot (named LightBlue4.jpg) showing the LightBlue application receiving the light values from the Photon 2.**
 
-4. Develop a Node-RED flow that communicates with the Argon over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following (for various light values. You will use a function node to extract the data from msg.payload and create a new output value for msg.payload. The function node programming is a small exercise.
+4. Develop a Node-RED flow that communicates with the Photon 2 over BLE and that displays the light values in the debug widow of the Node-RED palette. Again, the hardware will be configured as in Project 2, Part 2. You will use the same firmware as that developed in the previous question. The output displayed on the Node-RED debug window should look like the following (for various light values. You will use a function node to extract the data from msg.payload and create a new output value for msg.payload. The function node programming is left as a small exercise.
 
 Your debug node and debug output will appear as in the following picture:
 
@@ -315,97 +313,19 @@ In Part 5 write a Node-RED flow so that Node-RED becomes a gateway device - taki
 
 0. See Project 2 and run an instance of MQTT.
 
-1. Using the Node-RED flow from Part 4, publish the light values read from the sensor on the Argon to MQTT. Use an "mqtt out" node and publish to the topic "lightValues" with a quality of service equal to 0. Set the sever to “localhost:1883” on the "mqtt out" node. This assumes that mosquito is running on that port.
+1. Using the Node-RED flow from Part 4, publish the light values read from the sensor on the Photon 2 to MQTT. Use an "mqtt out" node and publish to the topic "lightValues" with a quality of service equal to 0. Set the sever to “localhost:1883” on the "mqtt out" node. This assumes that mosquito is running on that port.
 
 :checkered_flag:**Submit a screenshot showing Node-RED receiving the light values from the Argon and publishing JSON strings to MQTT. The MQTT window should be visible in your screenshot. Name the file "Node-RED2.jpg".**
 
-### Part 6. Subscribe to MQTT with Node-RED and write to InfluxDB Cloud
+### Part 6. Subscribe to MQTT with a browser and display the light values.
 
-Finally, to complete our system, we include a time series database named InfluxDB (used by CMU's OpenChirp). A time series database is not built on the traditional relational model. Instead, each element has a timestamp and the database is optimized to query the data over specified periods of time.
+Finally, to complete our system, use a browser to subscribe to the light values being generated by the MQTT broker.
 
-A time series database such as InfluxDB can generate analytics of various sorts as well as providing storage and web visualizations.
-
-With respect to IoT, time series databases are used mainly for anomaly detection and prediction. Anomaly detection and prediction have a wide variety of use cases. Here, we will use the web visualization and storage capabilities of InfluxDB.  
-
-0. Make sure that you are in the ~/.node-red directory and [Install the InfluxDB nodes for Node-RED.](https://flows.nodered.org/node/node-red-contrib-influxdb)
-
-1. Using the file system, check if "influx" appears under the node_modules directory and check if the Node-RED palette has new nodes: "influxdb in", "influxdb out" and "influx batch". You may ignore errors if these nodes are on the palette in Node-RED.
-
-2. [Visit this page and create an account on InfluxDB](https://www.influxdata.com/)
-
-3. Choose "Get InfluxDB". Choose "Sign Up". After signing up, notice the URL in your browser. It will
-read something like the following:
-```
-https://us-central1-1.gcp.cloud2.influxdata.com/orgs/b89e7673bd88ee8c
-```
-
-4. In this example, the organization is b89e7673bd88ee8c. Make a copy of your organization string. This will
-be needed when you configure the InfluxDB out node.
-
-5. In this example, the URL is https://us-central1-1.gcp.cloud2.influxdata.com/. Make a copy of your URL string. This will be needed when you configure the InfluxDB out node.
-
-6. Using InfluxDB, create a bucket with a name with no spaces. For example, a bucket name might be "MyCoolBucket".
-This will also be needed in the InfluxDB out node.
-
-7. Using InfluxDB, create an API token. This will also be needed in the InfluxDB out node.
-
-To create an API token, use the "data" tab and choose "tokens" and copy the generated value. You will paste this token into the Node-RED "InfluxDB out" node settings.
-
-8. In Node-RED, drag an "mqtt in" node onto the palette. This begins a new flow but may appear on the same palette as your previous work. This node will subscribe to the topic "lightValues" that are being published by the "mqtt out" node from Part 5. The output of the "mqtt in" node should be set to "parsed JSON object". Connect the "mqtt in" node to a debug node.
-
-:checkered_flag:**Submit a screenshot showing a Node-RED flow receiving the light values from the Argon and publishing JSON strings to MQTT. A second flow will also be on the Node-RED palette and this flow will subscribe to the values being published by the first flow. The output of the second flow will appear on the debug pane. Name the file "Node-RED3.jpg".**
-
-9. In Node-RED, drag an "InfluxDB out" node onto the palette. Use this new node to write data values to InfluxDB. The "InfluxDB out" node should have its version set to 2.0 in settings. See the image below.
-
-<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/SecondFlowToSubcribeAndWriteToInfluxDB.png" alt="Two flows in Node-RED" width="800" height="400"/>  
-
-<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two Node_RED flows. The bottom flow is writing data to InfluxDB</em>   
+The design of the display is in your hands. GoogleCharts may be used but a real time text display is also sufficient.
 
 
-7. Using InfluxDB, build a simple query in the "Data Explorer" and generate visualizations of the light value data. To execute an InfluxDB query, you will select a "From" bucket, the "_measurement" of "lightValue" and the "filter" of "lightValue". Hit the submit button and generate a graph of light values.
+:checkered_flag:**Submit a screenshot showing a Node-RED flow receiving the light values from the Photon 2 and publishing JSON strings to MQTT. Name the file "Node-RED3.jpg". In edition, provide a screenshot showing the light values displayed on a browser.**
 
-<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/ArgonOverBLE_to_NR_to_MQTT_to_NR_to_Influxdb.png" alt="InfluxDB Graph of Light Values" width="800" height="400"/>  
-
-<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An InfluxDB graph displaying simulated (random 1..100) light values from Node-RED</em>
-
-8. Real time data is also available on InfluxDB.
-
-a. You will notice that your graph is updated only after hitting the submit button. In order to see a live graph, we will build a dashboard.
-
-b. Select the “Boards” icon on the left. On the “Dashboards” screen, select “+ Create Dashboard”. This button is on the top right. Choose “New Dashboard”. Name this dashboard “LivelyDashboard”. Do this naming on the upper left.
-
-c. Choose “add cell” and name the cell “LivelyGaugeDashboardCell”. Select the Gauge option.
-
-d. Create a query for light values as you did before. Select the Aggregate Function as “last”. Click “Submit” and click the checkmark.
-
-e.	Click “Enable Auto Refresh” and choose to refresh every 5 seconds. After you click “confirm”, the cell in your dashboard should now refresh every 5 seconds.
-
-f. It is an easy matter to create several dashboards - all changing as events arrive.
-
-:checkered_flag:**Submit a screenshot showing an InfluxDB gauge receiving the light values from Node-RED. Note, this question is asking for a gauge rather than a graph. Name the file "InfluxDBGauge.jpg".**
-
-:checkered_flag:**Summary: On a single pdf named Your_Last_Name_First_Name_Project3.pdf, include the following clearly labelled files (10 points each):**
-
-
-LightBlue1.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Screen shot of phone connection
-
-LightBlue2.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Screen shot of phone details
-
-HelloCode.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Firmware code for Hello
-
-LightBlue3.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Hello shown on LightBLUE
-
-LightBlue4.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Light values in LightBlue
-
-Node-RED1.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Light value flow with debug pane
-
-Javascript1.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      Node-RED function node Javascript
-
-Node-RED2.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        NR to MQTT screenshot
-
-Node-RED3.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        containing two flows - pub and sub
-
-InfluxDBGauge.jpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    an InfluxDB Gauge
 
 ### Troubleshooting
 
@@ -423,7 +343,6 @@ My npm version looks like this:
 npm --version
 8.5.5
 ```
-
 
 On a MAC, you will need to have X-Code installed.
 
