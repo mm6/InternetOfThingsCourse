@@ -12,5 +12,4 @@
 + [Week 4](./Weeks/week4.md) Tuesday September 17, Thursday September 19
 + [Week 5](./Weeks/week5.md) Tuesday September 24, Thursday September 26
 + [Week 6](./Weeks/week6.md) Tuesday October 1, Thursday October 3
-+ [Week 7](./Weeks/week7.md) Tuesday October 8, Thursday October 10
-+ [Week 8](./Weeks/week8.md) Final Exam Friday October 11, time and place TBA
++ [Week 7](./Weeks/week7.md) Tuesday October 8, Thursday October 10 (Final Exam Thursday during class time in our regular room)
