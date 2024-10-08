@@ -13,9 +13,10 @@ In Week 6 we discuss W3C architecture patterns for the Web of Things.
 
 ## Required readings
 
-
+There are no required reading for next week. It is a good time to review for the final exam.
+<!--
 + [Self-sovereign identity at Computerworld](https://www.computerworld.com/article/3244128/how-blockchain-makes-self-sovereign-identities-possible.html)
-
+-->
 ## Project
 
 + There is no project assigned during week 6.
