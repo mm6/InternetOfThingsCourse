@@ -14,7 +14,6 @@ In week 7 we will discuss smart city use cases and review for the final exam.
 + [Microsoft Identity - short video](https://www.microsoft.com/en-us/security/business/solutions/decentralized-identity)
 -->
 + [Smart Cities](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_Smart_Cities.pdf)
-+ [Transportation use case](https://www.eenewseurope.com/en/worlds-first-driverless-public-parking-system-rolls-out/)
 
 
 <!--
@@ -45,7 +44,7 @@ In week 7 we will discuss smart city use cases and review for the final exam.
 + [21_StudentPresentations](https://heinzcollege.mediasite.com/Mediasite/Play/32d1d07e8dfe4280aa1d56064b9983e91d)
 -->
 ## Optional Readings
-
++ [Transportation use case](https://www.eenewseurope.com/en/worlds-first-driverless-public-parking-system-rolls-out/)
 + [NYC Smart City](https://www.smartcitiesdive.com/news/nyc-smart-city-testbed-technology-first-pilots/696366)
 + [IoT Reference Architecture from IBM](https://www.ibm.com/cloud/architecture/architectures/iotArchitecture/reference-architecture/)
 + [IoT Reference Architecture from Microsoft](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/iot)
