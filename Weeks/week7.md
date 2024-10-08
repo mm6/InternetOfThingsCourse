@@ -4,17 +4,15 @@
 
 ## Topics
 
-In week 7 we discuss Self-Sovereign Identity (SSI) using blockchain technology.
-We consider how SSI might be used in IoT.
-
-We also discuss smart city use cases and we review for the final exam.
+In week 7 we will discuss smart city use cases and review for the final exam.
 
 ## Slides
 
+<!--
 + [IoT and Self Sovereign Identity](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_IoTandSelfSovereignIdentity.pdf)
 
 + [Microsoft Identity - short video](https://www.microsoft.com/en-us/security/business/solutions/decentralized-identity)
-
+-->
 + [Smart Cities](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_Smart_Cities.pdf)
 
 
@@ -22,7 +20,7 @@ We also discuss smart city use cases and we review for the final exam.
 + [Flow Programming and Edge Analytics](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/07_FlowProgramming.pdf)
 -->
 
-## Required readings
+## Optional reading
 
 + [Smart Cities and IoT](https://www.tandfonline.com/doi/full/10.1080/15228053.2019.1587572)
 
@@ -32,8 +30,10 @@ We also discuss smart city use cases and we review for the final exam.
 
 ## Quizzes
 
++ There is no quiz during Week 7.
+<!--
 + Quiz 6 on self-sovereign identity article from Computerworld.
-
+-->
 <!--
 ## Video Lectures
 
