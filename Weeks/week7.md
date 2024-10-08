@@ -14,6 +14,7 @@ In week 7 we will discuss smart city use cases and review for the final exam.
 + [Microsoft Identity - short video](https://www.microsoft.com/en-us/security/business/solutions/decentralized-identity)
 -->
 + [Smart Cities](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/06_Smart_Cities.pdf)
++ [Transportation use case](https://www.eenewseurope.com/en/worlds-first-driverless-public-parking-system-rolls-out/)
 
 
 <!--
