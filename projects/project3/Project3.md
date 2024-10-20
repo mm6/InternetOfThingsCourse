@@ -179,7 +179,7 @@ buf[5] = 6; // buf[5] is used to hold a standard code for body location
 
 The buf array is used to hold the data that is passed over the BLE signal. The memcpy() call places 4 bytes from the "value" variable into the array starting at position 1. These four bytes will change often. The buf array at positions 0 and 5 are set according to standard settings for body temperature sensors. They will remain constant and are used for metadata, e.g., the temperature was taken in celsius and was monitored from the mouth. The receiver will have to know how to interpret the arriving bits.
 
-3. Test your Argon's BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Argon. LightBlue will act as a BLE central device and will scan for peripheral advertisements.
+3. Test your Photon 2s BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Photon 2. LightBlue will act as a BLE central device and will scan for peripheral advertisements.
 
 Note that this may require a bit of browsing with LightBlue to find the right BLE source. The dBm value (decibels relative to one milliwatt) is used to define the strength of the BLE signal. Anything greater than -75 dBm is considered a reliable signal. The closer that you get to 0, the more reliable the signal. On LightBlue's PunchThrough application, you can use signal strength to help locate which signal is coming from your Argon.
 
