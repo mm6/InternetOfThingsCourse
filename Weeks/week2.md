@@ -85,6 +85,8 @@ Javascript is used to program individual nodes.
 
 + [IOT Security Standards body](https://www.ioxtalliance.org/)
 
++ [IOT and Cryptography](https://www.nist.gov/news-events/news/2025/08/nist-finalizes-lightweight-cryptography-standard-protect-small-devices)
+
 + [European Union Agency for CyberSecurity - IoT Security](https://www.enisa.europa.eu/publications/guidelines-for-securing-the-internet-of-things)
 
 + [Kudelski on IoT Security](https://www.kudelski-iot.com/)

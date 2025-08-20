@@ -181,9 +181,9 @@ The buf array is used to hold the data that is passed over the BLE signal. The m
 
 3. Test your Photon 2s BLE code by [installing the LightBlue PunchThrough app](https://punchthrough.com/lightblue/) on your phone and making a BLE connection to your Photon 2. LightBlue will act as a BLE central device and will scan for peripheral advertisements.
 
-Note that this may require a bit of browsing with LightBlue to find the right BLE source. The dBm value (decibels relative to one milliwatt) is used to define the strength of the BLE signal. Anything greater than -75 dBm is considered a reliable signal. The closer that you get to 0, the more reliable the signal. On LightBlue's PunchThrough application, you can use signal strength to help locate which signal is coming from your Argon.
+Note that this may require a bit of browsing with LightBlue to find the right BLE source. The dBm value (decibels relative to one milliwatt) is used to define the strength of the BLE signal. Anything greater than -75 dBm is considered a reliable signal. The closer that you get to 0, the more reliable the signal. On LightBlue's PunchThrough application, you can use signal strength to help locate which signal is coming from your Photon 2.
 
-To help you connect with LightBlue, you might also want to look at the BLE MAC address being used by your Argon. A device may have several different MAC addresses. To view your BLE MAC in a terminal, you can use this line of C++ code in your firmware:
+To help you connect with LightBlue, you might also want to look at the BLE MAC address being used by your Photon 2. A device may have several different MAC addresses. To view your BLE MAC in a terminal, you can use this line of C++ code in your firmware:
 ```
 Serial.printlnf("BLE MAC address: %s ",BLE.address().toString().c_str());
 
@@ -198,7 +198,7 @@ BleCharacteristicProperty::NOTIFY
 
 Using LightBlue, you will need to use the "subscribe" or "listen" selection to receive these values.
 
-:checkered_flag:**Take two screenshots showing LightBlue connected to your Photn 2. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Photon 2.**
+:checkered_flag:**Take two screenshots showing LightBlue connected to your Photon 2. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Photon 2.**
 
 ### Part 2. Transmit text over BLE
 
