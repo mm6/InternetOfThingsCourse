@@ -5,6 +5,7 @@
 
 + [Course Description](./CourseDescription.md)
 + [Syllabus](./Syllabus.md)
++ [Text](./textbook/text.md)
 + Class meeting times: Tuesday, Thursday 5:00 - 6:20 PM HBH 1005
 + [Week 1](./Weeks/week1.md) Tuesday August 27, Thursday August 29
 + [Week 2](./Weeks/week2.md) Tuesday September 3, Thursday September 5
