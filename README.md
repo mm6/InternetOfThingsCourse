@@ -1,12 +1,12 @@
 
 # Carnegie Mellon University
 
-# 95-733/95-433 Fall 2024 Mini 1 Internet of Things Outline
+# 95-733/95-433 Fall 2025 Mini 2 Internet of Things Outline
 
 + [Course Description](./CourseDescription.md)
 + [Syllabus](./Syllabus.md)
 + [Text](./textbook/text.md)
-+ Class meeting times: Tuesday, Thursday 5:00 - 6:20 PM HBH 1005
++ Class meeting times: Tuesday, Thursday 5:00 - 6:20 PM HBH 2009
 + [Week 1](./Weeks/week1.md) Tuesday August 27, Thursday August 29
 + [Week 2](./Weeks/week2.md) Tuesday September 3, Thursday September 5
 + [Week 3](./Weeks/week3.md) Tuesday September 10, Thursday September 12
