@@ -7,10 +7,10 @@
 + [Syllabus](./Syllabus.md)
 + [Text](./textbook/text.md)
 + Class meeting times: Tuesday, Thursday 5:00 - 6:20 PM HBH 2009
-+ [Week 1](./Weeks/week1.md) Tuesday August 27, Thursday August 29
-+ [Week 2](./Weeks/week2.md) Tuesday September 3, Thursday September 5
-+ [Week 3](./Weeks/week3.md) Tuesday September 10, Thursday September 12
-+ [Week 4](./Weeks/week4.md) Tuesday September 17, Thursday September 19
-+ [Week 5](./Weeks/week5.md) Tuesday September 24, Thursday September 26
-+ [Week 6](./Weeks/week6.md) Tuesday October 1, Thursday October 3
-+ [Week 7](./Weeks/week7.md) Tuesday October 8, Thursday October 10 (Final Exam Thursday during class time in our regular room)
++ [Week 1](./Weeks/week1.md) Tuesday October 21, Thursday October 23
++ [Week 2](./Weeks/week2.md) Tuesday October 28, Thursday October 30
++ [Week 3](./Weeks/week3.md) Tuesday November 4, Thursday November 6
++ [Week 4](./Weeks/week4.md) Tuesday November 11, Thursday November 13
++ [Week 5](./Weeks/week5.md) Tuesday November 18, Thursday November 20
++ [Week 6](./Weeks/week6.md) Tuesday November 25, Thursday November 27 No class
++ [Week 7](./Weeks/week7.md) Tuesday December 2, Thursday December 4 (Final Exam Date and time to be announced)
