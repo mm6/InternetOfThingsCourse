@@ -43,6 +43,7 @@ ability, speak with your instructor.
 ### Assignments
 
 There will be three programming projects equally weighted (40%).
+The third project will be a small group project with a short presentation.
 
 <!--
 You may replace the third project with a presentation on an IoT related topic. The presentation might demonstrate an interesting technology in action or might be a review of a published paper.
