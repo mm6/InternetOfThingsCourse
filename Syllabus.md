@@ -104,7 +104,7 @@ In Person Expectation
 
 Fall 2025 Mini 2
 
-Tuesday, Thursday 5:00 PM - 6:20 PM HBH Room 1005
+Tuesday, Thursday 5:00 PM - 6:20 PM HBH Room 2009
 
 ### Grading Scale
 
