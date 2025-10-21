@@ -1,6 +1,6 @@
-# 95-733/95-433 Internet of Things, Fall Mini 1, 2024
+# 95-733/95-433 Internet of Things, Fall Mini 2, 2025
 
-## Project 1 Due: Tuesday, September 10, 2024
+## Project 1 Due: Tuesday, November 4, 2025
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project1.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
@@ -62,7 +62,7 @@ We will be programming the Photon 2 microcontroller by developing our firmware c
 
 5) [Install the Particle Command Line Interface (CLI) by following these directions.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
-#### On Campus CMU Wi-Fi registration needs performed once only
+#### On Campus CMU Wi-Fi registration needs performed once only. We have already registered your device with CMU Device. Therefore, you may safely skip step 6.
 
 6) [If you plan to use the Photon 2 on Campus - with CMU's Wi-Fi, the device needs to be registered as a wireless device on CMU-DEVICE.](https://www.cmu.edu/computing/services/endpoint/network-access/wireless/how-to/cmudevice.html) Do this only after you have a working CLI.
 
