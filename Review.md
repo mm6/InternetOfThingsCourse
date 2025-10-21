@@ -121,7 +121,6 @@
 
 ### Self-sovereign Identity and Blockchains lecture notes
 
-Not for Fall 2024
 + SSI Offline
 + SSI Online
 + Existing systems and standards

@@ -54,7 +54,7 @@ There will be four or five quizzes on the readings at the start of lecture with 
 
 There will be a closed Book Final Exam based on readings, lectures, and programming (45%).
 
-The Final Exam is scheduled on Thursday, October 10, 5:00-6:20 PM Room: HBH 1005
+The Final Exam date and time are to be announced.
 
 ### Late Assignment Policy
 
@@ -102,7 +102,7 @@ In Person Expectation
 
 ### Time and Place
 
-Fall 2024 Mini 1
+Fall 2025 Mini 2
 
 Tuesday, Thursday 5:00 PM - 6:20 PM HBH Room 1005
 
@@ -127,6 +127,8 @@ Tuesday, Thursday 5:00 PM - 6:20 PM HBH Room 1005
 70.0 - 72.4 C-
 
 ### Recommended Text/Resources
+
++ [Concise Guide to Internet of Things](https://link.springer.com/book/10.1007/978-3-031-57342-2)
 
 + We will be using Node for web sites:[ Visit Node](https://nodejs.org/en/about/)
 
