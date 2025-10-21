@@ -28,6 +28,8 @@ correct one to use in designing an interoperable internet of things - a web of t
 ## Required readings for next week's quiz
 
 + [Enabling The Internet of Things (a central article for the mini)](https://www.andrew.cmu.edu/user/mm6/95-733/iot/Enabling_the_Internet_of_Things.pdf)
+
+## Optional reading if you have free articles available 
 + [Smart Connected Products (Read up to but not including "Reshaping Industry Structure")](https://hbr.org/2014/11/how-smart-connected-products-are-transforming-competition)
 
 
