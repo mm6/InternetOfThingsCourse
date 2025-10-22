@@ -904,6 +904,6 @@ node server.js
 
 12) Vist the web site at http://localhost:8080 and heartbeats should appear on the Microcontroller Status Page as they arrive.
 
-13) Make the necessary modifications so that we we receive the message "Suspected Failure" if we hear nothing from Node-RED.
+13) Make the necessary modifications so that we receive the message "Suspected Failure" if we hear nothing from Node-RED.
 
 :checkered_flag:**Take three screenshots. The first will show the browser screen with the Microcontroller Status page and a timestamp of a recent visit. The second will show a "suspected failure" message. Name these screenshots Project1Part7BrowserA.png and Project1Part7BrowserB.png. The third will show the Node-RED palette and the debug window. Name this screenshot Project1Part7Node-RED.png. These screenshots should make it clear to the grader that you have a working system. In addition, provide a copy of the modified server.js - with the suspected failure logic described in step 13.**
