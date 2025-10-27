@@ -477,7 +477,8 @@ return msg;
 
 7) Deploy the new flow. Visit the web service with a browser and monitor heartbeats.
 
-8) If everything above is working well, it is time to make the appropriate changes to the app.get method so that it responds with a "suspected failure" message if Node-RED has not called in the last 12 seconds. Node-RED may not have called because the microcontroller has not called Node-RED. Or, perhaps, Node-RED is down. Plug and unplug your microcontroller to test this case.
+8) If everything above is working well, it is time to make the appropriate changes to the app.get and app.post methods so that our app.get responds with a "suspected failure" message if Node-RED has not called in the last 12 seconds. Node-RED may not have called because the microcontroller has not called Node-RED. Or, perhaps, Node-RED is down. Plug and unplug your microcontroller to test this case.
+
 
 :checkered_flag:**Take three screenshots. The first will show the browser screen with a timestamp of a recent visit. The second will show a "suspected failure" message. Name these screenshots Project1Part5BrowserA.png and Project1Part5BrowserB.png. The third will show the Node-RED palette and the debug window with responses coming from the web service. Name this screenshot Project1Part5Node-RED.png. These screenshots should make it clear to the grader that you have a working system. In addition, provide a copy of viewLastHeartBeat.js - with the modifications made in step 8.**
 
@@ -907,3 +908,8 @@ node server.js
 13) Make the necessary modifications so that we receive the message "Suspected Failure" if we hear nothing from Node-RED.
 
 :checkered_flag:**Take three screenshots. The first will show the browser screen with the Microcontroller Status page and a timestamp of a recent visit. The second will show a "suspected failure" message. Name these screenshots Project1Part7BrowserA.png and Project1Part7BrowserB.png. The third will show the Node-RED palette and the debug window. Name this screenshot Project1Part7Node-RED.png. These screenshots should make it clear to the grader that you have a working system. In addition, provide a copy of the modified server.js - with the suspected failure logic described in step 13.**
+
+FAQ
+
+(1) On Particle, a device must be unclaimed by Alice before being claimed by Bob.
+(2) In addition, if Alice has the device in a Particle product, it must be removed from the product (by Alice) before being claimed by Bob.

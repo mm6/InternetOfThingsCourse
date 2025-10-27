@@ -1,8 +1,8 @@
-# 95-733 Internet of Things Mini 5 2022
+# 95-733/95-433 Internet of Things Mini 2 2025
 
-## Directions for students with no Argon
+## Directions for students with no working Photon 2
 
-## Project 1  Due: Wednesday, June 1, 2022
+## Project 1  Due: Tuesday, November 4, 2025
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project1.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
@@ -14,13 +14,26 @@ In order to quickly build web sites, we will use Node.js and Express.
 
 In order to route and process IoT messages, we will use Node-RED.
 
-These directions assume that you have no Argon. We will simulate the behavior of an Argon by
+These directions assume that you have no Photon 2. We will simulate the behavior of a Photon 2 by
 building a node-red flow that publishes messages to Particle.
 
 
 0) [Follow these directions and install Node.js.](https://nodejs.org/en/download/)
 
 1) The node package manager (npm) was installed as part of node.js in step 0. Next, use npm to install Node-RED locally on your laptop or desktop machine.
+
+But note that we must first downgrade our npm. The default that comes with Node.js is too high of a version.
+
+On Mac OSX, downgrade our npm by running the shell command:
+```
+sudo npm install -g npm@8.19.4
+```
+On Windows, downgrade our npm by running the shell command:
+```
+npm install -g npm@8.19.4
+
+```
+Now, install node-red.
 
 On Mac OSX, run the shell command:
 ```
@@ -43,9 +56,9 @@ npm install -g --unsafe-perm node-red
    http://127.0.0.1:1880/
 ```
 
-4) [Establish credentials at Particle.io](https://www.particle.io/)
+4) [Establish credentials at Particle.io](https://www.particle.io/). Our primary tool on Particle will be the web IDE.
 
-5) Our goal is for Node-RED to publish messages to and receive messages from the Particle console. These heartbeat messages will be published to the Particle console by Node-RED. The publications will be used to simulate an Argon. And we want Node-RED to hear about (subscribe to) these messages (heartbeats). [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Particle Cloud to Node-RED. Read about Node-RED and how Node-RED can be integrated with the Particle Cloud.](https://docs.particle.io/community/node-red/)
+5) Our goal is for Node-RED to publish messages to and receive messages from the Particle console. These heartbeat messages will be published to the Particle console by Node-RED. The publications will be used to simulate a Photon 2. And we want Node-RED to hear about (subscribe to) these messages (heartbeats). [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Particle Cloud to Node-RED. Read about Node-RED and how Node-RED can be integrated with the Particle Cloud.](https://docs.particle.io/community/node-red/)
 
 6) Particle provides a set of nodes that can be used in a Node-RED flow to communicate with
 Particle. Our goal is to establish these new Particle nodes and make them available to Node-RED.
@@ -77,7 +90,7 @@ Particle. Our goal is to establish these new Particle nodes and make them availa
 
     Select I've copied my Secret
 
-8) Now, to simulate an Argon, we need to publish events to Particle. Drag an inject node onto the Node-RED palette.
+8) Now, to simulate a Photon 2, we need to publish events to Particle. Drag an inject node onto the Node-RED palette.
 Double click this node for node configuration. Configure it with a message.payload of {"deviceID":"650234"}. The type of this payload is string. Select inject once every 10 seconds with a repeat interval of every 10 seconds. Drag a second node onto the palette. This node will be a Particle publish node. Double click it and choose the pencil icon next to the Auth text box. Fill in the client ID and client secret (you should have copied these in step 7). Connect the inject node to the publish node. Deploy the flow to the Node-RED server. You should now be publishing heartbeats to Particle every 10 seconds.
 
 
@@ -91,13 +104,13 @@ After completing the work in step 10, you should have a Node-RED platform receiv
 
 The Node-RED palette has two flows. One that publishes to Particle and one that subscribes. The Node-RED palette should have a subscribe node wired to a debug node.
 
-:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Argon simulation (by simulation) . Name your screenshot Project1Part1.png.**
+:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the simulated Photon 2 . Name your screenshot Project1Part1.png.**
 
 ### Part 2: Node-RED Programming
 
 #### Working with flows
 
-0) The objective of this part is to gain skills in the creation and execution of Node-RED flows. We will work with the heartbeat data that we are receiving from our Particle Argon simulation. This is a continuation from our work in Part 1. [Follow this link for a good place to learn about Node-RED and its capabilities.](https://nodered.org/docs/)
+0) The objective of this part is to gain skills in the creation and execution of Node-RED flows. We will work with the heartbeat data that we are receiving from our Photon 2 simulation. This is a continuation from our work in Part 1. [Follow this link for a good place to learn about Node-RED and its capabilities.](https://nodered.org/docs/)
 
 1) Wire a function node in between your subscribe node and your debug node. The function node will add a timestamp to the incoming message. Study this code and use it in your function node:
 
@@ -116,9 +129,9 @@ msg.payload = JSON.stringify(newMessage);
 return msg;
 ```
 
-2) Add another function node that checks the timestamp. If the current message arrived late (after 12 seconds) then set a variable named "onTime" to false, otherwise set the "onTime" variable to true. Include the new "onTime" field and its value in the json message that leaves this node. Note: the very first message to arrive is never late. You can test this flow by changing you inject node (for publishing to Particle) to be disabled and redeploying your Argon simulation. You will need to think a bit about how to do this programming. Javascript is good at handling dates and it is easy to subtract one date from another. But you will need to research this a bit. [Here is another resource that you might find helpful.](https://nodered.org/docs/user-guide/writing-functions#storing-data)
+2) Add another function node that checks the timestamp. If the current message arrived late (after 12 seconds) then set a variable named "onTime" to false, otherwise set the "onTime" variable to true. Include the new "onTime" field and its value in the json message that leaves this node. Note: the very first message to arrive is never late. You can test this flow by changing you inject node (for publishing to Particle) to be disabled and redeploying your simulation. You will need to think a bit about how to do this programming. Javascript is good at handling dates and it is easy to subtract one date from another. But you will need to research this a bit. [Here is another resource that you might find helpful.](https://nodered.org/docs/user-guide/writing-functions#storing-data)
 
-:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Argon simulation. The debug panel should show messages that were on time and some that were not on time. Name your screenshot Project1Part2.png.**
+:checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Photn 2 simulation. The debug panel should show messages that were on time and some that were not on time. Name your screenshot Project1Part2.png.**
 
 ### Part 3: Build a web site using Node.js
 
@@ -316,7 +329,7 @@ app.use(bodyParser.json() );
 app.get('/ViewLastHeartBeat', (req, res) => {
   console.log('Browser visit for last heartbeat');
   // respond to browser
-  res.send('Last time Argon simulation visited via Node-RED ' + lastVisit);
+  res.send('Last time Photon 2 simulation visited via Node-RED ' + lastVisit);
 })
 
 // This function is called with an HTTP POST by Node-RED.
@@ -329,7 +342,7 @@ app.post('/SetNewHeartBeat', function (req, res) {
   console.log(req.body.deviceID)
   lastVisit = req.body.time;
   // respond to Node-RED
-  res.send('Argon simulation update received');
+  res.send('Photon 2 simulation update received');
 })
 
 app.listen(port, () => {
@@ -354,7 +367,7 @@ return msg;
 
 7) Deploy the new flow. Visit the web service with a browser and monitor heartbeats.
 
-8) If everything above is working well, it is time to make the appropriate changes to the app.get method so that it responds with a "suspected failure" message if Node-RED has not called in the last 12 seconds. Node-RED may not have called because the microcontroller has not called Node-RED. Or, perhaps, Node-RED is down. Plug and unplug your microcontroller to test this case.
+8) If everything above is working well, it is time to make the appropriate changes to the app.get and app.post methods so that our app.get responds with a "suspected failure" message if Node-RED has not called in the last 12 seconds. Node-RED may not have called because the microcontroller has not called Node-RED. Or, perhaps, Node-RED is down. Plug and unplug your microcontroller to test this case.
 
 :checkered_flag:**Take three screenshots. The first will show the browser screen with a timestamp of a recent visit. The second will show a "suspected failure" message. Name these screenshots Project1Part5BrowserA.png and Project1Part5BrowserB.png. The third will show the Node-RED palette and the debug window with responses coming from the web service. Name this screenshot Project1Part5Node-RED.png. These screenshots should make it clear to the grader that you have a working system. In addition, provide a copy of viewLastHeartBeat.js - with the modifications made in step 8.**
 
@@ -421,10 +434,10 @@ In this Part, AJAX (Asynchronous Javascript and XML) capabilities are added to t
 </html>
 
 ```
-2) Argon simulationStatus.js appears next. Be sure to study this code.
+2) Photon 2 simulationStatus.js appears next. Be sure to study this code.
 
 ```
-// Argon simulationStatus.js
+// simulationStatus.js
 
 // A call on getStatus causes an HTTP GET request back to the server.
 // The response data is available to the updateStatus function.
@@ -784,3 +797,8 @@ node server.js
 13) Make the necessary modifications so that we we receive the message "Suspected Failure" if we hear nothing from Node-RED.
 
 :checkered_flag:**Take three screenshots. The first will show the browser screen with the Microcontroller Status page and a timestamp of a recent visit. The second will show a "suspected failure" message. Name these screenshots Project1Part7BrowserA.png and Project1Part7BrowserB.png. The third will show the Node-RED palette and the debug window. Name this screenshot Project1Part7Node-RED.png. These screenshots should make it clear to the grader that you have a working system. In addition, provide a copy of the modified server.js - with the suspected failure logic described in step 13.**
+
+FAQ
+
+(1) On Particle, a device must be unclaimed by Alice before being claimed by Bob.
+(2) In addition, if Alice has the device in a Particle product, it must be removed from the product (by Alice) before being claimed by Bob.
