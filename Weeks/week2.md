@@ -53,7 +53,7 @@ Javascript is used to program individual nodes.
 ## Quizzes
 
 + Quiz 1 is on Canvas at the start of class on Tuesday.
-+ Quiz 1 Covers "Smart Connected Products" and "Enabling the Internet of Things".
++ Quiz 1 Covers "Enabling the Internet of Things".
 
 ## Video Lectures
 <!--
