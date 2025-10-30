@@ -18,9 +18,9 @@ Officer Hours: Tuesday and Thursday 2:00 PM - 4:00 PM
 
 ### Teaching Assistant
 
-Name: TBA
+Name: Aarvin George Poozhikala 
 
-Email: TBA
+Email: apoozhik@andrew.cmu.edu
 
 Office Hours: See Canvas
 
