@@ -55,6 +55,8 @@ browser.
 
 ## Optional Readings
 
++ [MQTT introduction](https://www.hivemq.com/mqtt/)
+
 + [Working with websockets in Java](http://www.byteslounge.com/tutorials/java-ee-html5-websockets-encoder-and-decoder-example)
 
 + [MQTT Specification](http://public.dhe.ibm.com/software/dw/webservices/ws-mqtt/MQTT_V3.1_Protocol_Specific.pdf)
