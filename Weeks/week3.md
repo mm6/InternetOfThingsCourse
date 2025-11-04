@@ -29,7 +29,7 @@ browser.
 
 + [People, Places, Things: Web Presence for the Real World](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=895378)
 
-+ [MQTT Essential](https://www.hivemq.com/blog/mqtt-essentials-part-1-introducing-mqtt/)
++ [MQTT Essentials](https://www.hivemq.com/blog/mqtt-essentials-part-1-introducing-mqtt/)
 
 ## Project
 
