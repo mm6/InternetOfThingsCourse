@@ -27,19 +27,20 @@ browser.
 + [Publish/Subscribe with MQTT](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/03_MQTT.pdf)
 
 
-## Required readings
+## Required readings for next week
 
 + [People, Places, Things: Web Presence for the Real World](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=895378)
 
-
-+ [MQTT Tutorial](http://www.hivemq.com/mqtt-essentials/)
++ [MQTT Essential](https://www.hivemq.com/blog/mqtt-essentials-part-1-introducing-mqtt/)
 
 ## Project
 
+<!--
 + [Project 2 Publish subscribe](../projects/project2/Project2.md)
 
 
 + Project 1 Due Midnight February 1, 2023
+-->
 
 ## Quizzes
 
