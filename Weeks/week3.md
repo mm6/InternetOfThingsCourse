@@ -62,6 +62,6 @@ browser.
 
 + [Sparkplug B defines MQTT best practices - what a message contains](https://www.cirrus-link.com/mqtt-sparkplug-tahu/)
 
-+ [Internet of Things Landscape](http://mattturck.com/wp-content/uploads/2016/03/Internet-of-Things-2016.png)
++ [Internet of Things Landscape](https://iot-analytics.com/iot-startup-landscape/)
 
 + [Video: MQTT at Google](https://www.youtube.com/watch?v=7kcDL5BDe0s)
