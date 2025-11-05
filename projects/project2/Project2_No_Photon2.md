@@ -3,7 +3,7 @@
 
 # Project 2 Due: Tuesday, November 25, 2025
 
-### Topics: MQTT, Particle Argon Simulation, Node-RED, Node.js, Google Charts
+### Topics: MQTT, Particle Photon 2 Simulation, Node-RED, Node.js, Google Charts
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project2.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
@@ -20,7 +20,7 @@ MQTT is targeted at low power, constrained, unreliable devices. It will likely p
 
 The second objective is to learn the Google Charts Javascript library. The internet of things will rely heavily on real time visualizations in the browser. Google Charts will likely play a significant role in this area.
 
-The third objective is to continue our work with the Particle Argon microcontroller.
+The third objective is to continue our work with the Particle Photon 2 microcontroller.
 
 There will be some challenges along the way.
 
@@ -30,15 +30,15 @@ There will be some challenges along the way.
 
 This is a five part assignment. The first part involves setting up an MQTT broker and interacting with the broker using browsers and WebSockets. The web applications will be built with Node.js.
 
-The second part requires that you simulate an Argon with a Node-RED node.
+The second part requires that you simulate a Photon 2 with a Node-RED node.
 
-The third part involves the construction of a Node-RED flow that receives messages from the Argon simulation node, makes modifications to the messages, and publishes the messages to MQTT. Note that we are not routing our messages through the Particle Cloud - as we did in Project 1.
+The third part involves the construction of a Node-RED flow that receives messages from the Photon 2 simulation node, makes modifications to the messages, and publishes the messages to MQTT. Note that we are not routing our messages through the Particle Cloud - as we did in Project 1.
 
-The fourth part involves writing a web application that provides browser code that subscribes to MQTT for the Argon's simulated messages. The browser will produce a textual display.
+The fourth part involves writing a web application that provides browser code that subscribes to MQTT for the Photon 2's simulated messages. The browser will produce a textual display.
 
 Part 5 is the same as Part 4 but includes Google Charts for visualization.
 
-In Project 1, we monitored an Argon heartbeat simulation in real time with a browser. We leveraged WebSockets and wrote our own server side code that sent a message to all listeners.
+In Project 1, we monitored a Photon 2 heartbeat simulation in real time with a browser. We leveraged WebSockets and wrote our own server side code that sent a message to all listeners.
 
 In much of this project, we will not write our own server side code (as we did in Project 1). Instead, we will use Mosquitto - an open source MQTT broker. [Download Mosquitto from here.](http://mosquitto.org/download/)
 
@@ -227,7 +227,7 @@ flow to the Node-RED server. You should now see a new output every 5 seconds. Th
 
 ### Part 3. Publishing Light Levels to MQTT
 
-1. Add an "MQTT OUT" node to the Node-RED palette. Configure the new node to publish to the topic "argonLightLevel". The quality of service (QoS) is 0 and Mosquitto's port is 1883 running on localhost. The name of this Node is "To MQTT".
+1. Add an "MQTT OUT" node to the Node-RED palette. Configure the new node to publish to the topic "photon2LightLevel". The quality of service (QoS) is 0 and Mosquitto's port is 1883 running on localhost. The name of this Node is "To MQTT".
 
 2. Connect the "AddTimeAndDeviceID" node to the "To MQTT" node. Run mosquitto and deploy the flow. You should see events being published to mosquitto every 5 seconds or so.
 
@@ -235,7 +235,7 @@ flow to the Node-RED server. You should now see a new output every 5 seconds. Th
 
 ### Part 4. Several browsers subscribe to microcontroller light levels
 
-1. Write a web application using Node.js that includes Javascript that subscribes to the topic "argonLightLevel". The Javascript will be included in an HTML file and the browser display will show the changing values as they are reported from the Argon.
+1. Write a web application using Node.js that includes Javascript that subscribes to the topic "photon2LightLevel". The Javascript will be included in an HTML file and the browser display will show the changing values as they are reported from the Photon 2 simulation.
 
 2. When the HTML runs in the browser, ask the user to provide a client side name. This name will be used to provide the client with a unique identifier as it connects to MQTT. If we do not change the name for each client, MQTT will assume that separate visits are all from the same client and will only respond to the last visitor. In other words, we would only be able to subscribe from one browser instance. We want to have several simultaneous visitors. How you design this input request is in your hands. You will need to work a bit with the HTML and Javascript.
 
@@ -247,7 +247,7 @@ flow to the Node-RED server. You should now see a new output every 5 seconds. Th
 
 1) [Spend some time reviewing Google Charts.](https://developers.google.com/chart) In particular, we are interested in the Gauge Chart.
 
-2) Write a web application using Node.js. The web application will deliver HTML and Javascript to the browser and the the browser will subscribe to the MQTT "argonLightLevel" topic. Use Google Charts to visualize the data with a gauge chart. Several browser should be able to visit at the same time and view the same gauge.
+2) Write a web application using Node.js. The web application will deliver HTML and Javascript to the browser and the the browser will subscribe to the MQTT "photon2LightLevel" topic. Use Google Charts to visualize the data with a gauge chart. Several browser should be able to visit at the same time and view the same gauge.
 
 ![Two browsers subscribe with different ID's.](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/TwoBrowsersSubscribe.png?raw=true)
 

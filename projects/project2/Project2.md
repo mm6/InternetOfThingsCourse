@@ -1,7 +1,7 @@
 
-# 95-733/95-433 Internet of Things Fall 2024
+# 95-733/95-433 Internet of Things
 
-# Project 2 Due: Thursday, September 26, 2024
+# Project 2 Due: Tuesday, November 25, 2025
 
 ### Topics: MQTT, Particle Photon 2, Node-RED, Node.js, Google Charts
 
@@ -49,7 +49,7 @@ or the remote version on the cloud.) Hive MQ's MQTT (both local and cloud) are a
 You can install Mosquitto on your MAC using brew. See [here](http://brew.sh) and then use "brew install mosquitto". There are directions on the mosquitto web site for Windows users.
 
 When you run mosquitto, it will run with its default configuration. We need to change its configuration to allow for WebSocket connections (we want to visit the server from
-Javascript). To change the configuration of Mosquitto, we can modify the configuration file found at /usr/local/etc/mosquitto/mosquitto.conf (on a MAC). My configuration file contains these lines at the very end of the file:
+Javascript). To change the configuration of Mosquitto, we can modify the configuration file found at /opt/homebrew/etc/mosquitto/mosquitto.conf (on a MAC). My configuration file contains these lines at the very end of the file:
 
 ```
 listener 1883
@@ -60,7 +60,7 @@ allow_anonymous true
 
 ```
 
-My copy of mosquitto is located at /opt/homebrew/sbin. If I change to that directory, I can run mosquitto (picking up the configuration file) with the command
+My copy of mosquitto is located at /opt/homebrew/opt/mosquitto/sbin/. If I change to that directory, I can run mosquitto (picking up the configuration file) with the command
 
 ```
 mosquitto -c /opt/homebrew/etc/mosquitto/mosquitto.conf -v
@@ -198,7 +198,7 @@ We would like to configure our microcontroller to sense or monitor changes in li
 5. Place the long leg of the photodiode in row 13, (A0) (on the left of the Photon 2).
 6. Place the short leg of the photodiode in row 10 (3V3).
 7. Place a 230 Ohm resistor (Orange, Orange, Brown, Gold) in row 12 (GND) and in row 13 (A0).
-8. Your hardware setup should look like the following: 
+8. Your hardware setup should look like the following:
 ![Microcontroller Light Monitor](https://github.com/mm6/InternetOfThingsCourse/blob/master/images/Photon2LightMonitor.jpg?raw=true)
 
 9. We need to flash code that monitors light levels to the microcontroller. We will name this firmware "LightMonitor". Use the Particle cloud to compile and deploy this firmware to your microcontroller.
