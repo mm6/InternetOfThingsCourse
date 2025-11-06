@@ -33,12 +33,8 @@ browser.
 
 ## Project
 
-<!--
 + [Project 2 Publish subscribe](../projects/project2/Project2.md)
-
-
-+ Project 1 Due Midnight February 1, 2023
--->
++ [Project 2 Without a Photon 2 Publish subscribe](../projects/project2/Project2_No_Photon2.md)
 
 ## Quizzes
 
