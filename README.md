@@ -13,4 +13,5 @@
 + [Week 4](./Weeks/week4.md) Tuesday November 11, Thursday November 13
 + [Week 5](./Weeks/week5.md) Tuesday November 18, Thursday November 20
 + [Week 6](./Weeks/week6.md) Tuesday November 25, Thursday November 27 No class
-+ [Week 7](./Weeks/week7.md) Tuesday December 2, Thursday December 4 (Final Exam Date and time to be announced)
++ [Week 7](./Weeks/week7.md) Tuesday December 2, Thursday December 4
++ Final Exam Thursday, December 11, 1:00 - 4:00 PM, HBH 1002
