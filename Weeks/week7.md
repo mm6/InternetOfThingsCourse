@@ -4,7 +4,7 @@
 
 ## Topics
 
-In week 7 we will discuss smart city use cases and review for the final exam.
+In week 7 we will have presentations and a short review for the final exam.
 
 ## Slides
 
@@ -26,7 +26,8 @@ In week 7 we will discuss smart city use cases and review for the final exam.
 
 ## Project
 
-+ There is no project assigned during week 7.
++ Project 3 Presentations are scheduled for week 7.
++ [Presentation topics](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/F25_Presentations.pdf)
 
 ## Quizzes
 
