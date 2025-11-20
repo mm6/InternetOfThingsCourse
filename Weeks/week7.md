@@ -20,7 +20,9 @@ In week 7 we will have presentations and a short review for the final exam.
 + [Flow Programming and Edge Analytics](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/07_FlowProgramming.pdf)
 -->
 
-## Optional reading
+## Optional Readings
+
++ [The Computing Landscape of the 21st Century](https://elijah.cs.cmu.edu/DOCS/satya-hotmobile2019.pdf)
 
 + [Smart Cities and IoT](https://www.tandfonline.com/doi/full/10.1080/15228053.2019.1587572)
 
