@@ -27,6 +27,10 @@ Particle cloud using CoAp.
 
 ## Slides
 
++ [Photon 2 BLE Temperature Firmware](https://github.com/sn-code-inside/guide-to-iot/blob/main/Ch09_code/ble-health-temperature.ino)
+
++ [Node-RED BLE Temperature Function Node From Binary to Text for Temperature](https://github.com/sn-code-inside/guide-to-iot/blob/main/Ch09_code/FromBinaryToText.js)
+
 + [Webhooks](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_WebhooksPublishSubscribe.pdf)
 
 + [XMPP Brief](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP_Overview.pdf)
