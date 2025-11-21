@@ -12,13 +12,18 @@ The publish/subscribe pattern is revisited using HTTP Webhooks. Thingspeak Webho
 
 Project 3 also demonstrates how a microcontroller can act as a Bluetooth Low Energy peripheral.
 -->
+
+We do three demonstrations in class using a constrained network. First,
+we use an Android phone running LightBlue to connect to a Photon 2
+running BLE firmware. Second, we connect the Photon 2 to Node-RED using BLE. Third, we add a node to Node-RED that converts the binary data received into a textual representation.
+
 We also discuss service discovery and the REST architectural style. CoAp is introduced as RESTful protocol and three Web of Things integration patterns are highlighted.
 
 The Web of Things Architecture from W3C and Mozilla are introduced.
 
-HTTP and CoAp are compared. It is noted that the microcontroller used in class interacts with the
-Particle cloud using CoAp.
+HTTP and CoAp are compared. It is noted that the microcontroller used in class interacts with the Particle cloud using CoAp.
 
++ BLE demonstrations
 + Introduction to XMPP
 + Sensor Andrew Architecture
 + Programming XMPP and IoT Discovery

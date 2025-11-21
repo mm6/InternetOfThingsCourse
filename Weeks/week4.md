@@ -30,9 +30,6 @@ on the internet at large. Both protocols utilize service discovery.
 
 + [Bluetooth](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Bluetooth.pdf)
 
-
-
-
 ## Required readings
 
 + [Sensor Andrew - Large Scale Campus Wide Sensing up to but not including "Building energy optimization".](https://users.ece.cmu.edu/~agr/resources/publications/ibm-sensor-andrew-11.pdf)
