@@ -33,8 +33,8 @@ There are no required reading for next week. It is a good time to review for the
 
 -->
 ## Optional Readings
-
-+ [Connectivity Standards Aliance: CSA-IOT](https://csa-iot.org/)
++ [Matter described by Wired](https://www.wired.com/story/what-is-matter/)
++ [Matter defined by the Connectivity Standards Aliance: CSA-IOT](https://csa-iot.org/)
 + [WoT Architecture at InfoQ](https://www.infoq.com/articles/web-of-things-iot-apps/)
 + [W3C Decentralized Identifiers](https://www.w3.org/TR/did-core/)
 + [W3C Verifiable Credentials Use Cases](https://www.w3.org/TR/vc-use-cases/)
