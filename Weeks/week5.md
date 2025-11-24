@@ -38,10 +38,10 @@ HTTP and CoAp are compared. It is noted that the microcontroller used in class i
 
 + [Webhooks](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_WebhooksPublishSubscribe.pdf)
 
-<!--
+
 + [XMPP Brief](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP_Overview.pdf)
 
-
+<!--
 + [XMPP Programming and Sensor Andrew ](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/05_XMPP.pdf)
 -->
 
