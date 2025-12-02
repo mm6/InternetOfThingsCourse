@@ -41,7 +41,7 @@
 ### Web sockets lecture notes
 
 + Web sockets in Javascript
-+ Websockets in a variety of languages (e.g. JEE) are also supported
++ Websockets are supported in a variety of languages (e.g. JEE)
 
 ### The publish subscribe pattern and MQTT lecture notes
 
