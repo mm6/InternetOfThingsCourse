@@ -41,7 +41,7 @@
 ### Web sockets lecture notes
 
 + Web sockets in Javascript
-+ Websockets in JEE  (encoders and decoders)
++ Websockets in a variety of languages (e.g. JEE) are also supported
 
 ### The publish subscribe pattern and MQTT lecture notes
 
@@ -79,14 +79,12 @@
 
 ### Primary article: Sensor Andrew at Carnegie Mellon
 
++ Using a traditional IM framework for IoT
 + Traditional IM applications
 + SMTP architecture
 + XMPP architecture
 + Publish/Subscribe messaging
-+ Jabber JID
-+ XML document transfer in XMPP
-+ XMPP elements: stream element, presence element, IQ element, Message element
-+ XML Schema for XMPP
++ XML document transfer for messaging in XMPP
 
 ### Primary article: OpenChirp at Carnegie Mellon
 
@@ -100,8 +98,8 @@
 
 + Smart connected products changing established industries
 + What is a micro controller?
-+ Capabilities of smart connected products
-+ Monitoring, Control, Optimization, Autonomy
++ Capabilities of smart connected products:
+     Monitoring, Control, Optimization, Autonomy
 + EnOcean, ZigBee, Thread, Bluetooth, Wi-Fi, 802.15.4 and 6LoWPAN
 
 ### Bluetooth lecture notes
@@ -111,6 +109,7 @@
 + GAP
 + GATT
 + Profiles, Services, and Characteristics
++ Review code presented in class
 
 ### Web of Things Architecture at W3C
 
@@ -119,6 +118,8 @@
 + Thing Description (TD)
 + WoT Scrpting API
 
+
+### Not covered in Fall 2025
 ### Self-sovereign Identity and Blockchains lecture notes
 
 + SSI Offline
@@ -126,6 +127,7 @@
 + Existing systems and standards
 + blockchains
 
+### Not covered in Fall 2025
 ### Smart cities lecture notes
 
 + Transportation
@@ -133,6 +135,7 @@
 + Safety
 + Conservation
 
+### Not covered in Fall 2025
 ### Google Charts
 
 + Google Charts basics
@@ -143,7 +146,7 @@
 + What is firmware?
 + How did our Photon 2 communicate with our node.js server?
 + Be able to read and interpret a simple firmware application.
-+ The Particle Device Cloud
++ The Particle Device Cloud and OTA updates
 
 ### Industrial Internet of Things (IIOT) lecture notes
 
@@ -186,6 +189,7 @@
 + Multiple subscribers to MQTT
 + Visualization with Google Charts
 
+### In Fall 2025 a demonstration was provided
 ### Review Project 3
 
 + BLE and the LightBlue phone application
