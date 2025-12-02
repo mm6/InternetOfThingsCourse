@@ -119,27 +119,25 @@
 + WoT Scrpting API
 
 
-### Not covered in Fall 2025
-### Self-sovereign Identity and Blockchains lecture notes
+
+### Self-sovereign Identity and Blockchains lecture notes (Not covered in F25)
 
 + SSI Offline
 + SSI Online
 + Existing systems and standards
 + blockchains
 
-### Not covered in Fall 2025
-### Smart cities lecture notes
+### Smart cities lecture notes (See slides from Week 7 on Smart Cities)
 
 + Transportation
 + Human Services
 + Safety
 + Conservation
 
-### Not covered in Fall 2025
 ### Google Charts
 
 + Google Charts basics
-+ Google charts in course project
++ Google charts in course Project 2
 
 ### Photon 2 microcontroller lecture notes
 
@@ -189,8 +187,8 @@
 + Multiple subscribers to MQTT
 + Visualization with Google Charts
 
-### In Fall 2025 a demonstration was provided
-### Review Project 3
+
+### Review Project 3 (In Fall 2025, an in-class demo was provided)
 
 + BLE and the LightBlue phone application
 + BLE to a Node-RED gateway
