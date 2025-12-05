@@ -78,6 +78,8 @@ correct one to use in designing an interoperable internet of things - a web of t
 
 + [Bottomless Coffee](https://www.bottomless.com/)
 
++ [Open Worldwide Application Security Project OWASP IOT Security](https://owasp.org/www-project-internet-of-things/)
+
 + [Coffee maker ransom machine](https://arstechnica.com/information-technology/2020/09/how-a-hacker-turned-a-250-coffee-maker-into-ransom-machine/)
 
 + [IoT Security Labeling From CMU](https://cylab.cmu.edu/news/2020/05/27-iot-labels-consumers.html)
