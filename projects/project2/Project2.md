@@ -161,9 +161,9 @@ and the x and y coordinates are displayed. It is required that you add your
 own detailed comments to this code - explaining clearly how it works. The grader
 will grade based on the quality of these comments.
 
-:checkered_flag: Take a screenshot showing the browser screen.  Name your screenshot Project2Part1Question1.png.
+:checkered_flag: Take a screenshot showing the browser screen.  Name your screenshot Project2Part1Question1.png. Include this labelled screenshot on your single pdf.
 
-:checkered_flag: Include your HTML and Javascript with comments.  Name your file Project2Part1Question1.html.
+:checkered_flag: Include your HTML and Javascript with comments.  Name your file Project2Part1Question1.html. Include your labelled HTML and Javascript on your single pdf.
 
 2. 15 Points. Here we want to sense the mouse movements and publish them to Mosquitto running MQTT. Create a new directory named Project2_Part1_Question_2. Include the same index.js file that you used in Part 1. Create a subdirectory named "public" containing an index.html file that publishes each new mouse coordinate pair to your MQTT broker. Your solution must make good use of the Javascript library - mqttws31.js.
 
@@ -181,9 +181,9 @@ Note: MQTT is very fussy about client names. Each client that visits must presen
 
 Note too that the communication between the broker and the browsers is done with WebSockets but we have abstracted those details away. The details are all hidden within the mqttws31.js library. By using "abstraction" we are hiding details and separating concerns - these are very important principles in computer science and in many areas of engineering.
 
-:checkered_flag: Take a screenshot showing two browser screens.  Name your screenshot Project2Part1Questions2And3.png.
+:checkered_flag: Take a screenshot showing two browser screens.  Name your screenshot Project2Part1Questions2And3.png. Include this labelled screenshot on your single pdf.
 
-:checkered_flag: Include your HTML and Javascript with comments.  Name your files Project2Part1Question2.html and Project2Part1Question3.html
+:checkered_flag: Include your HTML and Javascript with comments.  Name your files Project2Part1Question2.html and Project2Part1Question3.html. Include these labelled files on your single pdf.
 
 ### Part 2 Monitoring light levels with a microcontroller
 
@@ -375,7 +375,7 @@ void loop() {
 ```
 "{"deviceID":"e00fce68dfb40ca61243495e","lightReading":"89","time":"2021-06-05T21:00:09.832Z"}"
 ```
-:checkered_flag: Take a screenshot showing the Node-RED flow and the debug window showing JSON strings. Name your screenshot Project2Part2.png.
+:checkered_flag: Take a screenshot showing the Node-RED flow and the debug window showing JSON strings. Name your screenshot Project2Part2.png. Include this labelled screenshot on your single pdf.
 
 
 ### Part 3. Publishing Light Levels to MQTT
@@ -384,9 +384,9 @@ void loop() {
 
 2. Connect your "HTTP IN" node to the "Add Timestamp" node. Connect the "Add Timestamp" node to the "To MQTT" node. Run mosquitto and deploy the flow. You should see events being published to mosquitto every 5 seconds or so.
 
-:checkered_flag: Take a screenshot showing the Node-RED flow and the MQTT window as it receives visits. Name your screenshot Project2Part3.png.
+:checkered_flag: Take a screenshot showing the Node-RED flow and the MQTT window as it receives visits. Name your screenshot Project2Part3.png. Include this labelled screenshot on your single pdf.
 
-:checkered_flag: Create a text file with the Javascript code that is inside your timestamp function node. Name this file Project2Part3.js.
+:checkered_flag: Create a text file with the Javascript code that is inside your timestamp function node. Name this file Project2Part3.js. Include this labelled file on your single pdf.
 
 ### Part 4. Several browsers subscribe to microcontroller light levels
 
@@ -394,9 +394,9 @@ void loop() {
 
 2. When the HTML runs in the browser, ask the user to provide a client side name. This name will be used to provide the client with a unique identifier as it connects to MQTT. If we do not change the name for each client, MQTT will assume that separate visits are all from the same client and will only respond to the last visitor. In other words, we would only be able to subscribe from one browser instance. We want to have several simultaneous visitors. How you design this input request is in your hands. You will need to work a bit with the HTML and Javascript.
 
-:checkered_flag: Take a screenshot showing more than one browser receiving the same data from the broker. Name your screenshot Project2Part4.png.
+:checkered_flag: Take a screenshot showing more than one browser receiving the same data from the broker. Name your screenshot Project2Part4.png. Include this labelled screenshot on your single pdf.
 
-:checkered_flag: Create a text file with the HTML and Javascript  code that is inside your index.html file. Name this file Project2Part4.html.
+:checkered_flag: Create a text file with the HTML and Javascript code that is inside your index.html file. Name this file Project2Part4.html. Include this labelled text file on your single pdf.
 
 ### Part 5. Subscribe to MQTT and visualize with Google Charts
 
@@ -410,9 +410,9 @@ These two browsers are each subscribing with a different client ID.
 
 3) Add an additional Google Chart to the same web page. This would be any chart that you select (other than Gauge).
 
-:checkered_flag: Take a screenshot showing the visualization. Name your screenshot Project2Part5.png.
+:checkered_flag: Take a screenshot showing the visualization. Name your screenshot Project2Part5.png. Include this labelled screenshot on your single pdf.
 
-:checkered_flag: Create a text file with the HTML and Javascript  code that is inside your index.html file. Name this file Project2Part5.html.
+:checkered_flag: Create a text file with the HTML and Javascript  code that is inside your index.html file. Name this file Project2Part5.html. Include this labelled text file on your single pdf.
 
 ### Optional notes on Using a remote (rather than local) MQTT broker
 
