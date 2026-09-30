@@ -39,6 +39,7 @@ There are no required reading for next week. It is a good time to review for the
 + [W3C Decentralized Identifiers](https://www.w3.org/TR/did-core/)
 + [W3C Verifiable Credentials Use Cases](https://www.w3.org/TR/vc-use-cases/)
 + [Understanding Decentralized ID's](https://medium.com/@adam_14796/understanding-decentralized-ids-dids-839798b91809)
++ [Blockchains and IoT](https://ieeexplore.ieee.org/document/7467408)
 + [Identity verification in medical setting](https://www.youtube.com/watch?v=UdlmRoJK1Yg&feature=youtu.be)
 + [Convergence of IOT and Blockchain (IBM)](https://www.ibm.com/internet-of-things/trending/blockchain)
 + [Convergence of IOT and Blockchain (Microsoft)](https://azure.microsoft.com/en-us/solutions/blockchain/)
