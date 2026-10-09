@@ -14,21 +14,17 @@ Office: Hamburg Hall 3015
 
 Phone: 412-268-4657 (Office)
 
-Officer Hours: Tuesday and Thursday 2:00 PM - 4:00 PM
+Officer Hours: Monday 11:00 - 12:30 PM, Wednesday 11:00 - 1:00 PM
 
 ### Teaching Assistant
 
-Name: Aarvin George Poozhikala 
+Name: TBA
 
-Email: apoozhik@andrew.cmu.edu
+Email: TBA
 
-Office Hours: See Canvas
+Office Hours: TBA
 
-<!--
-Name: Kieran Walsh
 
-Email: kawalsh@andrew.cmu.edu
--->
 ### Communication
 
 We will use Piazza rather than email for most of our course related communications.
@@ -43,7 +39,7 @@ ability, speak with your instructor.
 ### Assignments
 
 There will be three programming projects equally weighted (40%).
-The third project will be a small group project with a short presentation.
+The third project will be a small group project (between one and three people) with a short presentation.
 
 <!--
 You may replace the third project with a presentation on an IoT related topic. The presentation might demonstrate an interesting technology in action or might be a review of a published paper.
@@ -93,7 +89,7 @@ You will need to install Node.js, Express (a web framework for Node.js), and Nod
 
 ### Hardware Requirements
 
-The student needs to have access to a Particle Photon 2 and the Edge ML Kit for Photon 2. [Available here.](https://store.particle.io/products/edge-ai-kit-for-photon-2) These will be provided to you in class for free.
+The student needs to have access to a Particle Photon 2. [Available here.](https://store.particle.io/products/photon-2) These will be provided to you in class for free.
 
 If you are not able to get access to a Photon 2, directions will be provided to simulate the device.
 
@@ -103,7 +99,7 @@ In Person Expectation
 
 ### Time and Place
 
-Fall 2025 Mini 2
+Fall 2026 Mini 2
 
 Tuesday, Thursday 5:00 PM - 6:20 PM HBH Room 2009
 
