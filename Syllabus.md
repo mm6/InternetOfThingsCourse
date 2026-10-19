@@ -22,8 +22,9 @@ Name: Ziyi Wu
 
 Email: ziyiwu@andrew.cmu.edu
 
-Office Hours: TBA
+Office hours Zoom URL: https://cmu.zoom.us/j/7362944969?omn=91291412018
 
+Office Hours: TBA
 
 ### Communication
 
