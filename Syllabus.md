@@ -18,9 +18,9 @@ Officer Hours: Monday 11:00 - 12:30 PM, Wednesday 11:00 - 1:00 PM
 
 ### Teaching Assistant
 
-Name: TBA
+Name: Ziyi Wu
 
-Email: TBA
+Email: ziyiwu@andrew.cmu.edu
 
 Office Hours: TBA
 
