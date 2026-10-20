@@ -24,7 +24,7 @@ Email: ziyiwu@andrew.cmu.edu
 
 Office hours Zoom URL: https://cmu.zoom.us/j/7362944969?omn=91291412018
 
-Office Hours: TBA
+Office Hours: 5-6pm on Tuesday and 4-6pm on Wednesday and 2-3pm on Thursday.
 
 ### Communication
 
