@@ -62,20 +62,36 @@ We will be programming the Photon 2 microcontroller by developing our firmware c
 
 5) [Install the Particle Command Line Interface (CLI) by following these directions.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
-#### On Campus CMU Wi-Fi registration needs performed once only. We have already registered your device with CMU Device. Therefore, you may safely skip step 6.
+6) Using the device on campus:
 
-6) [If you plan to use the Photon 2 on Campus - with CMU's Wi-Fi, the device needs to be registered as a wireless device on CMU-DEVICE.](https://www.cmu.edu/computing/services/endpoint/network-access/wireless/how-to/cmudevice.html) Do this only after you have a working CLI.
+You will need a working Particle CLI.
 
-[For students in Pittsburgh, the actual registration page is here.](https://getonline.cmu.edu/)
-Choose the wireless block. Your MAC address can be retrieved from your Photon 2 by entering the command:
 
-```
-particle serial mac
+On Campus CMU Wi-Fi registration needs performed once only. We have already registered your device with CMU Device. That
+is, we have provided the MAC addresses to CMU IT. We found the MAC address using
 
 ```
-You will need to wait (an hour or more) for your device to be registered. You only need to do this once. Your instructor may have already performed this step for a device passed out in class.
+particle serial MAC.
 
-To set up your device to be used on Campus, [use this link for the setup](https://docs.particle.io/tools). Select Device Doctor.
+```
+
+When you connect the device to the Particle cloud, you will need to provide to Particle
+the device ID. You can find this with:
+
+```
+particle serial identify
+```
+
+To connect to CMU-DEVICE, do the following:
+Put your device in listening mode (dark blue and blinking slowly).
+Enter into a shell the following lines:
+particle serial wifi
+Enter No when asked if you want to scan for WiFi.
+Enter an SSID of CMU-DEVICE
+The cipher type is AES
+
+You should only need to do that once. The next step is to visit Particle and add your device.
+You will need the device ID (not the MAC) to register the device with Particle.
 
 #### Setting up for home Wi-Fi
 
