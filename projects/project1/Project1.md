@@ -71,7 +71,7 @@ On Campus CMU Wi-Fi registration needs performed once only. We have already regi
 is, we have provided the MAC addresses to CMU IT. We found the MAC address using
 
 ```
-particle serial MAC.
+particle serial MAC
 
 ```
 
@@ -80,14 +80,22 @@ the device ID. You can find this with:
 
 ```
 particle serial identify
+
 ```
 
 To connect to CMU-DEVICE, do the following:
+
 Put your device in listening mode (dark blue and blinking slowly).
+
 Enter into a shell the following lines:
+```
 particle serial wifi
+```
+
 Enter No when asked if you want to scan for WiFi.
+
 Enter an SSID of CMU-DEVICE
+
 The cipher type is AES
 
 You should only need to do that once. The next step is to visit Particle and add your device.
