@@ -37,7 +37,7 @@ with programming languages he or she has not been exposed to. A certain level
 of programming maturity is required. If you are unsure about your
 ability, speak with your instructor.
 
-### Assignments
+### Assignments and Final Exam
 
 There will be three programming projects equally weighted (40%).
 The third project will be a small group project (between one and three people) with a short presentation.
@@ -53,8 +53,6 @@ There will be four or five quizzes on the readings at the start of lecture with 
 There will be a closed Book Final Exam based on readings, lectures, and programming (45%).
 
 The Final Exam date and time are Thursday, December 10 01:00PM - 04:00PM, Room TBA
-
-
 
 ### Late Assignment Policy
 
