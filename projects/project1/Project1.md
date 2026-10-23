@@ -14,58 +14,120 @@ In order to route and process IoT messages, we will use Node-RED.
 
 The selected microcontroller that we will use is the Particle Photon 2. It has the ability to communicate via Bluetooth LE and Wi-Fi. We need to initialize the Photon 2 and establish credentials at Particle. We will use the Particle cloud's over the air (OTA) update capability to flash firmware to the Photon 2.
 
+0. Install Node.js
 
-0) [Follow these directions and install Node.js.](https://nodejs.org/en/download/)
+Install the current LTS (Long-Term Support) version of Node.js from:
 
-1) The node package manager (npm) was installed as part of node.js in step 0. Next, use npm to install Node-RED locally on your laptop or desktop machine.
+```URL
 
-But note that we must first downgrade our npm. The default that comes with Node.js
-is too high of a version.
-
-On Mac OSX, downgrade our npm by running the shell command:
-```
-sudo npm install -g npm@8.19.4
-```
-On Windows, downgrade our npm by running the shell command:
-```
-npm install -g npm@8.19.4
-
-```
-Now, install node-red.
-
-On Mac OSX, run the shell command:
-```
-sudo npm install -g --unsafe-perm node-red
-```
-
-On Windows, run the shell command:
-```
-npm install -g --unsafe-perm node-red
+https://nodejs.org
 
 ```
 
-2) Execute Node-RED with the shell command:
-```
-   node-red
-```
-3) Test a running instance of Node-Red.
-   Use a browser and visit the localhost URL:
-```
-   http://127.0.0.1:1880/
+Verify your installation by opening a terminal (or command prompt) and entering:
+
+```bash
+node -v
 ```
 
-4) [Establish credentials at Particle.io](https://www.particle.io/). Our primary tool at Particle will be the web IDE.
+```bash
+npm -v
+
+```
+You should see version numbers for both commands.
+
+Windows
+
+Download and install the Windows installer from:
+
+```
+https://nodejs.org
+
+```
+Verify:
+
+```
+node -v
+```
+
+```
+npm -v
+```
+macOS
+
+Install using either:
+
+- The installer from https://nodejs.org
+- or Homebrew
+
+```
+brew install node
+```
+
+Verify:
+
+```
+node -v
+```
+```
+
+npm -v
+
+```
+
+Linux
+
+Install Node.js using your distribution's package manager or the official installation instructions from:
+
+```
+https://nodejs.org
+
+```
+Verify:
+
+```
+node -v
+```
+```
+npm -v
+```
+
+1. Install Node-RED
+
+Open a terminal and execute:
+
+npm install -g node-red
+
+
+2.  Start Node-RED
+
+```
+
+node-red
+
+```
+
+You should see messages indicating that the server has started successfully. By default, the editor is available
+with a browser at:
+
+```
+http://localhost:1880
+
+```
 
 #### Photon 2 Setup, Particle IDE, and Particle CLI
 
+[Establish credentials at Particle.io](https://www.particle.io/). Our primary tool at Particle will be the web IDE.
+
+
+
 We will be programming the Photon 2 microcontroller by developing our firmware code in C++, compiling to machine code, and downloading to the device via Particle's over the air (OTA) update.
 
-5) [Install the Particle Command Line Interface (CLI) by following these directions.](https://docs.particle.io/tutorials/developer-tools/cli/)
+3. [Install the Particle Command Line Interface (CLI) by following these directions.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
-6) Using the device on campus:
+4. Using the device on campus:
 
 You will need a working Particle CLI.
-
 
 On Campus CMU Wi-Fi registration needs performed once only. We have already registered your device with CMU Device. That
 is, we have provided the MAC addresses to CMU IT. We found the MAC address using
@@ -88,11 +150,13 @@ To connect to CMU-DEVICE, do the following:
 Put your device in listening mode (dark blue and blinking slowly).
 
 Enter into a shell the following lines:
+
 ```
 particle serial wifi
+
 ```
 
-Enter No when asked if you want to scan for WiFi.
+Enter "No" when asked if you want to scan for WiFi.
 
 Enter an SSID of CMU-DEVICE
 
@@ -101,15 +165,13 @@ The cipher type is AES
 You should only need to do that once. The next step is to visit Particle and add your device.
 You will need the device ID (not the MAC) to register the device with Particle.
 
-#### Setting up for home Wi-Fi
-
-7) [Set up your Photon 2](https://docs.particle.io/photon-2/)
+For Setting up your home Wi-Fi, [look at these directions:](https://docs.particle.io/photon-2/)
 
 It is recommended that you complete a tutorial. That is, blink an LED on your microcontroller as per the instructions [here](https://docs.particle.io/getting-started/hardware-tutorials/hardware-examples/)
 
-#### Publish heartbeat messages to the Particle console with an Photon 2
+#### Publish heartbeat messages to the Particle console with a Photon 2
 
-8) Use the code below to publish heartbeat messages to the Particle console.
+5. Use the code below to publish heartbeat messages to the Particle console.
 
 ```
 /*
@@ -187,7 +249,7 @@ void loop() {
      }
 }
 ```
-9) ***Study the code above.*** After compiling and deploying the code to your Photon 2, use a shell and check if the CLI is working properly.
+6. ***Study the code above.*** After compiling and deploying the code to your Photon 2, use a shell and check if the CLI is working properly.
 
 ```
 particle serial monitor
@@ -195,22 +257,28 @@ particle serial monitor
 ```
 
 
-10) The following are some useful CLI commands.
+7. The following are some useful CLI commands.
 
 ```
-$particle login          Login to Particle
-$particle serial monitor Listen for Serial.print
-$particle update-cli     Update the CLI
+particle login          Login to Particle
+particle serial monitor Listen for Serial.print
+particle update-cli     Update the CLI
+particle subscribe heartbeat      Listen for heartbeat messages published by your device
+particle token create   When logged in to Particle, create a Bearer token
+curl -N -H "Authorization: Bearer your_bearer_token_goes_here" https://api.particle.io/v1/devices/events/heartbeat
 ```
 [There are plenty of additional CLI commands.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
 [If your Photon 2 appears to be unusable (e.g. blinking red) [these instructions may be of value.](https://docs.particle.io/troubleshooting/guides/device-management/how-can-i-set-up-my-argon-or-boron-via-usb/)
 
-11) Using the Particle console on the cloud, verify that it is receiving the heartbeats from the Photon 2.
+8. Using the Particle console on the cloud, verify that it is receiving the heartbeats from the Photon 2.
 
 #### Using Node-RED, subscribe to the heartbeat messages that are being published to particle.
 
-12) Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Photon 2. We want Node-RED to hear about the heart beats. [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Particle Cloud to Node-RED. Read about Node-RED and integrate Node-RED with the Particle Cloud.](https://docs.particle.io/community/node-red/)
+9. Our goal is for Node-RED to subscribe to and receive messages from the Particle console. These messages are being published to the Particle console by our Photon 2. We want Node-RED to hear about the heartbeats. [This article introduces you to Node-RED and the "The Particle Nodes" section specifically is where the reader learns how to connect the Particle Cloud to Node-RED. Read about Node-RED and integrate Node-RED with the Particle Cloud.](https://docs.particle.io/community/node-red/)
+
+We will use either of two approaches to get the Particle events into node-red flows. The first will use the
+Particle node.
 
 Here are my notes on setting up a Node-RED Particle node and establishing the node's credentials at Particle:
 
@@ -234,9 +302,16 @@ In Node-RED:
     Install @particle/node-red-contrib-particle-official
     Close
 
-13) After completing the work in step 12, you should have a Node-RED platform receiving messages from your Photon 2 every 10 seconds or so. Each message should contain a JSON string with the device ID. Each message should appear in the right pane of the Node-RED UI.
+A second approach is to use Server Sent Events (SSE). In my solution, I am using
+node-red-contrib-sse-client 0.2.4. I included the node in Node-Red by searching
+for it from the hamburger icon and manage palette. Before the SSE node, I have an
+inject node configured with message.payload = start. The SSE node is configured
+with the URL: https://api.particle.io/v1/devices/events/heartbeat and an HTTP header
+named Authorization with value Bearer My_Bearer_Token_Here.
 
-The Node-RED palette should have a subscribe node wired to a debug node.
+10. After completing the work in step 9, you should have a Node-RED platform receiving messages from your Photon 2 every 10 seconds or so. Each message should contain a JSON string with the device ID. Each message should appear in the right pane of the Node-RED UI. You may use either of the two approaches specified in step 9.
+
+The Node-RED palette should have a subscribe node or SSE node wired to a debug node.
 
 :checkered_flag:**Take a screenshot showing the Node-RED palette. The debug panel on the right will show several JSON strings that have arrived from the Photon 2. Name your screenshot Project1Part1.png.**
 
@@ -318,7 +393,7 @@ node ViewSimpleMessage.js
     <title>Simple message in HTML from your name</title>
 </head>
 
-<body>    
+<body>
         <h1>Simple message in HTML from your name</h1>
 </body>
 
