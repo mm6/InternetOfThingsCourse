@@ -1,6 +1,6 @@
 # 95-733/95-433 Internet of Things, Fall Mini 2, 2026
 
-## Project 1 Due: Tuesday, November 3, 2026
+## Project 1 Due: Thursday, November 5, 2026
 
 :checkered_flag: Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project1.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you ***clearly label*** each answer with the project part number and that you provide your name and email address at the top of the .pdf.
 
@@ -286,7 +286,7 @@ Adding credentials for the Node-RED node on Particle.io.
 
 In Particle.io:
 
-    console.particle.io/authentication/new client
+    Web IDE/console/cloud services/authentication/new client
     New OAuth Client window/ Two-Legged Auth (Server)/provide name
     Get client ID and secret
     Copy the Client ID to your machine
@@ -302,7 +302,7 @@ In Node-RED:
     Install @particle/node-red-contrib-particle-official
     Close
 
-A second approach is to use Server Sent Events (SSE). In my solution, I am using
+An alternative approach is to use Server Sent Events (SSE). In my solution, I am using
 node-red-contrib-sse-client 0.2.4. I included the node in Node-Red by searching
 for it from the hamburger icon and manage palette. Before the SSE node, I have an
 inject node configured with message.payload = start. The SSE node is configured
