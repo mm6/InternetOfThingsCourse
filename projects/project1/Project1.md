@@ -267,9 +267,9 @@ particle subscribe heartbeat      Listen for heartbeat messages published by you
 particle token create   When logged in to Particle, create a Bearer token
 curl -N -H "Authorization: Bearer your_bearer_token_goes_here" https://api.particle.io/v1/devices/events/heartbeat
 ```
-[There are plenty of additional CLI commands.](https://docs.particle.io/tutorials/developer-tools/cli/)
+[For additional CLI commands, see this link.](https://docs.particle.io/tutorials/developer-tools/cli/)
 
-[If your Photon 2 appears to be unusable (e.g. blinking red) [these instructions may be of value.](https://docs.particle.io/troubleshooting/guides/device-management/how-can-i-set-up-my-argon-or-boron-via-usb/)
+If your Photon 2 appears to be unusable (e.g. blinking red) [these instructions may be of value.](https://docs.particle.io/troubleshooting/guides/device-management/how-can-i-set-up-my-argon-or-boron-via-usb/)
 
 8. Using the Particle console on the cloud, verify that it is receiving the heartbeats from the Photon 2.
 
