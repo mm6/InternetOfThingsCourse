@@ -305,9 +305,7 @@ In Node-RED:
 An alternative approach is to use Server Sent Events (SSE). In my solution, I am using
 node-red-contrib-sse-client 0.2.4. I included the node in Node-Red by searching
 for it from the hamburger icon and manage palette. Before the SSE node, I have an
-inject node configured with message.payload = start. The SSE node is configured
-with the URL: https://api.particle.io/v1/devices/events/heartbeat and an HTTP header
-named Authorization with value Bearer My_Bearer_Token_Here.
+inject node configured with message.payload = start. After deploying the flow, you must click the icon on the left of the inject node to send the command start to the SSE node. The SSE node is configured with the URL: https://api.particle.io/v1/devices/events/heartbeat and an HTTP header named Authorization with value Bearer My_Bearer_Token_Here.
 
 10. After completing the work in step 9, you should have a Node-RED platform receiving messages from your Photon 2 every 10 seconds or so. Each message should contain a JSON string with the device ID. Each message should appear in the right pane of the Node-RED UI. You may use either of the two approaches specified in step 9.
 
