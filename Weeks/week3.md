@@ -27,7 +27,7 @@ browser.
 
 ## Required readings for next week's quiz
 
-+ [People, Places, Things: Web Presence for the Real World](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=895378)
++ [People, Places, Things: Web Presence for the Real World](https://shiftleft.com/mirrors/www.hpl.hp.com/techreports/2000/HPL-2000-16.pdf)
 
 + [MQTT Essentials](https://www.hivemq.com/blog/mqtt-essentials-part-1-introducing-mqtt/)
 
