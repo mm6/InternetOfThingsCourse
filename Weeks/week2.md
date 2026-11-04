@@ -6,7 +6,7 @@
 
 In week 2 we consider how the design of the World Wide Web provides guidance on the construction of the internet of things.
 
-We look at three interaction patterns provided by HTTP. These are the standard request and response, asynchronous JavaScript and XML (AJAX), and websockets.
+We look at four communication patterns provided by HTTP. These are the standard request and response, asynchronous JavaScript and XML (AJAX), websockets, and Server-Sent Events (SSE).
 
 We also discuss the publish/subscribe model by publishing events to the Particle cloud
 and subscribing to those events with Node-RED.
