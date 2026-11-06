@@ -1,7 +1,7 @@
 
 # 95-733/95-433 Internet of Things
 
-# Project 2 Due: Tuesday, November 25, 2025
+# Project 2 Due: Thursday, November 19, 2026
 
 ### Topics: MQTT, Particle Photon 2, Node-RED, Node.js, Google Charts
 
