@@ -1,7 +1,7 @@
 
 # 95-733 Internet of Things  
 
-# Project 3 Due: Thursday, October 10, 2024
+# Project 3 Due: Thursday, December 3, 2026
 
 ### Topics: BLE, Node RED, MQTT, and the Web
 

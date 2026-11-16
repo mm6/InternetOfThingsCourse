@@ -33,6 +33,7 @@ browser.
 ## Project
 
 + [Project 2 Publish subscribe](../projects/project2/Project2.md)
+
 + [Project 2 Without a Photon 2 Publish subscribe](../projects/project2/Project2_No_Photon2.md)
 
 ## Quizzes
