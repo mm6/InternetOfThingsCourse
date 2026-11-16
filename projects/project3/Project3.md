@@ -27,6 +27,7 @@ In Part 1, you will deploy code to the Photon 2 so that it behaves as a peripher
 
 The Photon 2 will provide two services but advertise only one. The services will each make available values (called BLE characteristics). Both services and characteristics are associated with unique UUID's.
 
+Suppose a device advertises the value 0x180D. Another device knows that the first device is a heart-rate monitor and is advertising the Heart Rate Service. The mapping from 0x180D to the Heart Rate Service is defined by the Bluetooth SIG and published on the Assigned Numbers page at Bluetooth.com. No vendor-specific documentation is required. These assigned numbers are part of an open standard and enable interoperability between devices from different manufacturers.
 
 1. Study the following BLE peripheral code and flash it to your Photon 2.
 
