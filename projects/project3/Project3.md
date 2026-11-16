@@ -30,7 +30,7 @@ The Photon 2 will provide two services but advertise only one. The services will
 
 1. Study the following BLE peripheral code and flash it to your Photon 2.
 
-This code is adapted from the [Argon/BLE tutorial](https://docs.particle.io/tutorials/device-os/bluetooth-le/).
+This code is adapted from the [Particle BLE tutorial](https://docs.particle.io/tutorials/device-os/bluetooth-le/).
 
 ```
 #include "Particle.h"
