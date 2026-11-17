@@ -11,7 +11,7 @@
 a maximum score of 95%. To earn 100%, you must go further and complete through to Part 6.**
 
 :checkered_flag:**Another way to earn 100% is to do something creative with the tools we have worked with in class.
-This requires a short presentation and demonstration (say five minutes). Please let me know if you are going to demonstrate an application in class on December 3. **
+This requires a short presentation and demonstration (say five minutes). Please let me know if you are going to demonstrate an application in class on December 3.**
 
 ### Overview
 
