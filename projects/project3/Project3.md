@@ -23,6 +23,51 @@ The objective is to gain hands-on experience with a small implementation that in
 
 A BLE peripheral device offering a service periodically announces its availability to the local environment (a distance of about 10 meters). A central device scans for these advertisements and may chooses to connect to the peripheral. After a connection is established, the peripheral stops advertising its capabilities and begins to behave as a service to the central device - acting as a client.
 
+The general BLE pattern looks like the following:
+```
+Photon 2 boots
+    ↓
+BLE.on()
+    ↓
+BLE.advertise()
+    ↓
+Advertisement packets broadcast
+    ↓
+Central scans and receives advertisement
+    ↓
+Central notices Service UUID 0x1809
+    ↓
+Central decides to connect
+    ↓
+BLE connection established
+    ↓
+Central performs Service Discovery
+    ↓
+Peripheral returns:
+    0x1809 Health Thermometer Service
+    0x180F Battery Service
+    ↓
+Central performs Characteristic Discovery
+    ↓
+Peripheral returns:
+    0x2A1C Temperature Measurement (NOTIFY)
+    0x2A19 Battery Level (NOTIFY)
+    ↓
+Central examines characteristic properties
+    ↓
+Central subscribes to notifications
+    ↓
+Peripheral periodically updates characteristic values
+    ↓
+Notifications sent automatically
+    ↓
+Central receives data
+    ↓
+Disconnect
+    ↓
+Peripheral resumes advertising
+```
+
 In Part 1, you will deploy code to the Photon 2 so that it behaves as a peripheral. You will use a phone application as a central device. You will connect to the Photon 2 and receive notifications that will be displayed on the phone.
 
 The Photon 2 will provide two services but advertise only one. The services will each make available values (called BLE characteristics). Both services and characteristics are associated with unique UUID's.
@@ -36,6 +81,8 @@ This code is adapted from the [Particle BLE tutorial](https://docs.particle.io/t
 ```
 #include "Particle.h"
 
+// OS events at this level are sent over USB
+// You may also use Log.trace("My intersteting message to console");
 SerialLogHandler logHandler(LOG_LEVEL_TRACE);
 
 const unsigned long UPDATE_INTERVAL_MS = 2000;
@@ -47,14 +94,20 @@ uint32_t ieee11073_from_float(float temperature);
 
 // The "Health Thermometer" service is 0x1809.
 // See https://www.bluetooth.com/specifications/gatt/services/
+// Here, we construct an object named healthThermometerService, passing in a constant from Particle.h
 BleUuid healthThermometerService(BLE_SIG_UUID_HEALTH_THERMONETER_SVC);
 
 // We're using a well-known characteristics UUID. They're defined here:
 // https://www.bluetooth.com/specifications/gatt/characteristics/
-// The temperature-measurement is 16-bit UUID 0x2A1C
+// The temperature-measurement characteristic is a 16-bit UUID 0x2A1C
+// Here, we construct an object of class BLECharacteristic.
+// The string temp is a user defined name, NOTIFY is the way that the characteristic will behave.
+// The hex value 0x2A1C is the characteristic defined by Buetooth SIG.
+// This is part of the healthThermometerService defined above.
 BleCharacteristic temperatureMeasurementCharacteristic("temp", BleCharacteristicProperty::NOTIFY, BleUuid(0x2A1C), healthThermometerService);
 
-// The battery level service allows the battery level to be monitored
+// This is a second service on offer.
+// The battery level service allows the battery level to be monitored.
 BleUuid batteryLevelService(BLE_SIG_UUID_BATTERY_SVC);
 
 // The battery_level characteristic shows the battery level of
@@ -71,6 +124,10 @@ void setup() {
 
 	BLE.on();
 
+  // If someone connects and asks for my name then give them this name.
+	// This is the GAP name
+	BLE.setDeviceName("Photon2Thermometer");
+
 	// Add two characteristics - temperature and battery
 	BLE.addCharacteristic(temperatureMeasurementCharacteristic);
 	BLE.addCharacteristic(batteryLevelCharacteristic);
@@ -85,6 +142,8 @@ void setup() {
 	// only advertise the health thermometer. The battery service will be found after
 	// connecting.
 	advData.appendServiceUUID(healthThermometerService);
+  // Include this name in the advertisement packet
+	advData.appendLocalName("Photon2Thermometer");
 
 	// Continuously advertise when not connected
 	BLE.advertise(&advData);
@@ -94,8 +153,9 @@ void loop() {
 	if (millis() - lastUpdate >= UPDATE_INTERVAL_MS) {
 		lastUpdate = millis();
 
+    // Check if a central has connected
 		if (BLE.connected()) {
-			// a 6 byte buffer to transmit
+			// This is a 6 byte buffer to transmit. It is encoded according the SIG.
 			uint8_t buf[6];
 
 			// The Temperature Measurement characteristic data is defined here:
@@ -190,6 +250,14 @@ Serial.printlnf("BLE MAC address: %s ",BLE.address().toString().c_str());
 
 ```
 
+To see the MAC address from the terminal, try the following instruction:
+```
+particle serial MAC
+
+```
+This will return your WiFi MAC address but your BLE address might be close to that value. You should be
+able to see the MAC address of the BLE interface in the LightBlue application.
+
 Within the firmware, there is code that defines the temperature characteristic as a "notify" characteristic. This means that a client does not have to perform explicit read requests. The client can sit back and receive the temperature values.
 
 ```
@@ -199,7 +267,7 @@ BleCharacteristicProperty::NOTIFY
 
 Using LightBlue, you will need to use the "subscribe" or "listen" selection to receive these values.
 
-:checkered_flag:**Take two screenshots showing LightBlue connected to your Photon 2. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Indicated values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Photon 2.**
+:checkered_flag:**Take two screenshots showing LightBlue connected to your Photon 2. The first screenshot (named LightBlue1.jpg) will contain the Advertisement Data screen showing the raw advertisement packet. The second screenshot (named LightBlue2.jpg) will show the Temperature Measurement Properties screen and the Read/Notified values of the Health Thermometer's Temperature Measurement - it is important that you display the values arriving on your phone from the Photon 2.**
 
 ### Part 2. Transmit text over BLE
 
