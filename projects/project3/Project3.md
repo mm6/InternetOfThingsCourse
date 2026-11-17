@@ -7,6 +7,11 @@
 
 :checkered_flag:**Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project3.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you <em>clearly label</em> each answer with the project part number and question number and that you provide your name and email address at the top of the .pdf.**
 
+:checkered_flag:**Completion of parts 1 and 2 are sufficient for a complete Project 3. This will earn
+a maximum score of 95%. To earn 100%, you must go further and complete to Part 6.**
+
+:checkered_flag:**Another way to earn 100% is to due something creative with the tools we have worked with in class.**
+
 ### Overview
 
 In class, we have reviewed the architecture of several IoT platforms: Google's Cloud IoT, AWS's IoT, IBM's Watson IoT, CMU's Sensor Andrew, and CMU's OpenChirp. Each of these included a constrained networking area (the edge), a gateway layer, a publish/subscribe broker, a persistence layer, analytics capabilities and a web front end.
