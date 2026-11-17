@@ -7,10 +7,11 @@
 
 :checkered_flag:**Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project3.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you <em>clearly label</em> each answer with the project part number and question number and that you provide your name and email address at the top of the .pdf.**
 
-:checkered_flag:**Completion of parts 1 and 2 are sufficient for a complete Project 3. This will earn
-a maximum score of 95%. To earn 100%, you must go further and complete to Part 6.**
+:checkered_flag:**Completion of Parts 1 and 2 are sufficient for a complete Project 3. This will earn
+a maximum score of 95%. To earn 100%, you must go further and complete through to Part 6.**
 
-:checkered_flag:**Another way to earn 100% is to due something creative with the tools we have worked with in class.**
+:checkered_flag:**Another way to earn 100% is to do something creative with the tools we have worked with in class.
+This will be demonstrated in class. Please let me know if you are going to demonstrate an application in class on December 3. **
 
 ### Overview
 
