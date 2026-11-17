@@ -168,8 +168,8 @@ void loop() {
 
 			// The Temperature Measurement characteristic data is defined here:
 			/*
-			https://github.com/sputnikdev/bluetooth-gatt-parser/blob/master/src/main/resources/gatt/characteristic/org.bluetooth.characteristic.temperature_measurement.xml
-      */
+			https://github.com/sputnikdev/bluetooth-gatt-parser/blob/master/src/main/resources/gatt/characteristic/org.bluetooth.characteristic.temperature_measurement.xml */
+			
 			// First byte is flags. We're using Celsius (bit 0b001 == 0), no timestamp (bit 0b010 == 0), with temperature type (bit 0b100), so the flags are 0x04.
 			buf[0] = 0x04;
 
