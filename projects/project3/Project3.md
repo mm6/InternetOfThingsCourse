@@ -8,7 +8,7 @@
 :checkered_flag:**Submit to Canvas a single .pdf file named Your_Last_Name_First_Name_Project3.pdf. This single pdf will contain your responses to the questions marked with a checkered flag. It is important that you <em>clearly label</em> each answer with the project part number and question number and that you provide your name and email address at the top of the .pdf.**
 
 :checkered_flag:**Completion of Parts 1 and 2 are sufficient for a complete Project 3. This will earn
-a maximum score of 95%. To earn 100%, you must go further and complete through to Part 6.**
+a maximum score of 92%. To earn 100%, you must go further and complete through to Part 6.**
 
 :checkered_flag:**Another way to earn 100% is to do something creative with the tools we have worked with in class.
 This requires a short presentation and demonstration (say five minutes). Please let me know if you are going to demonstrate an application in class on December 3.**
@@ -169,7 +169,7 @@ void loop() {
 			// The Temperature Measurement characteristic data is defined here:
 			/*
 			https://github.com/sputnikdev/bluetooth-gatt-parser/blob/master/src/main/resources/gatt/characteristic/org.bluetooth.characteristic.temperature_measurement.xml */
-			
+
 			// First byte is flags. We're using Celsius (bit 0b001 == 0), no timestamp (bit 0b010 == 0), with temperature type (bit 0b100), so the flags are 0x04.
 			buf[0] = 0x04;
 
