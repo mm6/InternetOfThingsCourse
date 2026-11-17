@@ -84,6 +84,8 @@ Suppose a device advertises the value 0x180D. Another device knows that the firs
 
 This code is adapted from the [Particle BLE tutorial](https://docs.particle.io/tutorials/device-os/bluetooth-le/).
 
+
+
 ```
 #include "Particle.h"
 
@@ -130,8 +132,8 @@ void setup() {
 
 	BLE.on();
 
-  // If someone connects and asks for my name then give them this name.
-	// This is the GAP name
+	// If someone connects and asks for my name then give them this name.
+	// This is the GAP name.
 	BLE.setDeviceName("Photon2Thermometer");
 
 	// Add two characteristics - temperature and battery
@@ -148,7 +150,7 @@ void setup() {
 	// only advertise the health thermometer. The battery service will be found after
 	// connecting.
 	advData.appendServiceUUID(healthThermometerService);
-  // Include this name in the advertisement packet
+	// Include this name in the advertisement packet
 	advData.appendLocalName("Photon2Thermometer");
 
 	// Continuously advertise when not connected
