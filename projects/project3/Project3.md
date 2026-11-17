@@ -161,7 +161,7 @@ void loop() {
 	if (millis() - lastUpdate >= UPDATE_INTERVAL_MS) {
 		lastUpdate = millis();
 
-    // Check if a central has connected
+		// Check if a central has connected
 		if (BLE.connected()) {
 			// This is a 6 byte buffer to transmit. It is encoded according the SIG.
 			uint8_t buf[6];
