@@ -25,10 +25,9 @@ on the internet at large. Both protocols utilize service discovery.
 
 + [Industrial Internet of Things and SCADA](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_SCADA.pdf)
 
++ [Bluetooth](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Bluetooth.pdf)
 
 + [Microcontrollers, WPAN, and LPWAN Protocols](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Microcontrollers.pdf)
-
-+ [Bluetooth](https://www.andrew.cmu.edu/user/mm6/95-733/PowerPoint/04_Bluetooth.pdf)
 
 ## Required readings
 
