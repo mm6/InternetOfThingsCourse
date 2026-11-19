@@ -23,7 +23,7 @@ There are no required reading for next week. It is a good time to review for the
 
 ## Quizzes
 
-+ Quiz 5: WoT Architecture Use Cases Section 4, WoT Architecture Section 6, WoT Architecture Building blocks Section 7, Senate Testimony of Jonathan_Zittrain.
++ Quiz 5: WoT Architecture Use Cases Section 4, WoT Architecture Section 6, WoT Architecture Building blocks Section 7
 
 <!--
 ## Video Lectures
