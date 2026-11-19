@@ -50,7 +50,6 @@ HTTP and CoAp are compared. It is noted that the microcontroller used in class i
 
 ## Required readings
 
-+ [Jonathan Zittrain US Senate Testimony](https://www.andrew.cmu.edu/user/mm6/95-733/iot/Jonathan_Zittrain_Testimony.pdf)
 
 + [Web of Things Architecture at W3C](https://www.w3.org/TR/wot-architecture/)
 +  From WoT Architecture, read Use Cases Section 4, WoT Architecture Section 6, WoT Architecture Building blocks Section 7.
@@ -75,6 +74,9 @@ HTTP and CoAp are compared. It is noted that the microcontroller used in class i
 + [17_Lecture5](https://heinzcollege.mediasite.com/Mediasite/Play/251d1c7c5320408f9ded1c75fc7a53d81d)
 -->
 ## Optional Readings
+
++ [Jonathan Zittrain US Senate Testimony](https://www.andrew.cmu.edu/user/mm6/95-733/iot/Jonathan_Zittrain_Testimony.pdf)
+
 
 + [Node-Red and InfluxDB](https://www.influxdata.com/blog/iot-easy-node-red-influxdb/)
 
