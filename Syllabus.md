@@ -52,7 +52,7 @@ There will be four or five quizzes on the readings at the start of lecture with 
 
 There will be a closed Book Final Exam based on readings, lectures, and programming (45%).
 
-The Final Exam date and time are Thursday, December 10 01:00PM - 04:00PM, Room TBA
+The Final Exam date and time are Thursday, December 10 01:00PM - 02:30PM, Room HBH 2009
 
 ### Late Assignment Policy
 
